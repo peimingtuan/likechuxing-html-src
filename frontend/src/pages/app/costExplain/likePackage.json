@@ -1,0 +1,26 @@
+{
+  "id": 1008,
+  "zh_name": "app2.0.0费用说明",
+  "name": "costExplain",
+  "group": "app",
+  "ver": "1.0.0",
+  "lastUpdateTime": "2017-11",
+  "lastUpdateDesc": "1.0.0",
+  "bundle_vendor": false,
+  "copy": true,
+  "input_file": {
+    "index": [
+      "index.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/app/costExplain/",
+    "publicPath": "/",
+    "filename": "js/app_costExplain/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.pug"
+    ]
+  }
+}

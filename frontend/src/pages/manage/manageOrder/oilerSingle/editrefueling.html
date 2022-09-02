@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+    <meta content="telephone=no, address=no" name="format-detection">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="no-cache" http-equiv="pragma">
+    <meta content="0" http-equiv="expires">
+    <meta name="full-screen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>编辑加油信息</title>
+    <script>
+        var htmlBq = document.documentElement;
+
+        function allSize() {
+            var htmlWidth = htmlBq.clientWidth;
+            if (htmlWidth >= 640) {
+                htmlBq.style.fontSize = '40px';
+            } else if (htmlWidth < 640 && htmlWidth >= 320) {
+                htmlBq.style.fontSize = htmlWidth / (640 / 40) + 'px';
+            } else if (htmlWidth < 320) {
+                htmlBq.style.fontSize = '20px';
+            }
+        }
+        allSize();
+        window.onresize = function () {
+            allSize();
+        };
+    </script>
+    <script src="https://g.alicdn.com/dingding/open-develop/1.9.0/dingtalk.js"></script>
+</head>
+<body>
+<script>
+    !(function(c,b,d,a){c[a]||(c[a]={});c[a].config={pid:"gruqqi6cbp@6594c08d3216a5d",imgUrl:"https://arms-retcode.aliyuncs.com/r.png?"};
+        with(b)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("crossorigin","",src=d)
+    })(window,document,"https://retcode.alicdn.com/retcode/bl.js","__bl");
+</script>
+<ul class="refueling-list">
+    <li>
+        选择加油站：<input type="text" class="void choice-oilstate" name="" value="" placeholder="请选择加油站" readonly />
+        <span class="right-icon right">&#xe623;</span>
+        <span class="clear-icon none">&#xe601;</span>
+    </li>
+    <li>
+        油卡编号：<input type="text" class="oiler-number void" name="" value="" placeholder="请输入油卡编号后四位"/>
+        <span class="select-oilnumber right">查询</span>
+        <span class="clear-icon none">&#xe601;</span>
+    </li>
+    <li class="li-model">
+        油品型号：<span><input type="radio" class="oilermodel"  name="oilermodel" value="92" checked/>92</span>
+        <span><input type="radio" class="oilermodel" name="oilermodel" value="95" />95</span>
+        <span><input type="radio" class="oilermodel" name="oilermodel" value="98" />98</span>
+    </li>
+    <li>
+        加油量（L）：<input type="text" class="ifnumber void oilamount" name="" value="" placeholder="请输入加油量"/>
+    </li>
+    <li>
+        加油金额（元）：<input type="text" class="ifnumber void oilmoney" name="" value="" placeholder="请输入加油金额"/>
+    </li>
+    <li>
+        油卡余额（元）：<input type="text" class="ifnumber void oilbalance" name="" value="" placeholder="请输入加油卡余额"/>
+    </li>
+</ul>
+<div class="editrefueling-content">
+    <div class="left">
+        <p>加油前油表</p>
+
+        <div>
+            <input type="hidden" value="" class="image image1"/>
+            <span class="uploadIcon hasicam">&#xe616;</span>
+            <span class="end-photo none">已上传</span>
+            <span class="check-photo none">查看</span>
+            <span class="swat-photo none">重拍</span>
+            <!-- 用于本地缓存图片-->
+            <input type="hidden" value="imageArray1" class="imageArray1"/>
+        </div>
+    </div>
+    <div class="right">
+        <p>加油后油表</p>
+
+        <div>
+            <input type="hidden" value="" class="image image2"/>
+            <span class="uploadIcon">&#xe616;</span>
+            <span class="end-photo none">已上传</span>
+            <span class="check-photo none">查看</span>
+            <span class="swat-photo none">重拍</span>
+            <!-- 用于本地缓存图片-->
+            <input type="hidden" value="imageArray2" class="imageArray1"/>
+        </div>
+    </div>
+    <div class="left">
+        <p>加油小票</p>
+
+        <div>
+            <input type="hidden" value="" class="image image3"/>
+            <span class="uploadIcon">&#xe616;</span>
+            <span class="end-photo none">已上传</span>
+            <span class="check-photo none">查看</span>
+            <span class="swat-photo none">重拍</span>
+            <!-- 用于本地缓存图片-->
+            <input type="hidden" value="imageArray3" class="imageArray1"/>
+        </div>
+    </div>
+    <div class="right">
+        <p>车牌号</p>
+
+        <div>
+            <input type="hidden" value="" class="image image4"/>
+            <span class="uploadIcon">&#xe616;</span>
+            <span class="end-photo none">已上传</span>
+            <span class="check-photo none">查看</span>
+            <span class="swat-photo none">重拍</span>
+            <!-- 用于本地缓存图片-->
+            <input type="hidden" value="imageArray4" class="imageArray1"/>
+        </div>
+    </div>
+</div>
+<div class="refueling-submit">
+    <button>提交</button>
+</div>
+<!--弹框-->
+<div class="alert_refuewindow common_cover none">
+    <div class="alert_content common_content">
+        <div class="alert-refuecontent">
+
+        </div>
+        <div class="alert-refuebottom">
+            <button class="alert-refuesure">确定</button>
+        </div>
+    </div>
+</div>
+<!--加油金额验证弹框-->
+<div class="alert_refuewindow2 common_cover none">
+    <div class="alert_content2 common_content2">
+        <div class="alert-refuecontent2">
+            加油量或者加油金额错误，请核实更正！
+        </div>
+        <div class="alert-refuebottom2">
+            <button class="alert-sure">继续提交</button>
+            <button class="alert-cancel">更改</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+.code_box{
+  margin: 0.3rem 0;
+  position: relative;
+  .code_con{
+    left:40%;
+    margin-left: -0.8rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    border:solid 1px #000;
+    position: relative;
+
+    &:before{
+      content: '';
+      position: absolute;
+      width: 0.82rem;
+      height: 0.5rem;
+      display: block;
+      background-color:#ffe000 ;
+      left:-1px;
+      top:0.15rem;
+      z-index: 0;
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      width: 0.5rem;
+      height: 0.82rem;
+      display: block;
+      background-color:#ffe000 ;
+      left:0.15rem;
+      top:-1px;
+      z-index: 0;
+    }
+    &.white{
+      &:before{
+        background-color:#fff ;
+      }
+      &:after{
+        background-color:#fff ;
+      }
+    }
+    img{
+      width: 98%;
+      position: relative;
+      z-index: 1;
+      margin: 1%;
+    }
+  }
+  .desc{
+    position: absolute;
+    left:43%;
+    top:50%;
+    margin-top:-0.36rem;
+    line-height: 0.24rem;
+    .title{
+      text-indent: 0.5em;
+      letter-spacing: 0.1em;
+    }
+    .le{
+      letter-spacing: 0.6em;
+      text-indent: 0.7em;
+    }
+  }
+}
+.empty{
+  padding-bottom: 0.15rem;
+}

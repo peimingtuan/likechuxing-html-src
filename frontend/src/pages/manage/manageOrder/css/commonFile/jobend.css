@@ -1,0 +1,123 @@
+#container-end {
+    width: 100%;
+    height: 10.4rem;
+    margin: 0px;
+}
+
+.trail {
+    width: 100%;
+    height: 10.4rem;
+    margin: 0px;
+    text-align: center;
+    background: #F6F6F6;
+}
+
+.trail img {
+    margin-top: 2rem;
+    width: 6rem;
+    vertical-align: middle;
+}
+
+.trail span {
+    font-size: .8rem;
+    color: #999999;
+}
+
+.center {
+    margin: .5rem auto;
+    width: 5rem;
+    height: .4rem;
+    background: #F6F6F6;
+    border-radius: .5rem;
+}
+
+.content-top {
+    margin: .5rem;
+    line-height: 2rem;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.content-top span {
+    font-size: .8rem;
+}
+
+.content-top .span2 {
+    font-size: .5rem;
+    color: #666666;
+}
+
+.content {
+    margin: 0 .5rem;
+}
+
+.content p {
+    position: relative;
+    padding-left: 1.5rem;
+    line-height: 1rem;
+}
+
+.content p:first-of-type {
+    margin-bottom: .5rem;
+}
+
+.content p .span2 {
+    font-size: .5rem;
+    color: #999;
+}
+
+.content img {
+    position: absolute;
+    left: 0;
+    vertical-align: middle;
+    width: 1rem;
+}
+
+.door-btn {
+    margin: .5rem;
+    height: 2rem;
+}
+
+.sync-oiler, .open-cardoor, .close-cardoor {
+    display: inline-block;
+    line-height: 1.5rem;
+    text-align: center;
+    color: #fff;
+    background: #333;
+    width: 4rem;
+    border-radius: 1rem;
+}
+
+.job-detail {
+    font-family: 'iconfont';
+}
+
+.sync-detail {
+    margin: 0 .5rem 4.5rem;
+}
+
+.sync-detail font {
+    margin: 0 .3rem;
+}
+
+.content-bottom {
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    padding: .5rem;
+    height: 3rem;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    z-index: 100;
+    background: #fff;
+    box-shadow: 0px -2px 1px #eaeaea;
+}
+
+.content-bottom span {
+    display: inline-block;
+    width: 7rem;
+    margin-right: 0;
+    text-align: center;
+    line-height: 1.9rem;
+    border: 1px solid #747474;
+}

@@ -1,0 +1,153 @@
+.Index{
+  position: relative;
+  min-height: 100vh;
+  background: #ef1f2f;
+  .city_select{
+    position: absolute;
+    width: .66rem;
+    height: .22rem;
+    top: .12rem;
+    left: .12rem;
+    background: #47181a;
+    opacity: .8;
+    border-radius: .22rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .cityName{
+      font-size:14px;
+      color:#ffffff;
+      line-height: 14px;
+      flex: 1;
+      text-align: center;
+    }
+    .icon_location{
+      margin-left: .05rem;
+      width: .13rem;
+      height: .18rem;
+      background: url('../../images/icon_location2.png') no-repeat center;
+      background-size: 100%;
+    }
+    .icon_rightArrow{
+      width: .08rem;
+      height: .05rem;
+      background: url('../../images/icon_rightArrow4.png') no-repeat center;
+      background-size: .08rem .05rem;
+      margin-right: .05rem;
+    }
+  }
+  .main_header{
+    width: 100%;
+    height: 3.13rem;
+    background: url('../../images/main_header.png') no-repeat top ;
+    background-size: 100%;
+  }
+  .content_bg{    
+
+    .carList{
+      padding: 0 .34rem .23rem;
+
+
+    }
+    .footHint{
+      text-align: center;
+      color: #FFF;
+      font-size: 14px;
+      position: absolute;
+      bottom: .2rem;
+      width: 100%;
+    }
+  }
+  .toEditRental{
+    position: absolute;
+    top: 0;
+    right: .24rem;
+    width: 35px;
+    height: 60px;
+    background: url('../../images/toExplain.png') no-repeat;
+    background-size: 100%;
+  }
+}
+
+.CarBox{
+  width: 100%;
+  height: 1.12rem;
+  background: url("../../images/carBox_bg.png") no-repeat;
+  background-size:100%;
+  margin-bottom: .23rem;
+  padding: 0 .20rem 0 .30rem;
+  box-sizing: border-box;
+  align-items: center;
+  display: flex;
+  position: relative;
+  border-radius: 2px;
+  img{
+    width: 1.38rem;
+    height: .64rem;
+  }
+  .hot{
+    position: absolute;
+    top:0.24rem;
+    right:0.14rem;
+    width: 0.34rem;
+    height: 0.34rem;
+    background: url('../../images/hot_car.png') no-repeat center;
+    background-size: 100%;
+  }
+  .carBoxContent{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .title{
+    color:#282928;
+    font-size: 14px;
+    line-height: 1;
+  }
+  .price{
+    font-size: 18px;
+    span{
+      color: #EF3132;
+      font-size: 23px;
+    }
+  }
+  .payBtn{
+    font-size: 13px;
+    background: #ef3132;
+    color: #FFFFD9;
+    padding: .04rem .09rem;
+    width: fit-content;
+    margin-top: .1rem;
+  }
+  .payBtnLong{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -.6rem;
+    background: #ffffa8;
+    font-size: 19px;
+    color: #EF1F2F;
+    padding: .1rem 0;
+    text-align: center;
+  }
+  .mask{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('../../images/rentOut.png') no-repeat center;
+    background-size: 100%;
+    z-index: 10;
+  }
+  .rentOver{
+    background: #e9e9e9;
+    color: #c3c3c4;
+  }
+}
+
+
+
+
+

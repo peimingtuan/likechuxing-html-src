@@ -1,0 +1,78 @@
+.pd-15 {
+    margin: .5rem;
+    width:15rem;
+    box-sizing: border-box;
+}
+
+.pd-15 select {
+    margin: 5px 0 20px;
+    padding: 5px;
+    width: 15rem;
+    line-height: 2.5em;
+    font-size: 14px;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+}
+
+/*.pd-15 option {*/
+    /*font-size: 14px;*/
+    /*width: 15rem;*/
+    /*box-sizing: border-box;*/
+/*}*/
+
+.pd-15 input {
+    margin-top: 5px;
+    padding: 0 5px;
+    width: 15rem;
+    line-height: 2.5em;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+}
+
+.pd-15 input:focus {
+    border: 1px solid orange;
+}
+
+
+/*模糊查询*/
+.search-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.result-box {
+    display: none;
+    overflow: auto;
+    width: 15rem;
+    height:12rem;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #999;
+    border-top: 0;
+    z-index: 100;
+    box-sizing: border-box;
+}
+
+.result-box li{
+    width: 15rem;
+    padding:0 .5rem;
+    line-height:1.5rem;
+    border-bottom: 1px solid #dcdcdc;
+    box-sizing: border-box;
+}
+
+.changeBtn{
+    margin-top:2rem;
+}
+
+.changeBtn button {
+    width: 15rem;
+    line-height: 1.8rem;
+    background: #187aeb;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    text-align: center;
+    color: #fff;
+    box-sizing: border-box;
+}

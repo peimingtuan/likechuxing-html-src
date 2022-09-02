@@ -1,0 +1,26 @@
+{
+  "id": 4084,
+  "zh_name": "管理APP-服务商洗车工单",
+  "name": "managefacilitatorCarwash",
+  "group": "manage",
+  "copy": true,
+  "bundle_vendor": false,
+  "dll":[
+    "vuer"
+  ],
+  "input_file": {
+    "index": [
+      "index.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/manage/managefacilitatorCarwash/",
+    "publicPath": "/",
+    "filename": "js/manage_managefacilitatorCarwash/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.html"
+    ]
+  }
+}

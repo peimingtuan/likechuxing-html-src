@@ -1,0 +1,40 @@
+@import "./common/reset.css";
+.header{
+  .banner{
+    width: 100%;
+    height: 2.7rem;
+    background: #ffe000 url('../images/banner.png') no-repeat top;
+    background-size: 100%;
+  }
+}
+.tip{
+  display: none;
+  margin-top: -0.1rem;
+  margin-bottom: 0.1rem;
+  font-weight: 300;
+  text-align: center;
+  line-height: 0.2rem;
+}
+
+.link_con{
+  overflow: hidden;
+  .link{
+    width: 50%;
+    display: inline-block;
+    line-height: 0.2rem;
+    color:#373737;
+    float: left;
+    text-align: center;
+    vertical-align: top;
+    &::after{
+      content: '';
+      display: inline-block;
+      vertical-align: top;
+      width: 0.2rem;
+      height: 0.2rem;
+      background: url('../images/icon_rightArrow.png') no-repeat right;
+      background-size: 60%;
+    }
+  }
+}
+

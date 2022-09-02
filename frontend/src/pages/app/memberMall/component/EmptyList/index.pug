@@ -1,0 +1,16 @@
+//- Created by garvey on 2017/12/19.
+-require('./index.less')
+.emptyListIcon
+    if (type === 'note')
+        img(src=require('./images/note.png'))
+    else if (type === 'alert')
+        img(src=require('./images/alert.png'))
+    else if (type === 'coupon')
+        img(src=require('./images/coupon.png'))
+    else if (type === 'map')
+        img(src=require('./images/map.png'))
+    else if (type === 'gift')
+        img(src=require('./images/gift.png'))
+    else
+        img(src=require('./images/note.png'))
+    .text #{text}

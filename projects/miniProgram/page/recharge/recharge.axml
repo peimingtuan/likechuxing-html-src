@@ -1,0 +1,32 @@
+<view class="container" a:if="{{pageIsShow}}">
+    <view class="header">
+        <view class="title">充值金额</view>
+        <view class="tip" a:if="{{charge_remain_day}}">首充特权剩{{charge_remain_day}}天</view>
+    </view>
+    <view class="select-box" >
+        <view class="item {{item.selected?'on':''}}" a:for="{{list}}" key="{{index}}" onTap="selectType" data-index="{{index}}">
+            <view class="label">
+                <text>{{item.money}}</text>
+                <text class="unit">元</text>
+            </view>
+            <view class="desc"  style="color:{{item.color}};">{{item.desc}}</view>
+            <view class="icon" a:if="{{item.privilege}}"></view>
+        </view>
+    </view>
+    <view class="info">
+        <view class="info-title">
+            <view class="icon" a:if="{{info.privilege}}"></view>
+            <view class="info-title-txt">{{info.info.title}}</view>
+        </view>
+        <view class="desc-item" a:for="{{info.list[0]}}">
+            <text a:for="{{item}}" style="color:{{item.color?item.color:''}};">{{item.des}}</text>
+        </view>
+    </view>
+    <view class="footer">充值金额不可退，充值所赠金额不可开发票</view>
+    <view class="btn">
+        <view class="btnTxt" onTap="recharge">立刻充值</view>
+    </view>
+</view>
+<view class="loadingBox" a:if="{{!pageIsShow}}">
+    <view class="loadingIcon"></view>
+</view>

@@ -1,0 +1,41 @@
+page{
+    background:#fff;
+    padding: 30rpx;
+}
+.item{
+    padding-left: 16rpx;
+    font-family: PingFangSC-Regular;
+    font-size: 24rpx;
+    color: #525A66;
+    line-height: 18px;
+    margin-bottom: 22rpx;
+    position: relative;
+}
+.item::before{
+    content:'';
+    width: 4rpx;
+    height: 4rpx;
+    background: #5F626B;
+    position: absolute;
+    left: 0;
+    top: 16rpx;
+}
+.footer{
+    margin-top:80rpx;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    padding-bottom: 30rpx;
+}
+.btnWrap{
+    height: 104rpx;
+    background: #2B2E37;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 104rpx;
+}
+.btnText{
+    font-family: PingFangSC-Regular;
+    font-size: 34rpx;
+    color: #FFFFFF;
+    text-align: center;
+}

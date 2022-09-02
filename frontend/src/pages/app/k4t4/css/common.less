@@ -1,0 +1,60 @@
+@import 'reset.css';
+
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.float-left{
+  float: left!important;
+}
+
+.float-right{
+  float:  right!important;
+}
+
+.text-left{
+  text-align: left;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-right{
+  text-align: right;
+}
+
+.hide{
+  display: none;
+}
+
+.shadow{
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+}
+
+.warn{
+  color:#ed3800;
+}
+
+.point_car_cnt{
+  text-align: center;
+  display: block;
+  border-radius: 50%;
+  font-size: 12px;
+  background: #494B51;
+  border: 1px solid #FFFFFF;
+  width: 18px;
+  line-height: 18px;
+  color:#fff;
+  &.xl{
+    width: 22px;
+    line-height: 22px;
+    font-size: 14px;
+  }
+  &.empty{
+    background-color: #ccc;
+  }
+}

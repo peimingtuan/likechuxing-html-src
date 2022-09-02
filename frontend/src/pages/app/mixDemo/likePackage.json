@@ -1,0 +1,26 @@
+{
+  "id": 998,
+  "zh_name": "app交互DEMO",
+  "name": "mixDemo",
+  "group": "app",
+  "bundle_vendor": false,
+  "dll":[
+    "vuer"
+  ],
+  "copy": true,
+  "input_file": {
+    "index": [
+      "index.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/app/mixDemo/",
+    "publicPath": "/",
+    "filename": "js/app_mixDemo/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.pug"
+    ]
+  }
+}

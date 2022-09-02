@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, user-scalable=no"/>
+    <script src="https://webapi.amap.com/maps?v=1.4.4&key=91ed10906005ee88866f14fd9f076e8b"></script>
+    <!--    <script src="http://webapi.amap.com/loca?key=91ed10906005ee88866f14fd9f076e8b"></script>-->
+    <script src="//webapi.amap.com/ui/1.0/main.js?v=1.0.10"></script>
+    <script src="https://images.likechuxing.com/license/branch_car.js"></script>
+    <title>网点</title>
+</head>
+<body>
+<div id="map" class="map"></div>
+<div id="map2" class="map"></div>
+<div id="map3" class="map"></div>
+<div class="map">打开数 | 订单数<br/>空余车辆数</div>
+<div class="hot">
+    <div>时间：<span id="time">00:00</span>
+        <button id="play">从头播放</button>
+    </div>
+    <div id="slider"></div>
+</div>
+<div class="box">
+    <div>城市：
+        <select id="city">
+            <!-- <option value="0">全国</option>-->
+        </select>
+    </div>
+    <div class="border-top"></div>
+    <div>动画速率：
+        <select id="speed">
+            <option value="166">2小时/秒</option>
+            <option value="333" selected>1小时/秒</option>
+            <option value="1000">20分钟/秒</option>
+        </select>
+    </div>
+    </select>
+</div>
+<div id="toast-con" style="display: none;position:fixed;width:100vw;height: 100vh;top:0;left:0;z-index:1">
+    <p id="toast-msg" style="width: 70vw;padding: 10px;background: rgba(0,0,0,0.8);border-radius: 3px;color: #fff;text-align: center;margin:40vh auto 0"></p>
+</div>
+</body>
+</html>

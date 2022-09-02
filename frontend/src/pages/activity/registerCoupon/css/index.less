@@ -1,0 +1,144 @@
+@import '../../../../css/reset.css';
+@import "../../../../css/font";
+@import "../../../../css/buttons/button";
+
+body{
+  background-color: #f2f2f2
+}
+.downloadFooter{
+  z-index: 10;
+  position: fixed!important;
+  width: 100%;
+  top:0
+}
+.banner{
+  padding-top: 0.44rem;
+  width: 100%;
+  img{
+    width:100%
+  }
+}
+.box{
+  margin:0.1rem 0.15rem;
+  background-color: #fff;
+  border-radius: 2px;
+  overflow: hidden;
+  .title{
+    padding: 0.15rem;
+    border-bottom: solid 1px #f2f2f2;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      left:-0.06rem;
+      bottom:-0.06rem;
+      display: block;
+      width: 0.12rem;
+      height:0.12rem;
+      border-radius: 50%;
+      background-color: #f2f2f2;
+    }
+    &::after{
+      content: '';
+      position: absolute;
+      right:-0.06rem;
+      bottom:-0.06rem;
+      display: block;
+      width: 0.12rem;
+      height:0.12rem;
+      border-radius: 50%;
+      background-color: #f2f2f2;
+    }
+  }
+  .content{
+    padding: 0.15rem;
+    p {
+      font-size: 0.13rem;
+      color: #333;
+      margin: 0.08rem 0;
+      line-height: 1.6;
+      b{
+        margin:0 0.5em;
+        &.noMLeft{
+          margin-left:0
+        }
+      }
+    }
+    img{
+      width: 100%;
+    }
+  }
+}
+.box_title{
+  span{
+    display: inline-block;
+    line-height: 0.28rem;
+    font-size: 0.16rem;
+    vertical-align: top;
+  }
+  .icon_con{
+    margin-top: -0.01rem;
+    margin-right: 6px;
+    height: 0.28rem;
+    width: 0.28rem;
+    background: url('../images/icons.png') no-repeat;
+    background-size: 400% 100%;
+    &.icon_1{
+      background-position: 0 0;
+    }
+    &.icon_2{
+      background-position: -0.28rem 0;
+    }
+    &.icon_3{
+      background-position: -0.56rem 0;
+    }
+    &.icon_4{
+      background-position: -0.84rem 0;
+    }
+  }
+}
+.login{
+  padding:0 0.3rem;
+  button{
+    height:0.4rem;
+    margin:0.05rem 0;
+    font-size: 0.14rem;
+    &#getCode{
+      width:40%;
+      float: right;
+      background-color: #4A4A4A;
+      &.disabled{
+        background-color: #9B9B9B;
+        opacity: 1;
+      }
+    }
+    &#verify{
+      margin-top: 0.1rem;
+      width: 100%;
+      &.disabled{
+        background-color: #DBDBDB;
+        opacity: 1;
+      }
+    }
+  }
+  input{
+    height: 0.4rem;
+    text-indent: 1em;
+    font-size: 0.14rem;
+    font-weight: 400;
+    border:solid 1px #DBDBDB;
+    box-sizing: border-box;
+    margin:0.05rem 0;
+    border-radius: 2px;
+    &:hover{
+      border-color:#111;
+    }
+    &#phone{
+      width:100%
+    }
+    &#code{
+      width: 56%
+    }
+  }
+}
+

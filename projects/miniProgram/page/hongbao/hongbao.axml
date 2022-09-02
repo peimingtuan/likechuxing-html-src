@@ -1,0 +1,17 @@
+<view class="container">
+    <view class="listWrap">
+        <view class="block-item" a:for="{{list}}">
+            <card-item 
+                name="{{item.name}}"
+                case="{{item.case}}"
+                time="{{item.time}}"
+                money="{{item.money}}"
+                numCase="{{item.numCase}}"
+                couponType="{{item.type}}"
+                freeTime="{{item.freeTime}}"
+                type="1"
+            />
+        </view>
+    </view>
+</view>
+<desc-modal descList="{{descList}}" />

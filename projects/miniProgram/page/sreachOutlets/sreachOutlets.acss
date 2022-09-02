@@ -1,0 +1,105 @@
+page{
+    background:#F4F5F7;
+}
+.searchWrap{
+    padding: 20rpx;
+    background: #fff;
+}
+.search{
+    height: 72rpx;
+    display: flex;
+    background:#F4F5F7;
+    justify-content: center;
+    align-items: center;
+    padding-left: 22rpx;
+}
+.searchIcon{
+    width: 25rpx;
+    height: 26rpx;
+    background: url('/image/search.png') no-repeat;
+    background-size: 100% 100%;
+}
+.input{
+    flex:1;
+    height: 72rpx;
+    background:transparent;
+    font-family: PingFangSC-Regular;
+    font-size: 28rpx;
+    color: #333333;
+}
+.placeholderclass{
+    font-family: PingFangSC-Regular;
+    font-size: 28rpx;
+    color: #848C99;
+}
+.wrap{
+    padding: 20rpx;
+}
+.listWrap{
+    background: #fff;
+    border: 1px solid #dadfe7;
+    margin-bottom: 20rpx;
+}
+.listHeader{
+    height: 59rpx;
+    border-bottom: 1px solid #F3F3F3;
+    padding-left: 18rpx;
+    padding-right: 18rpx;
+    line-height: 59rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.deleteBtn{
+    width: 20rpx;
+    height: 21rpx;
+    background: url(/image/shanchu.png) no-repeat;
+    background-size: 100% 100%;
+}
+.label{
+    font-family: PingFangSC-Regular;
+    font-size: 22rpx;
+    color: #848C99;
+    letter-spacing: 0;
+}
+.listItem{
+    height: 117rpx;
+    border-bottom: 1px solid #dadfe7;
+    display: flex;
+    align-items: center;
+    padding-left: 20rpx;
+}
+.listItem:last-child{
+    border: 0;
+}
+.circle{
+    width: 14rpx;
+    height: 14rpx;
+    background: #90D599;
+    border-radius: 50%;
+    margin-right: 15rpx;
+}
+.icon{
+    width:20rpx;
+    height: 24rpx;
+    background: url('/image/huanchedian.png') no-repeat;
+    background-size: 100% 100%;
+    margin-right: 15rpx;
+}
+.info{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.title{
+    font-family: PingFangSC-Regular;
+    font-size: 28rpx;
+    color: #333333;
+}
+.address{
+    font-family: PingFangSC-Regular;
+    font-size: 22rpx;
+    color: #848C99;
+    margin-top: 10rpx;
+}

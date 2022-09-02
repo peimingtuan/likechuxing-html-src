@@ -1,0 +1,21 @@
+<!--pages/user/license.wxml-->
+<view class="License">
+    <p class="header_desc">
+      <p>用车需要认证驾驶证、身份证正面照、手持身份证照</p>
+      <p>立刻出行 承诺对信息进行严格保密</p>
+    </p>
+
+    <view
+      wx:for="{{list}}"
+      wx:key="{{item.id}}"
+      class="{{item.photo_src!==''?'after upload_box':'upload_box'}}">
+      <image src="{{item.photo_src !== '' ? item.photo_src : item.photo_default}}" class="img" />
+      <view class="mask"></view>
+      <view class="desc" >{{item.desc[0]}}<span>{{item.desc[1]}}</span></view>
+      <image src="data:image/png;base64,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" data-id="{{item.id}}" bindtap="chooseImage" class="camera"/>
+    </view>
+
+    <view class="btn_con">
+      <button class="sub_btn {{couldSubmit?'active':''}}" bindtap="takeSubmit">提交</button>
+    </view>
+</view>

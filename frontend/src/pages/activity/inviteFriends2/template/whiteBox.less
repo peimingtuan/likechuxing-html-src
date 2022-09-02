@@ -1,0 +1,31 @@
+.circle(){
+  content: '';
+  width: 0.14rem;
+  height:0.14rem;
+  position: absolute;
+  border-radius: 50%;
+  background-color:#ffe000;
+  top:-0.07rem;
+}
+.whiteBox{
+  margin:0 0.3rem;
+  background-color: #fff;
+  border-radius: 5px;
+  border:solid 1px #d6e2e9;
+  .content{
+    padding:0.1rem 0.2rem;
+  }
+  .nether{
+    position: relative;
+    &::before{
+      .circle();
+      left:-0.07rem;
+    }
+    &::after{
+      .circle();
+      right:-0.07rem;
+      box-shadow: 4px 1px 4px rgba(165,165,10,0.3) inset;
+    }
+    border-top:dashed 1px #ffe000;
+  }
+}

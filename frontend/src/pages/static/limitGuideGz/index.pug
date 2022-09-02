@@ -1,0 +1,60 @@
+//- Created by garvey on 2018/7/9.
+include ../../../template/base/h5
+    include ../../../template/head/viewport
+    title 广州限行期用车指南
+body
+    .section
+        .title 1.限行区外取车
+        .detail
+            span.index ( 1 )
+            span.content
+                |进入限行区，只能选择带有“
+                span.green 可入限行区
+                |”标识的车
+        .detail
+            span.index ( 2 )
+            span.content 不进入限行区，可选择任意车辆
+        .img-con
+            img(src=require('./images/01.jpg'))
+
+    .section
+        .title 2. 限行区内取车
+        .detail
+            span.index ( 1 )
+            span.content
+                | 可选择任意车辆
+                span.min ( 没有特别标识的车辆今日不限行 )
+        .img-con
+            img(src=require('./images/02.jpg'))
+        .detail
+            span.index ( 2 )
+            span.content
+                | “
+                span.orange 明日限行
+                | ”的车须在
+                span.red 当日 22:00 前还车
+        .img-con
+            img(src=require('./images/03.jpg'))
+
+    .section
+        .title 3. 注意事项 ( 以下3种操作会给您造成损失 )
+        .detail
+            span.index ( 1 )
+            span.content
+                |将“禁入限行区”的车开到限行区内
+                br
+                span.red 产生违章，扣 3 分罚款 200 元!!!
+        .detail
+            span.index ( 2 )
+            span.content
+                | 将“禁入限行区”的车还到限行区内
+                br
+                span.red 按订单时长每分钟加收 10 元!!!
+        .detail
+            span.index ( 3 )
+            span.content
+                | 22:00 后将“明日限行”的车还在限行区内
+                br
+                span.red 22:00 起每分钟加收 10 元!!!
+
+

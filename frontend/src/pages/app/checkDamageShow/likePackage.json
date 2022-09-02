@@ -1,0 +1,24 @@
+{
+  "id": 1007,
+  "zh_name": "查看验车单",
+  "name": "checkDamageShow",
+  "group": "app",
+  "ver": "1.0.1",
+  "copy":true,
+  "bundle_vendor": false,
+  "input_file": {
+    "index": [
+      "index.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/app/checkDamageShow/",
+    "publicPath": "/",
+    "filename": "js/app_checkDamageShow/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.html"
+    ]
+  }
+}

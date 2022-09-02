@@ -1,0 +1,13 @@
+//- Created by garvey on 2018/5/2.
+-require('./alert3001.less')
+.alert3001
+    .Mask.animated.fast.fadeIn
+    .Alert
+        .dialogBox.animated.faster.zoomIn
+            .title 账号异常提醒
+            .msg
+                |因您有
+                span.warn !{reason}
+                |行为，当前账号无权进行该操作
+            .alert_btn_container
+                button.btn.btn-block 确定

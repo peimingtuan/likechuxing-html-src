@@ -1,0 +1,83 @@
+page{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    flex: 1;
+    padding: 30rpx;
+}
+.desc{
+    font-family: PingFangSC-Light;
+    font-size: 12px;
+    color: #999999;
+    line-height: 24rpx;
+}
+.wrap{
+    margin-top:30rpx;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.item{
+    width: 326rpx;
+    height: 264rpx;
+    margin-bottom: 30rpx;
+    border:1px dashed #ECECEC;
+    position: relative;
+    left: 0;
+    right: 0;
+}
+.clearBtn{
+    width:40rpx;
+    height: 40rpx;
+    position: absolute;
+    right: -20rpx;
+    top: -20rpx;
+    background: url('/image/clear.png') no-repeat center;
+    background-size: 100% 100%;
+}
+#getImgBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('/image/tianjia.png') no-repeat center;
+    background-size: 120rpx 120rpx;
+}
+.imgItem{
+    width: 326rpx;
+    height: 264rpx;
+}
+.footer{
+    /* position: fixed;
+    left: 0;
+    bottom: 0;
+    width:100%; */
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    padding-bottom: 30rpx;
+}
+.btnWrap{
+    height: 104rpx;
+    background: #ccc;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 104rpx;
+}
+.btnText{
+    font-family: PingFangSC-Regular;
+    font-size: 34rpx;
+    color: #FFFFFF;
+    text-align: center;
+}
+.btnWrap.active{
+    background: #2B2E37;
+}
+.mask{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    left: 0;
+}
+

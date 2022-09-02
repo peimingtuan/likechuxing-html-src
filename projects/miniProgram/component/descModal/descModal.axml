@@ -1,0 +1,11 @@
+<view class="descBtn" catchTap="show">使用说明</view>
+<view class="lui-modal-container" a:if="{{visible}}">
+    <view class="lui-mask {{className[0]}}" hidden="{{!visible}}" ></view>
+    <view class="lui-box {{className[1]}}">
+        <view class="modal-header">使用说明</view>
+        <view class="modal-body">
+          <view class="modal-item" a:for="{{descList}}">{{item}}</view>
+        </view>
+        <view class="modal-footer" catchTap="hide">我知道了</view>
+    </view>
+</view>

@@ -1,0 +1,21 @@
+<view class="container">
+    <text class="header">* 请检查车辆外观并选择车伤部位</text>
+    <view class="bg">
+        <view class="hover {{item.class}}" a:for="{{imgList}}" id="{{item.id}}" a:if="{{item.isShow}}"></view>
+        <view class="handleArea {{item.class}}" a:for="{{areaList}}" id="{{item.id}}" onTap="handle"></view>
+        <view class="handleArea {{item.class}}" a:for="{{labelList}}" data-id="{{item.id}}" onTap="handleExtra"></view>
+    </view>
+    <view class="descBox">
+        <view class="descIcon">
+            <view class="descIconActive"></view>
+        </view>
+        <view class="desc" onTap="goLicence">
+            <text class="descTxt">立刻出行验车服务条款</text>
+        </view>
+    </view>
+</view>
+<view class="footer">
+    <view class="btnWrap" onTap="_handleBtn">
+        <text class="btnText">{{btnText}}</text>
+    </view>
+</view>

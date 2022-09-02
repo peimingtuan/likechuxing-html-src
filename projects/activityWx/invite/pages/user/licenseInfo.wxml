@@ -1,0 +1,14 @@
+<!--pages/user/licenseInfo.wxml-->
+<view class="LicenseInfo">
+  <view class="info-box">
+    <image src="{{icon}}" class="icon-img" />
+    <view>{{title}}</view>
+    <p class="msg">{{msg}}</p>
+  </view>
+  <view>
+    <div>应用市场中搜索下载</div>
+    <div>「立刻出行」</div>
+    <div>登录后您可查看其它活动奖励</div>
+  </view>
+  <view class="footer" bindtap="clear"></view>
+</view>

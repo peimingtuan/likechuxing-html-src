@@ -1,0 +1,50 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.94",
+	"appid": "wx758aa4dd02a7fc6e",
+	"projectname": "invite",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": 0,
+					"name": "invite",
+					"pathName": "pages/user/license",
+					"query": "uuid=1502274754196764&sign=769EG95UF397HSKLPN48QAB94VNPJW9F"
+				},
+				{
+					"id": 1,
+					"name": "licenseInfo",
+					"pathName": "pages/user/licenseInfo",
+					"query": "status=1"
+				}
+			]
+		}
+	}
+}

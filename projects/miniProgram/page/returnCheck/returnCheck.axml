@@ -1,0 +1,118 @@
+<view class="container" a:if="{{pageIsShow}}">
+    <view class="title">
+        <text a:if="{{!isUpdateEndBranch}}">系统检测到您现在位于</text>
+        <text a:if="{{isUpdateEndBranch}}">您已手动修改换成网点为</text>
+    </view>
+    <view class="cell" onTap="goReturnCarPage">
+        <view class="cellLabel">
+            <text class="cellLabelTtile">{{branch_name}}</text>
+            <text class="cellLabelDesc">{{branch_addr}}</text>
+        </view>
+        <view class="arrow"></view>
+    </view>
+    <view class="formGroup">
+        <view class="formItem line" onTap="showPicker">
+            <view class="pickerWrap">
+                <text class="formLabel">楼层</text>
+                <view class="placeholderClass {{floor?'formLabel':''}}">{{floor||'请选择楼层'}}</view>
+            </view> 
+            <view class="arrow"></view>
+        </view>
+        <view class="formItem" a:if="{{isShow}}">
+            <text class="formLabel">车位号</text>
+            <input value="{{num}}"  placeholder="请输入车位号" class="input" placeholder-class="placeholderClass" onInput="getCarNum"/>
+        </view>
+    </view>
+    <view class="title">
+        <text>请注意以下事项</text>
+    </view>
+    <view class="imgGroup">
+        <view class="col col1">
+            <view class="imgItem">
+                <view class="img img1"></view>
+                <text class="imgDesc">携带好个人物品</text>
+            </view>
+            <view class="imgItem">
+                <view class="img img2"></view>
+                <text class="imgDesc">车大灯是否关闭</text>
+            </view>
+        </view>
+        <view class="col">
+            <view class="imgItem">
+                <view class="img img3"></view>
+                <text class="imgDesc">如果取卡，停车卡放在这</text>
+            </view>
+            <view class="imgItem">
+                <view class="img img4"></view>
+                <text class="imgDesc">车窗是否关严</text>
+            </view>
+        </view>
+    </view>
+    <view class="tipWrap">
+        <text class="tip">以上事项如果没有问题，请站在车外锁门</text>
+    </view>
+</view>
+<view class="footer" a:if="{{pageIsShow}}">
+    <view class="btnWrap {{isActive?'on':''}}" onTap="returnBtn">
+        <text class="btnText">确认锁门还车</text>
+    </view>
+</view>
+<view class="mask" a:if="{{showModal}}">
+    <view class="modal">
+        <view class="mTitle">
+            <text>{{checkTrunk?'系统自动检测'+countDown+'s':'检测完成'}}</text>
+        </view>
+        <view class="mBody">
+            <view class="mItem" a:if="{{checkLight}}">
+                <view class="mIconxz icon1"></view>
+                <view>正在检测车辆大灯</view>
+            </view>
+            <view class="mItem" a:if="{{!checkLight}}">
+                <view class="mIcon {{carStatus.car_light==0?'icon2':'icon3'}}"></view>
+                <view a:if="{{carStatus.car_light==1}}">车辆大灯未关闭</view>
+                <view a:if="{{carStatus.car_light==0}}">车辆大灯已关闭</view>
+            </view>
+            <view class="mItem" a:if="{{checkTrunk}}">
+                <view class="mIconxz icon1"></view>
+                <view>正在检测车辆</view>
+            </view>
+            <view class="mItem" a:if="{{!checkTrunk}}">
+                <view class="mIcon {{carStatus.car_trunk==0?'icon2':'icon3'}}"></view>
+                <view a:if="{{carStatus.car_trunk==1}}">车辆未熄火</view>
+                <view a:if="{{carStatus.car_trunk==0}}">车辆已熄火</view>
+            </view>
+            <view class="mItem" a:if="{{checkDoor}}">
+                <view class="mIconxz icon1"></view>
+                <view>正在检测车锁</view>
+            </view>
+            <view class="mItem" a:if="{{!checkDoor}}">
+                <view class="mIcon {{carStatus.car_door==0?'icon2':'icon3'}}"></view>
+                <view a:if="{{carStatus.car_door==1}}">车门未锁好</view>
+                <view a:if="{{carStatus.car_door==0}}">车门已锁好</view>
+            </view>
+            <view class="mItem" a:if="{{checkAcc}}">
+                <view class="mIconxz icon1"></view>
+                <view>正在检测后备箱</view>
+            </view>
+            <view class="mItem" a:if="{{!checkAcc}}">
+                <view class="mIcon {{carStatus.car_acc==0?'icon2':'icon3'}}"></view>
+                <view a:if="{{carStatus.car_acc==1}}">后备箱未关闭</view>
+                <view a:if="{{carStatus.car_acc==0}}">后备箱已关闭</view>
+            </view> 
+        </view>
+        <view class="mFooter" a:if="{{isShowComfirmBtn}}" onTap="closeModal">
+            <text>确定</text>
+        </view>
+    </view>
+</view>
+<view class="loadingBox" a:if="{{!pageIsShow}}">
+    <view class="loadingIcon"></view>
+</view>
+<picker 
+    pickerData="{{items}}" 
+    class="{{class}}" 
+    visible="{{visible}}"
+    onHidePicker="hidePicker"
+    onChange="onChangePicker"
+    defaultValue="{{index}}"
+/>

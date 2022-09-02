@@ -1,0 +1,78 @@
+[
+  {
+    "id": 1,
+    "partName": "前保险杠"
+  },
+  {
+    "id": 2,
+    "partName": "右后视镜"
+  },
+  {
+    "id": 3,
+    "partName": "右前叶子板"
+  },
+  {
+    "id": 4,
+    "partName": "右前轮"
+  },
+  {
+    "id": 5,
+    "partName": "右前门"
+  },
+  {
+    "id": 6,
+    "partName": "右后门"
+  },
+  {
+    "id": 7,
+    "partName": "右后轮"
+  },
+  {
+    "id": 8,
+    "partName": "右后叶子板"
+  },
+  {
+    "id": 9,
+    "partName": "后保险杠"
+  },
+  {
+    "id": 10,
+    "partName": "左后叶子板"
+  },
+  {
+    "id": 11,
+    "partName": "左后轮"
+  },
+  {
+    "id": 12,
+    "partName": "左后门"
+  },
+  {
+    "id": 13,
+    "partName": "左前门"
+  },
+  {
+    "id": 14,
+    "partName": "左前轮"
+  },
+  {
+    "id": 15,
+    "partName": "左前叶子板"
+  },
+  {
+    "id": 16,
+    "partName": "左后视镜"
+  },
+  {
+    "id": 17,
+    "partName": "前机器盖"
+  },
+  {
+    "id": 18,
+    "partName": "车顶"
+  },
+  {
+    "id": 19,
+    "partName": "后备箱盖"
+  }
+]

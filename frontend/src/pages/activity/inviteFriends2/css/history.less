@@ -1,0 +1,27 @@
+@import "./common/common";
+.list{
+  display:none;
+  background-color: #fff;
+  margin:0.1rem 0.3rem 0;
+  border-radius: 5px;
+  border:solid 1px #d6e2e9;
+  .empty{
+    text-align: center;
+    color:#afafb0;
+    margin:0.7rem 0;
+  }
+  .historyBox{
+    margin:0 0.15rem;
+    padding: 0.15rem 0;
+    border-bottom: solid 1px #d6e2e9;
+    &:nth-last-of-type(1){
+      border-bottom: none;
+    }
+    .float-right{
+      color:#6fb82c;
+      &.suc{
+        color:#f3a000
+      }
+    }
+  }
+}

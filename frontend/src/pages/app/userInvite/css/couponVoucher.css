@@ -1,0 +1,56 @@
+*{
+    font-size:.1408rem;
+}
+.aleadyreceive{
+    margin-top:.5rem;
+    width:2.347rem;
+    margin-left:.704rem;
+}
+.aleadyreceive p{
+    color:#000000;
+    font-size:.159rem;
+    text-align: center;
+}
+.imgicon{
+    margin-top:.235rem;
+    text-align: center;
+}
+.imgicon>img{
+    width:1.88rem;
+}
+.bottom{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:.6rem;
+    background:#fff;
+}
+.bottom button{
+    width:94%;
+    margin-left:3%;
+    line-height:.46rem;
+    outline: none;
+    border:none;
+    background: #494B51;
+    border-radius: 2px;
+    text-align: center;
+    color:#fff;
+    font-size: .159rem;
+}
+.getcontent{
+    margin-top:.5rem;
+    margin-bottom: .7rem;
+}
+.getcontent p{
+    color:#000000;
+    font-size:.159rem;
+    text-align: center;
+}
+/*优惠券列表样式*/
+.coupon_list{
+    margin-left:-.4rem;
+}
+.limit{
+    margin-left:-.4rem;
+}

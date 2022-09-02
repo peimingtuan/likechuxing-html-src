@@ -1,0 +1,149 @@
+*{
+   	 box-sizing: border-box;
+   }
+   .fc44a{
+		color: #44A8EC;
+	}
+   textarea{
+   	outline: none;
+   }
+   textarea::-webkit-input-placeholder{color:#999999;font-size: .12rem;line-height:normal;}
+	
+	.check_modal{
+		z-index: 161;
+		width: 100%;
+		height:100%;
+		background-color: rgba(51,51,51,.7);
+		color: #333333;
+			display: -webkit-box;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		display: -webkit-flex;
+		-webkit-align-items: center;
+		-webkit-justify-content: center;
+		position: fixed;
+		top: 0;
+		left: 0;
+		overflow: hidden;
+	}
+	.modal_content{
+		z-index: 105;
+		background-color: #FFFFFF;
+		width: 2.7rem;
+		height: 2.3rem;
+		position: relative;
+		border-radius: 6px;
+	}
+	.alert_btn{
+		width: 100%;
+		display: -webkit-box;
+		display: flex;
+		align-items: center;
+		display: -webkit-flex;
+		-webkit-align-items: center;
+		height: .45rem;
+		border-top:1px solid #ededed;
+		position: absolute;
+		bottom: 0;
+	}
+	.alert_btn a{
+		font-size: .16rem;
+	}
+	 .cancel_btn a{
+	 	color: #666666;
+	 }
+	.confirm_btn a{
+	 	color: #44a8ec;
+	 }
+	.confirm_btn a{
+	 	color: #44a8ec;
+	 	width: 100%;
+	    height: 100%;
+	    display: -webkit-box;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    display: -webkit-flex;
+	    -webkit-align-items: center;
+	    -webkit-justify-content: center;
+	 }
+	.confirm_btn,.cancel_btn{
+		flex: 1;
+		display: -webkit-box;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		-webkit-flex: 1;
+		display: -webkit-flex;
+		-webkit-align-items: center;
+		-webkit-justify-content: center;
+		height: 100%;
+	}
+	.cancel_btn{
+		border-right: 1px solid #ededed;
+	}
+	.todown{display:inline-block;
+		width:0;height:0;
+		border-left:7px solid transparent;
+		border-right:7px solid transparent;
+		border-bottom:0;
+		border-top:7px solid #1f1d1d;
+		margin-left:.25rem;
+		position: absolute;
+		top: .1rem;
+		right: .1rem;
+	}
+	.modal_det{
+		padding: .15rem .15rem .05rem .15rem;
+	}
+	.check_down{
+		margin: .05rem 0;
+		border: 1px solid #999;
+	    height: .33rem;
+	    line-height: .31rem;
+	    position: relative;
+	    padding-left: .1rem;
+	    box-shadow: 0px 0px 2px #f1f1f1 inset;
+	}
+	#textarea{
+		margin-top: .05rem;
+		height: .7rem;
+		font-size: 14px;
+		color: #333333;
+		border: 1px solid #999;
+		box-shadow: none;
+		 -webkit-appearance: none; 
+		padding-left: .1rem;
+		width: 100%;
+	    -webkit-tap-highlight-color: rgba(0,0,0,0);
+	    -webkit-tap-highlight-color: transparent;
+	    border-radius: 0;
+	}
+	#cance_type{
+		position: relative;
+	}
+	.type_con{
+		min-height: 1rem;
+	    width: 100%;
+	    position: absolute;
+	    top: .57rem;
+	    background: #fff;
+	    z-index: 100;
+	    padding: .1rem;
+	    border: 1px solid #ededed;
+	    border-top: 0;
+	}
+	.type_con span{
+		display: block;
+	    text-align: left;
+	    height: .4rem;
+	    line-height: .4rem;
+	}
+	.like-toast{
+		z-index: 162;
+	}
+	.page_modal{
+		text-align: center;
+		height: 1.04rem;
+	}

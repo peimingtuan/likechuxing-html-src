@@ -1,0 +1,114 @@
+@import '../../../../css/reset.css';
+@import '../../../../../other_modules/css-animate/animateBase';
+
+html,body{
+    background-color: #e3002b;
+    color:#fff;
+}
+
+body{
+    max-width: 640px;
+    margin:0 auto;
+}
+
+@keyframes pulse {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.pulse {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+}
+
+.container{
+    padding: 0.22rem 0.17rem;
+
+    .header{
+        .logo{
+            margin:0 0.08rem;
+            height: 0.12rem;
+            background: url('../images/logo.png') no-repeat left;
+            background-size: auto 100%;
+        }
+        .title{
+            padding: 0.35rem 0 0.3rem;
+            text-align: center;
+            font-size: 52px;
+        }
+    }
+
+    .btns{
+        display: flex;
+        .btn{
+            border: solid 1px #fff;
+            border-radius: 4px;
+            width: 31%;
+            text-align: center;
+            padding: 0.07rem 0;
+            box-sizing: border-box;
+            transition: transform 100ms,box-shadow 100ms;
+            margin-left: 3.5%;
+            &:nth-of-type(1){
+                margin-left: 0;
+            }
+            .name{
+                font-size: 14px;
+            }
+
+            .desc{
+                font-size: 12px;
+                transform: scale(0.8);
+            }
+
+            &.active{
+                transform: scale(0.96);
+                box-shadow: 1px 1px 2px 0 #fff;
+            }
+        }
+    }
+
+    .tips{
+        text-align: center;
+        font-size: 12px;
+        padding: 0.1rem 0;
+        transform: scale(0.9);
+    }
+
+    .rules-box{
+        margin-top:0.2rem;
+        border:dashed 1px #fff;
+        border-radius: 4px;
+        padding: 0.12rem 0.15rem 0.12rem 0.2rem;
+        font-size: 12px;
+        .rules>.title{
+            font-size: 15px;
+        }
+        .example>.title{
+            font-size: 13px;
+        }
+        .example{
+            margin-top: 0.14rem;
+        }
+        p{
+            margin:4px 0 3px 1.5em;
+            .index{
+                display: inline-block;
+                width: 1.5em;
+                margin-left: -1.5em;
+            }
+        }
+    }
+}

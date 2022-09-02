@@ -1,0 +1,19 @@
+//- Created by garvey on 2017/11/9.
+.jobs.swiper-slide.swiper-no-swiping
+    .img_container
+        img(src=img_src)
+    .job_container
+        .city
+            span.city_name #{cityFullName}
+                .icon_position
+            p 加入我们
+        .job_list
+            .title 招聘职位
+                span
+            ul
+                if ( jobs.length === 0)
+                    li.empty 暂无开放职位
+                else
+                    each k in jobs
+                        li.job_detail(data-id=k.id) #{k.display_name}
+                            span #{'（'+k.recruit_count+'人）'}

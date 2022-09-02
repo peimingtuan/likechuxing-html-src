@@ -1,0 +1,443 @@
+/*chargelist充电工单列表*/
+#chargelist {
+    background: #f8f8f8;
+}
+
+#chargelist .charge-content {
+    width: 100%;
+    height: 1.58rem;
+    border-bottom: 1px solid #f6f6f6;
+    background: #fff;
+}
+
+#chargelist .charge-content span {
+    box-sizing: border-box;
+    font-family: 'iconfont';
+    display: inline-block;
+    width: 32%;
+    line-height: 1rem;
+    margin-top: .29rem;
+    text-align: center;
+    border-right: 1px solid #fbfbfb;
+}
+
+#chargelist .charge-List li {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    padding: .5rem;
+    background: #fff;
+    border-bottom: 1px solid #f6f6f6;
+    margin-bottom: .5rem;
+}
+
+#chargelist .charge-List li .right {
+    color: #999999;
+}
+
+#chargelist .charge-List span .font1 {
+    color: #999999;
+    margin-right: .1rem;
+}
+
+#chargelist .charge-List li span {
+    display: inline-block;
+    line-height: 1rem;
+    padding: .1rem;
+    margin-top: .15rem;
+    margin-right: .2rem;
+    border: 1px solid #dcdcdc;
+}
+
+#chargelist .charge-List li span:nth-of-type(1), #chargelist .charge-List li span:nth-of-type(2) {
+    border: none;
+}
+
+#chargelist .work-time {
+    border: none !important;
+}
+
+#chargelist .work-time font {
+    color: #999999;
+}
+
+/*充电工单列表筛选弹框*/
+#chargelist .common_content {
+    position: absolute;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100%;
+    height: 17.5rem;
+    background-color: #fff;
+    overflow: hidden;
+    color: #474747;
+}
+
+#chargelist .confirm-content>p:nth-of-type(3){
+    margin-top: .5rem;
+    line-height:1.5rem;
+}
+
+#chargelist .confirm-carstate > span {
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    margin-right: .5rem;
+    margin-top: .5rem;
+    padding: .4rem .8rem;
+    border: 1px solid #e7e7e7;
+}
+
+#chargelist .confirm-style span {
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    margin-right: 1rem;
+    margin-top: .5rem;
+}
+
+#chargelist .confirm-style span input {
+    margin-right: .3rem;
+    width: .8rem;
+    height: .8rem;
+    position: relative;
+    top: .2rem;
+}
+
+#chargelist .confirm-reset {
+    margin-right: .3rem;
+    background: #d8d8d8;
+}
+
+#chargelist .confirm-sure {
+    color: #fff;
+    background: #333333;
+}
+
+/*颜色控制*/
+#chargelist .color {
+    background: #333;
+    color: #fff;
+}
+
+/*chargedetail充电工单详情页*/
+#chargedetail .chargedetail-content {
+    background: #fff;
+    padding: .5rem;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+#chargedetail .chargedetail-content span {
+    display: inline-block;
+    margin-top: .3rem;
+    padding: .3rem .5rem;
+    border: 1px solid #f6f6f6;
+}
+
+#chargedetail .chargedetail-content .trouble_id {
+    border: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+#chargedetail .trouble_id font{
+    color: #999999;
+}
+
+#chargedetail .chargedetail-content .status_name{
+    border:1px solid #F5A623;
+    color:#F5A623;
+}
+
+#chargedetail .chargedetail-content p:last-of-type {
+    color: #9c9c9c;
+    padding: .5rem 1.5rem;
+    line-height: 1rem;
+    position: relative;
+}
+
+#chargedetail .chargedetail-content img {
+    position: absolute;
+    top: .4rem;
+    left: 0;
+    width: 1rem;
+}
+
+#chargedetail .chargedetail-content p span .font1 {
+    color: #999999;
+    margin-right: .1rem;
+}
+
+/*流程图样式*/
+#chargedetail .flowstatus {
+    margin-top: .5rem;
+    width: 100%;
+    height: 4.5rem;
+    background: #fff;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+#chargedetail .flowstatus .p1 {
+    margin: 0 .5rem;
+    padding-top: .5rem;
+    padding-bottom: .2rem;
+    height: 1.5rem;
+}
+
+#chargedetail .flowstatus .p2 {
+    position: relative;
+    height: 2rem;
+    text-align: center;
+}
+
+#chargedetail .flowstatus span img {
+    width: 1rem;
+}
+
+#chargedetail .flowstatus .p2 .size {
+    display:inline-block;
+    /*width:2rem;*/
+    text-align: center;
+}
+
+#chargedetail .flowstatus .p2 .size font{
+    font-size:.5rem;
+}
+
+#chargedetail .flowstatus .p2 .line {
+    display:inline-block;
+    width:.8rem;
+    height:2px;
+    background:#ededed;
+    position: relative;
+    top: -.9rem;
+}
+
+/*待充电状态添加删除按钮*/
+.chargedetail-content .deletework{
+    font-family: 'iconfont';
+    line-height: 1rem;
+    font-size: .8rem;
+    border: none!important;
+}
+
+#chargedetail .chargedetail-list {
+    margin-top: .5rem;
+}
+
+#chargedetail .chargedetail-list li {
+    position: relative;
+    line-height: 2.4rem;
+    background: #fff;
+    padding-left: .5rem;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+/*当前操作步骤字体颜色*/
+#chargedetail .chargedetail-list .stepcolor{
+    color:#44a8ec!important;
+}
+
+#chargedetail .chargedetail-list .forbidden{
+    color:#c8c8c8;
+}
+
+#chargedetail .chargedetail-list li > button {
+    width: 15rem;
+    line-height: 1.92rem;
+    border: none;
+    outline: none;
+    background: #44a8ec;
+    color: #fff;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+#chargedetail .chargedetail-list li span:last-of-type {
+    font-family: 'iconfont';
+    position: absolute;
+    right: 1rem;
+}
+
+#chargedetail .chargedetail-history {
+    margin-top: .5rem;
+    padding: .5rem;
+    background: #fff;
+    margin-bottom: 5.8rem;
+}
+
+#chargedetail .chargedetail-history p {
+    line-height: 2rem;
+}
+
+#chargedetail .chargedetail-history li span {
+    display: inline-block;
+    margin-right: 1rem;
+    line-height: 1.2rem;
+    word-break: break-all;
+}
+
+#chargedetail .chargedetail-history .check {
+    font-family: 'iconfont';
+    color: #d1d1d1;
+    position: absolute;
+    right: 0;
+}
+
+#chargedetail .chargedetail-btn {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 5% 2.5%;
+    background: #fff;
+    box-shadow: 1px -2px 2px #e8e8e8;
+}
+
+#chargedetail .chargedetail-btn button {
+    width: 31%;
+    line-height: 1.9rem;
+    text-align: center;
+    /*color: #fff;*/
+    background: #fff;
+    outline: none;
+    border: 1px solid #333;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+#chargedetail .open-door {
+    margin-right: 0;
+}
+
+/*更多*/
+#chargedetail .last-list {
+    height: 2.4rem;
+}
+
+/*更多弹框*/
+#chargedetail .common_content {
+    position: absolute;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100%;
+    height: 8rem;
+    background-color: #fff;
+    overflow: hidden;
+    color: #474747;
+}
+
+#chargedetail .common_content li {
+    box-sizing: border-box;
+    padding: 0 .5rem;
+    width: 100%;
+    line-height: 2rem;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+#chargedetail .common_content li:first-of-type {
+    position: relative;
+    text-align: center;
+}
+
+#chargedetail .common_content li:last-of-type {
+    border-bottom: none;
+}
+
+#chargedetail .close-icon {
+    position: absolute;
+    font-family: 'iconfont';
+    right: .5rem;
+}
+
+#chargedetail .rentcar-content {
+    width: 100%;
+    height: 1.58rem;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+#chargedetail .rentcar-content span {
+    box-sizing: border-box;
+    font-family: 'iconfont';
+    display: inline-block;
+    width: 32%;
+    line-height: 1rem;
+    margin-top: .29rem;
+    text-align: center;
+    border-right: 1px solid #fbfbfb;
+}
+/*充电上线弹框*/
+#chargedetail .common_content2 {
+    position: absolute;
+    bottom:50%;
+    left: 50%;
+    width: 12rem;
+    height: 7.5rem;
+    margin-left: -6rem;
+    margin-top: -3.75rem;
+    background-color: #fff;
+    overflow: hidden;
+    color: #474747;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+#chargedetail .common_content2 .top{
+    margin: 1.5rem 2rem;
+    height: 2rem;
+    text-align: center;
+    box-sizing: border-box;
+    line-height: 1rem;
+}
+
+#chargedetail .common_content2 .top span{
+    color:#f7b13d;
+}
+
+#chargedetail .common_content2 .bottom{
+    border-top:1px solid #ededed;
+    height:2.5rem;
+}
+
+#chargedetail .common_content2 .bottom span{
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 2.5rem;
+    width:6rem;
+}
+
+#chargedetail .go-add{
+    border-left:1px solid #ededed;
+    color:#44a8ec;
+}
+
+/*操作记录*/
+#chargedetail .chargedetail-history {
+    margin-top: .5rem;
+    padding: .5rem;
+    background: #fff;
+    margin-bottom: 4rem;
+}
+
+#chargedetail .chargedetail-history p {
+    line-height: 2rem;
+}
+
+#chargedetail .chargedetail-history li span {
+    display: inline-block;
+    margin-right: 1rem;
+    line-height: 1.2rem;
+    word-break: break-all;
+}
+
+#chargedetail .chargedetail-history .check {
+    font-family: 'iconfont';
+    color: #d1d1d1;
+    position: absolute;
+    right: 0;
+}
+
+#chargedetail .check font {
+    color: #adadad;
+}

@@ -1,0 +1,86 @@
+.refueling-list li {
+    position: relative;
+    padding: .5rem;
+    line-height: 2.1rem;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.refueling-list li input {
+    padding-left: .5rem;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    border: none;
+    outline: none;
+}
+
+.refueling-list .right-icon {
+    font-family: 'iconfont';
+}
+
+.refueling-list .select-oilnumber {
+    display: inline-block;
+    margin-top: .35rem;
+    width: 2.6rem;
+    line-height: 1.4rem;
+    text-align: center;
+    color: #fff;
+    background: #333333;
+    border-radius: 2px;
+}
+/*图片展示*/
+.editrefueling-content {
+    padding: 1rem 1.75rem;
+}
+
+.editrefueling-content .left {
+    margin-right: 1rem;
+}
+
+.editrefueling-content > div {
+    margin-bottom: 1rem;
+}
+
+.editrefueling-content > div > p {
+    text-align: center;
+    line-height: 2rem;
+}
+
+.editrefueling-content > div > div {
+    position: relative;
+    width: 5.2rem;
+    height: 5.2rem;
+    background: #f4f4f4;
+}
+.editrefueling-content img{
+    width:5.2rem;
+    height: 5.2rem;
+}
+/*选择的加油站名称*/
+.choice-oilstate{
+    width:80%;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.oiler-number{
+    width:60%;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+/*油卡型号*/
+.li-model span{
+    display:inline-block;
+    margin-left:.5rem;
+    width:3rem;
+    text-align:center;
+}
+.li-model input{
+    position:relative;
+    top:.4rem;
+    left:.1rem;
+    width:.8rem;
+    height:.8rem;
+    z-index:100;
+    margin-right:.3rem;
+}

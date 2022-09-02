@@ -1,0 +1,40 @@
+@import '../../css/common/color';
+.box{
+  position: relative;
+  margin:0.2rem 0;
+  .coupon_float{
+    position: absolute;
+    top:0.8rem;
+    right:0;
+    width:6.5%;
+    height: 0.3rem;
+    background: url('../../images/small_coupon.png') no-repeat center left;
+    background-size: auto 90%;
+    z-index: -1;
+  }
+  img {
+    display: block;
+  }
+  .title{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: @mainblue;
+    font-size: 0.16rem;
+    margin-top: 2%;
+    top:0
+  }
+  .box_body{
+    background: url('../../images/small_body.png') repeat-y top;
+    background-size: 100%;
+    padding: 0.05rem 0.25rem;
+  }
+  .link_con{
+    text-align: center;
+    padding-top: 0.1rem;
+    .link{
+      font-size: 0.11rem;
+      text-decoration: underline;
+    }
+  }
+}

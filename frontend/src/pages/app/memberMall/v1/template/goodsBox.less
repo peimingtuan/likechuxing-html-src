@@ -1,0 +1,61 @@
+.goods{
+  position: relative;
+  padding-left: 0.2rem;
+  height:0.86rem;
+  width: 50%;
+  box-sizing: border-box;
+  border-top:solid 1px #f2f2f2;
+  float: left;
+  &:nth-of-type(2n+1){
+    border-right:solid 1px #f2f2f2
+  }
+  .desc{
+    line-height: 0.2rem;
+    margin-top: 0.23rem;
+    position: absolute;
+    .name{
+      color:#111;
+    }
+    .cost{
+      color:#999;
+    }
+    .hot{
+      width: 0.3rem;
+      height:0.17rem;
+      position: absolute;
+      background: url('../images/goods_hot.png') no-repeat center;
+      background-size: 100%;
+      right:-0.33rem;
+      top:-0.05rem
+    }
+  }
+  .goods_img{
+    float: right;
+    width: 0.86rem;
+    background: no-repeat center;
+    background-size: contain;
+    height:100%;
+    display: block;
+  }
+  .soldOut{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0.7;
+    line-height: 0.86rem;
+    text-align: center;
+  }
+}
+
+.hotGoods{
+  .goods{
+    width: 100%;
+    .goods_img{
+      width: 1.4rem;
+      height: 1.2rem;
+      margin-top: -0.17rem;
+    }
+  }
+
+}

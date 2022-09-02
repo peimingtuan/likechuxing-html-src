@@ -1,0 +1,29 @@
+/*已添加的处理类型*/
+#checkmatter .top{
+    padding:0 .12rem;
+    margin-bottom:.12rem;
+    padding-bottom: .0234rem;
+    background:#fff;
+}
+
+#checkmatter .top>p{
+    line-height:.351rem;
+}
+
+#checkmatter .top-div{
+    border:1px solid #44a8ec;
+    padding:.12rem;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    margin-bottom: .12rem;
+    border-radius:2px;
+}
+
+#checkmatter .top-div .div1{
+    color: #44a8ec;
+}
+
+#checkmatter .top-div .div2{
+    color: #44a8ec;
+}

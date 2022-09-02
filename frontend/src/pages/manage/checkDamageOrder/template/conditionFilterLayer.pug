@@ -1,0 +1,11 @@
+//- Created by garvey on 2017/10/30.
+.conditionFilterLayer
+    .filterBox.animated.faster.zoomIn
+        -var list = [1,2,3,4]
+        each k in list
+            if k<4
+                .option(data-id=k) #{k}处伤
+            else
+                .option(data-id=k) #{k}处及以上
+        p#tips *全不选则筛出所有有伤车辆，不论数量
+        button.blue_btn 确认

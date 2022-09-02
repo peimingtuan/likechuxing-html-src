@@ -1,0 +1,486 @@
+/*车辆详情*/
+.cardetail-content {
+    background: #fff;
+    padding: .5rem;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+/*成都限行*/
+.cardetail-content .car-top .chengdu-limt {
+    border-radius: 3px;
+    border: 1px solid #f5937c !important;
+    color: #f5937c;
+    padding:0 .1rem;
+}
+
+.cardetail-content .car-top .chengdu-limt2 {
+    border: 1px solid #ff9500 !important;
+    color: #ff9500;
+}
+
+/*广州限行*/
+.car-top{
+    display:flex;
+    display: -webkit-flex; /* Safari */
+    justify-content:space-between;
+}
+
+.car-top .plate_no{
+    font-size:.7rem;
+    color: #999999;
+}
+
+.car-top .plate_no .font1 {
+    font-size:.7rem;
+    font-weight: bold;
+}
+
+.gz-limit{
+    display:flex;
+    display: -webkit-flex; /* Safari */
+    justify-content:space-between;
+}
+
+.gz-limit .div-com{
+    height: .8rem;
+    line-height: .8rem;
+    width: .8rem;
+    text-align: center;
+    margin-right: .2rem;
+    font-size: .56rem;
+}
+
+.gz-limit .div-com:last-of-type{
+    margin-right: 0!important;
+}
+
+.gz-limit .today,.gz-limit .moring{
+    display:flex;
+    display: -webkit-flex; /* Safari */
+    justify-content:space-between;
+    border-radius: 2px;
+    border: 1px solid #b6e088;
+    text-align: center;
+    margin-right: .2rem;
+    height: .8rem;
+}
+
+.stop-ff8e8e{
+    border: 1px solid #ff8e8e!important;
+}
+
+.wait-D1D1D1{
+    border: 1px solid #D1D1D1!important;
+}
+
+.gz-limit .today div,.gz-limit .moring div{
+    height: .8rem;
+    line-height: .8rem;
+    border: none !important;
+    width: .8rem;
+    text-align: center;
+    font-size: .56rem;
+}
+
+
+/*开*/
+.opencar {
+    color: #fff!important;
+    background: #b6e088;
+    border:1px solid #b6e088;
+    border-radius: 2px;
+}
+
+/*停*/
+.stopcar {
+    color: #fff!important;
+    background: #ff8e8e;
+    border:1px solid #ff8e8e;
+    border-radius: 2px;
+}
+
+/*待*/
+.waitingcar {
+    color: #fff!important;
+    background: #D1D1D1;
+    border:1px solid #D1D1D1;
+    border-radius: 2px;
+}
+
+.cardetail-content .p1>span {
+    display: inline-block;
+    margin-top: .3rem;
+    color: #999999;
+    font-size:.56rem;
+}
+
+.cardetail-content .brand_name,
+.cardetail-content .car-color,
+.cardetail-content .carqube{
+    padding-right:.4rem;
+    border-right:1px solid #e7e7e7;
+}
+
+.cardetail-content .car-color,
+.cardetail-content .carqube,
+.cardetail-content .remain_km{
+    margin-left:.2rem;
+}
+
+/*新增状态时长*/
+.cardetail-content>div.status-time{
+    border-top: 1px solid #e9e9e9;
+    border-bottom: 1px solid #e9e9e9;
+    padding:0;
+    margin:.5rem 0 .2rem 0;
+    height:1.5rem;
+}
+
+/*车辆状态*/
+.cardetail-content .status_name {
+    padding: .1rem .2rem;
+    border: 1px solid #e7e7e7!important;
+    border-radius: 2px;
+    margin-right:.3rem;
+    font-size:.56rem;
+}
+
+.cardetail-content>div.status-time .time{
+    color: #999999;
+    line-height:1.5rem;
+}
+
+/*取还车网点*/
+.cardetail-content .getnet,
+.cardetail-content .returnnet{
+    padding: .3rem 0rem;
+    border:none!important;
+    display:flex;
+    display: -webkit-flex; /* Safari */
+    justify-content:space-between;
+}
+
+.cardetail-content .getnet .get-left,
+.cardetail-content .returnnet .return-left{
+    width: 11.5rem;
+    line-height: 1rem;
+}
+
+.cardetail-content .getnet .get-right,
+.cardetail-content .returnnet .return-right{
+    width: 3.5rem;
+    display:flex;
+    display: -webkit-flex; /* Safari */
+    justify-content:space-between;
+}
+
+.cardetail-content div.general,
+.cardetail-content div.daoh{
+    color:#259bef;
+    text-align: center;
+}
+
+/*停车费*/
+.park_fee{
+    color:#999999;
+    font-size:.56rem;
+}
+
+.park_fee font{
+    margin:0 .2rem;
+}
+
+/*图片大小*/
+.cardetail-content img {
+    width: 1rem;
+}
+
+/*取还车网点类型图标*/
+.cardetail-content .mapb,
+.cardetail-content .mapb2{
+    position:relative;
+    top:-.05rem;
+}
+
+/*车辆详情备注信息*/
+.cardetail-content > div.bottom {
+    padding: .5rem 0 0 2rem;
+    position: relative;
+    border-top: 1px dashed #E9E9E9;
+}
+
+.cardetail-content > div.bottom span {
+    border: none !important;
+    display: inline-block;
+}
+
+.cardetail-content > div.bottom .span1 {
+    position: absolute;
+    left: 0;
+    color: #999999;
+}
+
+.cardetail-content > div.bottom .span2 {
+    color: #757575;
+}
+
+/*车辆详情按钮样式更换*/
+.cardetail-tool2{
+    margin: .3rem 0;
+    background: #fff;
+    padding:.5rem .5rem 0rem .5rem;
+    height:4.7rem;
+    position:relative;
+}
+
+.cardetail-tool2>div{
+    position:absolute;
+    top:.5rem;
+    /*height:4.2rem;*/
+}
+
+.cardetail-left{
+    width:5.5rem;
+    left:.5rem;
+}
+
+.cardetail-center{
+    width:4rem;
+    left:6rem;
+}
+
+.cardetail-right{
+    width:5.5rem;
+    left:10rem;
+}
+
+.change-carstatus,.morechoice{
+    margin-top:.5rem;
+}
+
+.cardetail-tool2>div>div{
+    position:relative;
+    width: 5.5rem;
+    height: 1.85rem;
+}
+
+.cardetail-tool2 .outer-img{
+    position:absolute;
+    left:0;
+    top:0;
+    width:5.5rem;
+    height:1.85rem;
+}
+
+.cardetail-tool2>.div1 span{
+    position:absolute;
+    top:.45rem;
+    left:.5rem;
+}
+
+.cardetail-tool2>.div1 .currentPage span,.cardetail-tool2>.div1 .morechoice span{
+    left:1rem;
+}
+
+.cardetail-tool2>div span img{
+    width:1rem;
+}
+
+.cardetail-tool2 .cardetail-center{
+    z-index: 99;
+}
+
+.cardetail-tool2 .cardetail-center .center-img{
+    width: 5.5rem;
+    left: -.75rem;
+    height: 4.2rem;
+    position: relative;
+}
+
+.cardetail-tool2 .cardetail-center .left-img{
+    position:absolute;
+    width:1rem;
+    left: -.2rem;
+    top: 1.6rem;
+}
+
+.cardetail-tool2 .cardetail-center .top-img{
+    position:absolute;
+    width:1rem;
+    top: .4rem;
+    left: 1.5rem;
+}
+
+.cardetail-tool2 .cardetail-center .right-img{
+    position:absolute;
+    width:1rem;
+    right: -.2rem;
+    top: 1.6rem;
+}
+
+.cardetail-tool2 .cardetail-center .bottom-img{
+    position:absolute;
+    width:1rem;
+    bottom: .4rem;
+    left: 1.5rem;
+}
+
+.transorm-icon img{
+    width:.6rem!important;
+}
+
+/*更多弹层*/
+.cardetail-tool2 .more-alert{
+    z-index:99;
+    top:5.2rem;
+    background:#fff;
+    width:15rem;
+    /*height:4rem;*/
+    box-sizing: border-box;
+    padding:.5rem;
+    box-shadow: 0px 3px 8px #888888;
+}
+
+.cardetail-tool2 .xia-l{
+    position: absolute;
+    width: .8rem;
+    top: -.55rem;
+    right: 2.5rem;
+}
+
+.cardetail-tool2 .more-alert span{
+    display:inline-block;
+    width:4.5rem;
+    line-height:1.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/*新建工单样式*/
+.newbuilt-work-style{
+    display:flex;
+    display: -webkit-flex; /* Safari */
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.newbuilt-work-style>div {
+    box-sizing: border-box;
+    width:7.9rem;
+    margin-bottom: .2rem;
+    padding: .5rem;
+    background: #fff;
+    line-height: 1.2rem;
+    display: -webkit-flex; /* Safari */
+    justify-content:space-between;
+}
+
+/*图标*/
+.newbuilt-work-style .check-icon{
+    width:.5rem;
+    vertical-align: middle;
+    position:relative;
+    top:-.05rem;
+}
+
+.newbuilt-work-style>div>span:nth-of-type(2){
+    font-family: 'iconfont';
+}
+
+/*不可创建图标样式*/
+.new_work{
+    color: #D1D1D1;
+}
+/*可创建图标样式*/
+.can_new_work {
+    color: #259bef!important;
+}
+
+/*故障工单处理*/
+.dispose img {
+    width: .8rem;
+}
+
+/*修改备注弹框*/
+.editremark_window{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.44);
+    z-index: 100;
+}
+
+.editremark{
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-left:-6rem;
+    margin-top:-7.5rem;
+    box-sizing:border-box;
+    width:12rem;
+    height:15rem;
+    border-radius:10px;
+    background:#f2f2f2;
+    overflow:hidden;
+}
+
+.editremark .title{
+    margin-top:.5rem;
+    line-height:1.5rem;
+    text-align:center;
+    font-size:.8rem;
+}
+
+.editremark .center{
+    margin:0 .5rem;
+    height:6.5rem;
+    border:1px solid #c7c7c7;
+    border-radius:2px;
+    background: #fff;
+    position:relative;
+}
+
+.void_writeinfo{
+    width:10.8rem;
+    height:6.5rem;
+    padding:5px;
+    box-sizing: border-box;
+    border:none;
+    outline:none;
+}
+
+.record-number{
+    position:absolute;
+    right:.5rem;
+    bottom:.2rem;
+    z-index:650;
+    color: #c7c7cd;
+}
+
+.record-number font{
+    color: #c7c7cd;
+}
+
+.editremark .bottom{
+    margin-top:.5rem;
+}
+
+.editremark .bottom li{
+    border-top:1px solid #cbcbcb;
+    line-height:1.9rem;
+    text-align:center;
+    font-size:.8rem;
+}
+
+.sub-edit-remark,.clear-void{
+    color:#007aff;
+}
+
+/*防止遗失物品弹框被遮挡*/
+.lostBox{
+    z-index:99;
+}

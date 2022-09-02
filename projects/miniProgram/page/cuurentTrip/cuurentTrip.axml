@@ -1,0 +1,99 @@
+<view class="container" >
+    <view class="mapWrap">
+        <map 
+            id="map"
+            style="height:100%"
+            class="mapStyle"
+            markers="{{markers}}" 
+            include-points="{{markers}}" 
+            style="flex:1" 
+            longitude="{{longitude}}" 
+            latitude="{{latitude}}"
+            controls="{{controls}}"
+            onControlTap="controltap"
+            onRegionChange="regionChang"
+            show-location="true">  
+        </map>
+    </view>
+    <view class="box" >
+        <view class="cardWrap">
+            <view class="cardItem">
+                <view class="cardLeft">
+                    <view class="titleWrap">
+                        <text class="title">预估费用：{{total_money}}元</text>
+                        <view class="titleLabelWrap" a:if="{{info.is_limit==1}}">
+                            <text class="titleLabel">今日限行</text>
+                        </view>
+                    </view>
+                    <view class="mileageDesc">
+                        <text>已用时：</text>
+                        <text class="num" a:if="{{h}}">{{h}}</text>
+                        <text a:if="{{h}}">小时</text>
+                        <text class="num">{{m}}</text>
+                        <text> 分钟</text>
+                    </view>
+                    <view class="priceDesc">
+                        <text>已行驶：</text>
+                        <text class="num">{{total_km||0}}</text>
+                        <text>公里</text>
+                    </view>
+                    <view class="sdewDesc" a:if="{{price_insurance>0}}">
+                        <text>不计免赔服务（{{price_insurance}}元/小时）</text>
+                    </view>
+                </view>
+                <view class="cardRight">
+                    <image class="carImg" src="{{info.car_pic}}" mode="aspectFit" />
+                </view>
+            </view>
+        </view>
+        <view class="returnTip" a:if="{{!info.end_branch_name}}" onTap="goReturnCarPage">
+            <text a:if="{{!info.end_branch_name}}">可还车时选择</text>
+            <text a:if="{{info.end_branch_name}}" class="returnAddress">{{returnAddress}}</text>
+        </view>
+        <view class="returnItem" a:if="{{info.end_branch_name}}" onTap="goReturnCarPage">
+            <view class="returnAddress">
+                <text class="address">{{info.end_branch_name}}</text>
+                <text class="des">{{info.end_branch_addr}}</text>
+                <view class="floorLabel">
+                    <view class="floor">
+                        <text>{{info.end_drive_remark}}</text>
+                    </view>  
+                </view>
+                <view a:if="{{info.parking_fee_in!='0.00'}}">
+                    <text>还车附加费</text>
+                    <text class="num">{{info.parking_fee_in}}</text>
+                    <text>元</text>
+                </view>
+            </view>
+            <view class="daohang" catchTap="_openLocation"></view>
+        </view>
+        <view class="likeBtnWrap">
+            <view class="likeBtn" >
+                <view class="btnItem" onTap="_openDoor">
+                    <view class="icon1"></view>
+                    <text>开门</text>
+                </view>
+                <view class="btnItem" onTap="_closeDoor">
+                    <view class="icon2"></view>
+                    <text>锁门</text>
+                </view>
+                <view class="btnItem" onTap="_returnCar">
+                    <view class="icon3"></view>
+                    <text>还车</text>
+                </view>
+                <view class="btnItem" onTap="_findCar">
+                    <view class="icon4"></view>
+                    <text>寻车</text>
+                </view>
+                <view class="btnItem last" onTap="_goMore">
+                    <view class="icon5"></view>
+                    <text>更多</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<!-- <view class="loadingBox" a:if="{{!pageIsShow}}">
+    <view class="loadingIcon"></view>
+</view> -->
+

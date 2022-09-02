@@ -1,0 +1,12 @@
+//- Created by garvey on 2017/10/30.
+include ../../../template/base/h5
+    include ../../../template/head/viewport
+    title 车辆外观故障详情
+body
+    .showContainer
+    .btnContainer
+        button.changeStatus.blue_btn.disabled#later 不需要立即处理
+        button.changeStatus.blue_btn.disabled#immediately 需要立即处理
+        button.tofix.blue_btn 去处理
+        a#toHistory 查看历史验车单
+        a#toOpList 查看操作历史

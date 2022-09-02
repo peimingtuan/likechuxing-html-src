@@ -1,0 +1,121 @@
+#addchargeinfo{
+    height:100%;
+}
+
+#addchargeinfo .endwork-netname{
+    padding: .5rem;
+    line-height: 2.3rem;
+    background: #fff;
+}
+
+#addchargeinfo .endwork-netname input{
+    height: 1.2rem;
+    line-height: 1.2rem;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+#addchargeinfo .choice-net{
+    width:65%;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+#addchargeinfo .endwork-netname input::-webkit-input-placeholder{
+    font-size: .6rem;
+}
+
+#addchargeinfo .endwork-netname span:nth-of-type(2){
+    color: #b7b7b7;
+}
+
+#addchargeinfo .endwork-icon {
+    font-family: 'iconfont';
+    float: right;
+}
+
+#addchargeinfo .charge-style{
+    margin-top:.5rem;
+    background: #fff;
+}
+
+#addchargeinfo .charge-style .top{
+    padding:0 .5rem;
+    height:2rem;
+    border-bottom:1px solid #dcdcdc;
+}
+
+#addchargeinfo .charge-style .top span {
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    margin-right: 1rem;
+    margin-top: .5rem;
+}
+
+#addchargeinfo .charge-style .top input {
+    margin-right: .2rem;
+    margin-left: .3rem;
+    width: .8rem;
+    height: .8rem;
+    position: relative;
+    top: .2rem;
+}
+
+#addchargeinfo .charge-style .bottom{
+    padding:0 .5rem 1.5rem;
+    position:relative;
+}
+
+#addchargeinfo .charge-style .bottom span{
+    display:inline-block;
+}
+
+#addchargeinfo .charge-style .bottom .title{
+    line-height:2rem;
+}
+
+#addchargeinfo .charge-style .bottom .style{
+    text-align: center;
+    /*margin-right: 1rem;*/
+    /*line-height:1.5rem;*/
+    width:3rem;
+    font-size:.58rem;
+}
+
+#addchargeinfo .charge-style .bottom .style:last-of-type{
+    position: absolute;
+    width: 5rem;
+}
+
+#addchargeinfo .charge-style .bottom img{
+    width:1.2rem;
+    margin-bottom: .5rem;
+}
+
+#addchargeinfo .endworkname-submit{
+    position: fixed;
+    bottom: 0;
+    left:0;
+    width:16rem;
+    padding:.5rem;
+    background: #fff;
+    box-shadow: 1px -2px 2px #e8e8e8;
+}
+
+#addchargeinfo .endworkname-submit button {
+    width: 15rem;
+    line-height: 1.9rem;
+    text-align: center;
+    outline: none;
+    border: 1px solid;
+    border-radius: 2px;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+#addchargeinfo .submit-btn{
+    background:#333!important;
+    border:none;
+    color:#fff;
+}

@@ -1,0 +1,116 @@
+@import '../../../../css/config';
+
+.TrackControlBox{
+  z-index: 160;
+  position: absolute;
+  width: 280px;
+}
+
+.new-top {
+  width: 450px;
+  position: absolute;
+  left:@headerHeight*0.5;
+  top:@headerHeight*0.3;
+  z-index: 160;
+  box-shadow: 1px 1px 1px #000011;
+  background-color: #999;
+  color: #fff;
+  .title{
+    position: relative;
+    background: #333;
+    color: white;
+    line-height: 28px;
+    font-size: 0.14rem;
+    text-align: center;
+    .switchBox{
+      position: absolute;
+      right:0;
+      top:0
+    }
+  }
+  .use{
+    padding: 0 20px;
+    color:#000;
+  }
+  .container{
+    padding: 10px 20px;
+    .btn{
+      margin:0 10px;
+      width: 80px;
+      height:28px;
+    }
+    &.btn_con{
+      text-align: center;
+      padding-bottom: 20px;
+    }
+  }
+  .fence_name{
+    vertical-align: top;
+  }
+  .policetime-end{
+    input{
+      margin-left: 4em;
+    }
+  }
+  label{
+    vertical-align: top;
+    line-height: 28px;
+  }
+  input,select{
+    margin:0 10px;
+    width: 120px;
+    height: 28px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 13px;
+  }
+  textarea {
+    margin:0 10px;
+    border-radius: 3px;
+    border:none;
+    outline: none;
+    width: 320px;
+    height: 60px;
+  }
+}
+
+.Tool{
+  width: 200px;
+  z-index: 160;
+  position: absolute;
+  right:@headerHeight*0.5;
+  bottom:@headerHeight*0.3;
+  .btn {
+    width: 60px;
+    line-height: 30px;
+    z-index: 1000;
+    border-radius: 5px;
+    opacity: .8;
+    text-align: center;
+    background: #333;
+    color: #ffffff;
+  }
+
+  .polygon {
+    position: absolute;
+    bottom: 30px;
+    right: 150px;
+  }
+
+  .polygon-end {
+    position: absolute;
+    bottom: 30px;
+    right: 80px;
+  }
+
+  .clear-polygon {
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+  }
+}
+
+
+
+

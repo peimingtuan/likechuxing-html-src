@@ -1,0 +1,30 @@
+.likePointExplain{
+  &::before{
+    content: '';
+    display: block;
+    height: 0.1rem;
+  }
+  .list{
+    background-color: #fff;
+    font-size: 0.13rem;
+    color:#999;
+    line-height: 0.26rem;
+    padding: 0 0.1rem;
+    li{
+      position: relative;
+      padding: 0.15rem 0.1rem;
+      border-bottom:solid 1px #f2f2f2;
+      &:nth-last-of-type(1){
+        border:none
+      }
+    }
+    .point_icon{
+      height: 0.44rem;
+      position: absolute;
+      top:0.18rem;
+    }
+    p{
+      margin-left:0.5rem
+    }
+  }
+}

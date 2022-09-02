@@ -1,0 +1,54 @@
+#checkgolineinfo{
+    background:#f6f6f6;
+}
+#checkgolineinfo .endwork-netname,#checkgolineinfo .endwork-floor p {
+    padding: .5rem;
+    line-height: 2.3rem;
+    background: #fff;
+}
+
+#checkgolineinfo .endwork-floor,#checkgolineinfo  .endwork-state {
+    margin-top: .5rem;
+}
+
+#checkgolineinfo .endwork-floor p {
+    border-bottom: 1px solid #f6f6f6;
+}
+
+/*备注信息样式*/
+#checkgolineinfo .remark-info2 {
+    margin: .5rem;
+    height: 6rem;
+    border: 1px solid gray;
+}
+
+/*图片展示*/
+
+#checkgolineinfo .editrefueling-content {
+    padding: 0rem 1.75rem;
+    margin-top:.5rem;
+}
+
+#checkgolineinfo .editrefueling-content .left {
+    margin-right: 1rem;
+}
+
+#checkgolineinfo .editrefueling-content > div {
+    margin-bottom: 1rem;
+}
+
+#checkgolineinfo .editrefueling-content > div > p {
+    text-align: center;
+    line-height: 2rem;
+}
+
+#checkgolineinfo .editrefueling-content > div > div {
+    position: relative;
+    width: 5.2rem;
+    height: 5.2rem;
+    background: #f4f4f4;
+}
+#checkgolineinfo .editrefueling-content img{
+    width:5.2rem;
+    height: 5.2rem;
+}

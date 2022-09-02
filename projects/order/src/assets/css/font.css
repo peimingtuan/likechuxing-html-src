@@ -1,0 +1,43 @@
+@media screen and (min-width: 620px ) {
+  html {
+    font-size: 140px !important;
+  }
+}
+
+@media screen and (min-width: 560px ) and (max-width: 619px) {
+  html {
+    font-size: 130px !important;
+  }
+}
+
+@media screen and (min-width: 414px ) and (max-width: 559px) {
+  html {
+    font-size: 120px !important;
+  }
+}
+
+@media screen and (min-width: 380px )and (max-width: 413px) {
+  html {
+    font-size: 110px !important;
+  }
+}
+
+@media screen and (min-width: 360px )and (max-width: 379px) {
+  html {
+    font-size: 100px !important;
+  }
+}
+
+@media screen and (max-width: 359px ) {
+  html {
+    font-size: 90px !important;
+  }
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}

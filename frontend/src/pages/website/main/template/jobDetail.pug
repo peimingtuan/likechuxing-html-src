@@ -1,0 +1,26 @@
+//- Created by garvey on 2017/11/9.
+.job_details
+    .close
+        .icon
+        p 返回
+    .job_name #{recruit_name + '（'+recruit_count+'人）'}
+    ul.requires
+        li #{recruit_salary}
+        li #{work_nature}
+        li #{work_year}
+        li #{educational_requirements}
+    .job_duty.list
+        .title 岗位职责
+        ul
+            each k in responsibility
+                li #{k.replace(/^\s*/, '')}
+    .job_require.list
+        .title 任职要求
+        ul
+            each k in job_requirements
+                li #{k.replace(/^\s*/, '')}
+    .contact 请将简历发送到：
+        a(href="mailto:"+company_emai)
+            span #{company_email}
+    .contact 邮件标题格式：
+        span #{title_style}

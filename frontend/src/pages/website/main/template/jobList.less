@@ -1,0 +1,152 @@
+.jobs{
+  display: flex;
+  justify-content: space-between;
+  .img_container{
+    width: 37%;
+    img{
+      display: block;
+      width: 100%;
+    }
+  }
+  .job_container{
+    padding:0.4rem;
+    box-sizing: border-box;
+    width: 60%;
+    .city{
+      color: #999;
+      font-size: 0.184rem;
+      position: relative;
+      .city_name{
+        position: relative;
+        color:#000;
+        font-size: 0.23rem;
+        line-height: 0.3rem;
+        .icon_position{
+          position: absolute;
+          top:0;
+          right:-0.32rem;
+          width:0.3rem;
+          height:0.3rem;
+          background: url('../images/icon_position.png') no-repeat center;
+          background-size: auto 60%;
+        }
+      }
+
+    }
+    .job_list{
+      margin-top: 0.5rem;
+      font-size: 0.11rem;
+      .title{
+        font-size: 0.1rem;
+        color:#999;
+        margin:0 0.2em
+      }
+      ul{
+        width: 100%;
+        overflow: hidden;
+        li {
+          width: 50%;
+          box-sizing: border-box;
+          float: left;
+          line-height: 1.6;
+          cursor: pointer;
+          color: #333;
+          span{
+            color:#999;
+            font-size: 0.1rem;
+          }
+          &::before {
+            content: ' · ';
+          }
+          &:hover {
+            color: #000;
+          }
+        }
+        li.empty{
+          font-size: 0.14rem;
+          line-height: 2;
+          &::before{
+            content:''
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:496px){
+  .jobs{
+    display: flex;
+    justify-content: space-between;
+    .img_container{
+      width: 37%;
+      img{
+        display: block;
+        width: 100%;
+      }
+    }
+    .job_container{
+      padding:0.5rem;
+      box-sizing: border-box;
+      width: 60%;
+      .city{
+        color: #999;
+        font-size: 0.184rem;
+        position: relative;
+        .city_name{
+          position: relative;
+          color:#000;
+          font-size: 0.23rem;
+          line-height: 0.3rem;
+          .icon_position{
+            position: absolute;
+            top:0;
+            right:-0.32rem;
+            width:0.3rem;
+            height:0.3rem;
+            background: url('../images/icon_position.png') no-repeat center;
+            background-size: auto 60%;
+          }
+        }
+
+      }
+      .job_list{
+        margin-top: 0.5rem;
+        font-size: 0.11rem;
+        .title{
+          font-size: 0.1rem;
+          color:#999;
+        }
+        ul{
+          width: 100%;
+          overflow: hidden;
+          li {
+            width: 50%;
+            box-sizing: border-box;
+            float: left;
+            line-height: 1.6;
+            cursor: pointer;
+            color: #333;
+            span{
+              color:#999;
+              font-size: 0.1rem;
+            }
+            &::before {
+              content: ' · ';
+            }
+            &:hover {
+              color: #000;
+            }
+          }
+          li.empty{
+            font-size: 0.14rem;
+            line-height: 2;
+            &::before{
+              content:''
+            }
+          }
+        }
+      }
+    }
+  }
+}

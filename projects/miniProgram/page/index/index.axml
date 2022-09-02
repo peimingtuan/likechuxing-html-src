@@ -1,0 +1,101 @@
+<view class="container"  a:if="{{pageIsShow}}">
+    <view class="mapWrap">
+        <map 
+            id="map"
+            class="mapStyle"
+            markers="{{markers}}" 
+            style="height:100%;flex:1;" 
+            longitude="{{longitude}}" 
+            latitude="{{latitude}}"
+            controls="{{controls}}"
+            onControlTap="controltap"
+            show-location="true"
+            onTap="pressMap"
+            scale="{{scale}}"
+            onRegionChange="regionChange"
+            onMarkerTap="onMarkerTap"> 
+        </map>
+    </view>
+    <view class="footer" id="footer" a:if="{{!show}}" >
+        <view class="btnTip" a:if="{{isHasBranch&&!isHasCar}}">
+            <text class="tipText">请在地图上选择取车网点</text>
+        </view>
+        <text class="tipText" a:if="{{!isHasBranch}}">该城市暂未开通网点</text>
+        <text class="tipText" a:if="{{isHasCar}}">该网点暂无车辆可用</text>
+    </view> 
+    <view class="box" style="{{carList[currentIndex].price_insurance>0?'height:380px':'height:320px'}}" a:if="{{show}}" >
+        <view class="cardWrap bottomBorder">
+            <swiper 
+                a:if="{{show_swiper}}"
+                class="swiper" 
+                indicator-dots="{{carList.length>1?true:false}}" 
+                autoplay="{{false}}" 
+                interval="{{3000}}" 
+                indicator-color="#D4DAE4" 
+                indicator-active-color="#2A2D36" 
+                onChange="getCurrent" 
+                current="0"
+            >
+                <swiper-item a:for="{{carList}}">
+                    <view class="cardItem">
+                        <view class="cardLeft">
+                            <view class="titleWrap">
+                                <text class="title">{{item.brand_name}}{{item.model_name}}</text>
+                                <view class="titleLabelWrap" a:if="{{item.is_limit==1}}">
+                                    <text class="titleLabel">今日限行</text>
+                                </view>
+                            </view>
+                            <view class="mileageDesc">
+                                <text>续航约</text>
+                                <text class="numColor">  {{item.remain_km}}  </text>
+                                <text>公里</text>
+                            </view>
+                            <view class="priceDesc">
+                                <text class="numColor">  {{item.price_km}}  </text>
+                                <text>元/公里 +   </text>
+                                <text class="numColor">  {{item.price_min}}  </text>
+                                <text>元/分钟</text>
+                            </view>
+                            <text class="carDetail" onTap="_goCarDetail" data-carInfo="{{item}}">车辆详情 ></text>
+                        </view>
+                        <view class="cardRight">
+                            <image class="carImg" src="{{item.car_pic}}" mode="aspectFit" />
+                        </view>
+                    </view>
+                </swiper-item>
+            </swiper>
+        </view>
+        <view class="sdew" a:if="{{carList[currentIndex].price_insurance>0}}">
+            <view class="sdewContent">不计免赔服务（{{carList[currentIndex].price_insurance}}元/小时）<text class="toSdew" onTap="goLikeSdew"></text></view>
+            <view class="switchBox" onTap="switchChange"><switch class="mini-switch" checked="{{sdewSwitch}}" controlled="true" color="#494B51"/></view>
+        </view>
+        <view class="pickItem">
+            <view class="pickAddress bottomBorder" data-isClick="{{parking_fee!='0.00'?0:1}}" onTap="goLikeDesc" >
+                <text class="address">{{pickAddress}}</text>
+                <view a:if="{{parking_fee!='0.00'}}">
+                    <text>代缴停车费</text>
+                    <text class="num">{{parking_fee}}元</text>
+                    <text>(结算时系统补还)</text>
+                </view>
+            </view>
+            <view class="daohang" catchTap="_openLocation"></view>
+        </view>
+        <view class="returnItem bottomBorder" onTap="goReturnCarPage">
+            <text class="tip" a:if="{{returnAddress==''}}">可还车时选择</text>
+            <text class="address" a:if="{{returnAddress}}">{{returnAddress}}</text>
+            <view a:if="{{returnNum!=='0.00'}}" class="returnDesc">
+                <text>还车附加费</text>
+                <text class="num">{{returnNum}}元</text>
+            </view>
+        </view>
+        <view class="likeBtnWrap">
+            <view class="likeBtn" onTap="_driveBtn">
+                <text>立刻用车</text>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="loadingBox" a:if="{{!pageIsShow}}">
+    <view class="loadingIcon"></view>
+</view>
+

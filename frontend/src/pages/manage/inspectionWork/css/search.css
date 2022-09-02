@@ -1,0 +1,207 @@
+#rentlistsearch .repair_shop{
+    padding:.12rem;
+    background:#fff;
+    display:flex;
+    display: -webkit-flex; /* Safari */
+    justify-content:space-between;
+}
+
+#rentlistsearch .repair_sear {
+    width:3rem;
+    height:.4rem;
+    line-height:.4rem;
+    border-radius:20px;
+    position: relative;
+}
+
+#rentlistsearch .rightIcon{
+    display:inline-block;
+    width:.3rem;
+    height:.4rem;
+    line-height:.4rem;
+    text-align: center;
+}
+
+#rentlistsearch .repair_shop input {
+    height: .4rem;
+    border: none;
+    outline: none;
+    padding: 0;
+    -webkit-appearance: none;
+    width: 3rem;
+    padding-left: .45rem;
+    padding-right: .31rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background: #f5f5f5;
+    border-radius:20px;
+}
+
+#rentlistsearch input::-webkit-input-placeholder{
+    font-size:.12rem;
+}
+
+#rentlistsearch input:-moz-input-placeholder{
+    font-size:.12rem;
+}
+
+#rentlistsearch input:-ms-input-placeholder{
+    font-size:.12rem;
+}
+
+#rentlistsearch .icon {
+    font-family: 'iconfont';
+    display: inline-block;
+    width: .4rem;
+    line-height: .4rem;
+    text-align: center;
+    border-radius: 50%;
+    background: #f5f5f5;
+    position: absolute;
+    left: 0;
+    top: 0rem;
+}
+
+#rentlistsearch .input_clearn {
+    right: .12rem;
+    top: .11rem;
+    position: absolute;
+    width: .18rem;
+}
+
+/*搜索结果*/
+#rentlistsearch .history_items {
+    z-index: 120;
+    background: #FFFFFF;
+    position: absolute;
+    width: 3.51rem;
+    left: .12rem;
+    border: 1px solid #F0F0F0;
+    overflow: hidden;
+    padding:0 .1rem;
+    box-shadow: 1px 2px 2px #e8e8e8;
+
+}
+
+/*历史记录*/
+#rentlistsearch .history-list{
+    border-top:1px solid #f6f6f6;
+    background: #FFFFFF;
+    padding:.12rem;
+}
+
+#rentlistsearch .colortype{
+    color:#bebebe;
+}
+
+#rentlistsearch .his_list,#rentlistsearch .his_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: -webkit-flex;
+    line-height: 1.1;
+    -webkit-justify-content: space-between;
+    -webkit-align-items: center;
+}
+
+#rentlistsearch .his_list {
+    border-bottom: 1px solid #ededed;
+    padding: 0.1rem 0;
+    line-height: 1.5;
+}
+
+#rentlistsearch .record{
+    display: flex;
+    display: -webkit-flex;
+    line-height: .312rem;
+    /*padding: 0.1rem 0;*/
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    flex-wrap:wrap;
+}
+
+#rentlistsearch .top-list{
+    padding-bottom: .12rem;
+    border-bottom: 1px solid #ededed;
+    margin-bottom: .12rem;
+}
+
+#rentlistsearch .record .div1{
+    margin-top:.12rem;
+    width:1rem;
+    margin-left:.25rem;
+    text-align: center;
+    border:1px solid #939393;
+    border-radius: 5px;
+}
+
+#rentlistsearch .record .div1:first-of-type,
+#rentlistsearch .record .div1:nth-of-type(4),
+#rentlistsearch .record .div1:nth-of-type(7),
+#rentlistsearch .record .div1:nth-of-type(10),
+#rentlistsearch .record .div1:nth-of-type(13){
+    margin-left:0!important;
+}
+
+#rentlistsearch .record .div2{
+    margin-top:.12rem;
+    width:2.1rem;
+    text-align: center;
+    border:1px solid #939393;
+    border-radius: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 .05rem;
+}
+
+#rentlistsearch .delete-icon {
+    font-family: iconfont;
+    width: .468rem;
+    line-height: .468rem;
+    font-size: .18rem;
+    display: inline-block;
+    text-align: center;
+}
+
+#rentlistsearch .his_clearn {
+    display: inline-block;
+    width: .14rem;
+    height: .14rem;
+}
+
+#rentlistsearch .his_clearn img {
+    width: 100%;
+}
+
+#rentlistsearch .history_item {
+    padding: 0.1rem 0;
+    line-height: 1.5;
+    border-bottom: 1px solid #ededed;
+}
+
+#rentlistsearch .noSearch {
+    z-index:120;
+    text-align: center;
+    padding: .5rem 0;
+    box-shadow: 1px 2px 2px #e8e8e8;
+    background:#fff;
+    position: absolute;
+    width: 3.75rem;
+    left: 0;
+}
+
+#rentlistsearch .noSearch img {
+    width: 0.5rem;
+}
+
+/*confirm弹框*/
+.mint-msgbox{
+    width:2.6rem!important;
+}
+
+.mint-msgbox-message{
+    line-height:30px;
+    color:#494b51;
+}

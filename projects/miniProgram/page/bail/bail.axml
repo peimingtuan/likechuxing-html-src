@@ -1,0 +1,41 @@
+<view class="container" a:if="{{pageIsShow&&openFree==0}}">
+    <view class="headerBg">
+        <view class="bailRecordingBox">
+            <text class="bailRecording" onTap="goBailRcord">保证金记录</text>
+        </view>
+        <view class="bailDesc">
+            <text class="bailTitle">用车保证金(元)</text>
+            <image src="../../image/bailImg.png" mode="aspectFit"  class="bailImg" onTap="goBailDesc"/>
+        </view>
+        <view class="amountWrap">
+            <text class="amount">{{amount}}</text>
+        </view>
+        <view class="btnWrap {{can_refund==1?'on':''}}" onTap="goAuthentication">
+            <text class="btnText">退保证金</text>
+        </view>
+    </view>
+    <view class="list">
+        <view class="listItem" a:for="{{des}}">
+            <text class="itemDesc">{{item}}</text>
+        </view>
+    </view>
+    <view class="footer">
+        <view class="footerDesc">
+            <text class="footerDescLabel">近期已增加车辆及网点，请</text>
+            <text class="link" onTap="goIndex">返回首页</text>
+            <text class="footerDescLabel">查看</text>
+        </view>
+    </view>
+</view>
+<view class="zhimacontainer" a:if="{{pageIsShow&&openFree==1}}">
+    <view class="zhimaicon"></view>
+    <view class="zhimadesc">
+        <text>已开启免保证金用车</text>
+    </view>
+    <view class="zhimafooter" onTap="goDesc">
+        <text>如何关闭免保证金用车></text>
+    </view>
+</view>
+<view class="loadingBox" a:if="{{!pageIsShow}}">
+    <view class="loadingIcon"></view>
+</view>

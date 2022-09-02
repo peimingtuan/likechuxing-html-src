@@ -1,0 +1,111 @@
+.navHeader{
+  position: absolute;
+  z-index: 100;
+  background-color: transparent;
+  width: 100%;
+  padding: 1% 5% 0;
+  box-sizing: border-box;
+  .slogan{
+    float: left;
+    width:1.4rem;
+    height: 0.4rem;
+    background: url('../images/slogan_bright.png') no-repeat center;
+    background-size: 100% auto;
+  }
+  .nav{
+    float: right;
+    font-weight: 200;
+    li{
+      width: 4em;
+      display: inline-block;
+      cursor: pointer;
+      text-align: center;
+      a{
+        line-height: 0.4rem;
+        font-size: 0.13rem;
+        color:#fff;
+        &.this{
+          color:#aaa
+        }
+      }
+    }
+  }
+  &.dark{
+    .slogan{
+      background-image: url('../images/slogan_dark.png');
+    }
+    .nav li a{
+      color:#111
+    }
+  }
+}
+
+@media screen and (max-width:496px){
+  .navHeader{
+    &.dark{
+      .menu_m .bar{
+        background-color: #111;
+      }
+    }
+    .menu_m{
+      display:block;
+      position: absolute;
+      width:20px;
+      height:16px;
+      right:5%;
+      top:50%;
+      margin-top: -8px;
+      z-index: 10;
+      .bar{
+        width: 100%;
+        height: 1px;
+        background-color: #fff;
+        position: absolute;
+        transition-duration: 400ms;
+        transition-property: all;
+        &:nth-of-type(1){
+          top:0
+        }
+        &:nth-of-type(2){
+          top:50%;
+        }
+        &:nth-of-type(3){
+          bottom:0
+        }
+
+      }
+      &.active{
+        .bar{
+          background-color:#111;
+          &:nth-of-type(1){
+            top:50%;
+            transform:  rotate(-45deg);
+          }
+          &:nth-of-type(2){
+            opacity: 0;
+          }
+          &:nth-of-type(3){
+            top:50%;
+            transform:  rotate(45deg);
+          }
+        }
+      }
+    }
+    .nav{
+      display: none;
+      position: absolute;
+      width: 100%;
+      margin-left: -5%;
+      top:0;
+      background-color: rgba(255,255,255,0.97);
+      li{
+        width: 100%;
+        a{
+          color:#111;
+          line-height: 0.5rem;
+          font-size: 0.16rem;
+        }
+      }
+    }
+  }
+}

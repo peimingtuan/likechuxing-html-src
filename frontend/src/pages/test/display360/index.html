@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>display360</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <style>
+        html,body{
+            background-color: #666;
+        }
+        #myCar{
+            width: 375px!important;
+            height: 250px!important;
+            margin:0 auto;
+            background: no-repeat center;
+            background-size: 100%;
+        }
+    </style>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/3deye.min.js"></script>
+</head>
+<body>
+<div id="myCar">
+</div>
+<script>
+  $(document).ready(function(){
+
+    $("#myCar").vc3dEye({
+      imagePath:"images/",
+      totalImages:30,
+      imageExtension:"png"
+    });
+
+  });
+</script>
+</body>
+</html>

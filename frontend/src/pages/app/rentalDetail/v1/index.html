@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, user-scalable=no"/>
+    <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=fqCNAr6UAW542snWLf3dCaYH9vXAOgD8&s=1"></script>
+    <title>行程详情</title>
+</head>
+<body>
+<div class="page">
+    <div id="map"></div>
+    <div class="detail_con">
+        <div class="slide_btn"></div>
+        <div class="car_detail">
+            <p class="chepai">车牌号</p>
+            <p class="chekuan">车辆型号</p>
+            <div class="car_img"></div>
+        </div>
+        <p class="order_time"><span id="order_time">订单时间</span><span class="order_cost"><span class="cost_num">订单金额 </span> 元</span>
+        </p>
+        <div class="point_con">
+            <p><span class="icon icon_get_car">取：</span><span id="start_point_name">取车地点</span></p>
+            <p><span class="icon icon_return_car">还：</span><span id="end_point_name">还车地点</span></p>
+        </div>
+        <div class="btn_con">
+        </div>
+    </div>
+    <div class="appraise_con">
+        <div class="appraise_con_in animated faster zoomIn">
+            <div class="btn_close"></div>
+            <p class="title">请您对立刻本次服务做评价</p>
+            <div class="choose_con">
+                <div class="satisfied choose_one active">
+                    <div class="face_con"></div>
+                    <p>满意!</p>
+                </div>
+                <div class="dissatisfied choose_one">
+                    <div class="face_con"></div>
+                    <p>不满意!</p>
+                </div>
+            </div>
+            <ul class="choose_list"></ul>
+            <button class="btn opacity" id="send_comment">提交</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

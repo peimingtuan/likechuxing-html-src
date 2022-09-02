@@ -1,0 +1,101 @@
+.netlist li {
+    padding: .12rem;
+    border-bottom: 2px solid #dcdcdc;
+}
+
+.netlist li p span {
+    display: inline-block;
+    margin-top: .0446rem;
+    margin-right: .12rem;
+    padding: .046rem .092rem;
+    border: 1px solid #dcdcdc;
+    border-radius: 2px;
+}
+
+.netlist li p .font1 {
+    color: #999999;
+    margin-right: .0234rem;
+}
+
+/*网点样式*/
+.netlist p:last-of-type {
+    color: #a8a8a8;
+    line-height: .234rem;
+    position: relative;
+    padding:.05rem;
+}
+
+.netlist img {
+    width: .234rem;
+    margin-right:.0468rem;
+}
+
+/*超链接字体样式*/
+a {
+    color: #a8a8a8;
+}
+
+/*限行样式*/
+.netlist li .limit-icon  .span1{
+    line-height: .234rem;
+    padding: .0234rem;
+    margin-top: .0351rem;
+    border:none;
+    width: .234rem;
+    text-align: center;
+    margin-right: .234rem;
+}
+
+.opencar{
+    color:#fff;
+    background:#b6e088;
+    border-radius: 2px;
+}
+
+.stopcar{
+    color:#fff;
+    background: #ff8e8e;
+    border-radius: 2px;
+}
+
+.waitingcar {
+    color: #fff;
+    background: #D2D2D2;
+    border-radius: 2px;
+}
+
+/*24小时未动和远距离车辆*/
+.netlist li>div.not_time,.netlist li>div.long_distance{
+    border: none;
+    padding:0rem;
+}
+.netlist li>div.not_time{
+    padding: .12rem 0rem;
+}
+.fcec6e{color: #ec6e6e;}
+
+
+/*状态时长*/
+.during_sec{
+    margin:.1rem 0;
+}
+
+/*车辆详情添加备注信息*/
+.netlist  li> div.bottom {
+    padding:.12rem 0 0 .468rem;
+    position:relative;
+    border-top: 1px dashed #E9E9E9;
+}
+
+.netlist  li> div span {
+    border:none!important;
+    display:inline-block;
+}
+.netlist  li> div.bottom .span1{
+    position:absolute;
+    left:0;
+    color:#333333;
+}
+.netlist  li> div.bottom .span2{
+    color:#666666;
+}

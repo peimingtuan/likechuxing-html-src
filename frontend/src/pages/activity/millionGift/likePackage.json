@@ -1,0 +1,63 @@
+{
+  "id": 2008,
+  "zh_name": "百万红包_6小时0元",
+  "name": "millionGift",
+  "group": "activity",
+  "bundle_vendor": true,
+  "copy": true,
+  "input_file": {
+    "index": [
+      "index.js"
+    ],
+    "list": [
+      "list.js"
+    ],
+    "history": [
+      "history.js"
+    ],
+    "cashSucc": [
+      "cashSucc.js"
+    ],
+    "confirmAccount": [
+      "confirmAccount.js"
+    ],
+    "editAccount": [
+      "editAccount.js"
+    ],
+    "explain": [
+      "explain.js"
+    ],
+    "share": [
+      "share.js"
+    ],
+    "plus": [
+      "plus.js"
+    ],
+    "support": [
+      "support.js"
+    ],
+    "clear": [
+      "clear.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/activity/millionGift/",
+    "publicPath": "/",
+    "filename": "js/activity_millionGift/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.pug",
+      "list.pug",
+      "history.pug",
+      "cashSucc.pug",
+      "confirmAccount.pug",
+      "editAccount.pug",
+      "explain.pug",
+      "share.pug",
+      "plus.pug",
+      "support.pug",
+      "clear.pug"
+    ]
+  }
+}

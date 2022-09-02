@@ -1,0 +1,100 @@
+#cancelwashwork2 .header{
+    padding:0 .12rem;
+    height:.46rem;
+    position:relative;
+    background: #fff;
+}
+
+#cancelwashwork2 .header input{
+    width:3.51rem;
+    margin:.05rem 0;
+    line-height:.35rem;
+}
+
+#cancelwashwork2 .header-icon {
+    position:absolute;
+    right:.12rem;
+    top:.153rem;
+    font-family: 'iconfont';
+    color: #b7b7b7;
+}
+
+/*拍照样式*/
+#cancelwashwork2 .photo-content {
+    margin:.12rem 0;
+    padding:0 .12rem;
+    background:#fff;
+}
+
+#cancelwashwork2 .photo-content > p {
+    line-height: .468rem;
+}
+
+#cancelwashwork2 .photo-content div {
+    display: inline-block;
+}
+
+#cancelwashwork2 .photo-content > div {
+    margin-left: .35rem;
+    margin-bottom: .12rem;
+}
+
+#cancelwashwork2 .photo-content > div > div {
+    position: relative;
+    width: 1.22rem;
+    height: 1.22rem;
+    background: #f4f4f4;
+}
+
+/*图片样式*/
+#cancelwashwork2 .photo-content > div > div .preview{
+    position: absolute;
+    width: 1.22rem;
+    height: 1.22rem;
+}
+
+#cancelwashwork2 .uploadIcon {
+    font-family: 'iconfont';
+    font-size: .323rem;
+    position: absolute;
+    left: .447rem;
+    top: .304rem;
+    width:.351rem;
+    height:.351rem;
+}
+
+#cancelwashwork2 .uploadphoto{
+    width:.351rem;
+    height:.351rem;
+    overflow: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#cancelwashwork2 .number {
+    position: absolute;
+    left: .17rem;
+    top: .679rem;
+}
+
+#cancelwashwork2 .swat-photo {
+    font-family: 'iconfont';
+    font-size:.187rem;
+    position:absolute;
+    right:-.09rem;
+    top: -.09rem;
+    color:#43aff7;
+}
+
+/*备注信息*/
+#cancelwashwork2 .remark-div{
+    padding:.12rem 0;
+    background:#fff;
+}
+
+#cancelwashwork2 .remark-div p{
+    line-height:.234rem;
+    margin-left:.12rem;
+}

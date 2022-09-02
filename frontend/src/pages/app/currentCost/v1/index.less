@@ -1,0 +1,64 @@
+@import '../../../css/font';
+@import '../../../css/reset.css';
+@import '../../../css/buttons/button';
+
+body{
+  background-color: #f2f2f2;
+}
+
+.explainBox,.detailBox{
+  background-color: #fff;
+  padding-left: 0.2rem;
+  margin-top: 0.1rem;
+  .title{
+    padding: 0.15rem 0;
+    font-size: 0.12rem;
+    color:#999;
+    border-bottom: solid 1px #f2f2f2;
+  }
+  .content{
+    padding: 0.15rem 0;
+    font-size: 0.13rem;
+    color:#999;
+    position: relative;
+    span{
+      margin-right:0.5em
+    }
+    .strong{
+      font-size: 0.16rem;
+      color:#111;
+    }
+    .price_type{
+      position: absolute;
+      height: 0.13rem;
+      top:50%;
+      margin-top:-0.06rem;
+    }
+  }
+  .detailList{
+    padding: 0.1rem 0.2rem 0.1rem 0;
+    border-bottom: solid 1px #f2f2f2;
+    li{
+      overflow: hidden;
+      padding: 0.05rem 0;
+      font-size: 0.13rem;
+      &.discount{
+        display: none;
+      }
+    }
+  }
+  .currentCost{
+    overflow: hidden;
+    padding: 0.2rem 0.2rem 0.2rem 0;
+    font-size: 0.15rem;
+  }
+  .itemName,.itemValue{
+    width:50%;
+    box-sizing: border-box;
+    float: left;
+  }
+  .itemValue{
+    text-align: right;
+  }
+}
+

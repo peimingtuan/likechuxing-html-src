@@ -1,0 +1,22 @@
+//- Created by garvey on 2017/12/19.
+-require('./exchangeHistoryBox.less')
+div(class="ExchangeHistoryBox ExchangeHistoryBox"+type data-id=id)
+    .header.clearfix
+        .float-left 订单号：#{uuid}
+        .float-right.status(class=status_class) #{status_desc}
+    .desc
+        .name.fs16 #{extra_info.name}
+        .time.fs12 #{format_time}
+        if (type === '1')
+            .btn_con
+                button.wuliu(data-id=id) 查看物流
+        else if (type === '2')
+            .code.fs12 券码：#{extra_info.coupon_val}
+            .btn_con
+                button.copy.fs12(data-code=extra_info.coupon_val) 复制兑换码
+        else if (type === '5')
+            .btn_con
+                button.qrcode.fs12(data-code=extra_info.coupon_val) 查看二维码
+       
+        .img_con
+            img(src=extra_info.small_image)

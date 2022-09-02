@@ -1,0 +1,32 @@
+//- Created by garvey on 2017/10/30.
+-
+    var carStatus = require('../../../js/database/carStatus.json')
+    var maskStatus = [3,4,20,24,27,28,29,33,40] //屏蔽的状态值
+
+include ../../../template/base/h5
+    include ../../../template/head/viewport
+    title 停车费列表
+body
+    .searchBox
+        .inputBox
+            input#plateQuery(type="text" placeholder="车牌号")
+            input#vinQuery.fl_r(type="text" placeholder="VIN")
+            input#branchQuery(type="text" placeholder="网点名")
+            select#order.fl_r
+                option(value="5_desc") 时长-从长到短
+                option(value="5_asc") 时长-从短到长
+                option(value="7_desc") 费用-从高到低
+                option(value="7_asc") 费用-从低到高
+            select#carStatus
+                option(value=0) 全部(车辆状态)
+                each k in carStatus
+                    if (maskStatus.indexOf(k.status) === -1)
+                        option(value=k.status) #{k.desc}
+            button.white_btn.fl_r#reset 重置
+            button.blue_btn#search 查询
+        .msgBox
+            .boxToggle.active
+            .msg#cache_time
+            .msg.r#total
+    ul.list.active
+

@@ -1,0 +1,32 @@
+//- Created by garvey on 2018/1/19.
+include ../../../template/base/h5
+    include ../../../template/head/viewport
+    include ../../../template/head/noTelephone
+    include ../../../template/head/wx120
+    title 开立刻出行，分百万现金
+body
+    .banner
+        .title.red.fs46
+            | 已延长
+            span#day.fs70 0
+            | 天
+        .process.fs24
+            span.red#num 0
+            | /10000
+
+
+    .footer.fs12
+        .tips 每个手机号每天可支持一次
+        .name 立刻出行
+
+    .Mask
+        .Box
+            #close
+            p 已给您
+                span.user.red
+                |手机号
+            .line 发送短信验证码请查收
+                span#count 60s
+                span#getCode 重发
+            input#code(type="text" maxlength="4" placeholder="请输入短信验证码")
+            button#verify.fs16 领取

@@ -1,0 +1,26 @@
+//- Created by garvey on 2018/6/25.
+li.item(data-id=id)
+    .job #{name}
+        span.mini （#{num}人）
+    .detail
+        .box
+            .title 岗位职责
+            ul.job_list
+                each item in duty
+                    li.job_item #{item}
+        .box
+            .title 任职要求
+            ul.job_list
+                each item in skill
+                    li.job_item #{item}
+        .form
+            label.label
+                span 姓名
+                input.input.name(placeholder='请输入您的姓名')
+            label.label
+                span 电话
+                input.input.phone(placeholder='请输入您的电话' maxlength=11)
+            label.label
+                span 岗位
+                input.input.no-border(value=name readonly=true)
+            button.btn(data-id=id) 提 交

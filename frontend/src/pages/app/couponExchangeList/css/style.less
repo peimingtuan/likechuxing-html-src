@@ -1,0 +1,75 @@
+@import '../../../../css/font';
+@import '../../../../css/reset.css';
+@import './css-loading.css';
+
+body{
+  background-color: #f7f7f7;
+}
+.history_list{
+  border-top:solid 1px transparent;
+}
+li{
+  background-color: #fff;
+  border-top:solid 1px #DFDFDF;
+  border-bottom:solid 1px #DFDFDF;
+  margin:0.16rem 0;
+  .title{
+    margin-left: 0.2rem;
+    padding-right: 0.2rem;
+    font-size: 0.19rem;
+    color:#111;
+    border-bottom:solid 1px #dfdfdf;
+    line-height: 0.19rem;
+    padding: .2rem .2rem .2rem 0;
+    .num{
+      font-size: 0.16rem;
+      float: right;
+    }
+  }
+  .des{
+    margin-left:0.2rem;
+    padding-right: 0.2rem;
+    font-size:12px;
+    color:#999;
+    padding: .14rem .2rem .14rem 0;
+    line-height: .12rem;
+    .time{
+      float:right;
+    }
+  }
+}
+.loading{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  font-size: 0.13rem;
+  text-align: center;
+  color:#E3E3E3;
+  .load{
+    margin:50% auto 5%;
+    width:2em;
+    height: 2em;
+  }
+}
+.empty{
+  display: none;
+  position: fixed;
+  top:25%;
+  left:0;
+  width:100%;
+  text-align: center;
+  .img{
+    margin:0 auto;
+    width:60%;
+    height: 1rem;
+    background: url('../images/empty.png') no-repeat center;
+    background-size: contain;
+  }
+  p{
+    padding-top: 0.1rem;
+    color:#999;
+    font-size: 0.12rem;
+  }
+}

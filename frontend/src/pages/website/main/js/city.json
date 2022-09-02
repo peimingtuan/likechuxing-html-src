@@ -1,0 +1,37 @@
+[
+  {
+    "city": "北京",
+    "pinyin": "beijing",
+    "job_page_img_name": "job_beijing.jpg"
+  },
+  {
+    "city": "广州",
+    "pinyin": "guangzhou",
+    "job_page_img_name": "job_guangzhou.jpg"
+  },
+  {
+    "city": "成都",
+    "pinyin": "chengdu",
+    "job_page_img_name": "job_chengdu.jpg"
+  },
+  {
+    "city": "天津",
+    "pinyin": "tianjin",
+    "job_page_img_name": "job_beijing.jpg"
+  },
+  {
+    "city": "武汉",
+    "pinyin": "wuhan",
+    "job_page_img_name": "job_beijing.jpg"
+  },
+  {
+    "city": "长沙",
+    "pinyin": "changsha",
+    "job_page_img_name": "job_beijing.jpg"
+  },
+  {
+    "city": "南京",
+    "pinyin": "nanjing",
+    "job_page_img_name": "job_beijing.jpg"
+  }
+]

@@ -1,0 +1,158 @@
+/* @import "/component/confirm/confirmBox.acss"; */
+page{
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    flex:1;
+    padding-top: 64rpx;
+    padding-left: 50rpx;
+    padding-right: 50rpx;
+}
+.titleWrap{
+    margin-bottom: 40rpx;
+}
+.title{
+    font-family: PingFangSC-Medium;
+    font-size: 34rpx;
+    color: #282B34;
+}
+.formGroup{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 2rpx solid rgba(40,43,52,0.6);
+}
+.formInput{
+    flex:1;
+    height: 96rpx;
+    background: transparent;
+    font-family: PingFangSC-Regular;
+    font-size: 34rpx;
+    color: #22252C;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+.placeholderClass{
+    font-family: PingFangSC-Regular;
+    font-size: 34rpx;
+    color: #999999;
+}
+.formLeft{
+    flex:1;
+    height: 96rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.formRightInput{
+    flex:1;
+    height: 96rpx;
+    background: transparent;
+    font-family: PingFangSC-Regular;
+    font-size: 34rpx;
+    color: #22252C;
+    padding-top: 0;
+    padding-bottom: 0; 
+    padding-left: 0;
+}
+.btn{
+    width:236rpx;
+    height: 96rpx;
+    padding-left: 30rpx;
+    padding-top: 12rpx;
+    padding-bottom: 12rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btnText{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 72rpx;
+    padding-left: 16rpx;
+    border-left: 2rpx solid  #D3D3D3;
+}
+.btnTextClass{
+    width:100%;
+    font-family: PingFangSC-Regular;
+    font-size: 30rpx;
+    color: #22252C;
+}
+.descBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 40rpx;
+}
+.descIcon{
+    width: 16px;
+    height: 16px;
+    margin-right: 20rpx;
+    border:1px solid #D3D3D3;
+    border-radius: 50%;
+    position: relative;   
+}
+.descIconActive{
+    width: 8px;
+    height: 8px;
+    background: #282B34;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    margin-left: -4px;
+    margin-top: -4px;
+}
+.desc{
+  display: flex;
+  justify-content: center;
+}
+.descTxt{
+    font-family: PingFangSC-Regular;
+    font-size: 24rpx;
+    color: #999;
+    letter-spacing: 0;
+}
+.clause{
+    font-family: PingFangSC-Regular;
+    font-size: 24rpx;
+    color: #5D7BAF;
+    letter-spacing: 0;
+}
+.footer{
+    font-family: PingFangSC-Regular;
+    font-size: 24rpx;
+    color: #848C99;
+    text-align: center;
+}
+.footerDesc{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.footerDesc .line{
+    width:194rpx;
+    height: 1px;
+    background: #D4DAE4;
+}
+.footerDescText{
+    margin-left: 22rpx;
+    margin-right: 22rpx;
+}
+.aliLoginWrap{
+    height: 234rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aliLoginIcon{
+    width: 120rpx;
+    height: 120rpx;
+    background: url('/image/aliLogin.png') no-repeat;
+    background-size: 100%;
+}

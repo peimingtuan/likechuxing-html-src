@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <title>查看定位</title>
+    <script src="https://g.alicdn.com/dingding/open-develop/1.9.0/dingtalk.js"></script>
+    <script type="text/javascript"
+            src="https://api.map.baidu.com/api?v=2.0&ak=fqCNAr6UAW542snWLf3dCaYH9vXAOgD8&s=1"></script>
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.4&key=91ed10906005ee88866f14fd9f076e8b"></script>
+</head>
+<body>
+<script>
+    !(function(c,b,d,a){c[a]||(c[a]={});c[a].config={pid:"gruqqi6cbp@6594c08d3216a5d",imgUrl:"https://arms-retcode.aliyuncs.com/r.png?"};
+        with(b)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("crossorigin","",src=d)
+    })(window,document,"https://retcode.alicdn.com/retcode/bl.js","__bl");
+</script>
+<div class="mapWarp" id="mapWarp"></div>
+<div class="btn-box none">
+    <a href="javascript:;" class="back-btn" onclick="window.history.back();">返回</a>
+</div>
+<!--刷新页面-->
+<span class="refurepage-icon none">&#xe8d0;</span>
+<span class="navigation none">&#xe88a;</span>
+<div class="car_location none"><img src="" /></div>
+<div class="car_icon none"><img src="" /></div>
+<div class="coating_icon none"><img src="" /></div>
+<!--alert导航弹框-->
+<div class="alert_window common_cover none">
+    <div class="navigation_content">
+        <div>
+            请选择定位方式
+        </div>
+        <ul class="navigation-list">
+            <li class="qubelocation">
+                <img src="" alt=""/>
+                车机定位
+            </li>
+            <li class="coating">
+                <img src="" alt=""/>
+                涂强定位
+            </li>
+            <li class="locationnet">
+                <img src="" alt=""/>
+                当前网点
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

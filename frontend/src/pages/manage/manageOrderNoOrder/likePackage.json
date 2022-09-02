@@ -1,0 +1,26 @@
+{
+  "id": 4034,
+  "zh_name": "管理端App-无单启动",
+  "name": "manageOrderNoOrder",
+  "group": "manage",
+  "bundle_vendor": false,
+  "copy":true,
+  "dll":[
+    "vuer"
+  ],
+  "input_file": {
+    "index": [
+      "index.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/manage/manageOrderNoOrder/",
+    "publicPath": "/",
+    "filename": "js/manage_manageOrderNoOrder/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.html"
+    ]
+  }
+}

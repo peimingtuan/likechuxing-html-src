@@ -1,0 +1,23 @@
+{
+  "id": 4017,
+  "zh_name": "dispatchCar4",
+  "name": "dispatchCar4",
+  "group": "manage",
+  "bundle_vendor": false,
+  "copy": true,
+  "input_file": {
+    "index": [
+      "index.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/manage/dispatchCar4/",
+    "publicPath": "/",
+    "filename": "js/manage_dispatchCar4/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.html"
+    ]
+  }
+}

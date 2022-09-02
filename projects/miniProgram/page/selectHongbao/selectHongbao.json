@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "红包",
+  "usingComponents":{
+      "select-item":"/component/selectItem/selectItem",
+      "desc-modal":"/component/descModal/descModal"
+  }
+}

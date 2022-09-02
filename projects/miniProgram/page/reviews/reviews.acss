@@ -1,0 +1,76 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header{
+    height: 80rpx;
+}
+.iconGroup{
+    width:380rpx;
+    display: flex;
+    justify-content: center;
+    font-family: PingFangSC-Regular;
+    font-size: 28rpx;
+    color: #2A2D36;
+    letter-spacing: 0;
+    margin-top: 48rpx;
+    margin-bottom: 40rpx;
+}
+.iconGroup .icon{
+    width: 120rpx;
+    height: 120rpx;
+    margin-bottom: 14rpx;
+}
+.iconGroup .left{
+    width: 120rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.iconGroup .right{
+    width: 120rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.iconGroup .left .icon{
+    background: url('/image/facemy.png') no-repeat;
+    background-size: 120rpx 120rpx;
+}
+.iconGroup .left .icon.on{
+    background: url('/image/facemyon.png') no-repeat;
+    background-size: 120rpx 120rpx;
+}
+.iconGroup .right .icon{
+    background: url('/image/facebmy.png') no-repeat;
+    background-size: 120rpx 120rpx;
+}
+.iconGroup .right .icon.on{
+    background: url('/image/facebmyon.png') no-repeat;
+    background-size: 120rpx 120rpx;
+}
+.btn-group {
+    width: 500rpx;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.btn-group .item{
+    width:240rpx;
+    height: 68rpx;
+    border: 1px solid rgba(132,140,153,0.30);
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20rpx;
+    color: #848C99;
+}
+.btn-group .item.on{
+    width:240rpx;
+    height: 68rpx;
+    border: 1px solid #2A2D36;
+    border-radius: 2px;
+    color: #22252C;
+}

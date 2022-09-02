@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, user-scalable=no"/>
+    <script src="https://webapi.amap.com/maps?v=1.3&key=91ed10906005ee88866f14fd9f076e8b"></script>
+    <script src="https://webapi.amap.com/ui/1.0/main.js?v=1.0.10"></script>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <title>App PV热力图</title>
+</head>
+<body>
+<div class="input_con">
+    <label>开始时间：<input id="begin" type="text" /></label><br />
+    <label>结束时间：<input id="end" type="text" /></label><br />
+    <label>
+        数据类别：
+        <select id="select">
+            <option value="0">pv</option>
+            <option value="1">uv</option>
+            <option value="2">还车网点</option>
+            <option value="3">取车网点</option>
+        </select>
+    </label>
+    <br />
+    <button id="branch" style="font-size: 14px">显示/隐藏网点</button><br />
+    <button class="btn">查 询</button><br />
+    <p class="info">点击查看更多↓</p>
+    <div class="info_con">
+        <div>
+            当前数据条数：<span id="total">0</span>条
+        </div>
+        <div>
+            <p>热力等级：</p>
+            <ul id="show_hot_level">
+            </ul>
+        </div>
+        <div class="set_hot">
+            <p>修改热力等级的最大值：</p>
+            <label>当前等级：<input id="hot_level" /></label>
+            <button id="save_hot">重绘</button>
+        </div>
+        <span id="level"></span>
+        <div class="draw_grid">
+            <p class="title">绘制栅格：</p>
+            <label>
+                栅格间距：
+                <select id="grid_step">
+                    <option value="200">200米</option>
+                    <option value="500" selected>500米</option>
+                    <option value="800">800米</option>
+                    <option value="1000">1公里</option>
+                </select>
+                <button id="addGrid">增加栅格图层</button>
+                <button id="drawLine">绘制栅格</button>
+                <button id="removeGrid">删除图层</button>
+            </label>
+        </div>
+    </div>
+</div>
+<div class="setting"></div>
+<div id="map"></div>
+<div id="loadingToast">
+    <div class="weui-toast">
+        <div class="weui-loading weui-icon_toast"></div>
+        <p class="weui-toast__content">加载中...</p>
+    </div>
+</div>
+<div id="toast-con" style="display: none;position:fixed;width:100vw;height: 100vh;top:0;left:0;z-index:1">
+    <p id="toast-msg" style="width: 70vw;padding: 10px;background: rgba(0,0,0,0.8);border-radius: 3px;color: #fff;text-align: center;margin:40vh auto 0"></p>
+</div>
+<script>
+	$( "#begin,#end" ).datepicker();
+</script>
+</body>
+</html>

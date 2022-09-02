@@ -1,0 +1,95 @@
+.downloadFooter{
+  position: fixed;
+  width: 100%;
+  padding: 0 0.15rem;
+  box-sizing: border-box;
+  bottom:0;
+  height: 0.4rem;
+  background-color: #fff;
+  .logo_con{
+    position: absolute;
+    left:0.15rem;
+    top:0.05rem;
+    width:0.3rem;
+    height:0.3rem;
+    background: url('../../images/logo.png') no-repeat center;
+    background-size: 100%;
+  }
+  p{
+    line-height: 0.4rem;
+    text-align: center;
+    text-indent: -4em;
+    transform: scale(0.9);
+    font-size: 0.12rem;
+  }
+  .toYYB{
+    position: absolute;
+    top:0.05rem;
+    right:0.15rem;
+    border:none;
+    border-radius: 3px;
+    margin:0;
+    padding: 0;
+    height: 0.3rem;
+    width:7em;
+    font-size: 0.12rem;
+    transform: scale(0.8);
+    background-color: #FDD74E;
+  }
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both
+}
+.animated.faster {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+}
+.animated.fast {
+  -webkit-animation-duration: 0.6s;
+  animation-duration: 0.6s;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite
+}
+
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s
+}
+
+@-webkit-keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+}

@@ -1,0 +1,9 @@
+//- Created by garvey on 2017/11/24.
+-require('./leave.less')
+
+.mask
+    .leaveBox.animated.fast.zoomIn
+        .item 操作 #{plate_no} 出场？
+        input#money(type="text" placeholder="请输入停车费")
+        textarea#remark(placeholder="备注")
+        button.blue_btn#leave_btn(data-id=id) 提交

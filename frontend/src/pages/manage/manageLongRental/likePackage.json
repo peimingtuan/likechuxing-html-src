@@ -1,0 +1,26 @@
+{
+  "id": 4010,
+  "zh_name": "管理App长租车辆数",
+  "name": "manageLongRental",
+  "group": "manage",
+  "bundle_vendor": false,
+  "copy": {
+    "directory": "../../likechuxing-html/manage/",
+    "files": "../../likechuxing-html/manage/longRental/"
+  },
+  "input_file": {
+    "index": [
+      "index.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/manage/manageLongRental/",
+    "publicPath": "/",
+    "filename": "js/manage_manageLongRental/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.pug"
+    ]
+  }
+}

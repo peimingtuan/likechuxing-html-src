@@ -1,0 +1,30 @@
+<view class="container">
+    <view class="header">
+        <view class="icon icon-left"></view>
+        <text>请您对立刻本次服务做评价</text>
+        <view class="icon icon-right"></view>
+    </view>
+    <view class="iconGroup">
+        <view class="left" onTap="tabBtn" data-index=1>
+            <view class="icon {{current==1?'on':''}}"></view>
+            <text>满意</text>
+        </view>
+        <view class="right" onTap="tabBtn" data-index=2>
+            <view class="icon {{current==2?'on':''}}"></view>
+            <text>不满意</text>
+        </view>
+    </view>
+    <view class="btn-group" a:if="{{current==1}}" >
+        <view class="item {{item.checked?'on':''}}" a:for="{{list1}}" onTap="select" data-index="{{index}}">
+            <text>{{item.des}}</text>
+        </view>
+    </view>
+    <view class="btn-group" a:if="{{current==2}}">
+        <view class="item {{item.checked?'on':''}}" a:for="{{list2}}" onTap="select" data-index="{{index}}">
+            <text>{{item.des}}</text>
+        </view>
+    </view>
+    <view class="btn" onTap="postData">
+        <text>提交</text>
+    </view>
+</view>

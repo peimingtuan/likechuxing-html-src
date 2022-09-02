@@ -1,0 +1,14 @@
+//- Created by garvey on 2017/12/21.
+-require('./successBox.less')
+.successBox
+    img.success_img(src=require('../../images/success.png'))
+    .title.fs20 恭喜您获得
+    .name.fs13 #{name}
+        if (type === 2)
+            .code 券码：#{coupon_val}
+        if (type === 3 || type === 4)
+            div 30分钟内请注意查收
+    if (type === 2)
+        .btn_con_copy
+            button#copy.white_btn 复制兑换码
+    img.goods_img(src=small_image)

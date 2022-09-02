@@ -1,0 +1,27 @@
+{
+  "id": 1006,
+  "zh_name": "使用优惠券",
+  "name": "couponUse",
+  "group": "app",
+  "ver": "2.0.0",
+  "bundle_vendor": false,
+  "dll":[
+    "vue"
+  ],
+  "copy": true,
+  "input_file": {
+    "index": [
+      "index.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/app/couponUse/",
+    "publicPath": "/",
+    "filename": "js/app_couponUse/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.html"
+    ]
+  }
+}

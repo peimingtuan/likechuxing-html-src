@@ -1,0 +1,25 @@
+{
+  "id": 3022,
+  "zh_name": "静态页-蓝牙问题解决说明",
+  "name": "bluetoothDescd",
+  "group": "static",
+  "ver": "1.1.0",
+  "bundle_vendor": false,
+  "copy":true,
+  "input_file": {
+    "index": [
+      "index.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/static/bluetoothDescd/",
+    "publicPath": "/",
+    "filename": "js/static_bluetoothDescd/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.html"
+    ],
+    "importAll":false
+  }
+}

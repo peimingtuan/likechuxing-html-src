@@ -1,0 +1,95 @@
+/*上报故障类型*/
+.none{
+    display:none;
+}
+.faultwork-top {
+    box-sizing: border-box;
+    margin-top: .117rem;
+    height: .98rem;
+    background: #fff;
+    border-top: 1px solid #f6f6f6;
+}
+
+.faultwork-top .content, .faultwork-bottom .content {
+    box-sizing: border-box;
+    height: .47rem;
+    line-height: .47rem;
+    margin-left: .188rem;
+    border-top: 1px solid #f6f6f6;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.faultwork-top .title, .faultwork-bottom .title {
+    box-sizing: border-box;
+    height: .516rem;
+    line-height: .516rem;
+    font-size: .164rem;
+    padding-left: .117rem;
+}
+
+/*弹层故障类型*/
+.faultcontent {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 3.75rem;
+    height: 4.225rem;
+    background: #fff;
+}
+
+.faultcontent .title {
+    height: .468rem;
+    line-height: .469rem;
+    text-align: center;
+}
+
+.faultcontent .close-btn {
+    font-family: 'iconfont';
+    margin-right: .117rem;
+}
+
+.faultcontent .content {
+    height: 3.75rem;
+    overflow-y: scroll;
+}
+
+.faultcontent .content p {
+    height: .469rem;
+    line-height: .469rem;
+    padding-left: .117rem;
+    border-bottom: 2px solid #f6f6f6;
+}
+
+.faultcontent .content p .choice-type {
+    display: inline-block;
+    margin-right: .234rem;
+}
+
+.faultcontent .content p .choice {
+    display: inline-block;
+    color: #44a8ec;
+    border-bottom: 2px solid #44a8ec;
+}
+
+.faultcontent ul li {
+    padding-left: .117rem;
+    line-height: .469rem;
+}
+
+/*一级分类*/
+.faulttype-list li img {
+    width:.234rem;
+    margin-left:.234rem;
+}
+
+.font-color {
+    color: #44a8ec;
+}
+
+/*二级分类*/
+.faultchoice-list li img {
+    width:.234rem;
+    margin-left: .234rem;
+}

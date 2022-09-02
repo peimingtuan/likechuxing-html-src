@@ -1,0 +1,116 @@
+page{
+    background: #f2f2f2;
+}
+.container{
+    width:100%;
+    height: 100%;
+}
+.headerBg{
+    height: 290rpx;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:1px solid #d3d3d3;
+}
+.bailRecordingBox{
+    width:100%;
+    padding-right: 30rpx;
+    margin-top: 14rpx;
+    margin-bottom: 26rpx;
+    text-align: right;
+}
+.bailRecording{
+    font-family: PingFangSC-Regular;
+    font-size: 22rpx;
+    color: #848C99;
+}
+.bailDesc{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 14rpx;
+}
+.bailDesc .bailTitle{
+    font-family: PingFangSC-Regular;
+    font-size: 28rpx;
+    color: #848C99;
+    margin-right: 8rpx;
+}
+.bailImg{
+    width: 26rpx;
+    height: 26rpx;
+}
+.amount{
+    font-family: HelveticaNeue-Medium;
+    font-size: 80rpx;
+    color: #22252C;
+}
+.payWrap{
+    height: 116rpx;
+    background: #fff;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+}
+.payDesc{
+    flex:1;
+    display: flex;
+    align-items: center;
+}
+.payIcon{
+    width: 44rpx;
+    height: 44rpx;
+}
+.payName{
+    font-family: PingFangSC-Regular;
+    font-size: 28rpx;
+    color: #22252C;
+    margin-left: 10rpx;
+}
+.checkImg{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #D4DAE4;
+    border-radius: 50%;
+    position: relative;
+}
+.checkImg::before{
+    content: '';
+    width:10px;
+    height: 10px;
+    background: #6FC47A;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -5px;
+    margin-left: -5px;
+    border-radius: 50%;
+}
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width:100%;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    padding-bottom: 30rpx;
+}
+.btnWrap{
+    height: 104rpx;
+    background: #2B2E37;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 104rpx;
+}
+.btnText{
+    font-family: PingFangSC-Regular;
+    font-size: 34rpx;
+    color: #FFFFFF;
+    text-align: center;
+}
+

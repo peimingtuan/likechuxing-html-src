@@ -1,0 +1,299 @@
+body {
+    background: #f6f6f6;
+}
+
+.selectdetail-content {
+    box-sizing: border-box;
+    width: 100%;
+    height: 2rem;
+    background: #fff;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.selectdetail-content > p:first-of-type {
+    box-sizing: border-box;
+    height: 2rem;
+    padding: 0 .5rem;
+}
+
+.selectdetail-content .p1 span {
+    box-sizing: border-box;
+    font-family: 'iconfont';
+    display: inline-block;
+    width: 7.4rem;
+    line-height: 2rem;
+    text-align: center;
+    border-right: 1px solid #fbfbfb;
+}
+
+.selectdetail-content .p1 .detailRefle {
+    border-right: none;
+}
+
+.selectstockList li {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    /*height: 6rem;*/
+    padding: .5rem .5rem .8rem;
+    background:#fff;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.selectstockList li>span {
+    display: inline-block;
+    line-height: 1.2rem;
+    padding: .1rem .2rem;
+    margin-top: .15rem;
+}
+
+.selectstockList li span:first-of-type {
+    font-size: .7rem;
+}
+
+.selectstockList li span:nth-of-type(2) {
+    margin-right: 1rem;
+    /*color: #4caced;*/
+    /*border: 1px solid #4caced;*/
+}
+
+/*新增样式圆点标符*/
+.circle{
+    width: 5px;
+    height: 5px;
+    background: #4caced;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: .2rem;
+    position: relative;
+    top: -.1rem;
+}
+
+.selectstockList li span:nth-of-type(4) {
+    width: 11rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.selectstockList li span:nth-of-type(5) {
+    float: right;
+}
+
+.selectstockList li span font {
+    margin: 0 .2rem;
+    color: red;
+}
+
+.netlocation font {
+    color: #4caced;
+}
+
+.selectstockList li span img {
+    width: .8rem;
+    vertical-align: middle;
+    margin-right: .3rem;
+}
+
+/*查询网点车辆详情*/
+.netdetail-content {
+    width: 100%;
+    /*height: 6rem;*/
+    background:#fff;
+    box-sizing: border-box;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.netdetail-content > p:first-of-type {
+    /*height: 3rem;*/
+    padding: .5rem;
+}
+
+.netdetail-content > .div1{
+    direction: rtl;
+    padding-right: .5rem;
+}
+
+.netdetail-content img {
+    margin-right: .3rem;
+    width: .8rem;
+    vertical-align: middle;
+}
+
+.netdetail-content span {
+    display: inline-block;
+    line-height: 1rem;
+}
+
+.netdetail-content .net-name{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 12rem;
+}
+
+.netdetail-content .right font, .navigation-icon font {
+    padding: 0 .2rem;
+}
+
+.find-norecordcar {
+    margin: 0 0 .5rem;
+    border: 1px solid;
+    padding: .1rem .3rem;
+    border-radius: 2px;
+}
+
+.selectcardetail{
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    /*height: 7.5rem;*/
+    padding: .8rem .5rem;
+    border-top: 1px solid #dcdcdc;
+}
+
+.selectcardetail span .font1 {
+    color: #999999;
+    margin-right: .1rem;
+}
+
+.selectcardetail span {
+    display: inline-block;
+    line-height: 1rem;
+    padding: .1rem;
+    margin-top: .15rem;
+}
+
+.selectcardetail span:nth-of-type(2) {
+    float: right;
+    color: #666666;
+}
+
+.selectcardetail span:nth-of-type(3) {
+    margin-right: .2rem;
+    border: 1px solid #dcdcdc;
+}
+
+.selectcardetail span:nth-of-type(4) {
+    margin-right: .2rem;
+    border: 1px solid #dcdcdc;
+}
+
+.selectcardetail span:nth-of-type(5) {
+    border: 1px solid #dcdcdc;
+}
+
+.selectcardetail .car-notnet {
+    border: 1px solid black;
+    padding: .1rem .3rem;
+    border-radius: 2px;
+}
+
+.netdetail-nextbtn {
+    position: fixed;
+    bottom: 0;
+    width: 16rem;
+    padding: .5rem;
+    background: #fff;
+    box-sizing: border-box;
+    box-shadow: 0px -2px 1px #eaeaea;
+}
+
+.netdetail-nextbtn button {
+    width: 15rem;
+    line-height: 1.9rem;
+    text-align: center;
+    background: #fff;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.submit-info{
+    border:1px solid #44a8ec!important;
+    color:#44a8ec;
+}
+
+/*弹框*/
+.common_cover2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .44);
+    z-index: 10;
+}
+
+.net-content1 {
+    width: 12rem;
+    height: 6rem;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    margin-top: -3rem;
+    margin-left: -6rem;
+    box-sizing: border-box;
+}
+
+.net-content2 {
+    width: 12rem;
+    height: 8rem;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    margin-top: -4rem;
+    margin-left: -6rem;
+    box-sizing: border-box;
+}
+
+.net-content1 .top {
+    padding: 1rem 0;
+    text-align: center;
+    height: 4rem;
+    line-height: 1rem;
+    box-sizing: border-box;
+}
+
+.net-content2 .top {
+    padding: 1rem 0;
+    text-align: center;
+    height: 6rem;
+    line-height: 1rem;
+    box-sizing: border-box;
+}
+
+.net-content1 .top .span1, .net-content2 .top .span1 {
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.net-content1 .bottom, .net-content2 .bottom {
+    box-sizing: border-box;
+    height: 2rem;
+    border-top: 1px solid #ececec;
+}
+
+.net-content1 .bottom span, .net-content2 .bottom span {
+    display: inline-block;
+    width: 6rem;
+    line-height: 1.95rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.net-content1 .qure, .net-content2 .qure2 {
+    color: #65b7ef;
+    border-left: 1px solid #ececec;
+}
+
+.net-content2 .plate-num {
+    width: 10rem;
+    height: 1.2rem;
+    margin-top: .5rem;
+}

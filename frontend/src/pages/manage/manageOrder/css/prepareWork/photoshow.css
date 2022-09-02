@@ -1,0 +1,35 @@
+.photoshow-content {
+    margin: 1rem .5rem 0;
+    width: 15rem;
+    box-sizing: border-box;
+}
+
+.photoshow-content .photo-img {
+    display: inline-block;
+    width: 7rem;
+    height: 7rem;
+    margin-bottom: .5rem;
+}
+
+.photoshow-content .photo-img:nth-of-type(odd) {
+    margin-right: .8rem;
+}
+
+.photoshow-content .photo-img img {
+    width: 7rem;
+    height: 7rem;
+}
+
+.note{
+    margin:.5rem;
+    line-height:1rem;
+}
+
+.word-show {
+    margin: 0 .5rem;
+}
+
+.word-show p {
+    line-height: 1rem;
+    text-align: justify;
+}

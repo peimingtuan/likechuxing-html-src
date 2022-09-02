@@ -1,0 +1,19 @@
+<view class="container">
+    <view class="header">
+    </view>
+    <view class="iconGroup">
+        <view class="left" a:if="{{type==0}}">
+            <view class="icon on"></view>
+            <text>满意</text>
+        </view>
+        <view class="right" a:if="{{type==1}}">
+            <view class="icon on"></view>
+            <text>不满意</text>
+        </view>
+    </view>
+    <view class="btn-group" >
+        <view class="item {{item.checked?'on':''}}" a:for="{{list}}" >
+            <text>{{item.des}}</text>
+        </view>
+    </view>
+</view>

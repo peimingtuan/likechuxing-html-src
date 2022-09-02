@@ -1,0 +1,30 @@
+//- Created by garvey on 2018/1/14.
+-require('./explain.less')
+.ActivityExplain
+    .item
+        .title.fs14 活动时间
+        .desc.fs13 2018年1月25日 —— 2018年2月10日
+    .item
+        .title.fs14 活动内容
+        .desc.fs12 活动期间，每日首单（里程大于0）可返现。
+    .item
+        .title.fs14 活动规则
+        ul.desc_ul.fs12
+            li
+                .index ①
+                .desc_li 活动期间，用户每日首单行驶里程≥20公里，可享受开1公里返1元现金。单日最多可返现50元。
+
+            if(channel === 'wxad')
+                li
+                    .index ②
+                    .desc_li 订单结束后，按系统提示提交支付宝信息（须为本人名下支付宝账户）可进行提现，审核通过后，兑换金额将实时存入该支付宝账户。
+            else
+                li
+                    .index ②
+                    .desc_li 订单结束后，按系统提示提交支付宝信息（须为本人名下支付宝账户）可进行提现，审核通过后，兑换金额将实时存入该支付宝账户。
+            li
+                .index ③
+                .desc_li 每个用户每日仅限首单（以下单时间为准，跨夜订单归为下单当日的订单）参与活动。
+            li
+                .index ④
+                .desc_li 可提现金额请在2月11日前完成提取，逾期未提将视为放弃相关奖励。

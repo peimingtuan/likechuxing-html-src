@@ -1,0 +1,52 @@
+//- Created by garvey on 2018/3/7.
+.banner
+    img(src=require('../../images/banner_guangzhou.jpg'))
+.login
+    input#phone(type="text" maxlength="11" placeholder="请输入手机号")
+    input#code(type="text" maxlength="4" placeholder="请输入验证码")
+    button#getCode.dark_btn.disabled 获取验证码
+    button#verify.dark_btn.disabled 领取优惠券
+.box
+    .title
+        .box_title
+            span.icon_con(class='icon_1')
+            span 注册说明
+    .content
+        p 1. 下载“立刻出行”APP，完成注册认证后即可租车。
+            p
+                | 2. 输入手机号码注册领取
+                b 50元
+                | 优惠券（相当于免费用车3小时+30公里）。
+.box
+    .title
+        .box_title
+            span.icon_con(class='icon_2')
+            span 选择车型
+    .content
+        p 1. 近千辆车遍布广州各大商圈及生活区。
+            p
+                | 2. 当前优惠最低只需
+                b 1
+                | 元／公里+
+                b 0.1
+                | 元 / 分钟。
+            img(src=require('../../images/cars_guanghzou.jpg'))
+.box
+    .title
+        .box_title
+            span.icon_con(class='icon_3')
+            span 使用流程
+    .content
+        img(src=require('../../images/step.jpg'))
+.box
+    .title
+        .box_title
+            span.icon_con(class='icon_4')
+            span 公司介绍
+    .content
+        p
+            b.noMLeft 立刻出行
+            | ，基于移动互联网的汽车分时共享平台，致力于解决城市出行问题，为租客带来更加舒适、快捷的自驾出行体验。
+        p 用户无需负担油费电费，网点密布覆盖，全天随租随走，手机一键取还。
+        p 喜欢你就，立刻出发！
+

@@ -1,0 +1,92 @@
+<import-sjs from="/sjs/filter.sjs" name="filter" />
+<view class="container" a:if="{{pageIsShow}}">
+    <view class="headerBg">
+        <view class="logoutBox" onTap="_logout" a:if="{{logoutBtn}}"> 
+            <text class="logoutText">退出登录</text>
+        </view>
+    </view>
+    <view class="body">
+        <view class="bodyHeaderWrap">
+            <view class="bodyHeader">
+                <view class="avatarBox" >
+                    <image class="avatar" src="{{info.profile_photo}}" mode="aspectFill" />
+                </view>
+                <view class="bodyHeaderDesc">
+                    <view class="desc">
+                        <text class="phone">{{info.mobile}}</text>
+                        <view class="labelBox {{info.license_status==0?'on':''}}">
+                            <text class="label" a:if="{{info.license_status==0}}">已认证</text>
+                            <text class="label" a:if="{{info.license_status!=0}}">未认证</text>
+                        </view>
+                    </view>
+                    <view class="overBox">
+                        <text class="over">余额：{{filter.numTofixed(info.money)}}元</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="btnGroup">
+            <view class="btnItem rightBoder" onTap="goRecharge">
+                <view class="iconWrap">
+                    <image src="../../image/cz.png" mode="aspectFit" class="btnImgcz"  />
+                </view>
+                <text class="btnText">我要充值</text>
+                <view class="tip" a:if="{{info.charge_discount}}">
+                    <view class="txt">
+                        <text>{{info.charge_discount}}</text>
+                    </view>
+                    <view class="triangle"></view>
+                </view>
+            </view>
+            <view class="btnItem rightBoder" onTap="goCoupon" >
+                <view class="iconWrap">
+                    <image src="../../image/coupon.png" mode="aspectFit" class="btnImg3"/>
+                    <view class="badge" a:if="{{couponNum!=0}}">
+                        <text>{{couponNum}}</text>
+                    </view>
+                </view>
+                <text class="btnText">优惠</text>
+            </view>
+            <view class="btnItem" onTap="goMyTrip">
+                <view class="iconWrap">
+                    <image src="../../image/mytrip.png" mode="aspectFit" class="btnImgtrip"  />
+                </view>
+                <text class="btnText">我的行程</text>
+                <view class="tip" a:if="{{info.rental_desc}}">
+                    <view class="txt">
+                        <view class="desi">{{info.rental_desc}}</view>
+                    </view>
+                    <view class="triangle"></view>
+                </view>
+            </view>
+            <view class="btnItem rightBoder" onTap="goLicense">
+                <view class="iconWrap">
+                    <image src="../../image/authentication.png" mode="aspectFit" class="btnImg1" />
+                </view>
+                <text class="btnText">身份认证</text>
+            </view>
+            <view class="btnItem rightBoder" onTap="goBail">
+                <view class="iconWrap">
+                    <image src="../../image/bail.png" mode="aspectFit" class="btnImg2"  />
+                </view>
+                <text class="btnText">保证金</text>
+            </view>
+        </view>
+    </view>
+    <view class="footer">
+        <image src="{{info.activity_img_url}}" mode="aspectFill" class="footerBg" onTap="goinvitePage" />
+        <view class="footerDesc">
+            <view onTap="callPhone">
+                <text class="footerDescLabel">客服热线：</text>
+                <text class="tel">400-666-2333</text>
+            </view>
+            <view class="tip">
+                <text class="footerDescText">更多功能请使用</text>
+                <text class="footerDescBtnText">立刻出行APP</text>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="loadingBox" a:if="{{!pageIsShow}}">
+    <view class="loadingIcon"></view>
+</view>

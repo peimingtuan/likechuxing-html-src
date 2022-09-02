@@ -1,0 +1,23 @@
+{
+  "id": 997,
+  "zh_name": "likePostMan",
+  "name": "likePostMan",
+  "group": "test",
+  "bundle_vendor": false,
+  "copy": true,
+  "input_file": {
+    "index": [
+      "index.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/test/likePostMan/",
+    "publicPath": "/",
+    "filename": "js/test_likePostMan/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.pug"
+    ]
+  }
+}

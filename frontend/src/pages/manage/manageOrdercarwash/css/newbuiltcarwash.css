@@ -1,0 +1,78 @@
+#newbuiltcarwash .header{
+    padding:.12rem;
+    background:#fff;
+    border-bottom:1px solid #dcdcdc;
+}
+
+#newbuiltcarwash .header .span1{
+    color: #999999;
+}
+
+#newbuiltcarwash .header  .font1{
+    font-weight:bold;
+}
+
+#newbuiltcarwash .header  .span2{
+    padding:0 .12rem;
+    border-radius:2px;
+    border:1px solid #999999;
+}
+
+#newbuiltcarwash .header  .span3{
+    padding:0 .12rem 0 0;
+    border-right:1px solid #dcdcdc;
+}
+
+#newbuiltcarwash .header  .span4{
+    padding:0 .12rem;
+    line-height:.35rem;
+}
+
+#newbuiltcarwash .net-info{
+    display:flex;
+    display: -webkit-flex; /* Safari */
+    justify-content:space-between;
+}
+
+#newbuiltcarwash .net-name{
+    width: 3rem;
+    color: gray;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#newbuiltcarwash .daoh1{
+    width: .2rem;
+    height:.2rem;
+}
+
+#newbuiltcarwash .top{
+    margin:.12rem 0;
+    padding:0 .12rem;
+    height:.46rem;
+    background:#fff;
+    /*border-bottom:1px solid #dcdcdc;*/
+}
+
+#newbuiltcarwash .top span {
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    margin-right: .23rem;
+    margin-top: .12rem;
+}
+
+#newbuiltcarwash .top input {
+    margin-right: .046rem;
+    margin-left: .07rem;
+    width: .187rem;
+    height: .187rem;
+    position: relative;
+    top: .046rem;
+}
+
+#newbuiltcarwash .content{
+    padding:0 .12rem;
+    line-height:1.5;
+}

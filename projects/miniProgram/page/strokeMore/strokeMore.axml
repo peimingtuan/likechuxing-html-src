@@ -1,0 +1,6 @@
+<view class="wrap">
+    <view class="cell" onTap="report"> 
+        <text class="label">事故上报</text>
+        <view class="arrow"></view>
+    </view>   
+</view>

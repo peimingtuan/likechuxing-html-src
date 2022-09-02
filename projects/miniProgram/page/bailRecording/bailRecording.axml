@@ -1,0 +1,21 @@
+<view class="container" a:if="{{pageIsShow}}">
+    <view class="empty" a:if="{{isEmpty}}">
+        <image src="/image/bailEmpty.png" mode="aspectFit"  class="emptyImg"/>
+        <text class="emptyText">暂无保证金记录</text>
+    </view>
+    <view class="listWrap" a:else="{{!isEmpty}}">
+        <view class="listItem" a:for="{{list}}">
+            <view class="listLeft">
+                <text class="name">{{item.title}}</text>
+                <text class="time">{{item.time}}</text>
+            </view>
+            <view class="listRight">
+                <text class="amount reduce">{{item.sign}}{{item.deposit}}</text>
+                <text class="from">{{item.method}}</text>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="loadingBox" a:if="{{!pageIsShow}}">
+    <view class="loadingIcon"></view>
+</view>

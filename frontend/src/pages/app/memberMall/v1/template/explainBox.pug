@@ -1,0 +1,7 @@
+//- Created by garvey on 2017/12/18.
+-require('./explainBox.less')
+.ExplainBox
+    .title.fs16 #{content}
+    ul.detail
+        each k in detail
+            li.item #{k}

@@ -1,0 +1,55 @@
+{
+  "id": 1011,
+  "zh_name": "积分商城",
+  "name": "memberMall",
+  "group": "app",
+  "bundle_vendor": true,
+  "copy": true,
+  "input_file": {
+    "index": [
+      "index.js"
+    ],
+    "mailAddress": [
+      "mailAddress.js"
+    ],
+    "scoreDetail": [
+      "scoreDetail.js"
+    ],
+    "scoreExplain": [
+      "scoreExplain.js"
+    ],
+    "goodsDetail": [
+      "goodsDetail.js"
+    ],
+    "exchangeSuccess": [
+      "exchangeSuccess.js"
+    ],
+    "exchangeHistory": [
+      "exchangeHistory.js"
+    ],
+    "editAddress": [
+      "editAddress.js"
+    ],
+    "phoneDetail": [
+      "phoneDetail.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/app/memberMall/",
+    "publicPath": "/",
+    "filename": "js/app_memberMall/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.pug",
+      "mailAddress.pug",
+      "scoreDetail.pug",
+      "scoreExplain.pug",
+      "goodsDetail.pug",
+      "exchangeSuccess.pug",
+      "exchangeHistory.pug",
+      "editAddress.pug",
+      "phoneDetail.html"
+    ]
+  }
+}

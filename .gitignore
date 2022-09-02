@@ -1,0 +1,43 @@
+# webstorm项目文件
+.idea/
+
+# node、npm相关
+node_modules/
+#package*.json
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# webpack相关
+# /frontend/webpack_config/
+frontend/webpack_config/function/temp.json
+
+# 立刻出行员工信息
+frontend/webpack_config/function/user.json
+frontend/webpack_config/function/project_list_temp.json
+
+# 其它第三方工具文件
+#.babelrc
+#postcss.config.js
+#.postcssrc.js
+
+# 发布目录
+public/
+dist/
+
+# 备份文件
+*.js.bak
+config.zip
+
+#系统相关
+.DS_Store
+
+#小程序相关
+projects/miniProgram/.tea/
+
+# 其它
+test/unit/coverage
+test/e2e/reports
+selenium-debug.log
+config-local.js
+/frontend/dist/manage/

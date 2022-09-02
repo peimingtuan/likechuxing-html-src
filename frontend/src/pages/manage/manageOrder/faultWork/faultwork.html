@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+    <meta content="telephone=no, address=no" name="format-detection">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="no-cache" http-equiv="pragma">
+    <meta content="0" http-equiv="expires">
+    <meta name="full-screen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>故障工单</title>
+    <script>
+        var htmlBq = document.documentElement;
+
+        function allSize() {
+            var htmlWidth = htmlBq.clientWidth;
+            if (htmlWidth >= 640) {
+                htmlBq.style.fontSize = '40px';
+            } else if (htmlWidth < 640 && htmlWidth >= 320) {
+                htmlBq.style.fontSize = htmlWidth / (640 / 40) + 'px';
+            } else if (htmlWidth < 320) {
+                htmlBq.style.fontSize = '20px';
+            }
+        }
+        allSize();
+        window.onresize = function () {
+            allSize();
+        };
+    </script>
+    <script src="https://g.alicdn.com/dingding/open-develop/1.9.0/dingtalk.js"></script>
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.4&key=91ed10906005ee88866f14fd9f076e8b"></script>
+</head>
+<body class="body">
+<script>
+    !(function (c, b, d, a) {
+        c[a] || (c[a] = {});
+        c[a].config = {pid: "gruqqi6cbp@6594c08d3216a5d", imgUrl: "https://arms-retcode.aliyuncs.com/r.png?"};
+        with (b)with (body)with (insertBefore(createElement("script"), firstChild))setAttribute("crossorigin", "", src = d)
+    })(window, document, "https://retcode.alicdn.com/retcode/bl.js", "__bl");
+</script>
+<div class="faultwork-content none">
+    <p>
+        <span class="plate_no inline"></span>
+        <span class="trouble_id"></span><br/>
+        <span class="brand_name"></span>
+        <span class="carqube">自研</span>
+        <span class="remain_km"></span>
+        <span class="right location">
+            <img src=""/>
+            当前位置
+        </span>
+    </p>
+    <div class="getnet">
+        <div>
+            <img class="img1" src=""/>
+            <span class="branch_addr inline"></span><br/>
+        </div>
+        <img src="" class="daoh1 daoh" />
+    </div>
+    <div class="div1">
+        <span class="border-color"></span>
+        <span class="status_name normal"></span><br/>
+        <span class="troule-type">上报类型：1111111</span>
+    </div>
+    <!-- 新增备注信息展示-->
+    <div class="trouble-remark">故障备注：</div>
+</div>
+<div class="faultwork-bottom">
+    <p class="title">车辆是否在当前网点</p>
+
+    <p class="content">是<img class="none right" src=""/><input type="hidden" value="1"/></p>
+
+    <p class="content">否<img class="none right" src=""/><input type="hidden" value="2"/></p>
+</div>
+<div class="virtual-net none">
+    <p>车辆所在网点</p>
+
+    <p><input class="search-net" type="text" value="" placeholder="请选择车辆当前所在虚拟网点"/>
+        <input type="hidden" value="" class="virtual-netid"/>
+        <span class="right">&#xe603;</span></p>
+    <ul class="virtualnet-list none">
+
+    </ul>
+</div>
+<div class="indicator-show">注：本页由故障处理人员填写。</div>
+<!--新增工单创建人-->
+<div class="fault-history">
+    <ul class="history-list">
+
+    </ul>
+</div>
+<div class="faultwork-nextbtn">
+    <button class="submit-btn">确定</button>
+</div>
+</body>
+</html>

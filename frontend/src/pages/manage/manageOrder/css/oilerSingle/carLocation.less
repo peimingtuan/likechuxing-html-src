@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: Helvetica;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.mapWarp {
+  width: 100%;
+  height: 100%;
+}
+
+.btn-box {
+  padding: 10px 15px;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+}
+
+.back-btn {
+  display: block;
+  line-height: 3rem;
+  text-align: center;
+  background-color: deepskyblue;
+  color: #fff;
+  font-size: 14px;
+}
+
+.car_location {
+  position: fixed;
+  bottom: 13rem;
+  right: 1rem;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  font-size: 2rem;
+  z-index: 1000;
+  border-radius: 50%;
+}
+
+.car_icon {
+  position: fixed;
+  bottom: 9rem;
+  right: 1rem;
+  width: 3rem;
+  height: 3rem;
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 50%;
+  z-index: 1000;
+}
+
+.coating_icon {
+  position: fixed;
+  bottom: 5rem;
+  right: 1rem;
+  width: 3rem;
+  height: 3rem;
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 50%;
+  z-index: 1000;
+}
+
+.car_location img, .car_icon img, .coating_icon img {
+  width: 3rem;
+}
+
+/*导航icon*/
+.navigation {
+  font-family: 'iconfont';
+  position: fixed;
+  bottom: 17rem;
+  right: 1rem;
+  width: 2.8rem;
+  text-align: center;
+  line-height: 2.8rem;
+  font-size: 2rem;
+  background: #fff;
+  border-radius: 50%;
+}
+
+/*刷新按钮*/
+.refurepage-icon {
+  font-family: 'iconfont';
+  position: fixed;
+  bottom: 21rem;
+  right: 1rem;
+  width: 2.8rem;
+  text-align: center;
+  line-height: 2.8rem;
+  font-size: 2rem;
+  background: #fff;
+  border-radius: 50%;
+}
+
+/**/
+.loading_fe4e > div, .loading_fe4e > p {
+  font-size: 1rem;
+}
+
+/*alert导航弹框*/
+.navigation_content {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  width: 90%;
+  height: 17rem;
+  background: #fff;
+  border-radius: 3px;
+}
+
+.navigation_content > div {
+  padding-left: .8rem;
+  font-size: 15px;
+  line-height: 5rem;
+}
+
+.navigation_content li {
+  padding-left: .8rem;
+  line-height: 4rem;
+  font-size: 14px;
+  border-top: 1px solid #dcdcdc;
+}
+
+.navigation_content li:hover {
+  background: #f7f7f7;
+}
+
+.navigation_content li img {
+  width: 2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+
+.Toast .msg {
+  font-size: 14px !important;
+}

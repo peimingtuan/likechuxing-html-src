@@ -1,0 +1,247 @@
+@import '../../../../css/reset.css';
+
+* {
+    box-sizing: border-box;
+}
+
+.none {
+    display: none !important;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    background: url("../images/bg.jpg") repeat-y;
+    background-size: 100%;
+}
+
+.banner {
+    width: 100%;
+    height: 4.54rem;
+    background: url("../images/h5_banner.jpg") no-repeat;
+    background-size: 100%;
+}
+
+/*图标库*/
+@font-face {
+    font-family: 'iconfont';  /* project id 628835 */
+    src: url('//at.alicdn.com/t/font_628835_4q9l8fr9wsvy4x6r.eot');
+    src: url('//at.alicdn.com/t/font_628835_4q9l8fr9wsvy4x6r.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_628835_4q9l8fr9wsvy4x6r.woff') format('woff'),
+    url('//at.alicdn.com/t/font_628835_4q9l8fr9wsvy4x6r.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_628835_4q9l8fr9wsvy4x6r.svg#iconfont') format('svg');
+}
+
+/*登录框*/
+.login {
+    margin: -.7rem .3rem 0 .3rem;
+    width: 3.15rem;
+    height: 1.15rem;
+    z-index: 100;
+}
+
+.login p {
+    height: .46rem;
+}
+
+.login .p2 {
+    margin-top: .2rem;
+}
+
+.login input {
+    width: 100%;
+    height: .45rem;
+    outline: none;
+    -webkit-outline: none;
+    border-radius: 3px;
+    padding-left: .117rem;
+    border: none;
+    font-size: .17rem;
+}
+
+.login button {
+    width: 100%;
+    font-size: .17rem;
+    outline: none;
+    border: none;
+    height: .45rem;
+    color: #fff;
+    text-align: center;
+    background: #06b7e0;
+    border-radius: 3px;
+}
+
+input::-webkit-input-placeholder {
+    font-size: .17rem;
+}
+
+input:-moz-input-placeholder {
+    font-size: .17rem;
+}
+
+input:-ms-input-placeholder {
+    font-size: .17rem;
+}
+
+/*报名成功*/
+.enter-success {
+    margin: -.38rem .2rem -.2rem;
+    position: relative;
+    top: -.6rem;
+    width: 3.35rem;
+    height: 1.8rem;
+}
+
+.enter-success p {
+    text-align: center;
+}
+
+.enter-success img {
+    width: .4rem;
+}
+
+.enter-success .p2 {
+    line-height: .46rem;
+    font-size: .22rem;
+    color: #22b7e0;
+}
+
+.enter-success .p3, .enter-success .p4 {
+    line-height: .3rem;
+    color: #fff;
+}
+
+.enter-success .p3 span {
+    padding: 0 .03rem;
+    color: #22b7e0;
+}
+
+.enter-success .p3 {
+    font-size: .15rem;
+    word-break: keep-all;
+}
+
+.enter-success .p4 {
+    font-size: .15rem;
+    word-break: keep-all;
+}
+
+.enter-success .p5 {
+    margin-top: .26rem;
+}
+
+.info_btn {
+    width: 1.85rem;
+    outline: none;
+    border: none;
+    height: .42rem;
+    color: #fff;
+    font-size: .17rem;
+    text-align: center;
+    background: #06b7e0;
+    border-radius: 3px;
+}
+
+/*活动说明*/
+.activity-show {
+    margin: .28rem .3rem .1rem .3rem;
+    color: #fff;
+}
+
+.activity-show .p1 {
+    text-align: center;
+}
+
+.icon1 {
+    font-family: 'iconfont';
+    display: inline-block;
+    padding: 0 .05rem;
+    color: #fff;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+}
+
+.activity-show p {
+    position: relative;
+    margin-top: .1rem;
+    width: 100%;
+    line-height: .2rem;
+}
+
+.activity-show .p5, .activity-show .p6 {
+    height: .2rem;
+}
+
+.activity-show .p3 {
+    height: .4rem;
+}
+
+.activity-show .p4 {
+    height: .8rem;
+}
+
+.activity-show .span1 {
+    font-family: 'iconfont';
+    display: inline-block;
+    margin-right: .05rem;
+    color: #22b7e0;
+}
+
+.activity-show .span2 {
+    text-align: justify;
+    position: absolute;
+    left: .2rem;
+}
+
+/*底部说明*/
+.copyright {
+    width: 100%;
+    color: #666;
+    text-align: center;
+}
+
+/*Confirm弹框*/
+.common_cover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.44);
+    z-index: 10000
+}
+
+.alert_content {
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 80%;
+    height: 1rem;
+    padding: .1rem;
+    margin-top: -1rem;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.alert_content img {
+    width: .4rem;
+    margin-bottom: .05rem;
+}
+
+.info-left {
+    width: 45%;
+    float: left;
+    height: .8rem;
+    text-align: center;
+    padding-top: .1rem;
+}
+
+.info-right {
+    width: 45%;
+    float: right;
+    text-align: center;
+    padding-top: .1rem;
+    height: .8rem;
+}

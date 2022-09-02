@@ -1,0 +1,23 @@
+{
+  "id": 995,
+  "name": "display360",
+  "zh_name": "360度展示物品",
+  "group": "test",
+  "ver": "1.0.0",
+  "bundle_vendor": false,
+  "copy": true,
+  "input_file": {
+    "index": ["index.js"]
+  },
+  "output_file": {
+    "path": "./dist/test/display360",
+    "publicPath": "/",
+    "filename": "js/test_display360/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.html"
+    ],
+    "importAll": false
+  }
+}

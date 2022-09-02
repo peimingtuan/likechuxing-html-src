@@ -1,0 +1,31 @@
+<!--@xurr on 18/07/17  开四停四调度列表-->
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta charset="UTF-8">
+    <title>预警列表</title>
+    <script src="https://g.alicdn.com/dingding/open-develop/1.9.0/dingtalk.js"></script>
+    <script type="text/javascript"
+            src="https://webapi.amap.com/maps?v=1.4.4&key=91ed10906005ee88866f14fd9f076e8b"></script>
+    <!-- UI组件库 1.0 -->
+    <script src="//webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script>
+</head>
+  <script type="text/javascript">
+    	(function (doc, win) {
+				    var docEl = doc.documentElement,
+				        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+				        recalc = function () {
+				            var clientWidth = docEl.clientWidth;
+				            if (!clientWidth) return;
+				            docEl.style.fontSize = 100 * (clientWidth / 375) + 'px';
+				        };
+				    if (!doc.addEventListener) return;
+				    win.addEventListener(resizeEvt, recalc, false);
+				    doc.addEventListener('DOMContentLoaded', recalc, false);
+				})(document, window);
+    </script>
+  </head>
+<body style="margin:0;" id="fourBody">
+    <div id="app"></div>
+</body>
+</html>

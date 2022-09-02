@@ -1,0 +1,12 @@
+//- Created by garvey on 2017/12/19.
+-require('./scoreDetailBox.less')
+li.ScoreDetailBox
+    .borderBox
+        .desc.fs15 #{detail_type}
+        if (Number(point) > 0)
+            .point.green.fs15 #{point}
+        else
+            .point.red.fs15 #{point}
+        .time.fs12 #{format_time}
+        .newScore.fs12 #{new_score}
+

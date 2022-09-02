@@ -1,0 +1,6 @@
+{
+    "defaultTitle": "优惠",
+    "usingComponents":{
+        "card-item":"/component/cardItem/cardItem"
+    }
+}

@@ -1,0 +1,24 @@
+{
+  "id": 4025,
+  "zh_name": "事故工单",
+  "name": "accidentWorkList",
+  "group": "manage",
+  "ver": "0.0.1",
+  "bundle_vendor": false,
+  "copy":true,
+  "input_file": {
+    "index": [
+      "index.js"
+    ] 
+  },
+  "output_file": {
+    "path": "/dist/manage/accidentWorkList/",
+    "publicPath": "/",
+    "filename": "js/manage_accidentWorkList/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.html"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+//- Created by garvey on 2017/11/15.
+li.coupon_box(class=valid data-id=id)
+    .type !{typeDesc}
+    .main_box
+        -if(type===2)
+            div.money2 #{value}
+                p.type_cut2 2小时
+        -else
+            div.money #{value}
+                p.type_cut #{typeCut}
+        .desc
+            .name #{name}
+            .time #{time}
+            ul.limit !{des}
+    ul.circles
+        -for (var i=0 ; i<6;i++)
+            li
+    .useless_desc #{uselessDesc}
+    .choose

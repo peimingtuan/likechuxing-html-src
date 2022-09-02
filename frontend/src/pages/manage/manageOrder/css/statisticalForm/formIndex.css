@@ -1,0 +1,520 @@
+/*********************预警列表样式表**************************/
+#app{height: 100%;overflow-x: hidden;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+img { border: 0; max-width: 100%; }
+input, select, textarea {
+    font-family:none;
+    font-size: .42rem;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+		-webkit-tap-highlight-color: transparent;
+}
+input[type=search] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 0;
+    /*border-radius: 6px;*/
+}
+input::-webkit-input-placeholder{color:#999999;font-size: .12rem;line-height:normal;}
+.formList,.carNums,.carDetails{
+	width: 100%;
+	height: 100%;
+	font-size: .14rem;
+	background: #F6F6F6;
+	-webkit-overflow-scrolling:touch;
+	position: relative;
+	overflow: hidden;
+}
+.fc33{color: #333333;}
+.fc99{color: #999999;}
+.fc66{color: #666666;}
+.fcec6e{color: #ec6e6e;}
+.Toast{position: fixed;
+    text-align: center;
+    width: 100%;
+    bottom: 50%;
+    z-index: 200;
+}
+.Toast .msg {
+	  display: inline-block;
+	  max-width: 78%;
+	  min-width: 47%;
+	  font-size: 0.16rem;
+	  color: #fff;
+	  padding: .15rem 0.15rem;
+	  box-sizing: border-box;
+	  border-radius: 2px;
+	  background-color: rgba(0, 0, 0, 0.75);
+}
+.check_modal{
+	width: 100%;
+	height:100%;
+	background-color: rgba(51,51,51,.7);
+	color: #333333;
+	z-index: 103;
+		display: -webkit-box;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	-webkit-align-items: center;
+	justify-content: center;
+	-webkit-justify-content: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+.modal_content{
+	z-index: 103;
+	background-color: #FFFFFF;
+	width: 80%;
+	height: 1.86rem;
+	position: relative;
+	border-radius: 2px;
+}
+.text_dec{
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: row wrap;
+	align-content: flex-start;
+	padding: .16rem;
+	text-align: center;
+}
+.modal_title{
+	width: 100%;
+	text-align: center;
+	font-size: .16rem;
+	color: #333333;
+	padding-top: .22rem;
+}
+.alert_btn{
+	width: 100%;
+	display: -webkit-box;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	-webkit-align-items: center;
+	height: .55rem;
+	border-top:1px solid #ededed;
+	position: absolute;
+	bottom: 0;
+}
+.alert_btn a{
+	font-size: .16rem;
+}
+ .cancel_btn a{
+ 	color: #666666;
+ }
+ .confirm_btn a{
+ 	color: #44a8ec;
+ }
+.confirm_btn,.cancel_btn{
+	flex: 1;
+	-webkit-flex: 1;
+	display: -webkit-box;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	-webkit-align-items: center;
+	justify-content: center;
+	-webkit-justify-content: center;
+	height: 100%;
+}
+.cancel_btn{
+	border-right: 1px solid #ededed;
+}
+.det_header{
+	display: -webkit-box;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	-webkit-align-items: center;
+	justify-content: center;
+	-webkit-justify-content: center;
+	padding: 0.06rem 0;
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #f6f6f6;
+	color: #494b51;
+	/*position: fixed;*/
+    /*top: 0;*/
+    width: 100%;
+    z-index: 101;
+    height: .47rem;
+    /*-webkit-transform: translateZ(0);
+		transform: translateZ(0);*/
+}
+.header_item{
+	flex: 1;
+	-webkit-flex: 1;
+	padding: 0.06rem 0;
+	display: -webkit-box;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	-webkit-align-items: center;
+	justify-content: center;
+	-webkit-justify-content: center;
+	
+}
+.header_item.item_center{
+	border-left: 1px solid #F6F6F6;
+	border-right: 1px solid #F6F6F6;
+}
+.detail_icon{
+	display: inline-block;
+	width: .15rem;
+	height: .15rem;
+	margin-right: 0.11rem;
+}
+.detail_icon img{
+	width: 100%;
+	height: 100%;
+}
+.item_center2{
+	border-right: 1px solid #F6F6F6;
+}
+
+/*筛选弹层样式************/
+.modal{
+	  position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    /* background: #333333; */
+    z-index: 104;
+}
+.filter_cont{
+	/*min-height: 1rem;*/
+	z-index: 105;
+	width: 100%;
+	background: #FFFFFF;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 0.12rem 0.2rem 0.5rem 0.1rem;
+	transform: translateX(0);
+}
+.filter_header{
+	position: relative;
+	text-align: center;
+	font-size: .16rem;
+	margin-bottom: 0.15rem;
+}
+.close_modal{
+	position: absolute;
+	left: 0.1rem;
+}
+.filter_footer{
+	display: -webkit-box;
+	display: flex;
+	display: -webkit-flex;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+    align-items: center;
+	-webkit-align-items: center;
+    position: absolute;
+    width: 95%;
+    bottom: 0.07rem;
+}
+.filter_footer input{
+	height: 0.43rem;
+	font-size: .14rem;
+	width: 40%;
+	border: 0;
+}
+.filter_all{
+	margin-bottom: .15rem;
+}
+.fildec_title{
+	margin-bottom: 0.14rem;
+}
+.filter_only .filter_dec{
+	margin-bottom: 0.1rem;
+}
+.fildec_items{
+	display: inline-block;
+	padding: 0.08rem 0.23rem;
+	border: 1px solid #cdcdcd;
+	margin-right: 0.08rem;
+	margin-bottom: 0.1rem;
+	font-size: .125rem;
+}
+.fildec_items:last-child{margin-right: 0;}
+.filmore {
+	color: #333333;
+}
+.bg_black{
+	background: #333333;
+	color: #FFFFFF;
+}
+.bg_white{
+	background: #FFFFFF;
+	color: #333333;
+}
+.filter_reset{
+	background-color: #D8D8D8;
+}
+.filter_submit{
+	background: #333333;
+	color: #FFFFFF;
+}
+
+/*统计说明*/
+.check_modal.note_modal{
+	background-color: #fff;
+    text-align: center;
+    opacity: .95;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    display: -webkit-flex;
+    -webkit-justify-content: flex-start;
+    -webkit-align-items: center;
+    -webkit-flex-direction: column;
+}
+.note_content{
+	width: 100%;
+	padding: .19rem;
+}
+.note_title{
+	text-align: center;
+    font-size: .2rem;
+    color: #333;
+    margin-bottom: .12rem;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: .15rem;
+}
+.note_item{
+	text-align: left;
+    color: #333;
+    margin-bottom: .12rem;
+    font-size: .15rem;
+}
+.note_close{
+	width: .35rem;
+	height: .35rem;
+	  position: absolute;
+    bottom: .25rem;
+    left: 50%;
+    transform:translateX(-50%);
+    margin: 0 auto;
+}
+.note_close img{
+	width: 100%;
+	height: 100%;
+}
+.note_out{
+	background: #FFFFFF;
+	padding: .05rem .1rem;
+	border-bottom: 1px solid #F6F6F6;
+}
+.form_note{
+	height: .38rem;
+	width: 100%;
+	line-height: .38rem;
+	border: 1px solid #e7e7e7;
+	text-align: center;
+}
+/*列表样式*/
+
+.right_icon{
+	display: inline-block;
+	width: .17rem;
+	height: .17rem;
+}
+.right_icon img{
+	width: 100%;
+	height: 100%;
+}
+.warn_item{
+	background: #fff;
+    padding:0.2rem 0.1rem;
+    /*border-bottom: 1px solid #f6f6f6;*/
+    display: -webkit-box;
+    display: flex;
+	display: -webkit-flex;
+    align-items: center;
+	-webkit-align-items: center;
+    justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+/*车辆统计*/
+.four_content{
+	position: relative;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	width: 100%;
+}
+/*.four_header{
+	margin-bottom: ;
+}*/
+.detail_addr{
+	padding-top: .14rem;
+	display: -webkit-box;
+	display: flex;
+	display: -webkit-flex;
+	align-items: flex-start;
+	-webkit-align-items: flex-start;
+}
+.icon_addr{
+	display: inline-block;
+	width: 0.15rem;
+	height: 0.2rem;
+	margin-right: .03rem;
+}
+.icon_addr img{width: 100%;height: 100%;}
+.dot_line{
+	display: inline-block;
+	width: 100%;
+	height: 1px;
+	border-bottom: 1px dashed #e9e9e9;
+}
+.not_time{
+	padding-top: .1rem;
+	/*padding-bottom: .14rem;*/
+}
+.note_dec{
+	    text-align: left;
+    margin-top: .6rem;
+
+}
+.move_note{
+	padding-top: 0.06rem;
+	display: flex;
+	display: -webkit-flex;
+	align-items: flex-start;
+	-webkit-align-items: flex-start;
+	justify-content: flex-start;
+	width: 100%;
+	line-height: .18rem;
+}
+.move_note .note_titles{
+	display: inline-block;
+	white-space: nowrap;
+	flex: 10%;
+}
+.note_con{
+	flex: 90%;
+	/*margin-left: .15rem;*/
+	
+}
+.addr_dec{
+	flex: 1;
+	-webkit-flex: 1;
+}
+ .nullData {
+    /*暂无更多数据样式*/
+    font-size: .13rem;
+    color: #999999;
+    height: 0.25rem;
+    line-height: 0.25rem;
+    text-align: center;
+}
+.form_item{
+	  width: 100%;
+    background: #fff;
+    padding: .15rem .1rem .15rem .1rem;
+    margin-bottom: .1rem;
+}
+.car_num_title{
+	padding-bottom: .15rem;
+    font-size: .17rem;
+    border-bottom: 1px solid #f6f6f6;
+}
+.form_dec{
+	height: .4rem;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	-webkit-align-items: center;
+	border-bottom: 1px solid #f6f6f6;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+}
+.list_icon{
+	display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: #44A8EC;
+    border-radius: 50%;
+    margin-right: .08rem;
+}
+.ul_carlist {
+	padding-top: .2rem;
+}
+.ul_carlist li.car_status span{
+	display: inline-block;
+}
+.ul_carlist li.car_status:not(:first-child){
+	  display: -webkit-box;
+	  display: inline-flex;
+	  display: -webkit-inline-flex;
+	  display: -ms-inline-flex;
+    width: 50%;
+    text-align: left;
+    padding-top: .2rem;
+    margin: 0 auto;
+    align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    -webkit-box-align: center;
+}
+.ul_carlist li.car_status:not(:first-child) .status_nums{
+	color: #44A8EC;
+	font-size: .15rem;
+}
+.status_nums{
+	margin-left: .12rem;
+	/*padding-top: .02rem;*/
+}
+/*车辆明细*/
+.car_plat span:first-child{
+	font-weight: 700;
+}
+.car_dec span{
+	height: .27rem;
+    line-height: .27rem;
+    padding: 0 .1rem;
+    display: inline-block;
+    border: 1px solid #dcdcdc;
+    border-radius: 2px;
+    margin-right: .05rem;
+}
+.car_card{
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+   	display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: space-between;
+	padding-bottom: .1rem;
+}
+.car_detail_item{
+	width: 100%;
+	background: #FFFFFF;
+	padding: .2rem .15rem .13rem .1rem;
+	margin-bottom: .1rem;
+}
+.details_header{
+	padding: .17rem;
+	border-bottom: 1px solid #F2F2F2;
+	background: #FFFFFF;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	align-content: center;
+	-webkit-justify-content: space-between;
+	-webkit-align-content: center;
+}

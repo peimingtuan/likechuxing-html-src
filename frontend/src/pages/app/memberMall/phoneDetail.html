@@ -1,0 +1,72 @@
+<!--@xurr   兑换说明页面  2018/6/6-->
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+    <meta content="telephone=no, address=no" name="format-detection">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="no-cache" http-equiv="pragma">
+    <meta content="0" http-equiv="expires">
+    <meta name="full-screen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<title>充值方法</title>
+	<script src="/js/bundle/dll.vue.100.js"></script>
+	<script>
+		//rem适配文件
+        (function (doc, win) {
+		    var docEl = doc.documentElement,
+		        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+		        recalc = function () {
+		            var clientWidth = docEl.clientWidth;
+		            if (!clientWidth) return;
+		            docEl.style.fontSize = 100 * (clientWidth / 375) + 'px';
+		        };
+		
+		    if (!doc.addEventListener) return;
+		    win.addEventListener(resizeEvt, recalc, false);
+		    doc.addEventListener('DOMContentLoaded', recalc, false);
+		})(document, window);
+    </script>
+	</head>
+	<body>
+		<div class="phoneWarp">
+			<ul>
+				<li class="phone_item">
+					<span class="item_title">
+						<span>物</span>品
+					</span>
+					<span id="goodsName"></span>
+				</li>
+				<li class="phone_item">
+					<span class="item_title">
+						<span>劵</span>码
+					</span>
+					<span id="goodsNum"></span>
+				</li>
+			</ul>
+			<div class="phone_dec">
+				<p>语音充值方法（按语音提示操作）：</p>
+				<ul>
+					<li class="pdec_item">
+						<span>中国移动用户拨打&nbsp;13800-138000</span>
+					</li>
+					<li  class="pdec_item">
+						<span>中国联通用户拨打&nbsp;10011</span>
+						
+					</li>
+					<li  class="pdec_item">
+						<span>中国电信用户拨打&nbsp;11888</span>
+						
+					</li>
+				</ul>
+			</div>
+			
+		</div>
+	</body>
+</html>

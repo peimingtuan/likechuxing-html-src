@@ -1,0 +1,28 @@
+#checkafterphoto2 .content {
+    padding: .234rem .41rem;
+}
+
+#checkafterphoto2 .content .left {
+    margin-right: .234rem;
+}
+
+#checkafterphoto2 .content > div > p {
+    text-align: center;
+    line-height: .468rem;
+}
+
+#checkafterphoto2 .content > div > div {
+    position: relative;
+    width: 1.22rem;
+    height: 1.22rem;
+    background: #f4f4f4;
+}
+#checkafterphoto2 .content img{
+    width: 1.22rem;
+    height: 1.22rem;
+}
+
+#checkafterphoto2 .loading{
+    margin-top:1rem;
+    text-align: center;
+}

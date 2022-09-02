@@ -1,0 +1,63 @@
+//- Created by garvey on 2017/11/7.
+footer
+    .con_pc
+        .container
+            .left
+                .about
+                    .title 关于我们
+                    p
+                        a(href="about.html") 介绍
+                    p
+                        a(href="job.html") 招聘
+                .contact
+                    .title 电话我们
+                    p
+                        a(href="tel:4006662333") 400-666-2333
+                    p.s 7 × 24 小时服务
+                    .title 联系
+                    p
+                        a(href="mailto:" + contact_us) #{contact_us}
+            .right
+                .download
+                    .title 下载立刻出行 APP
+                    .ways
+                        .link
+                            a.download-ios(href="javascript:void(0)")
+                                img(src=require('../images/download_ios.png'))
+                            a.download-android(href="javascript:void(0)")
+                                img(src=require('../images/download_android.png'))
+                        .scanCode
+                            .download
+                                img(src=require('../images/scan_code_port.jpg'))
+                                .desc 扫描二维码下载
+                            .wx
+                                img(src=official_accounts)
+                                .desc 立刻出行微信公众号
+        .copyright #{copyright}
+    .con_m
+        .container
+            .menuBar 关于我们
+                .menu
+                    p
+                        a(href="about.html") 介绍
+                    p
+                        a(href="job.html") 招聘
+            div 下载 APP
+                .link
+                    a.download-ios(href="javascript:void(0)")
+                        img(src=require('../images/download_ios.png'))
+                    a.download-android(href="javascript:void(0)")
+                        img.fr(src=require('../images/download_android.png'))
+            div.scanCode
+                .download
+                    img(src=require('../images/scan_code_port.jpg'))
+                    .desc 扫描二维码下载
+                .wx
+                    img(src=official_accounts)
+                    .desc 立刻出行微信公众号
+        .contact
+            | 更多信息，致电
+            a(href="tel:4006662333")  400-666-2333
+            |  或给我们发送
+            a.click(href="mailto:" + contact_us) 电子邮件
+        .copyright #{copyright}

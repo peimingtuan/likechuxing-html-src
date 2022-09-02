@@ -1,0 +1,33 @@
+<view class="container">
+    <view class="header"></view>
+    <view class="body">
+        <view class="title">
+            <text>您有一张免费出行券待领</text>
+        </view>
+        <view class="coupon">
+            <!-- <view class="left">
+                <text class="mianfei">免费</text>
+                <text class="time">2小时</text>
+            </view>
+            <view class="right">
+                <text>优惠券不同享</text>
+                <text>仅限成都地区使用</text>
+                <text>可用于抵扣2小时内的里程费和时长费</text>
+            </view> -->
+        </view>
+    </view>
+    <view class="footer">
+        <view class="btn" onTap="receiveCoupon">
+            <text>点击领取</text>
+        </view>
+    </view>
+    <view class="descWrap">
+        <view class="descTtile">活动细则</view>
+        <view class="desc">
+            <text>1、活动期间，首次登录小程序的用户可领取免费出行券。</text>
+            <text>2、使用免费出行券可抵扣2小时内订单费用，含里程费和时长费。</text>
+            <text>3、免费券的有效期自领取之日起15天。</text>
+            <text>4、本活动仅限成都地区的用户参加，该券仅限成都地区的订单使用。</text>
+        </view>
+    </view>
+</view>

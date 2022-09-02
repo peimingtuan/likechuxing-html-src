@@ -1,0 +1,82 @@
+.ChooseCar{
+  padding:0.15rem 0;
+  .chooseCar{
+    padding: 0 0.2rem;
+    .empty{
+      padding-top: 0.5rem;
+      text-align: center;
+    }
+  }
+  .ContentBox{
+    p{
+      line-height: 0.2rem;
+    }
+  }
+  .carList{
+    padding: 0.1rem 0;
+  }
+  .ChooseCarBox{
+    position: relative;
+    padding: 0.04rem 0;
+    img{
+      padding: 0.06rem 0;
+      height: 0.6rem;
+      display: block;
+    }
+    .car_info{
+      line-height: 0.22rem;
+      position: absolute;
+      top:0.03rem;
+      left:50%;
+      width: 50%;
+      &::after{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 0.2rem;
+        height: 0.2rem;
+        right:0;
+        top:50%;
+        margin-top: -0.1rem;
+        background: url('../../images/icon_rightArrow_2.png') no-repeat center;
+        background-size: 90%;
+      }
+    }
+  }
+  .btn_short{
+    width: 1.4rem;
+    height: 0.46rem;
+    line-height: 0.46rem;
+    &.hidden{
+      opacity: 0;
+    }
+  }
+}
+
+.Prepare{
+  .branchName{
+    line-height: 0.2rem;
+    padding: 0.1rem 0 0.05rem;
+    .icon.pan{
+      display: inline-block;
+      width: 0.2rem;
+      height: 0.2rem;
+      background: url('../../images/icon_pan.png') no-repeat center;
+      background-size: 70%;
+      vertical-align: top;
+      margin:0 0.05rem
+    }
+  }
+}
+
+.Choose{
+
+  .tips{
+    text-align: center;
+    margin: 0.8rem 0 0.1rem;
+    color:#999;
+  }
+  .red{
+    text-align: center;
+  }
+}

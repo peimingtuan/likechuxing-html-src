@@ -1,0 +1,63 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100rpx;
+}
+.title{
+    font-family: PingFangSC-Medium;
+    font-size: 72rpx;
+    color: #101300;
+    margin-bottom: 8rpx;
+}
+.num{
+    color: #D9314C ;
+}
+.tipImg{
+    width: 26rpx;
+    height: 26rpx;
+    background: url('/image/bailImg.png') no-repeat;
+    background-size: 100%;
+    margin-left: 4rpx;
+}
+.desc{
+    font-family: PingFangSC-Regular;
+    font-size: 28rpx;
+    color: #22252C;
+    letter-spacing:1rpx;
+    margin-bottom: 112rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    width: 358rpx;
+    height: 186rpx;
+    background: url('/image/car.png') no-repeat;
+    background-size: 100% 100%;
+}
+.btn{
+    width: 474rpx;
+    height: 90rpx;
+    margin-top:66rpx;
+    border: 1px solid #979797;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: PingFangSC-Regular;
+    font-size: 34rpx;
+    color: #333333;
+    text-align: center;
+}
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 34rpx;
+    text-align: center;
+    font-family: PingFangSC-Regular;
+    font-size: 24rpx;
+    color: #5D7BAF;
+}

@@ -1,0 +1,63 @@
+#carwashafterphoto2 .carpicture-content {
+    padding: .234rem .41rem;
+    height:6.71rem;
+}
+
+#carwashafterphoto2 .carpicture-content .left {
+    margin-right: .234rem;
+}
+
+#carwashafterphoto2 .carpicture-content > div {
+    margin-bottom: .234rem;
+}
+
+#carwashafterphoto2 .carpicture-content > div:last-of-type {
+    margin-bottom: .936rem;
+}
+
+#carwashafterphoto2 .carpicture-content > div > p {
+    text-align: center;
+    line-height: .468rem;
+}
+
+#carwashafterphoto2 .carpicture-content > div > div {
+    position: relative;
+    width: 1.22rem;
+    height: 1.22rem;
+    background: #f4f4f4;
+}
+
+/*图片样式*/
+#carwashafterphoto2 .carpicture-content > div > div .preview{
+    width: 1.22rem;
+    height: 1.22rem;
+}
+
+#carwashafterphoto2 .uploadIcon {
+    font-family: 'iconfont';
+    font-size:.323rem;
+    position: absolute;
+    left: .447rem;
+    top: .447rem;
+    width:.351rem;
+    height:.351rem;
+}
+
+#carwashafterphoto2 .uploadphoto{
+    width:.351rem;
+    height:.351rem;
+    overflow: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#carwashafterphoto2 .swat-photo{
+    font-family: 'iconfont';
+    font-size:.187rem;
+    position:absolute;
+    right:-.09rem;
+    top: -.09rem;
+    color:#43aff7;
+}

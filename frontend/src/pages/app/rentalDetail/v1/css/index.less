@@ -1,0 +1,307 @@
+@import "./reset.css";
+@import '../../../../css/font';
+@import '../../../../css/animates';
+@import '../../../../css/animates/zoomInOut';
+
+.btn{
+  transition-duration: 100ms;
+  &.white:active{
+    background-color: #f7f7f7!important;
+  }
+  &.opacity:active{
+    opacity: 0.8;
+  }
+  &.disable{
+    opacity: 0.6;
+    &.white:active{
+      background-color: transparent;
+    }
+    &.white:active{
+      opacity: 1;
+    }
+  }
+}
+
+#map{
+  width:100%;
+  height: 400px;
+  img[src="https://api.map.baidu.com/images/copyright_logo_hd.png"]{
+    display: none;
+  }
+}
+.loading{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  font-size: 0.13rem;
+  text-align: center;
+  color:#E3E3E3;
+  .load{
+    margin:50% auto 5%;
+    width:2em;
+    height: 2em;
+  }
+}
+.page{
+  display: none;
+}
+.detail_con{
+  position: fixed;
+  width: 100%;
+  max-width: 640px;
+  padding: 0 6.67%;
+  box-sizing: border-box;
+  bottom:0;
+  z-index: 1;
+  background-color: #FFF;
+  transition: all 600ms;
+  max-height: 400px;
+  .slide_btn{
+    padding: 3% 0;
+    &::before{
+      content: '';
+      display: block;
+      margin:0 auto;
+      width:10%;
+      height: 4px;
+      border-radius: 2px;
+      background-color: #E3E3E3;
+    }
+    .slide_btn{
+
+    }
+  }
+  .car_detail{
+    position: relative;
+    padding: 3% 0;
+    border-bottom: solid 1px #DFDFDF;
+    .chepai{
+      font-size: 0.19rem;
+      color:#111;
+    }
+    .chekuan{
+      font-size: 0.13rem;
+      color:#999;
+    }
+    .car_img{
+      position: absolute;
+      height: 100%;
+      width: 50%;
+      right:0;
+      top:0;
+      background: url('../images/car_img_default.png') no-repeat center right;
+      background-size: auto 75%;
+    }
+  }
+  .order_time{
+    margin: 2.6% 0;
+    color:#999;
+    font-size: 0.13rem;
+    position: relative;
+    .order_cost{
+      position: absolute;
+      right: 0;
+      color: #000;
+      font-size: 0.12rem;
+      .cost_num{
+        font-size: 0.2rem;
+        color: #ED3800;
+      }
+    }
+  }
+  .point_con{
+    color:#111;
+    font-size: 0.14rem;
+    padding-bottom: 3%;
+    p{
+      position: relative;
+      line-height: 1.5em;
+      height: 1.5em;
+      margin-left: 2em;
+    }
+    .icon{
+      display: inline-block;
+      position: absolute;
+      color:#999;
+      left:-2em;
+      height: 1.5em;
+      width:1em;
+      background: no-repeat center;
+      background-size: 100% auto;
+      /*
+      &.icon_get_car{
+        background-image: url('../images/icon_get_car.png');
+      }
+      &.icon_return_car{
+        background-image: url('../images/icon_return_car.png');
+      }
+      */
+    }
+  }
+  .btn_con{
+    position: relative;
+    padding: 3% 0;
+    border-top:solid 1px #DFDFDF;
+    box-sizing: border-box;
+    overflow:hidden;
+    zoom:1;
+    text-align: center;
+    &::before{
+      content:'';
+      position: absolute;
+      width: 1px;
+      height:50%;
+      left:50%;
+      z-index:-1;
+      top:25%;
+      background-color: #e3e3e3;
+    }
+    button{
+      box-sizing: border-box;
+      width: 36%;
+      margin:5px 3%;
+      height: 2.8em;
+      background-color: #FFF;
+      border: solid 1px #e3e3e3;
+      color: #111;
+      font-size: 0.13rem;
+      border-radius: 2px;
+      float:left;
+      &:nth-of-type(even){
+        float: right;
+      }
+      &.no_float{
+        float: none;
+      }
+    }
+  }
+
+  &.fold{
+    max-height: 130px;
+    .car_detail{
+      display: none;
+    }
+    .order_time{
+      .order_cost{
+        display: none;
+      }
+    }
+    .btn_con{
+      display: none;
+    }
+  }
+}
+
+.appraise_con{
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top:0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  .appraise_con_in{
+    width: 78%;
+    margin: 30% auto 0;
+    padding-bottom: 5%;
+    background-color: #FFF;
+    border-radius: 2px;
+    color:#111;
+    text-align: center;
+    position: relative;
+    .btn_close{
+      position: absolute;
+      padding: 5%;
+      width: 1em;
+      height: 1em;
+      top:0;
+      right:0;
+      background: url('../images/btn_close_gray.png') no-repeat center;
+      background-size: 35%;
+      font-size: 0.15rem;
+    }
+    .title{
+      padding: 5% 0;
+      text-align: center;
+      font-size: 0.15rem;
+    }
+    .choose_con{
+      zoom: 1;
+      overflow: hidden;
+      margin:0 5%;
+      .choose_one{
+        display: inline-block;
+        width:45%;
+        opacity: 0.2;
+        text-align: center;
+        &.active{
+          opacity: 1;
+        }
+      }
+      p{
+        font-size: 0.16rem;
+        color: #000;
+      }
+      .satisfied{
+        .face_con{
+          background-image: url('../images/satisfied.png');
+        }
+      }
+      .dissatisfied{
+        .face_con{
+          background-image: url('../images/dissatisfied.png');
+        }
+      }
+      .face_con{
+        width:48px;
+        height: 48px;
+        margin:8% auto;
+        background: no-repeat center;
+        background-size: 100%;
+      }
+    }
+    .choose_list{
+      margin:5%;
+      overflow: hidden;
+      zoom:1;
+      li{
+        color:#999;
+        width:46%;
+        line-height: 2.8em;
+        margin:5px 0;
+        float: left;
+        text-align: center;
+        border: solid 1px #E3E3E3;
+        border-radius: 2px;
+        font-size: 0.12rem;
+        box-sizing: border-box;
+        &:nth-of-type(even){
+          margin-left: 8%;
+        }
+        &.active{
+          background-color: #E3E3E3;
+          color:#111
+        }
+      }
+    }
+    .btn{
+      width:76%;
+      height: 2.6em;
+      color:#fff;
+      font-size: 0.14rem;
+      background-color: #000;
+      border:none;
+      border-radius: 2px;
+      &.disable{
+        background-color: #DBDBDB;
+        color:#FFF;
+        &:active{
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+

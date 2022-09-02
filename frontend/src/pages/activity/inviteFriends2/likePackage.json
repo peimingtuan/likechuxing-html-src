@@ -1,0 +1,48 @@
+{
+  "id": 2012,
+  "zh_name": "邀请好友返现金",
+  "name": "inviteFriends2",
+  "group": "activity",
+  "ver": "1.0.0",
+  "bundle_vendor": true,
+  "copy": true,
+  "input_file": {
+    "index": [
+      "index.js"
+    ],
+    "history": [
+      "history.js"
+    ],
+    "confirmAccount": [
+      "confirmAccount.js"
+    ],
+    "editAccount": [
+      "editAccount.js"
+    ],
+    "share": [
+      "share.js"
+    ],
+    "registerFinish": [
+      "registerFinish.js"
+    ],
+    "inviteList":[
+      "inviteList.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/activity/inviteFriends2/",
+    "publicPath": "/",
+    "filename": "js/activity_inviteFriends2/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.pug",
+      "history.pug",
+      "confirmAccount.pug",
+      "editAccount.pug",
+      "share.pug",
+      "registerFinish.pug",
+      "inviteList.pug"
+    ]
+  }
+}

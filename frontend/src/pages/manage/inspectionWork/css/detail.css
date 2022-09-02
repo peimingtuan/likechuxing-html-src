@@ -1,0 +1,269 @@
+/*车辆详情*/
+.car-detail{
+    background: #fff;
+    padding: .12rem .12rem 0;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+/*成都限行*/
+.car-detail .car-top .chengdu-limt {
+    border-radius: 3px;
+    border: 1px solid #f5937c !important;
+    color: #f5937c;
+    padding:0 .0234rem;
+}
+
+.car-detail .car-top .chengdu-limt2 {
+    border: 1px solid #ff9500 !important;
+    color: #ff9500;
+}
+
+/*广州限行*/
+.car-top{
+    display:flex;
+    display: -webkit-flex; /* Safari */
+    justify-content:space-between;
+}
+
+.car-top .plate_no{
+    font-size:.163rem;
+    color: #999999;
+}
+
+.car-top .plate_no .font1 {
+    font-size:.163rem;
+    font-weight: bold;
+}
+
+/*车辆状态*/
+.car-top .status_name {
+    padding:.01rem .03rem;
+    border: 1px solid #e7e7e7!important;
+    border-radius: 2px;
+}
+
+.gz-limit{
+    display:flex;
+    display: -webkit-flex; /* Safari */
+    justify-content:space-between;
+}
+
+.gz-limit .div-com{
+    height: .187rem;
+    line-height: .187rem;
+    width: .187rem;
+    text-align: center;
+    margin-right: .0468rem;
+    font-size: .131rem;
+}
+
+.gz-limit .div-com:last-of-type{
+    margin-right: 0!important;
+}
+
+.gz-limit .today,.gz-limit .moring{
+    display:flex;
+    display: -webkit-flex; /* Safari */
+    justify-content:space-between;
+    border-radius: 2px;
+    border: 1px solid #b6e088;
+    text-align: center;
+    margin-right: .0468rem;
+    height: .187rem;
+}
+
+.stop-ff8e8e{
+    border: 1px solid #ff8e8e!important;
+}
+
+.wait-D1D1D1{
+    border: 1px solid #D1D1D1!important;
+}
+
+.gz-limit .today-moring div{
+    height: .187rem;
+    line-height: .187rem;
+    border: none !important;
+    width: .187rem;
+    text-align: center;
+    font-size: .131rem;
+}
+
+
+/*开*/
+.opencar {
+    color: #fff!important;
+    background: #b6e088;
+    border:1px solid #b6e088;
+    border-radius: 2px;
+}
+
+/*停*/
+.stopcar {
+    color: #fff!important;
+    background: #ff8e8e;
+    border:1px solid #ff8e8e;
+    border-radius: 2px;
+}
+
+/*待*/
+.waitingcar {
+    color: #fff!important;
+    background: #D1D1D1;
+    border:1px solid #D1D1D1;
+    border-radius: 2px;
+}
+
+.car-detail .car-info{
+    margin:.05rem 0;
+}
+
+.car-detail .location {
+    padding-left:.07rem;
+    border-left:1px solid #e7e7e7;
+}
+
+.car-detail .location img{
+    width:.14rem;
+}
+
+.car-detail .car-info>span {
+    display: inline-block;
+    margin-top: .07rem;
+    color: #999999;
+    font-size:.131rem;
+}
+
+.car-detail .brand_name,
+.car-detail .car-color,
+.car-detail .carqube{
+    padding-right:.0936rem;
+    border-right:1px solid #e7e7e7;
+}
+
+.car-detail .car-color,
+.car-detail .carqube,
+.car-detail .remain_km{
+    margin-left:.0468rem;
+}
+
+/*取车网点*/
+.car-detail .getnet{
+    padding: .07rem 0rem;
+    border:none!important;
+    display:flex;
+    display: -webkit-flex; /* Safari */
+    justify-content:space-between;
+}
+
+.car-detail .getnet img{
+    width:.234rem;
+}
+
+.car-detail .getnet .get-left{
+    width: 3.2rem;
+    line-height: .234rem;
+}
+
+.car-detail .getnet .get-right{
+    width: .31rem;
+    text-align:right;
+}
+
+.car-detail div.general{
+    color:#259bef;
+    text-align: center;
+}
+
+#detail .div-center{
+    background:#f6f6f6;
+    height:.12rem;
+}
+
+/*流程图样式*/
+#detail .flowstatus {
+    width: 100%;
+    height: 1.05rem;
+    background: #fff;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+#detail .flowstatus .p1 {
+    margin: 0 .12rem;
+    padding:.12rem 0;
+    height: .351rem;
+}
+
+#detail .flowstatus .delete{
+    color:#259bef;
+}
+
+#detail .flowstatus .p2 {
+    margin-top:.12rem;
+    position: relative;
+    height: .42rem;
+    text-align: center;
+}
+
+#detail .flowstatus span img {
+    width: .234rem;
+}
+
+#detail .flowstatus .p2 .size {
+    display:inline-block;
+    /*width:2rem;*/
+    text-align: center;
+}
+
+#detail .flowstatus .p2 .size font{
+    font-size:.12rem;
+}
+
+#detail .flowstatus .p2 .line {
+    display:inline-block;
+    width:.3rem;
+    height:2px;
+    background:#ededed;
+    position: relative;
+    top: -.211rem;
+}
+
+/*是否已到网点*/
+#detail .task{
+    margin-left:.7rem;
+    margin-top:.6rem;
+    width: 2.34rem;
+    text-align: center;
+}
+
+#detail .task-bottom{
+    white-space:nowrap;
+    margin-top:.12rem;
+}
+
+#detail .task-top{
+    box-sizing: border-box;
+    width:1.4rem;
+    height:1.4rem;
+    margin-left:.468rem;
+    background:#00aaf2;
+    border-radius:50%;
+    padding:.51rem 0;
+}
+
+#detail .task-top span{
+    display:inline-block;
+    line-height:.374rem;
+    font-size:.234rem;
+    color:#fff;
+}
+
+/*confirm弹框*/
+.mint-msgbox{
+    width:2.6rem!important;
+}
+
+.mint-msgbox-message{
+    line-height:30px;
+    color:#494b51;
+}

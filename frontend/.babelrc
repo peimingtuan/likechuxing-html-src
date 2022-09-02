@@ -1,0 +1,35 @@
+//.babelrc
+{
+  "presets": [
+    [
+      "es2015",
+      {"modules":false}
+    ],
+    "react",
+    "stage-2"
+  ],
+  "plugins": [
+/*    [
+      "component",
+      {
+        "libraryName": "element-ui",
+        "styleLibraryName": "theme-chalk"
+      }
+    ],*/
+    [
+      "component",
+      {
+        "libraryName": "mint-ui",
+        "style": true
+      }
+    ],
+    [
+    "transform-runtime",
+    {
+      "helpers": false,
+      "polyfill": false,
+      "regenerator": true,
+      "moduleName": "babel-runtime"
+    }
+  ]]
+}

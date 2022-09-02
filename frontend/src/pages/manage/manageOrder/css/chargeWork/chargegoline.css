@@ -1,0 +1,95 @@
+#chargegoline .endwork-netname,#chargegoline  .endwork-state,#chargegoline  .endwork-floor p {
+    padding: .5rem;
+    line-height: 2rem;
+    background: #fff;
+}
+
+#chargegoline .endwork-netname input,#chargegoline  .endwork-floor input,#chargegoline .endwork-state input {
+    height: 1.2rem;
+    line-height: 1.2rem;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+#chargegoline .choice-net {
+    width: 65%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#chargegoline .endwork-floor input::-webkit-input-placeholder,#chargegoline  .endwork-netname input::-webkit-input-placeholder,
+#chargegoline .endwork-state input::-webkit-input-placeholder {
+    font-size: .6rem;
+}
+
+#chargegoline .endwork-floor,#chargegoline  .endwork-state {
+    margin-top: .5rem;
+}
+
+#chargegoline .endwork-floor p {
+    border-bottom: 1px solid #f6f6f6;
+}
+
+#chargegoline .endwork-netname span:nth-of-type(2),#chargegoline  .endwork-state span:nth-of-type(2),
+#chargegoline .endwork-floor p > span:nth-of-type(2) {
+    color: #b7b7b7;
+}
+
+#chargegoline .endwork-icon {
+    font-family: 'iconfont';
+    float: right;
+}
+
+#chargegoline .endworkname-submit {
+    position: fixed;
+    bottom: 0;
+    left:0;
+    width: 16rem;
+    padding:.5rem;
+    box-shadow: 1px -2px 2px #e8e8e8;
+}
+
+#chargegoline .endworkname-submit button {
+    width: 15rem;
+    line-height: 1.9rem;
+    text-align: center;
+    color: #fff;
+    background: #d1d1d1;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+#chargegoline .submit-btn {
+    background: #333 !important;
+}
+
+/*备注信息样式*/
+#chargegoline .remark-info {
+    margin: .5rem .5rem 3.5rem;
+    width: 15rem;
+    height: 6rem;
+    border: 1px solid gray;
+    position: relative;
+}
+
+#chargegoline .remark-info span {
+    position: absolute;
+    left: -.4rem;
+    top: 0;
+    color: red;
+}
+
+#chargegoline .void_writeinfo {
+    box-sizing: border-box;
+    width: 15rem;
+    height: 6rem;
+    padding: .5rem;
+    outline: none;
+    background: #f7f7f7;
+    border: none;
+    border-radius: 2px;
+}

@@ -1,0 +1,218 @@
+@import "./reset.css";
+@import '../../../../css/font';
+
+body{
+    background-color: #F7F7F7;
+}
+.dt_price{
+    font-size: 0.13rem;
+    line-height: 1.6em;
+    padding-bottom: 5px;
+}
+.b_price{
+    font-size: 0.16rem;
+}
+.dt_desc{
+    color:#999;
+}
+.dt_price_n{
+    color:#ED3800
+}
+.gray_line{
+    width: 100%;
+    height: 1px;
+    background-color: #DBDBDB;
+    margin:5px 0;
+}
+.box_top{
+    background-color: #FFF;
+    padding: 20px;
+    .second{
+        color:#999
+    }
+}
+
+.detail_list{
+    overflow:hidden;
+    zoom: 1;
+    color:#111;
+    li{
+      &.discount{
+        display:none
+      }
+        width: 45%;
+        line-height: 2em;
+        &:nth-of-type(odd){
+            float: left;
+            text-align: left;
+        }
+        &:nth-of-type(even){
+            float: right;
+            text-align: right;
+        }
+        &.cut_flag::before{
+          content: '- ';
+        }
+    }
+}
+.dark_gray{
+    color:#999
+}
+.rental_sec{
+    display: -webkit-box;
+    .left,.middle,.right{
+        width:32%;
+    }
+    .middle div{
+        text-align: center;
+    }
+    .first{
+        font-size: 0.18rem;
+    }
+}
+
+
+
+.one_points_mixins {
+  position: absolute;
+  display: block;
+  width: 0.02rem;
+  height: 0.02rem;
+  background-color: #D8D8D8;
+  left: 0;
+  border-radius: 50%;
+}
+
+.operate_con {
+  font-size: 0.12rem;
+  line-height: 1.6em;
+  padding-bottom: 5px;
+  .operate_list {
+    position: relative;
+    li {
+      margin-left: 1.2em;
+      line-height: 0.16rem;
+      zoom: 1;
+      overflow: hidden;
+      padding: 0.07rem 0;
+      & > div {
+        &:nth-of-type(1) {
+          color: #999;
+          float: left;
+        }
+        &:nth-of-type(even) {
+          float: right;
+          text-align: right;
+        }
+      }
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 0.06rem;
+        height: 0.06rem;
+        margin-left: 0.01rem;
+        background-color: #999;
+        border-radius: 50%;
+        margin-top: 0.05rem;
+      }
+      &:nth-last-of-type(1) {
+        &::before {
+          width: 0.08rem;
+          height: 0.08rem;
+          margin-left: 0;
+          background-color: #111;
+          margin-top: 0.04rem;
+        }
+        .three_points {
+          display: none;
+        }
+        .two_point {
+          &::before {
+            display: none;
+          }
+          &::after {
+            display: none;
+          }
+        }
+      }
+
+      .three_points {
+        .one_points_mixins;
+        margin-left: 0.03rem;
+        margin-top: 0.16rem;
+        &::before {
+          content: '';
+          margin-top: 0.05rem;
+          .one_points_mixins;
+        }
+        &::after {
+          content: '';
+          margin-top: 0.1rem;
+          .one_points_mixins;
+        }
+      }
+    }
+    .sys_cancel {
+      padding-bottom: 0.18rem;
+      p {
+        width: 50%;
+        color: #999;
+        font-size: 0.12rem;
+        position: absolute;
+        right: 0;
+        margin-right: -1em;
+        margin-top: -0.05em;
+        transform: scale(0.8);
+      }
+      .two_point {
+        &::before {
+          content: '';
+          margin-left: 0.03rem;
+          margin-top: 0.31rem;
+          .one_points_mixins
+        }
+        &::after {
+          content: '';
+          margin-left: 0.03rem;
+          margin-top: 0.2rem;
+          .one_points_mixins
+        }
+      }
+        }
+    }
+}
+
+/*rental detail*/
+.rental_details{
+    border-top:1px solid #DBDBDB;
+    background-color: #F7F7F7;
+    padding-bottom: 50px;
+  font-size: 0.13rem;
+}
+
+#font_red{
+    color: #ED3800;
+}
+
+.clear_float div{
+    margin: 6px;
+}
+.last_tree .clear_float div img{
+    height: 18px;
+    width: auto;
+}
+.text_in_line{
+    text-align: center;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEXj4+NAjkDOAAAACklEQVQI12NgAAAAAgAB4iG8MwAAAABJRU5ErkJggg==) repeat-x center;
+    background-size: auto 1px;
+  font-size: 0.12rem;
+    span{
+        display: inline-block;
+        padding: 10px 2em;
+        background-color:#f7f7f7;
+        color:#999;
+    }
+}

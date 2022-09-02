@@ -1,0 +1,37 @@
+//- Created by garvey on 2017/11/2.
+-
+    var list = [
+        {name:"当前里程（公里）", attrId:'total_km', type:'base'},
+        {name:"当前时长（时间）", attrId:'total_time', type:'base'},
+        {name:"优惠里程（公里）", attrId:'discount_km', type:'discount'},
+        {name:"优惠时长（时间）", attrId:'discount_min', type:'discount'},
+        {name:"", attrId:'discount_fee', type:'discount msg'},
+        {name:"里程费（元）", attrId:'km_money', type:'base'},
+        {name:"用时费（元）", attrId:'min_money', type:'base'},
+        {name:"还车附加费（元）", attrId:'parking_fee_in', type:'base'}
+    ]
+
+include ../../../template/base/h5
+    include ../../../template/head/viewport
+    title 费用说明
+body
+    .explainBox
+        .title 收费标准
+        .content
+            span.strong#price_km -
+            span 元/公里 +
+            span.strong#price_min -
+            span 元/分钟
+            img.price_type(src=require('./images/tejia.png'))
+
+    .detailBox
+        .title 费用明细
+        ul.detailList
+            each k in list
+                li(class=k.type)
+                    .itemName #{k.name}
+                    .itemValue(id=k.attrId) -
+        .currentCost
+            .itemName 当前费用（元）
+            .itemValue#total_money -
+    include ../../../template/footer/interpretationRight/index

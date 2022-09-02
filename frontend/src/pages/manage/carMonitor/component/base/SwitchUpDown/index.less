@@ -1,0 +1,34 @@
+.bar(){
+  content: '';
+  position: absolute;
+  top:50%;
+  width: 30%;
+  height: 1px;
+  background-color: #fff;
+  transition: all 400ms;
+}
+
+.switchUpDown{
+  cursor: pointer;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  &::before{
+    .bar();
+    left:25%;
+    transform: rotate(45deg);
+  }
+  &::after{
+    .bar();
+    right:25%;
+    transform: rotate(-45deg);
+  }
+  &.open{
+    &::before{
+      transform: rotate(135deg);
+    }
+    &::after{
+      transform: rotate(-135deg);
+    }
+  }
+}

@@ -1,0 +1,47 @@
+*{margin:0;padding:0}
+ul,li{
+  list-style: none;
+}
+button{
+  margin:2px auto;
+  padding: 3px 8px;
+}
+.map{
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+}
+.config{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top:10px;
+  right:10px;
+  background-color: #fff;
+  border: solid 1px #ddd;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  overflow: hidden;
+  .config_img{
+    width: 30px;
+    height: 30px;
+    background: url('../images/设置.png') no-repeat center;
+    background-size: 100%;
+    position: absolute;
+    top:10px;
+    right:10px;
+  }
+  &.active{
+    width: auto;
+    height: auto;
+    .box{
+      display: block;
+    }
+  }
+  .box{
+    display: none;
+  }
+
+}

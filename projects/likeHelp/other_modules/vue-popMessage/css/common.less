@@ -1,0 +1,44 @@
+@mask:{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.44);
+};
+
+@dialogBox:{
+  text-align: center;
+  background-color: #FFF;
+  width: 2.8rem;
+  margin-left: -1.4rem;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  padding-top: 0.1rem;
+  border-radius: 2px;
+  color: #999;
+  .title {
+    font-size: 0.17rem;
+    line-height: 1;
+    margin: 0.15rem 0.18rem;
+    color: #111;
+  }
+  .msg {
+    font-size: 0.14rem;
+    margin: 0.15rem 0.18rem 0.2rem;
+    .con {
+      display: inline-block;
+      text-align: left;
+    }
+  }
+  .icon{
+    width: 0.6rem;
+    height: 0.6rem;
+    margin:0.15rem auto;
+    background: no-repeat center;
+    background-size: 100%;
+    &[data-type="peccancy"]{
+      background-image: url('../images/peccancy.png');
+    }
+  }
+};

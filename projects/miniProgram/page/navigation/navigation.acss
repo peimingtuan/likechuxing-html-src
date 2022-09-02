@@ -1,0 +1,14 @@
+page{
+    display: flex;
+    flex-direction: column;
+}
+.wrap{
+    flex: 1;
+    background: red;
+    display: flex;
+    flex-direction: column;
+}
+.map{
+    flex: 1;
+    height: 100%;
+}

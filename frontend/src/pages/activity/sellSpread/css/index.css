@@ -1,0 +1,157 @@
+@import '../../../../css/reset.css';
+
+* {
+    box-sizing: border-box;
+}
+
+.none {
+    display: none !important;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    background: #fff;
+}
+
+.banner {
+    width: 100%;
+    height: 2.27rem;
+    background: url("../images/banner.png") no-repeat;
+    background-size: 100%;
+}
+
+/*图标库*/
+@font-face {
+    font-family: 'iconfont';  /* project id 628835 */
+    src: url('//at.alicdn.com/t/font_628835_nj4psi92p9jrwwmi.eot');
+    src: url('//at.alicdn.com/t/font_628835_nj4psi92p9jrwwmi.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_628835_nj4psi92p9jrwwmi.woff') format('woff'),
+    url('//at.alicdn.com/t/font_628835_nj4psi92p9jrwwmi.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_628835_nj4psi92p9jrwwmi.svg#iconfont') format('svg');
+}
+
+/*登录框*/
+.login {
+    margin: .2rem .35rem 0 .35rem;
+    width: 3.05rem;
+    height: 2.6rem;
+    z-index: 100;
+}
+
+.login p {
+    height: .42rem;
+}
+.login .p0{
+    height:.25rem;
+    padding-left:.117rem;
+}
+.login .p2, .login .p3, .login .p4 {
+    margin-top: .18rem;
+}
+
+.login input {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: .41rem;
+    outline: none;
+    -webkit-outline: none;
+    border-radius: 3px;
+    padding-left: .117rem;
+    border: 1px solid #d6d7d7;
+    font-size: .16rem;
+}
+
+.vcode {
+    width: 1.84rem !important;
+    border-radius:3px 0 0 3px!important ;
+}
+
+.get-code {
+    width: 1.21rem !important;
+    background: #333;
+    color: #fff;
+    border: 1px solid #333 !important;
+    border-left: none !important;
+    border-radius:0 3px 3px 0!important;
+}
+
+.dark_btn {
+    color: #fff;
+    background: #333;
+}
+
+.login button {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: .16rem;
+    outline: none;
+    border: none;
+    height: .41rem;
+    text-align: center;
+    border-radius: 3px;
+    /*background: #06b7e0;*/
+}
+
+input::-webkit-input-placeholder {
+    color: #b8babc;
+    font-size: .16rem;
+}
+
+input:-moz-input-placeholder {
+    color: #b8babc;
+    font-size: .16rem;
+}
+
+input:-ms-input-placeholder {
+    color: #b8babc;
+    font-size: .16rem;
+}
+
+/*Confirm弹框*/
+.common_cover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.44);
+    z-index: 10000
+}
+
+.alert_content {
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 80%;
+    height: 1rem;
+    padding: .1rem;
+    margin-top: -1rem;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.alert_content img {
+    width: .4rem;
+    margin-bottom: .05rem;
+}
+
+.info-left {
+    width: 45%;
+    float: left;
+    height: .8rem;
+    text-align: center;
+    padding-top: .1rem;
+}
+
+.info-right {
+    width: 45%;
+    float: right;
+    text-align: center;
+    padding-top: .1rem;
+    height: .8rem;
+}

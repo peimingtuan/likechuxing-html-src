@@ -1,0 +1,32 @@
+<view class="container" a:if="{{pageIsShow}}">
+    <view class="wrap" a:if="{{status==2}}">
+        <image src="../../image/certificationFailed.png" mode="aspectFit"  class="icon"/>
+        <text class="title">认证未通过审核</text>
+        <text class="titleDesc">{{reason}}</text>
+    </view>
+    <view class="wrap" a:if="{{status==1}}">
+        <image src="../../image/underReview.png" mode="aspectFit"  class="icon"/>
+        <text class="title">信息审核中</text>
+        <text class="titleDesc">请耐心等待</text>
+    </view>
+    <view class="wrap" a:if="{{status==0}}">
+        <image src="../../image/passedTheCertification.png" mode="aspectFit"  class="icon"/>
+        <text class="title">认证已通过</text>
+        <text class="titleDesc">证件照片已做隐私处理，不显示具体内容</text>
+    </view>
+    <view class="footer">
+        <view onTap="callPhone">
+            <text class="footerDescLabel">客服热线：</text>
+             <text class="tel">400-666-2333</text>
+        </view>
+        <view class="btn" a:if="{{status==2}}" onTap="goAuthenticationPage">
+            <text class="btnText">重新认证</text>
+        </view>
+        <view class="btn" a:if="{{status==1}}" onTap="goIndexPage">
+            <text class="btnText">去首页</text>
+        </view>
+    </view>
+</view>
+<view class="loadingBox" a:if="{{!pageIsShow}}">
+    <view class="loadingIcon"></view>
+</view>

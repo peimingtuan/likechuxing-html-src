@@ -1,0 +1,73 @@
+#checkdinspection .show{
+    padding:.05rem;
+    font-size:.12rem;
+    line-height:.234rem;
+    color:#bebebe;
+    margin-bottom:.1rem;
+}
+
+#checkdinspection .show img{
+    width:.12rem;
+}
+
+#checkdinspection .car-part{
+    margin:0 .12rem;
+}
+
+#checkdinspection .last-more{
+    margin-bottom:.8rem;
+}
+
+#checkdinspection .car-part .top{
+    text-align: center;
+}
+
+#checkdinspection .car-part .top img{
+    width:1.2rem;
+}
+
+#checkdinspection .last-more .top img{
+    width:.5rem;
+    height:.01rem;
+}
+
+#checkdinspection .car-part .top span {
+    display: inline-block;
+    margin:0 .12rem;
+}
+
+#checkdinspection .car-part .content{
+    display:flex;
+    display: -webkit-flex; /* Safari */
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    flex-wrap:wrap;
+}
+
+
+#checkdinspection .car-part .content .parts{
+    margin-top:.12rem;
+    margin-left:.09rem;
+    background:#fff;
+    width:1.05rem;
+    height:.8rem;
+    border-radius: 2px;
+}
+
+#checkdinspection .parts-text{
+    line-height:.3rem;
+    text-align: center;
+}
+
+#checkdinspection .parts-img{
+    text-align: center;
+    line-height: .4rem;
+}
+
+#checkdinspection .parts-color{
+    color:#ff9191;
+}
+
+#checkdinspection .abnormal{
+    margin-right:.2rem;
+}

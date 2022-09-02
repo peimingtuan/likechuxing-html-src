@@ -1,0 +1,117 @@
+page{
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+}
+.mapWrap{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.mapStyle{
+    height: 100%;
+    flex: 1;
+}
+
+.footer{
+    height: 65px;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    background: #fff;
+    display: flex;
+    align-items: center;
+}
+.btnTip{
+    flex:1;
+    height: 45px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    border: 1px solid #e8ebef;
+}
+.tipText{
+    font-family: PingFangSC-Regular;
+    font-size: 32rpx;
+    color: #111;
+    text-align: center;
+    line-height: 32rpx;
+}
+.box{
+    height: 292rpx;
+    background: #FFFFFF;
+    box-shadow: 0 -2px 3px 0 rgba(200,200,200,0.50);
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+}
+.likeBtnWrap{
+    flex:1;
+    padding-left: 20rpx;
+    padding-right: 20rpx;
+    padding-top: 28rpx;
+}
+.likeBtn{
+    height: 100rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2A2D36;
+    border-radius: 2px;
+    font-family: PingFangSC-Regular;
+    font-size: 34rpx;
+    color: #FFFFFF;
+}
+.dotWrap{
+    padding-left: 40rpx;
+    padding-top: 30rpx;
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    font-family: PingFangSC-Regular;
+    font-size: 24rpx;
+    color: #848C99;
+    line-height: 18px;
+    justify-content: center;
+}
+.dotTitle{
+    font-family: PingFangSC-Regular;
+    font-size: 28rpx;
+    color: #333333;
+}
+.num{
+    font-family: PingFangSC-Regular;
+    font-size: 24rpx;
+    color: #e58d8d;
+}
+/* 搜索框样式 */
+.searchWrap{
+    padding: 10px;
+    background: #fff;
+}
+.search{
+    height: 36px;
+    display: flex;
+    background:#F4F5F7;
+    justify-content: center;
+    align-items: center;
+    padding-left: 11px;
+}
+.searchIcon{
+    width: 13px;
+    height: 13px;
+    background: url('/image/search.png') no-repeat;
+    background-size: 100% 100%;
+}
+.placeholderclass{
+    flex:1;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #848C99;
+    margin-left: 5px;
+}

@@ -1,0 +1,34 @@
+//- Created by garvey on 2017/12/15.
+include ../../../template/base/h5
+    include ../../../template/head/viewport
+    include ../../../template/head/noTelephone
+    script(src="/js/bundle/dll.vue.100.js")
+    title 收货地址
+body
+    .tips 请填写收件人真实姓名，切勿使用类似张、张生、张先生、张先生a、张小姐、张女士、张太太、ABC……
+    .box.name.fs14
+        label
+            span.word3 收件
+            span 人：
+            input.value#name(type="text")
+        .close
+    .box.phone.fs14
+        label
+            span.word3 手机
+            span 号：
+            input.value#phone(type="text")
+        .close
+    .box.area.fs14
+        label
+            span 所在地区
+            span ：
+            span.value#area
+        .rightArrow
+    .box.address.fs14
+        label.add_label
+            span 详细地址
+            span ：
+            textarea.value#address.fs14
+        .close
+    .btn_con
+        button#submit.disabled.fs16 提交

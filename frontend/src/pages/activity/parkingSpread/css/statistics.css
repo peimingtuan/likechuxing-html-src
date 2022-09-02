@@ -1,0 +1,137 @@
+@import '../../../../css/reset.css';
+* {
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+.none {
+    display: none !important;
+}
+input::-webkit-input-placeholder {
+    color: #b8babc;
+    font-size: .13rem;
+}
+
+input:-moz-input-placeholder {
+    color: #b8babc;
+    font-size: .13rem;
+}
+
+input:-ms-input-placeholder {
+    color: #b8babc;
+    font-size: .13rem;
+}
+.color{
+    color:#b8babc!important;
+}
+body{
+    background:#eeeef0;
+}
+.left{
+    float:left;
+}
+.right{
+    float:right;
+}
+@font-face {
+    font-family: 'iconfont';  /* project id 628835 */
+    src: url('//at.alicdn.com/t/font_628835_nj4psi92p9jrwwmi.eot');
+    src: url('//at.alicdn.com/t/font_628835_nj4psi92p9jrwwmi.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_628835_nj4psi92p9jrwwmi.woff') format('woff'),
+    url('//at.alicdn.com/t/font_628835_nj4psi92p9jrwwmi.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_628835_nj4psi92p9jrwwmi.svg#iconfont') format('svg');
+}
+.top{
+    position:fixed;
+    top:0;
+    width:100%;
+    height:0.75rem;
+    padding:0 .15rem;
+    background:#fff;
+    z-index:100;
+    border-bottom: 1px solid #e1e1e3;
+}
+.top .p1{
+    margin-top:.1rem;
+    font-size:.17rem;
+    height:.2rem;
+    text-align: center;
+}
+.top .p1 span{
+    display:inline-block;
+    line-height:.2rem;
+    text-align: center;
+}
+.top .p1 .right{
+    font-family: 'iconfont';
+}
+.top .p2{
+    height:.2rem;
+    text-align: center;
+}
+.top .p2 span{
+    display:inline-block;
+    line-height:.2rem;
+    color:#b7b7b7;
+    font-size:.13rem;
+    text-align: center;
+}
+.top .p2 span:nth-of-type(2){
+    position:relative;
+}
+.select{
+    margin:.2rem auto;
+    position:relative;
+}
+.select select{
+    margin:0;
+    padding:0;
+    width:2.2rem;
+    height:.3rem;
+    padding-left:.1rem;
+    outline:none;
+    border:1px solid #bababc;
+    border-radius:3px;
+    background:#fff;
+}
+.select-btn{
+    margin:0;
+    padding:0;
+    width:1rem;
+    height:.3rem;
+    outline: none;
+    color:#fff;
+    text-align: center;
+    border:none;
+    background:#333;
+    font-size:.17rem;
+    border-radius:3px;
+}
+.logout-btn {
+    margin-top:.1rem;
+    padding:0;
+    width:100%;
+    height:.3rem;
+    outline: none;
+    color:#fff;
+    text-align: center;
+    border:none;
+    background:#666;
+    font-size:.17rem;
+    border-radius:3px;
+}
+
+.stat-table-container{
+    margin:0.95rem .1rem .2rem;
+}
+.stat-table-container table{
+    width: 100%;
+    background: #ccc;
+}
+.stat-table-container table th,
+.stat-table-container table td{
+    background: #fff;
+    padding: .05rem .03rem;
+    font-size: .12rem;
+}

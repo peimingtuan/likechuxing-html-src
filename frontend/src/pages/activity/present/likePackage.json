@@ -1,0 +1,38 @@
+{
+  "id": 2019,
+  "zh_name": "6月活动",
+  "name": "present",
+  "group": "activity",
+  "bundle_vendor": true,
+  "dll":[
+    "vue"
+  ],
+  "copy": true,
+  "input_file": {
+    "license":[
+      "license.js"
+    ],
+    "licenseInfo":[
+      "licenseInfo.js"
+    ],
+    "share": [
+      "share.js"
+    ],
+    "share2": [
+      "share2.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/activity/present/",
+    "publicPath": "/",
+    "filename": "js/activity_present/[name].js"
+  },
+  "template": {
+    "list": [
+      "share.pug",
+      "share2.pug",
+      "license.pug",
+      "licenseInfo.pug"
+    ]
+  }
+}

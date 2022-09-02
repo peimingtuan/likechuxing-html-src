@@ -1,0 +1,208 @@
+#networkdetail2 .header {
+    padding: .12rem;
+    background: #fff;
+}
+
+#networkdetail2 .header .p1 {
+    font-size: .15rem;
+    font-weight: bold;
+    line-height: .28rem;
+}
+
+#networkdetail2 .header .p2 {
+    display: flex;
+    display: -webkit-flex; /* Safari */
+    justify-content: space-between;
+    line-height: .28rem;
+}
+
+#networkdetail2 .header .net-name {
+    width: 3rem;
+    color: gray;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#networkdetail2 .header img {
+    width: .23rem;
+}
+
+#networkdetail2 .carwash-num {
+    padding: 0 .12rem;
+    line-height: .45rem;
+}
+
+#networkdetail2 .carwash-num span {
+    display: inline-block;
+    padding: 0 .02rem;
+}
+
+/*已有洗车列表*/
+#networkdetail2 .carwash-list{
+    padding: .12rem;
+    background: #fff;
+    border-top:1px solid #dcdcdc;
+    position:relative;
+}
+
+#networkdetail2 .carwash-list span{
+    display:inline-block;
+}
+
+#networkdetail2 .carwash-list .span1{
+    color: #999999;
+}
+
+#networkdetail2 .carwash-list .font1{
+    font-size:.15rem;
+    font-weight:bold;
+}
+
+#networkdetail2 .carwash-list .span2{
+    margin-right:.12rem;
+    padding:0 .12rem;
+    border-radius:2px;
+    border:1px solid #999999;
+}
+
+#networkdetail2 .carwash-list .span3{
+    margin-left:.12rem;
+    padding:0 .12rem 0 0;
+    border-right:1px solid #dcdcdc;
+}
+
+#networkdetail2 .carwash-list .span4{
+    padding:0 .12rem;
+    line-height:.35rem;
+}
+
+#networkdetail2 .carwash-list .check-detail{
+    position:absolute;
+    padding:.08rem 0;
+    border:1px solid #999999;
+    border-radius:20px;
+    width: 1.2rem;
+    text-align: center;
+    color:#fff;
+    background:#666566;
+    right:.12rem;
+    top:.22rem;
+}
+/*待接单列表*/
+#networkdetail2 .detail-list{
+    /*margin-bottom:.234rem;*/
+}
+
+#networkdetail2 .detail-list li {
+    margin-bottom: .12rem;
+    padding: .12rem;
+    background: #fff;
+}
+
+#networkdetail2 .detail-list li:last-of-type {
+    margin-bottom:.234rem;
+}
+
+#networkdetail2 .detail-list li span{
+    display:inline-block;
+}
+
+#networkdetail2 .detail-list li .span1{
+    color: #999999;
+}
+
+#networkdetail2 .detail-list li .font1{
+    font-size:.15rem;
+    font-weight:bold;
+}
+
+#networkdetail2 .detail-list li .span2{
+    margin-right:.12rem;
+    padding:0 .12rem;
+    border-radius:2px;
+    border:1px solid #999999;
+}
+
+#networkdetail2 .detail-list li .span3{
+    margin-left:.12rem;
+    padding:0 .12rem 0 0;
+    border-right:1px solid #dcdcdc;
+}
+
+#networkdetail2 .detail-list li .span4{
+    padding:0 .12rem;
+    line-height:.35rem;
+}
+
+#networkdetail2 .detail-list li .div3{
+    margin-top:.1rem;
+    /*border-top:1px solid #dcdcdc;*/
+    text-align: right;
+}
+
+#networkdetail2 .detail-list li .div3 span{
+    padding:.08rem 0;
+    border:1px solid #999999;
+    border-radius:3px;
+    width: 1.2rem;
+    text-align: center;
+}
+
+#networkdetail2 .detail-list li .div3 .fit{
+    color:#fff;
+    background:#666566;
+}
+
+/*车辆不在网点弹框*/
+ #networkdetail2 .editremark_window{
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(0, 0, 0, 0.44);
+     z-index: 100;
+ }
+
+#networkdetail2 .editremark{
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-left:-1.6rem;
+    margin-top:-.8rem;
+    box-sizing:border-box;
+    width:3.2rem;
+    /*height:2.46rem;*/
+    border-radius:10px;
+    background:#fff;
+    overflow:hidden;
+}
+
+#networkdetail2 .editremark .center{
+    margin:.2rem .1rem;
+    line-height:1.6;
+}
+
+#networkdetail2 .editremark .bottom{
+    margin-top:.12rem;
+    box-sizing: border-box;
+    height: .468rem;
+    border-top: 1px solid #dcdcdc;
+    display: flex;
+    display: -webkit-flex; /* Safari */
+    justify-content:space-between;
+}
+
+#networkdetail2 .editremark .bottom span{
+    display: inline-block;
+    width:1.58rem;
+    color:#469dfa;
+    line-height: .456rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#networkdetail2 .editremark .bottom .sure{
+    border-right:1px solid #dcdcdc;
+}

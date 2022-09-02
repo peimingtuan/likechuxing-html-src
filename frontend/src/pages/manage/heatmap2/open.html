@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>打开热力图</title>
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, user-scalable=no"/>
+    <script src="https://webapi.amap.com/maps?v=1.4.6&key=91ed10906005ee88866f14fd9f076e8b"></script>
+        <script src="http://webapi.amap.com/loca?key=91ed10906005ee88866f14fd9f076e8b"></script>
+    <script src="//webapi.amap.com/ui/1.0/main.js?v=1.0.10"></script>
+</head>
+<body>
+<div id="map" class="map"></div>
+<div class="config active">
+    <div class="box">
+        <div>城市：
+            <select id="city">
+                <!-- <option value="0">全国</option>-->
+            </select>
+        </div>
+        <div>日期：
+            <select id="time"></select>
+        </div>
+        <div style="width:160px;text-align: left"><!--<button id="toggle">显示/隐藏网点</button>-->
+        </div>
+        <div id="slider"><div id="custom-handle" class="ui-slider-handle"></div>
+        </div>
+    </div>
+    <div class="config_img"></div>
+</div>
+</body>
+</html>

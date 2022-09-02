@@ -1,0 +1,43 @@
+@import '../../../css/config';
+.activeCar(){
+  background-color: lighten(@mainColor, 75%);
+  color:@mainColor;
+}
+
+.CarList{
+  &.hidden{
+    display: none;
+  }
+  ul,li{
+    list-style: none;
+  }
+  .list{
+    border-bottom:solid 1px #dbdbdb;
+    min-height: 290px;
+  }
+  .row{
+    line-height: 20px;
+    font-size: 14px;
+    padding: 4px 10px;
+    border-bottom:dashed 1px #dbdbdb;
+    overflow: hidden;
+    &:nth-last-of-type(1){
+      border:none
+    }
+    &:hover{
+      .activeCar()
+    }
+    &.active{
+      .activeCar()
+    }
+    .name{
+      float: left;
+    }
+    .time{
+      font-size: 13px;
+      color:@whiteBgFont;
+      float: right;
+    }
+  }
+
+}

@@ -1,0 +1,12 @@
+<view class="container">
+    <view class="formWrap">
+        <view class="input">
+            <input type="text" placeholder="输入兑换码" class="formInput" placeholder-class="placeholderClass" onInput="getCode"/>
+        </view>
+    </view>
+    <view class="footer">
+        <view class="btnWrap" onTap="convertCoupon">
+            <text class="btnText">兑换</text>
+        </view>
+    </view>
+</view>

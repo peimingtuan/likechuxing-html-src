@@ -1,0 +1,29 @@
+<view class="container" a:if="{{pageIsShow}}">
+    <view class="headerBg">
+        <view class="bailRecordingBox">
+            <text class="bailRecording" onTap="goBailRcord">保证金记录</text>
+        </view>
+        <view class="bailDesc">
+            <text class="bailTitle">用车保证金(元)</text>
+            <image src="../../image/bailImg.png" mode="aspectFit"  class="bailImg" onTap="goBailDesc"/>
+        </view>
+        <view class="amountWrap">
+            <text class="amount">{{num}}</text>
+        </view>
+    </view>
+    <view class="payWrap">
+        <view class="payDesc">
+            <image src="../../image/alipay.png" mode="aspectFit" class="payIcon"/>
+            <text class="payName">支付宝支付</text>
+        </view>
+        <view class="checkImg"></view>
+    </view>
+    <view class="footer">
+        <view class="btnWrap" onTap="goAuthentication">
+            <text class="btnText">立即支付</text>
+        </view>
+    </view>
+</view>
+<view class="loadingBox" a:if="{{!pageIsShow}}">
+    <view class="loadingIcon"></view>
+</view>

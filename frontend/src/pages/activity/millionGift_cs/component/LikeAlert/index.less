@@ -1,0 +1,81 @@
+@import '../../../../../css/animates';
+@import '../../../../../css/animates/zoomInOut';
+@import '../../../../../css/buttons/button';
+.LikeAlert{
+  position: fixed;
+  z-index: 100;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+
+  .Toast{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom:50%;
+    .msg{
+      display: inline-block;
+      max-width: 78%;
+      min-width: 47%;
+      font-size: 0.15rem;
+      color:#fff;
+      padding: 0.15rem 0.2rem;
+      box-sizing: border-box;
+      border-radius: 2px;
+      background-color: rgba(0,0,0,0.75);
+    }
+  }
+
+  .Mask{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.44);
+  }
+
+  .Alert, .Confirm{
+    .dark_btn{
+      background-color: #e84656;
+    }
+    .dialogBox {
+      background-color: #FFF;
+      width: 78%;
+      position: absolute;
+      top: 30%;
+      left: 11%;
+      padding: 0.2rem 0.35rem;
+      box-sizing: border-box;
+      border-radius: 2px;
+      color: #494B51;
+      text-align: center;
+      font-size: 0.15rem;
+      line-height: 0.23rem;
+      .title {
+        word-break: break-all;
+      }
+      .msg {
+        word-break: break-all;
+      }
+      .alert_btn_container {
+        height: 0.36rem;
+        padding-top: 0.2rem;
+        button {
+          height: 100%;
+          font-size: 14px;
+        }
+        .btn_row_1 {
+          width: 100%;
+        }
+        .btn_row_2 {
+          width: 46.3%;
+          &:nth-child(1) {
+            float: left
+          }
+          &:nth-child(2) {
+            float: right
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+@import '../../../css/config';
+
+.TrackControlBox{
+  z-index: 160;
+  position: absolute;
+  width: 280px;
+  left:@headerHeight*0.5;
+  top:@headerHeight*0.3;
+}
+
+.TrackControlTitle{
+  position: relative;
+  text-align: center;
+  font-size: 0.14rem;
+  line-height: 36px;
+  background-color: @mainColor;
+  color:#fff;
+  border-radius: 3px 3px 0 0;
+  .switchBody {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    width: 30px;
+    height: 100%;
+  }
+}
+
+.TrackControlBody{
+  background-color: contrast(lighten(@mainColor, 40%));
+  border-radius: 0 0 3px 3px;
+  .switch_container{
+    position: relative;
+    .switch{
+      padding: 3px 10px;
+      display: flex;
+      justify-content: center;
+      background-color: lighten(@mainColor,20%);
+      .item{
+        margin:0 8px;
+        width: 30px;
+        height:30px;
+        background:  no-repeat center;
+        background-size: 80%;
+        transition: background 400ms;
+        position: relative;
+        &:hover::after {
+          content: attr(data-title);    //取到data-title属性的值
+          display: inline-block;
+          width:100%;
+          text-align: center;
+          font-size: 12px;
+          line-height: 16px;
+          position: absolute;
+          background-color: #fbeed5;
+          top: -16px;
+        }
+        &.car{
+          background-image: url('../../../images/icon_car.png');
+          &.active{
+            background-image: url('../../../images/icon_car_light.png');
+          }
+        }
+        &.branch{
+          background-image: url('../../../images/icon_branch.png');
+          &.active{
+            background-image: url('../../../images/icon_branch_light.png');
+          }
+        }
+      }
+    }
+    .switchSearch{
+      position: absolute;
+      right:15px;
+      top:0;
+      width:30px;
+      height: 36px;
+    }
+  }
+
+}

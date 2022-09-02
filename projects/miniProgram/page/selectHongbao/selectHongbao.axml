@@ -1,0 +1,33 @@
+<view class="container">
+    <view class="header">
+        <view class="headerBtn" onTap="goNextPage"> 
+            <text class="headerBtnText">不使用红包</text>
+        </view>
+    </view>
+    <view class="tips" a:if="{{!isEmpty}}">
+        <view a:if="{{leftNum!==''}}">您还可以使用{{leftNum}}次优惠</view>
+    </view>
+    
+    <view class="empty" a:if="{{isEmpty}}">
+        <image src="/image/couponEmpty.png" mode="aspectFit"  class="emptyImg"/>
+        <text class="emptyText">当前暂无可用优惠券</text>
+    </view>
+    <view class="listWrap" a:else="{{!isEmpty}}">
+        <view class="block-item" a:for="{{list}}">
+            <select-item 
+                name="{{item.name}}"
+                case="{{item.case}}"
+                time="{{item.time}}"
+                money="{{item.money}}"
+                numCase="{{item.numCase}}"
+                couponType="{{item.type}}"
+                freeTime="{{item.freeTime}}"
+                selected="{{item.selected}}"
+                onClick="handleItem"
+                index="{{index}}"
+                type="1"
+            />
+        </view>
+    </view>
+  </view>
+  <desc-modal descList="{{descList}}" />

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+    <meta content="telephone=no, address=no" name="format-detection">
+    
+    <meta name="full-screen" content="yes">
+    
+    <meta name="x5-fullscreen" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="no-cache" http-equiv="pragma">
+    <meta content="0" http-equiv="expires">
+    <meta name="full-screen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>网点名称</title>
+    <script>
+        var htmlBq = document.documentElement;
+
+        function allSize() {
+            var htmlWidth = htmlBq.clientWidth;
+            if (htmlWidth >= 640) {
+                htmlBq.style.fontSize = '40px';
+            } else if (htmlWidth < 640 && htmlWidth >= 320) {
+                htmlBq.style.fontSize = htmlWidth / (640 / 40) + 'px';
+            } else if (htmlWidth < 320) {
+                htmlBq.style.fontSize = '20px';
+            }
+        }
+        allSize();
+        window.onresize = function () {
+            allSize();
+        };
+    </script>
+    <script src="https://g.alicdn.com/dingding/open-develop/1.9.0/dingtalk.js"></script>
+    <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=fqCNAr6UAW542snWLf3dCaYH9vXAOgD8&s=1"></script>
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.4&key=91ed10906005ee88866f14fd9f076e8b"></script>
+<link href="/css/manage_manageOrder/vendor.da8023.css" rel="stylesheet"><link href="/css/manage_manageOrder/chunk.633431.css" rel="stylesheet"></head>
+<body>
+<script>
+    !(function(c,b,d,a){c[a]||(c[a]={});c[a].config={pid:"gruqqi6cbp@6594c08d3216a5d",imgUrl:"https://arms-retcode.aliyuncs.com/r.png?"};
+        with(b)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("crossorigin","",src=d)
+    })(window,document,"https://retcode.alicdn.com/retcode/bl.js","__bl");
+</script>
+<div id="container"></div>
+<div class="networkname-top">
+    <span class="netpoint">请在地图内选择网点或搜索网点</span>
+    <span class="icon">&#xe605;</span>
+    <span class="navigation">导航</span>
+</div>
+<div class="networkname-toolcar2">
+    <input type="radio" class="name2" value="">
+    工具车
+</div>
+<div class="networkname-bottom">
+    <button class="">提交</button>
+</div>
+
+<div class="refure-operation">
+    <img src="">
+</div>
+<script type="text/javascript" src="/js/manage_manageOrder/manageOrder_bundle_manifest.4d64bb.js"></script><script type="text/javascript" src="/js/manage_manageOrder/manageOrder_bundle_vendor.0c0134.js"></script><script type="text/javascript" src="/js/manage_manageOrder/manageOrder_bundle_chunk.f65b09.js"></script><script type="text/javascript" src="/js/manage_manageOrder/schedulingJob/networkname2.269cc8.js"></script></body>
+</html>

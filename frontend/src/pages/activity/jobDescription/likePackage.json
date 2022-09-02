@@ -1,0 +1,22 @@
+{
+  "id": 2020,
+  "zh_name": "2018校园招聘h5",
+  "name": "jobDescription",
+  "group": "activity",
+  "ver": "1.0.0",
+  "bundle_vendor": false,
+  "copy": true,
+  "input_file": {
+    "index": ["index.js"]
+  },
+  "output_file": {
+    "path": "/dist/activity/jobDescription/",
+    "publicPath": "/",
+    "filename": "js/activity_jobDescription/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.pug"
+    ]
+  }
+}

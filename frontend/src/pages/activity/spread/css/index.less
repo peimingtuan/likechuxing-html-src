@@ -1,0 +1,202 @@
+@import "./reset.css";
+body{position: relative}
+.btn{
+  transition-duration: 100ms;
+  &:active{
+    transform: scale(0.97);
+  }
+  &.disable{
+    opacity: 0.6;
+    &:active{
+      transform: scale(1);
+    }
+  }
+}
+p{color:#f1d76f;text-align: center}
+.header {
+  width: 100%;
+  position: relative;
+  transition:transform 600ms ease-in-out;
+  font-size: 13px;
+  .text{
+    background-color: #FC3F2D;
+    .logo{
+      display: block;
+      width: 22%;
+      height: auto;
+      margin:0 auto;
+      padding: 15% 0 3%;
+    }
+    p{
+      transition:opacity 600ms ease-in-out;
+    }
+    .title{
+      font-size:42px ;
+      padding-top: 10%;
+      & + p{
+        font-size: 16px;
+      }
+    }
+  }
+  &.up{
+    transform: translate(0,-62%);
+    p{opacity:0}
+    .open_con{
+      .open{
+        opacity: 0;
+      }
+      .logo{
+        opacity: 1;
+      }
+    }
+  }
+  .open_con {
+    margin-top: -1px;
+    position: relative;
+    width:100%;
+    background: url(../images/red-border.png) no-repeat center top;
+    background-size: 100% auto;
+    .open{
+      position: absolute;
+      top:0;
+      width: 28%;
+      margin-left: 36%;
+      transition:opacity 600ms ease-in-out;
+    }
+    .logo{
+      margin:0 39%;
+      padding-top: 2%;
+      width: 22%;
+      opacity: 0;
+      transition:opacity 600ms ease-in-out;
+    }
+
+  }
+}
+section{
+  position: absolute;
+  top:0;
+  width: 100%;
+  .tip{
+  text-align: center;
+  .gray{
+    width:100%;
+    background-color: #f1f1f1;
+    padding-top: 50%;
+  }
+  span{
+    color:#a1a1a1;
+    font-size: 10px;
+    background-color: #f1f1f1;
+    padding: 2% 5%;
+    border-radius: 0 0 6px 6px;
+  }
+}
+  .coupon_title{
+    padding:15% 0;
+    color:#fc3f2d;
+    font-size: 24px;
+    span{
+      font-size: 14px;
+    }
+  }
+  .slogan{
+    position: fixed;
+    bottom:3%;
+    width: 26%;
+    left:37%
+  }
+  &.step_3{
+    .btn_con{
+      p{
+        color:#fc3f2d
+      }
+      img{
+        width: 38%;
+        margin:3% 31%;
+      }
+    }
+  }
+  &.step_2{
+    .input_con{
+      width: 62%;
+      margin-left:19% ;
+      .label{
+        border-bottom: solid 1px #ececec ;
+        position: relative;
+        line-height: 2em;
+        margin-bottom: 5%;
+      }
+      .get_code{
+        display: block;
+        position: absolute;
+        right:0;
+        bottom:-1px;
+        width:7em;
+        height:2.4em;
+        font-size: 12px;
+        color:#FFF;
+        border:none;
+        border-radius:5px;
+        background-color: #fc3f2d;
+      }
+      span{font-size: 12px;color:#333}
+      .input{
+        border:none;
+        height: 2em;
+      }
+      #phone{
+        width:8em;
+      }
+      #code{
+        width:4em
+      }
+      .get_coupon{
+        margin:25%;
+        width:50%;
+        height: 2em;
+        border-radius: 1em;
+        font-size: 16px;
+        color:#fc3f2d;
+        background-color:#FFF;
+        border:solid 1px #fc3f2d;
+      }
+    }
+  }
+}
+
+
+.step_1{
+  top:100%;
+  transition:transform 600ms ease-in-out;
+  .footer{
+    background-color: #DD4C3A;
+    .three_detail {
+      padding: 40% 0 12%;
+      margin-top: -28%;
+      width: 76%;
+      margin-left: 12%;
+      color: #f1d76f;
+      border-bottom: dashed 1px #f1d76f;
+      li {
+        text-align: center;
+      }
+    }
+    p {
+      margin-left: 12%;
+      padding: 4% 0;
+      width: 76%;
+      text-align: left;
+      font-size: 12px;
+    }
+    .steps{
+      width: 93.75%;
+      margin:0 auto;
+      padding: 6% 0;
+    }
+  }
+  &.down{
+    transform: translate(0,100%);
+  }
+}
+

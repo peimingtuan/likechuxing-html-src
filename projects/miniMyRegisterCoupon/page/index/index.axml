@@ -1,0 +1,36 @@
+<view class="container">
+  <view class="header" >
+    <image class="img" src="../../assert/images/banner_01.png" mode="scaleToFill" />
+  </view>
+  <view class="opt-box" a:if="{{step===1}}">
+          <view class="pos">
+            <input
+            placeholder="输入手机号领取免费券"
+            class="input"
+            type="digit"
+            maxlength="11"
+            onInput="bindKeyInput" />
+          </view>
+          <view class="pos" >
+          <input
+            placeholder="输入验证码"
+            class="input half"
+            type="digit"
+            maxlength="4"
+            onInput="bindKeyInput2" />
+            <view class='get' onTap="getCode">{{code_text}}</view>
+          </view>
+          <button class="btn main_color_btn" onTap="submit">点击领取</button>
+        </view>
+        <view a:else>
+          <view class="text">
+        <view>您已注册成功，下载<text class="download" onTap="toDownload">"立刻出行"</text>APP</view>
+        <view>体验便捷出行</view>
+    </view>
+        </view>
+        <view class="rules" a:if="{{rules.length>0}}">
+          <view class="title">活动说明</view>
+          <view class="rule" a:for="{{rules}}"><text class="index">{{index+1}}、</text>{{item}}</view>
+        </view>
+          <view class="footer"></view>
+</view>

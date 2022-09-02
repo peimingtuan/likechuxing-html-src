@@ -1,0 +1,51 @@
+@import '../../../../other_modules/css-animate/animate-btn';
+
+body{
+  background-color: #f3f3f3;
+}
+
+.header{
+  padding: 0.15rem 0.2rem;
+  font-size: 0.16rem;
+  line-height: 0.3rem;
+  text-align: center;
+  position: relative;
+  &::before{
+    content: '';
+    display: block;
+    width: 3.35rem;
+    height: 1px;
+    position: absolute;
+    top:0.3rem;
+    background-color:#dfdfdf ;
+  }
+  .text{
+    padding: 0 0.12rem;
+    position: relative;
+    z-index: 2;
+    background-color: #f3f3f3;
+  }
+}
+.text{
+  padding: 0 0.2rem;
+  font-size: 0.14rem;
+}
+.footer{
+  text-align: center;
+  color:#999;
+  font-size: 0.11rem;
+  padding: 0 0.1rem;
+  .btn{
+    line-height: 0.44rem;
+    background-color: #333;
+    color:#fff;
+    font-size: 0.15rem;
+    border-radius: 2px;
+    &.disabled{
+      background: #AFB2B5;
+    }
+  }
+  .footer_text{
+    line-height: 0.3rem;
+  }
+}

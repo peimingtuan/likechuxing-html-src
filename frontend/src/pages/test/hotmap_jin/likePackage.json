@@ -1,0 +1,23 @@
+{
+  "id": 899,
+  "name": "demo",
+  "zh_name": "测试",
+  "group": "test",
+  "ver": "1.0.0",
+  "bundle_vendor": false,
+  "copy": false,
+  "input_file": {
+    "index": ["index.js"]
+  },
+  "output_file": {
+    "path": "./dist/test/demo",
+    "publicPath": "/",
+    "filename": "js/test_demo/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.html"
+    ],
+    "importAll": false
+  }
+}

@@ -1,0 +1,331 @@
+body {
+    background: #f6f6f6;
+}
+
+.faultlist-content {
+    width: 100%;
+    height: 1.58rem;
+    background: #fff;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.faultlist-content span {
+    box-sizing: border-box;
+    font-family: 'iconfont';
+    display: inline-block;
+    width: 24%;
+    line-height: 1rem;
+    margin-top: .29rem;
+    text-align: center;
+    border-right: 1px solid #fbfbfb;
+}
+
+.faultlist-content .faultlistRefle {
+    border-right: none;
+}
+
+/*查看地图按钮样式*/
+.faultlist-map {
+    width: 100%;
+    height: 2.4rem;
+    background: #fff;
+    border-bottom: 1px solid #f8f8f8;
+    text-align: center;
+    box-sizing: border-box;
+    padding: .4rem .5rem;
+}
+
+.faultlist-map span {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 7.2rem;
+    line-height: 1.6rem;
+    text-align: center;
+    border-radius: 2px;
+    border: 1px solid #dcdcdc;
+}
+
+.faultlist-map img {
+    width: .8rem;
+    margin-right: .3rem;
+}
+
+/*列表样式*/
+.faultList li {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    /*height: 6rem;*/
+    padding: .5rem;
+    margin-bottom: .3rem;
+    background: #fff;
+}
+
+.faultList li span .font1 {
+    color: #999999;
+    margin-right: .1rem;
+}
+
+.faultList li span {
+    display: inline-block;
+    line-height: 1.2rem;
+}
+
+.faultList li span img {
+    width: 1rem;
+    margin-right: .3rem;
+}
+
+.faultList li span:nth-of-type(2) {
+    float: right;
+    color: #999;
+}
+
+.faultList li span:nth-of-type(3) {
+    line-height: 1rem;
+    padding: .1rem;
+    margin-top: .15rem;
+    margin-right: .2rem;
+    border: 1px solid #f6f6f6;
+}
+
+.faultList li span:nth-of-type(4) {
+    line-height: 1rem;
+    padding: .1rem;
+    margin-top: .15rem;
+    margin-right: .2rem;
+    border: 1px solid #f6f6f6;
+}
+
+.faultList li span:nth-of-type(5) {
+    line-height: 1rem;
+    padding: .1rem;
+    margin-top: .15rem;
+    border: 1px solid #f6f6f6;
+}
+
+.faultList li span:last-of-type, .faultList li .time {
+    color: #999;
+}
+
+/*筛选弹框*/
+.faultlist_content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 16rem;
+    padding: .5rem;
+    height: 23.2rem;
+    background: #fff;
+}
+
+.faultlist-title {
+    text-align: center;
+    fon-size: .8rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.close-faultlist {
+    font-family: 'iconfont';
+    fon-size: .8rem;
+    float: left;
+}
+
+.confirm-faultlist > .title {
+    height: 1.5rem;
+    line-height: 1.5rem;
+    margin-top: .5rem;
+}
+
+.confirm-faultlist > .title:first-of-type,.confirm-faultlist > .title:nth-of-type(3){
+    margin-top: 0;
+}
+
+.confirm-carstate > span {
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    margin:.2rem 0;
+    margin-right: .2rem;
+    /*margin-top: .5rem;*/
+    padding: .4rem .8rem;
+    border: 1px solid #e7e7e7;
+}
+
+.confirm-talkstyle{
+    /*overflow: hidden;*/
+    /*white-space: nowrap;*/
+    /*text-overflow: ellipsis;*/
+    /*height:1.5rem;*/
+}
+
+.confirm-netstyle span, .confirm-talkstyle span {
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    margin-right: .1rem;
+    margin-top: .5rem;
+}
+
+.confirm-netstyle span input, .confirm-talkstyle span input {
+    margin-right: .1rem;
+    width: .8rem;
+    height: .8rem;
+    position: relative;
+    top: .2rem;
+}
+
+.carstate-bottom {
+    box-sizing: border-box;
+    width: 16rem;
+    height: 3rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: .5rem;
+    box-shadow: 0px -2px 1px #eaeaea;
+}
+
+.carstate-bottom button {
+    width: 7.25rem;
+    line-height: 2rem;
+    text-align: center;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+.carstate-reset {
+    margin-right: .5rem;
+    background: #d8d8d8;
+}
+
+.carstate-sure {
+    color: #fff;
+    background: #333333;
+}
+
+/*颜色控制*/
+.color {
+    background: #333;
+    color: #fff;
+}
+
+/*排序弹框*/
+.sort_content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding: .5rem;
+    height: 5.8rem;
+    background: #fff;
+}
+
+.sort-title {
+    text-align: center;
+    fon-size: .8rem;
+    height: 1.6rem;
+    line-height: 1.5rem;
+}
+
+.close-sort {
+    font-family: 'iconfont';
+    fon-size: .8rem;
+    float: left;
+}
+
+.sort_content li {
+    line-height: 1.7rem;
+    border-top: 1px solid #ededed;
+    position: relative;
+}
+
+.sort_content li img {
+    position: absolute;
+    right: 0;
+    top: .35rem;
+    width: 1rem;
+    vertical-align: middle;
+}
+
+.sort-color {
+    color: #44a8ec;
+}
+
+/*筛选弹框二级分类*/
+.confirm-faultlist .bold .right {
+    font-family: 'iconfont';
+}
+
+.faultlist_content .faulttype,.faultlist_content .faulttype2 {
+    position: absolute;
+    background: #fff;
+    top: -.2rem;
+    left: .5rem;
+    width: 15rem;
+    height: 13rem;
+    border-bottom: 1px solid gray;
+    z-index: 10100;
+    border-radius: 2px;
+    overflow-y: scroll;
+}
+
+.faultlist_content ul {
+    position: absolute;
+    width: 7rem;
+    height: 13rem;
+    overflow-y: scroll;
+}
+
+.faultlist_content ul li {
+    padding-left: .5rem;
+    line-height: 2rem;
+}
+
+.faulttype-list,.faulttype-list2 {
+    top: 0;
+    left: 0;
+}
+
+.faultchoice-list,.faultchoice-list2 {
+    top: 0rem;
+    left: 8rem;
+}
+
+.confirm-faultlist .content p, .confirm-faultlist .content2 p {
+    height: 2rem;
+    line-height: 2rem;
+    padding-left: .5rem;
+    border-bottom: 2px solid #f6f6f6;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.confirm-faultlist .content p .choice-type, .confirm-faultlist .content2 p .choice-type2 {
+    display: inline-block;
+}
+
+.confirm-faultlist .content p .choice, .confirm-faultlist .content2 p .choice2 {
+    display: inline-block;
+}
+
+/*一级分类*/
+.faulttype-list li img,.faulttype-list2 li img {
+    width: 1rem;
+    margin-left: .3rem;
+}
+
+.font-color {
+    color: #44a8ec;
+}
+
+/*二级分类*/
+.faultchoice-list li img,.faultchoice-list2 li img {
+    width: 1rem;
+    margin-left: .3rem;
+}

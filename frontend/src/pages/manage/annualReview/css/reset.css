@@ -1,0 +1,206 @@
+a{
+	color:#333;
+}
+input[type=search]{
+	color: #333;
+    border-radius: 0px;
+    border:none;
+}
+input::-webkit-input-placeholder {
+    color: #999;
+}
+/*html { height: 100%;overflow-x: hidden;}*/
+body {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+        -webkit-tap-highlight-color: transparent;
+        font-size: .12rem;
+
+    }
+ input[type="button"], input[type="submit"], input[type="reset"] {-webkit-appearance: none;}
+
+textarea {-webkit-appearance: none;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+ul { list-style: none;}
+
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+strong { font-weight: bold; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+img { border: 0;}
+
+a{ text-decoration:none}
+h1,h2,h3,h4,h5,h6{font-weight:normal; font-size:15px;}
+a:focus,input:focus{
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+input{outline:none;border:none;}
+*:focus{outline:none;}
+*, :after, :before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/**
+    动画
+*/
+.slide-up-enter-active, .slide-up-leave-active{
+    transition: all .35s;
+}
+.slide-up-enter, .slide-up-leave-to{
+    transform: translateY(100%)
+}
+.fade-enter-active,.fade-leave-active{
+    transition: opacity .35s;
+}
+.fade-enter, .fade-leave-to{
+    opacity: 0;
+}
+.slide-left-enter-active, .slide-left-leave-active{
+    transition: all .35s;
+}
+.slide-left-enter, .slide-left-leave-to{
+    transform: translateX(-100%)
+}
+.slide-right-enter-active, .slide-right-leave-active{
+    transition: all .35s;
+}
+.slide-right-enter, .slide-right-leave-to{
+    transform: translateX(100%)
+}
+.mint-indicator-mask{
+    opacity: 1!important;
+    background: #fff!important;
+    z-index: 2020;
+}
+.mint-indicator-wrapper{
+    z-index: 2021
+}
+
+.mint-msgbox-content .mint-msgbox-message{
+    font-family: PingFangSC-Light;
+    font-size:.12rem;
+    color: #4A4A4A;
+    text-align: center;
+    line-height: .16rem!important;
+}
+.mint-msgbox-wrapper .mint-msgbox{
+    width: 2.46rem!important;
+    border-radius: 8px;
+}
+@media (-webkit-min-device-pixel-ratio: 1.1), (-webkit-min-device-pixel-ratio: 1.09375), (min-resolution: 1.1dppx), (min-resolution: 105dpi){
+    .pswp--svg .pswp__button--close{
+       background: url('../images/close_btn.png') no-repeat center center !important;
+       background-size: .16rem .16rem !important;
+    }
+}
+.pswp--svg .pswp__button--close{
+    background: url('../images/close_btn.png') no-repeat center center !important;
+    background-size: .16rem .16rem !important;
+ }
+ /*Сͼ��*/
+#dispatch-map .amap-marker .marker-route {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url("../images/like/white-net.png") no-repeat;
+    background-size: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#dispatch-map .amap-marker .marker-route2 {
+	display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url("../images/like/black-net.png") no-repeat;
+    background-size: 50px;
+}
+
+/* 地图 */
+#dispatch-map .amap-marker .bigmarker-route {
+	/*display: flex;
+    justify-content: flex-end;*/
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: url("../images/like/bigwhite-net.png") no-repeat;
+    background-size: 60px;
+}
+
+#dispatch-map  .amap-marker .bigmarker-route2 {
+	/*display: flex;
+    justify-content: flex-end;*/
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: url("../images/like/bigblack-net.png") no-repeat;
+    background-size: 60px;
+}
+
+#dispatch-map  .amap-marker .div1 {
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    white-space: nowrap;
+    /*padding: 2px;*/
+    position: absolute;
+    right: 0;
+    /*left: 28px;
+    top: -8px;*/
+    background: #fff;
+    border-radius: 10px;
+    /*使数字居中处理*/
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#dispatch-map  .amap-marker .div1 .span1 {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    box-sizing: border-box;
+    line-height: 18px;
+    /*margin-right: 8px;*/
+    background: #666;
+    border-radius: 50%;
+    text-align: center;
+    font-size: .12rem;
+    color: #fff;
+    /*position: absolute;*/
+}
+
+#dispatch-map  .amap-marker .div1 .span2 {
+    display: inline-block;
+    width: 18px;
+    line-height: 18px;
+    font-size: .12rem;
+    position: absolute;
+}
+
+#dispatch-map  .amap-marker .marker-route2 .div1 .span2 {
+    color: #999999;
+}
+#dispatch-map  .amap-marker .bigmarker-route2 .div1 .span2 {
+    color: #999999;
+}
+.detailPreview-marker{
+    background:rgb(129, 221, 87);
+    font-size: .12rem;
+    color: #fff;
+    border-radius: 60%;
+    width: .22rem;
+    height: .27rem;
+    text-align: center;
+    line-height: .27rem;
+}

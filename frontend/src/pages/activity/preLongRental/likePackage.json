@@ -1,0 +1,27 @@
+{
+  "id": 2007,
+  "zh_name": "长租活动预热",
+  "name": "preLongRental",
+  "group": "activity",
+  "bundle_vendor": false,
+  "copy": true,
+  "input_file": {
+    "index": [
+      "index.js"
+    ],
+    "download": [
+      "download.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/activity/preLongRental/",
+    "publicPath": "/",
+    "filename": "js/activity_preLongRental/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.pug",
+      "download.pug"
+    ]
+  }
+}

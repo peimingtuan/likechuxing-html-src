@@ -1,0 +1,89 @@
+@import "reset.css";
+
+body {
+  background-color: #ef1f2f;
+  position: relative;
+  min-height: 100vh;
+}
+
+.header {
+  height: 4.33rem;
+  background: url('../images/header.png') no-repeat center;
+  background-size: 100%;
+}
+
+.container {
+  padding-bottom: 0.45rem;
+
+  .item {
+    width: 3.05rem;
+    position: relative;
+    margin: 0.18rem auto;
+
+
+    .input, .btn {
+      height: 0.46rem;
+      width: 100%;
+      box-sizing: border-box;
+      border-radius: 2px;
+      border: none;
+      outline: none;
+    }
+
+    .count{
+      border-left:solid 1px #EF1F2F;
+      color:#ef1f2f;
+      line-height: 0.2rem;
+      position: absolute;
+      top: 0.13rem;
+      right:0.15rem;
+      padding-left: 0.15rem;
+      width: 5em;
+      text-align: center;
+    }
+
+    .clear {
+      position: absolute;
+      top: 0.13rem;
+      right: 0.13rem;
+      border-radius: 50%;
+      width: 0.2rem;
+      height: 0.2rem;
+      background: url('../images/cross.png') no-repeat center;
+      background-size: 100%;
+      opacity: 0.6;
+      &.code{
+        right:1.2rem;
+      }
+    }
+
+    .input {
+      background: #FFFFD9;
+      font-size: 16px;
+      color: #EF1F2F;
+      padding: 0 0.15rem;
+
+      &::-webkit-input-placeholder {
+        font-size: 16px;
+        color: #F5A623;
+      }
+    }
+
+    .btn {
+      background: #FAEA9D;
+      font-size: 20px;
+      color: #EF1F2F;
+      font-weight: 500;
+    }
+  }
+}
+
+
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 0.45rem;
+  background: url('../images/footer.png') no-repeat center;
+  background-size: 100%;
+}

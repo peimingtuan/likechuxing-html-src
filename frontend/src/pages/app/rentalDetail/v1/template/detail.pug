@@ -1,0 +1,73 @@
+//- Created by garvey on 2017/11/14.
+.detail_header
+    ul.rental_top
+        li
+            p #{distance}公里
+            p 里程
+        li
+            p #{total_time}
+            p 用时
+        li
+            p.dt_price_n #{total_fee}元
+            p 费用
+.rental_details
+    div(style="margin: 0.2rem")
+        // 计费价格
+        .dt_price
+            .text_in_line
+                span 计费价格
+            p
+                span.b_price #{dt_distance_price}
+                span  元 / 公里 +
+                span.b_price #{dt_time_price}
+                span 元 / 分钟
+            if (price_extra !== '0.00')
+                p.dt_desc
+                    span 动态加价
+                    span.dt_price_n  + ¥ #{price_extra}
+        // 费用明细
+        .price_img
+            .text_in_line
+                span 费用明细
+            ul.detail_list
+                li 总里程（公里）
+                li #{distance}
+                li 总时长（时间）
+                li #{total_time}
+
+                li.discount 优惠里程（公里）
+                li.discount #{discount_km}
+                li.discount 优惠时长（时间）
+                li.discount #{discount_min}
+                li.discount #{discount_msg}
+                li.discount #{discount_fee}
+
+                li 里程费（元）
+                li #{km_fee}
+                li 用时费（元）
+                li #{time_fee}
+                if (price_extra !== '0.00')
+                    li 动态加价（元）
+                    li #{price_extra}
+                if (parking_fee_in !== '0.00')
+                    li 还车附加费（元）
+                    li #{parking_fee_in}
+            .gray_line
+            // 应付
+            ul.detail_list
+                li 应付（元）
+                li #{deal_fee}
+                li.dark_gray 优惠券
+                li.dark_gray.cut_flag #{coupon_fee}
+                li.dark_gray 余额（元）
+                li.dark_gray.cut_flag #{balance}
+            .gray_line
+            // 实付
+            ul.detail_list
+                li 实付（元）
+                li #{actual_fee}
+        // 操作记录
+        .operate_con
+            .text_in_line
+                span 操作记录
+            ul.operate_list !{operateList}

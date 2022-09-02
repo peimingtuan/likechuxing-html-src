@@ -1,0 +1,115 @@
+@import "../../../../css/animates";
+@import "../../../../css/animates/slideInOut";
+@import './common';
+
+body{
+  background-color: #f7f9fb;
+}
+
+.banner{
+  background-image: url('../images/banner_4.jpg');
+}
+
+.introduce {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  .devote{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin:0.8rem 0;
+    .img_con{
+      margin:0;
+      width:50%;
+      text-align: center;
+      img{
+        width: 85%;
+      }
+    }
+    .desc{
+      width:35%;
+      margin:0 5%;
+      color:#333;
+      .title{
+        font-size: 0.184rem;
+      }
+      p{
+        font-size: 0.11rem;
+        line-height: 1.8;
+        margin:0.1rem 0
+      }
+    }
+  }
+  .swiper-container{
+    position: relative;
+    .swiper-pagination{
+      width: 6em;
+      position: absolute;
+      top:16%;
+      right:0;
+      left:auto;
+      bottom:auto;
+      .swiper-pagination-bullet{
+        width: auto;
+        height: auto;
+        display: block;
+        background: transparent;
+        text-align: right;
+        line-height: 1.8;
+        color:#999;
+        opacity: 1;
+        font-size: 0.12rem;
+        &:hover::before{
+          content: '• ';
+        }
+        &.swiper-pagination-bullet-active{
+          color:#000;
+          &::before{
+            content: '• ';
+          }
+        }
+      }
+    }
+  }
+  .jobList{
+    display: block;
+    margin-bottom: -1px;
+  }
+  .jobList_m{
+    display: none;
+  }
+}
+
+@media screen and (max-width:496px){
+  .introduce{
+    width: 80%;
+
+    .devote{
+      width: 100%;
+      margin:0 auto;
+      .img_con{
+        width:100%;
+        img{
+          width:100%
+        }
+      }
+      .desc{
+        margin:0.4rem 0;
+        width:100%;
+        .title{
+          text-align: center;
+        }
+      }
+    }
+
+    .jobList{
+      display: none;
+    }
+    .jobList_m{
+      display: block;
+    }
+  }
+}
+
+

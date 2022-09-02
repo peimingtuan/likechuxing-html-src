@@ -1,0 +1,276 @@
+.controlist-content {
+    box-sizing: border-box;
+    width: 100%;
+    height: 5rem;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.controlist-content > p:first-of-type {
+    box-sizing: border-box;
+    height: 2rem;
+    padding: 0 .5rem;
+}
+
+.controlist-content > p:last-of-type {
+    box-sizing: border-box;
+    height: 3rem;
+    padding: .5rem;
+    border-top: 1px solid #f6f6f6;
+}
+
+.controlist-content .p1 span {
+    box-sizing: border-box;
+    font-family: 'iconfont';
+    display: inline-block;
+    width: 24%;
+    line-height: 2rem;
+    text-align: center;
+    border-right: 1px solid #fbfbfb;
+}
+
+.controlist-content .p1 .controlContentRefle {
+    border-right: none;
+}
+
+.controlist-content .p2 span {
+    display: inline-block;
+    width: 7rem;
+    line-height: 1.8rem;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.check-net {
+    background: #44a8ec;
+    border: 1px solid #44a8ec;
+    color: #fff;
+}
+
+.show-dock {
+    border: 1px solid #333;
+}
+
+.controlList li {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 3rem;
+    padding: .5rem;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.controlList li:nth-of-type(even) {
+    background: #f8f8f8;
+}
+
+.controlList li .div1 {
+    position: absolute;
+    left: .5rem;
+    top: .5rem;
+    width: 9.5rem;
+    height: 2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.controlList li .div2 {
+    position: absolute;
+    left: 10rem;
+    top: .5rem;
+    width: 3rem;
+    height: 2rem;
+    text-align: center;
+    border-left: 1px solid #f6f6f6;
+    border-right: 1px solid #f6f6f6;
+}
+
+.controlList li .div3 {
+    position: absolute;
+    left: 13.5rem;
+    top: .5rem;
+    width: 2.5rem;
+    height: 2rem;
+    text-align: center;
+}
+
+.controlList li div span {
+    display: inline-block;
+    line-height: 1rem;
+}
+
+.controlList .net-id, .controlList .advise, .controlList .need-dispatch {
+    color: #9a9a9a;
+}
+
+/*调度说明弹框*/
+.control_window {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(244, 244, 244, 1);
+    z-index: 10000;
+}
+
+.control_content {
+    padding: .8rem;
+}
+
+.control_content .title {
+    text-align: center;
+    font-size: .8rem;
+    line-height: 2rem;
+    font-weight:bold;
+}
+
+.control_content .p1 {
+    margin-top:.5rem;
+    line-height:1rem;
+}
+
+.control_content .p2,.control_content .p3,.control_content .p4 {
+    margin-top:1rem;
+    line-height:1.2rem;
+    font-size: .8rem;
+}
+
+.control_content p span{
+    font-size: .8rem;
+    font-weight:bold;
+}
+
+.control_content .p5{
+    margin-top:2.5rem;
+    line-height:1rem;
+    color:#bfbfbf;
+}
+
+.control_window .control_bottom{
+    position:absolute;
+    bottom:2rem;
+    width:100%;
+    left:0;
+    text-align: center;
+}
+
+.control_window .control_bottom img{
+    width:2rem;
+    vertical-align: middle;
+}
+
+/*颜色控制*/
+.color {
+    background: #333;
+    color: #fff;
+}
+
+/*排序弹框*/
+.controlsort_content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding: .5rem;
+    height: 5.8rem;
+    background: #fff;
+}
+
+.controlsort-title {
+    text-align: center;
+    fon-size: .8rem;
+    height: 1.6rem;
+    line-height: 1.5rem;
+}
+
+.controlclose-sort {
+    font-family: 'iconfont';
+    fon-size: .8rem;
+    float: left;
+}
+
+.controlsort_content li {
+    line-height: 1.7rem;
+    border-top: 1px solid #ededed;
+    position: relative;
+}
+
+.controlsort_content li img {
+    position: absolute;
+    right: 0;
+    top: .35rem;
+    width: 1rem;
+    vertical-align: middle;
+}
+
+.controlsort-color {
+    color: #44a8ec;
+}
+
+/*筛选弹框*/
+.dispatch_content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: .5rem;
+    height: 8rem;
+    background: #fff;
+}
+
+.dispatch-title {
+    text-align: center;
+    fon-size: .8rem;
+    height: 1.6rem;
+    line-height: 1.5rem;
+}
+
+.close-dispatch {
+    font-family: 'iconfont';
+    fon-size: .8rem;
+    float: left;
+}
+
+.confirm-carstock > p:first-of-type{
+    line-height: 1.5rem;
+}
+
+.confirm-carstate > span{
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    margin-right: .3rem;
+    margin-top: .5rem;
+    padding: .4rem 1rem;
+    border: 1px solid #e7e7e7;
+}
+
+.dispatch-bottom {
+    box-sizing: border-box;
+    height: 3rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: .5rem;
+}
+
+.dispatch-bottom button {
+    width: 7.25rem;
+    line-height: 2rem;
+    text-align: center;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+.carstate-reset {
+    margin-right: .5rem;
+    background: #d8d8d8;
+}
+
+.carstate-sure {
+    color: #fff;
+    background: #333333;
+}

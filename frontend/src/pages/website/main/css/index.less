@@ -1,0 +1,240 @@
+@import './common';
+body{
+  background-color: #f8f8f8;
+}
+
+.banner{
+  background-image: url('../images/banner_1.jpg');
+  .slogan{
+    position: absolute;
+    top:50%;
+    width: 100%;
+    margin-top: -1rem;
+    text-align: center;
+    color:#fff;
+    font-size: 0.16rem;
+    .s{
+      margin-bottom: 2%;
+    }
+    .l{
+      font-size: 0.34rem;
+      letter-spacing: 0.9em;
+      text-indent: 0.9em;
+    }
+    button{
+      margin-top: 2.5%;
+      font-size: 0.12rem;
+      font-weight: 300;
+      height: 0.34rem;
+      width: 10em;
+      color:#fff;
+      background-color: transparent;
+      border-radius: 0;
+      border:solid 1px #999;
+      &:hover{
+        border-color:#fff;
+      }
+    }
+  }
+}
+
+.int_con{
+  width: 100%;
+  overflow: hidden;
+  padding: 0 0.25rem;
+  box-sizing: border-box;
+}
+
+.introduce{
+  width: 100%;
+  max-width: 800px;
+  margin:0 auto;
+  position: relative;
+  .why{
+    margin: 5% 0;
+    text-align: center;
+    .title{
+      font-size: 0.4rem;
+      color:#999;
+      margin-bottom: 1%;
+    }
+    p{
+      color:#333;
+      font-size: 0.146rem;
+      margin:0.05rem 0;
+    }
+    /*
+    ul{
+      color:#333;
+      font-size: 0.146rem;
+      font-weight: 500;
+      line-height: 1.6em;
+      li span{
+        display: inline-block;
+        //width:7em;
+        word-break: keep-all;
+        letter-spacing: -0.02em;
+      }
+    }
+    */
+  }
+  .what{
+    margin:0 auto;
+    text-align: left;
+    position: relative;
+    .phone{
+      width: 50%;
+    }
+    .desc{
+      position: absolute;
+      left:50%;
+      top:28%;
+      width:35%;
+      color:#333;
+      text-align: left;
+      .title{
+        font-size: 0.184rem;
+        font-weight: 300;
+        text-align: left;
+      }
+      .content{
+        font-size: 0.11rem;
+        line-height:1.7;
+        text-align: left;
+      }
+      button{
+        margin-top: 2em;
+        width: 10em;
+        font-size: 0.094rem;
+        color:#333;
+        height: 2.8em;
+        background-color: transparent;
+        border:solid 1px #ccc;
+        border-radius: 0;
+        &:hover{
+          border-color:#666;
+        }
+      }
+    }
+  }
+  .video{
+    margin: 0.4rem 0 1rem;
+    width: 100%;
+    position: relative;
+    &::before{
+      position: absolute;
+      content: '';
+      width: 800%;
+      height: 117%;
+      margin-top: 5%;
+      margin-left: -400%;
+      background-color: #47454a;
+      transform: rotate(-6.8deg);
+    }
+    .mask{
+      position: relative;
+      font-size: 0.3rem;
+      color:#fff;
+      .video_mask{
+        width: 100%;
+        display: block;
+      }
+      .video_text{
+        position: absolute;
+        top:0.6em;
+        left:0.5em;
+        .content{
+          font-size: 0.36rem;
+        }
+      }
+      .video_start{
+        width: 3em;
+        height: 3em;
+        position: absolute;
+        left:50%;
+        top:50%;
+        margin-top: -1.5em;
+        margin-left:-1.5em;
+      }
+    }
+  }
+  .how{
+    text-align: center;
+    color:#707677;
+    .title{
+      font-size: 0.3rem;
+    }
+    img{
+      margin:0.3rem 0;
+    }
+    img:nth-of-type(1){
+      width: 65%;
+    }
+    img:nth-of-type(2){
+      width:100%
+    }
+  }
+}
+
+#my-video{
+  top:0;
+  left:0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none
+}
+
+@media screen and (max-width:496px){
+  .banner{
+    .slogan{
+      top:60%
+    }
+  }
+  .introduce{
+    .why{
+      margin:0.3rem 0;
+      .title{
+        font-size: 0.28rem;
+      }
+    }
+    .what{
+      margin-bottom: 0.6rem;
+      text-align: center;
+      .phone{
+        width: 70%;
+      }
+      .desc{
+        width:80%;
+        margin:0 auto;
+        position: static;
+        text-align: center;
+        .title{
+          text-align: center;
+          line-height: 2;
+        }
+      }
+    }
+    .video{
+      .mask{
+        .video_text{
+          font-size: 0.184rem;
+          position: absolute;
+          top:0.6em;
+          left:0.5em;
+          .content{
+            font-size: 0.24rem;
+          }
+        }
+      }
+    }
+    .how{
+      .title{
+        font-size: 0.28rem;
+      }
+      img:first-of-type{
+        width: 75%;
+      }
+    }
+  }
+}

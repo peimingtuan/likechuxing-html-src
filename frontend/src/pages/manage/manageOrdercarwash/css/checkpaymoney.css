@@ -1,0 +1,131 @@
+#checkpaymoney .checkpayment-content {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 1.12rem;
+    padding: .12rem;
+    margin-bottom: .12rem;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+#checkpaymoney .checkpayment-content span .font1 {
+    color: #999999;
+    margin-right: .02rem;
+}
+
+#checkpaymoney .checkpayment-content span {
+    display: inline-block;
+    line-height: .281rem;
+}
+
+#checkpaymoney .checkpayment-content span img {
+    width: .234rem;
+    margin-right: .07rem;
+}
+
+#checkpaymoney .checkpayment-content span:nth-of-type(2) {
+    float: right;
+    color: #999;
+}
+
+#checkpaymoney .checkpayment-content span:nth-of-type(3) {
+    line-height: .234rem;
+    padding: .02rem;
+    margin-top: .035rem;
+    margin-right: .047rem;
+    border: 1px solid #f6f6f6;
+}
+
+#checkpaymoney .checkpayment-content span:nth-of-type(4) {
+    line-height: .234rem;
+    padding: .02rem;
+    margin-top: .035rem;
+    margin-right: .047rem;
+    border: 1px solid #f6f6f6;
+}
+
+#checkpaymoney .checkpayment-content span:nth-of-type(5) {
+    line-height: .234rem;
+    padding: .02rem;
+    margin-top: .035rem;
+    border: 1px solid #f6f6f6;
+}
+
+/*输入框样式*/
+#checkpaymoney .text-content {
+    margin: .12rem;
+}
+
+#checkpaymoney .text-content .p0 {
+    line-height: .49rem;
+}
+
+#checkpaymoney .text-content .p0 span {
+    display: inline-block;
+    height: .468rem;
+    padding: 0 .07rem;
+}
+
+#checkpaymoney .text-content .p0 input {
+    margin-right: .046rem;
+}
+
+#checkpaymoney .text-content .p1,#checkpaymoney .text-content .p3 {
+    height: .351rem;
+}
+
+#checkpaymoney .text-content .p2 {
+    margin-top: .12rem;
+}
+
+#checkpaymoney .parkingfee,#checkchargepayment .fee-type {
+    box-sizing: border-box;
+    width: 10rem;
+    border: none;
+    padding-left: .5rem;
+    height: 1.8rem;
+    line-height: 1.8rem;
+    outline: none;
+    border-radius: 2px;
+}
+
+/*拍照样式*/
+#checkpaymoney .photo-du {
+    line-height: .281rem;
+    padding-left: .12rem;
+}
+
+#checkpaymoney .checksingle-content {
+    padding: .07rem .12rem .585rem;
+    height: 1.76rem;
+}
+
+#checkpaymoney .checksingle-content .left {
+    margin-right: .14rem;
+}
+
+#checkpaymoney .checksingle-content > div {
+    margin-bottom: .234rem;
+}
+
+#checkpaymoney .checksingle-content > div > p {
+    text-align: center;
+    line-height: .234rem;
+}
+
+#checkpaymoney .checksingle-content > div > div {
+    position: relative;
+    width: .983rem;
+    height: .983rem;
+    background: #f4f4f4;
+}
+
+#checkpaymoney .parkfee {
+    color: #d1d1d1;
+    font-size: .12rem;
+}
+
+#checkpaymoney .checksingle-content img {
+    width: .983rem;
+    height: .983rem;
+}

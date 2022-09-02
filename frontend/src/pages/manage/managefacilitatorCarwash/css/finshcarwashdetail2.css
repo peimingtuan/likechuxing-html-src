@@ -1,0 +1,81 @@
+#finshcarwashdetail2 .header{
+    padding:.12rem;
+    background:#fff;
+    /*border-bottom:1px solid #dcdcdc;*/
+}
+
+#finshcarwashdetail2 .header .span1{
+    font-weight:bold;
+    margin-right:.12rem;
+    line-height:.35rem;
+}
+
+#finshcarwashdetail2 .header .span0{
+    line-height:.35rem;
+}
+
+#finshcarwashdetail2 .header  .span3{
+    padding:0 .12rem 0 0;
+    line-height:.35rem;
+    border-right:1px solid #dcdcdc;
+}
+
+#finshcarwashdetail2 .header  .span4{
+    padding:0 .12rem;
+    line-height:.35rem;
+    border-right:1px solid #dcdcdc;
+}
+
+#finshcarwashdetail2 .net-info{
+    display:flex;
+    display: -webkit-flex; /* Safari */
+    justify-content:space-between;
+}
+
+#finshcarwashdetail2 .net-name{
+    width: 3rem;
+    color: gray;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#finshcarwashdetail2 .daoh1{
+    width: .2rem;
+    height:.2rem;
+}
+/*历史记录*/
+#finshcarwashdetail2 .recordtails-list{
+    margin:.12rem;
+}
+#finshcarwashdetail2 .recordtails-list li{
+    position:relative;
+    padding-left:1.64rem;
+    margin-bottom: .12rem;
+}
+#finshcarwashdetail2 .recordtails-list li span{
+    line-height: .281rem;
+    word-break: break-all;
+}
+#finshcarwashdetail2 .recordtails-list li .span1{
+    position:absolute;
+    left:0;
+    font-family: 'iconfont';
+}
+#finshcarwashdetail2 .recordtails-list li .span2{
+    margin-left:.023rem;
+}
+#finshcarwashdetail2 .recordtails-list li .span3{
+    color:#d1d1d1;
+}
+#finshcarwashdetail2 .recordtails-list .check{
+    font-family: 'iconfont';
+    color:#90c7ef;
+    position:absolute;
+    right:0;
+}
+
+#finshcarwashdetail2 .recordtails-list li .net_type{
+    margin-right:.047rem;
+    width:.187rem;
+}

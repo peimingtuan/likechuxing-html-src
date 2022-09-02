@@ -1,0 +1,135 @@
+@import './common';
+body{
+  background-color: #f7f9fb;
+}
+
+.banner{
+  background-image: url('../images/banner_2.jpg');
+}
+
+.introduce {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  .we{
+    margin:1.2rem auto;
+    width: 60%;
+    color:#333;
+    .title{
+      font-size: 0.184rem;
+      text-align: center;
+      line-height: 2;
+    }
+    p{
+      font-size: 0.11rem;
+      line-height: 1.8;
+    }
+  }
+  .devote{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin:0.8rem 0;
+    .img_con{
+      margin:0;
+      width:50%;
+      text-align: center;
+      img {
+        width: 85%;
+      }
+    }
+     .desc{
+       width:35%;
+       margin:0 5%;
+       color:#333;
+       .title{
+         font-size: 0.184rem;
+       }
+       p{
+         font-size: 0.11rem;
+         line-height: 1.8;
+         margin:0.1rem 0
+       }
+     }
+   }
+}
+.where{
+  width: 100%;
+  background-color:#f5f4f4;
+  text-align: center;
+  img{
+    width: 100%;
+    max-width: 1200px;
+  }
+}
+.contact_ways{
+  background-color:#f2f2f8;
+  text-align: center;
+  padding: 1rem 0;
+  color:#000;
+  &>.title{
+    font-size: 0.184rem;
+    text-indent: -1em;
+    margin:0.2rem 0 0.4rem
+  }
+  .ways{
+    display: inline-flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: left;
+    color:#999;
+    font-size: 0.14rem;
+    a{
+      color:#999
+    }
+    .way{
+      display: inline-block;
+      width:11em;
+      margin:0.1rem 0.6rem;
+    }
+    .title{
+      font-size: 0.184rem;
+      text-align: left;
+      color:#333
+    }
+  }
+}
+
+@media screen and (max-width:496px){
+  .introduce {
+    .we{
+      margin:0.4rem auto;
+      width: 80%;
+    }
+    .devote{
+      width: 80%;
+      margin:0 auto;
+      .img_con{
+        width:100%;
+        img{
+          width:100%
+        }
+      }
+      .desc{
+        margin:0.4rem 0;
+        width:100%;
+        .title{
+          text-align: center;
+        }
+      }
+    }
+  }
+  .where{
+    overflow: hidden;
+    img{
+      margin-left: -30%;
+      width:130%;
+    }
+  }
+  .contact_ways{
+    padding: 0.8rem 0;
+    &>.title{
+      margin:0.2rem 0
+    }
+  }
+}

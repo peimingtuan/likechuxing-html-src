@@ -1,0 +1,9 @@
+{
+  "pages": [
+    "page/index/index",
+    "page/coupon/list"
+  ],
+  "window": {
+    "defaultTitle": "立刻出行"
+  }
+}

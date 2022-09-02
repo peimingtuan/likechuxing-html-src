@@ -1,0 +1,24 @@
+//- Created by garvey on 2018/1/11.
+include ../../../template/base/h5
+    include ../../../template/head/viewport
+    meta(name="viewport-fit" content="cover")
+    title 红包详情
+body
+    .bg
+        img.header(src=require('./images/index_header.png'))
+        img.footer(src=require('./images/index_footer.png'))
+
+//
+        img.like(src=require('./images/like.jpg'))
+        .title.fs30 128元春节长租
+            span.red 专享券
+        .coupon
+        .tip 已成功绑定至，您的账号
+        .desc
+            p
+                |春节长租车辆将于
+                span.dark 1 月 26 日
+                |开启预订
+            p 请随时关注APP内长租活动页面
+            p 获取最新长租信息
+

@@ -1,0 +1,26 @@
+.Peccancy{
+  padding: 0.1rem 0;
+  line-height: 0.24rem;
+  .title,.item{
+    padding: 0 0.3rem;
+  }
+  .title{
+    color:#FF9500;
+  }
+  .label{
+    color:#999;
+    position: relative;
+    &::before{
+      content: '';
+      display: block;
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      border-radius: 2px;
+      background-color: #999;
+      top:50%;
+      left:-10px;
+      margin-top: -2px;
+    }
+  }
+}

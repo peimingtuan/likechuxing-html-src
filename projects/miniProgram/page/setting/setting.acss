@@ -1,0 +1,15 @@
+.desc{
+    height: 100vw;
+    height: 124rpx;
+    background: #3481f4;
+    color: #fff;
+    font-size: 28rpx;
+    padding:26rpx 50rpx;
+    line-height: 38rpx;
+}
+.bg{
+    width: 750rpx;
+    height: 3897rpx;
+    background:url('/image/setting.png') no-repeat;
+    background-size: 100%;
+}

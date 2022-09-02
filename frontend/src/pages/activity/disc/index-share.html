@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>大转盘</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/kinerLottery.css">
+
+    <style>
+    </style>
+</head>
+
+<body>
+
+<div class="boss">
+    <div class="header">
+        <img src="imgs/header.png" alt="">
+    </div>
+    <ul class="gift_box">
+        <li class="gift_box_re"><img src="imgs/Refresh.png" alt=""><a>刷新</a></li>
+        <li class="gift_box_gi"><img src="imgs/gift.png" alt=""><a href="myPrize.html">我的奖品</a></li>
+    </ul>
+    <div class="aa">
+        <div id="box" class="box">
+            <div class="outer KinerLottery KinerLotteryContent"><img src="./imgs/lotteryContent.png"></div>
+            <!-- 大转盘分为三种状态：活动未开始（no-start）、活动进行中(start)、活动结束(completed),可通过切换class进行切换状态，js会根据这3个class进行匹配状态 -->
+            <div class="inner KinerLotteryBtn no-start"></div>
+            <!--“我的奖品”弹出层-->
+            <div class="popups_box">
+            <div class="remove"></div>
+            </div>
+
+            <!--登录框-->
+            <div class="loding">
+                <div class="loading_cont">
+                    <input id="phone" class="lod_inp" type="text" placeholder="请输入手机号">
+                    <input type="button" id="btn" value="获取验证码" />
+                </div>
+                <div>
+                    <input id="code" class="lod_inp" type="text" placeholder="请输入验证码">
+                </div>
+                <button class="log" onclick="checkCode()">点击登录</button>
+            </div>
+            <div class="old" style="display: none">
+                <p>您可在APP内分享活动进行抽奖</p>
+                <button>打开立刻出行</button>
+            </div>
+        </div>
+    </div>
+</div>
+<ul class="new" style="display: none">
+    <li>恭喜您有<b>一</b>次抽奖机会！</li>
+    <li><button>点击分享可抽奖</button></li>
+</ul>
+<div class="footer">
+
+</div>
+    <script src="js/zepto.min.js"></script>
+    <script src="js/kinerLottery.js"></script>
+    <script src="js/cookie.js"></script>
+    <script>
+	
+		var wait=60;
+        function time(o) {
+            if (wait == 0) {
+                o.removeAttribute("disabled");
+                o.value="获取验证码";
+                wait = 60;
+            } else {
+
+                o.setAttribute("disabled", true);
+                o.value="重新发送(" + wait + ")";
+                wait--;
+                setTimeout(function() {
+                        time(o)
+                    },
+                    1000)
+            }
+        }
+        document.getElementById("btn").onclick=function(){
+			var phone = $("#phone").val();
+			if (phone == null || phone == '') {
+				alert('请输入手机号~');
+				exit;
+			}
+			time(this);
+			getCode();
+		}
+	
+		/**
+		 * 检查用户是否登录
+		 */
+		 function checkLogin () {
+			var ck = new cookieStorage(3600,"/");
+			var uuid = ck.getItem("uuid");
+			var sign = ck.getItem("sign");
+			if (uuid == null || sign == null) {
+				alert('请登录后再领奖~');
+				exit;
+			}
+		}
+		
+		/**
+		 * 获取验证码
+		 */
+		 function getCode () {
+			$.ajax({
+				url: 'http://119.23.14.132:6079/web/get-code',
+				type: 'post',
+				data:{phone:"13621099020"},
+				success: function(data) {
+					if (data.status == 0) {
+						alert('发送成功');
+					}
+				}
+			});
+		}
+		
+		/**
+		 * 验证验证码
+		 */
+		 function checkCode () {
+			var phone = $("#phone").val();
+			if (phone == null || phone == '') {
+				alert('请输入手机号~');
+				exit;
+			}
+			var code = $("#code").val();
+			if (code == null || code == '') {
+				alert('请输入验证码~');
+				exit;
+			}
+			$.ajax({
+				url: 'http://119.23.14.132:6079/web/verify-code',
+				type: 'post',
+				data:{phone:"13621099020",code:"6666"},
+				success: function(data) {
+				
+					// 设置cookie
+					var ck = new cookieStorage(3600,"/");
+					ck.setItem("uuid",data.data.uuid);
+					ck.setItem("sign",data.data.sign);
+					var uuid = data.data.uuid;
+					var sign = data.data.sign;
+					isPerson(uuid, sign);
+				}
+			});
+		}
+		
+		
+		/**
+		 * 判断是否是否新老用户、抽奖次数
+		 */
+		function isPerson (uuid, sign) {
+			$.ajax({
+				url: 'http://119.23.14.132:6079/activity-turntable/can-choose-num',
+				type: 'post',
+				data:{uuid:"1508330582415467",sign:"K9QF78NNNJ9TRCHPTKHNLGWVSYAZCPJD"},
+				success: function(data) {
+					
+					// 判断是否新老用户
+					if (data.data.is_new == 1) {
+						$(".new").css("display","");
+						$(".loding").css("display","none");
+					}
+					if (data.data.is_new == 0) {
+						$(".old").css("display","");
+						$(".loding").css("display","none");
+					}
+					
+				}
+			});
+		}
+    </script>
+</body>
+</html>

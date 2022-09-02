@@ -1,0 +1,34 @@
+page{
+    background: #F4F5F7;
+}
+.container{
+    width:100%;
+    height: 100%;
+}
+.empty{
+    margin-top: 316rpx;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.emptyImg{
+    width:200rpx;
+    height: 188rpx;
+}
+.emptyText{
+    margin-top:32rpx;
+    font-family: PingFangSC-Regular;
+    font-size: 28rpx;
+    color: #999999; 
+}
+.listWrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30rpx;
+}
+.block-item{
+    margin-bottom: 20rpx;
+}
+

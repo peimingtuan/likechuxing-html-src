@@ -1,0 +1,56 @@
+//- Created by garvey on 2018/3/19.
+include ../../../template/base/h5
+    include ../../../template/head/viewport
+    title 立刻出行
+    include ../../../template/head/seo_meta
+body
+    include ./template/header
+    .banner
+        .slogan_2
+            p
+                | 立刻
+                span |
+                | 一起合作共赢
+    .cooperation
+        .title LIKE合作伙伴
+        .desc
+            span 请填写合作登记表，我们会及时与您联系。
+            span.strong （所有项必填）
+        .block
+            .input-item.item-100(data-err='')
+                input#company_name.input-block(type="text" name="company_name" placeholder="公司名称")
+            .input-item.item-50.select(data-err='')
+                select.province#province(name="province")
+                    option(value="0") 选择省份
+                    option(value="86") 全国
+            .input-item.item-50.select.float-right(data-err='')
+                select.city.disabled#city.float-right(name="city")
+                    option(value="0") 选择城市
+            .input-item.item-100(data-err='')
+                input#address.input-block(type="text" name="address" placeholder="详细地址")
+        .block.clearfix
+            .input-item.item-50(data-err='')
+                input#name(type="text" name="name" placeholder="姓名")
+            .input-item.item-50.float-right(data-err='')
+                input#phone.float-right(type="text" name="phone" placeholder="电话")
+            .input-item.item-50(data-err='')
+                input#position(type="text" name="position" placeholder="职位")
+        .block.border.clearfix
+            p 合作方向（单选）
+            .input-item.item-100.pdb(data-err='')
+                ul.coopWays.clearfix
+                    li.coopWay.pointer(data-checked=0 data-value=1) 网点
+                    li.coopWay.pointer(data-checked=0 data-value=3) 车辆
+                    li.coopWay.pointer(data-checked=0 data-value=2) 车辆运维
+                    li.coopWay.pointer(data-checked=0 data-value=4) 推广
+                    li.coopWay.pointer(data-checked=0 data-value=5) 软件
+                    li.coopWay.pointer(data-checked=0 data-value=6) 车载硬件
+                    //li.coopWay.pointer(data-checked=0 data-value=99) 其它
+        button#submit.btn.btn-primary.disabled 提交
+    .infoWindow
+        .mask.animated.fadeIn.fast
+        .box.animated.zoomIn.fast
+            .title 您的信息已收到！
+            .msg 非常感谢，我们近期会与您联系，期待与贵司合作共赢。
+            button.btn.btn-light.btn-border#closeInfoWindow 完成
+

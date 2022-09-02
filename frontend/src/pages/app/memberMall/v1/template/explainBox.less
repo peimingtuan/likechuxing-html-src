@@ -1,0 +1,29 @@
+.ExplainBox{
+  border-bottom: solid 1px #f2f2f2;
+  padding: 0.15rem 0.2rem;
+  color:#111;
+  .title{
+    font-weight: 500;
+    line-height: 0.3rem;
+  }
+  .detail{
+    .item{
+      position: relative;
+      margin-left: 1em;
+      line-height: 0.24rem;
+      &::before{
+        content:'';
+        display: inline-block;
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        border-radius: 2px;
+        background-color: #111;
+        margin-top: -2px;
+        margin-left: 2px;
+        top:0.12rem;
+        left:-1em;
+      }
+    }
+  }
+}

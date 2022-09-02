@@ -1,0 +1,26 @@
+{
+    "id": 2028,
+    "zh_name": "E代驾领券活动",
+    "name": "edaijia",
+    "group": "activity",
+    "bundle_vendor": true,
+    "copy": true,
+    "input_file": {
+      "index": [
+        "index.js"
+      ]
+    },
+    "dll":[
+        "vue"
+    ],
+    "output_file": {
+      "path": "/dist/activity/edaijia/",
+      "publicPath": "/",
+      "filename": "js/activity_edaijia/[name].js"
+    },
+    "template": {
+      "list": [
+        "index.html"
+      ]
+    }
+  }

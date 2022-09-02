@@ -1,0 +1,27 @@
+@import '../../../css/config';
+.LabelInput{
+  display: inline-block;
+  position: relative;
+  .hidden{
+    display:none
+  }
+  .maybeList{
+    z-index: 100;
+    right:0;
+    width: 100%;
+    position: absolute;
+    background-color: #fff;
+    box-sizing: border-box;
+    border:solid 1px #dfdfdf;
+    color:#666;
+    max-height: 400px;
+    overflow: scroll;
+    .maybe{
+      padding:2px 5px;
+      border-bottom:dashed 1px #dbdbdb;
+      &:hover{
+        background-color: lighten(@mainColor, 75%);
+      }
+    }
+  }
+}

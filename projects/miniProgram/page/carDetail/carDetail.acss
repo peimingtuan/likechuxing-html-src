@@ -1,0 +1,65 @@
+page{
+    background: #F4F5F7;
+}
+.header{
+    background: #fff;
+    height: 352rpx;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding-top: 80rpx;
+}
+.header .carImg{
+    width: 256rpx;
+    height: 128rpx;
+    margin-bottom: 20rpx;
+}
+.header .desc{
+    font-family: PingFangSC-Regular;
+    font-size: 28rpx;
+    color: #848C99;
+    margin-bottom: 10rpx;
+}
+.header .desc .num{
+    font-family: PingFangSC-Regular;
+    font-size: 28rpx;
+    color: #2A2D36;
+    margin-right: 6rpx;
+    margin-left: 6rpx;
+}
+.title{
+    height: 80rpx;
+    font-family: PingFangSC-Regular;
+    font-size: 24rpx;
+    color: #2A2D36;
+    letter-spacing: 0;
+    padding-top: 30rpx;
+    padding-left: 40rpx;
+}
+.wrap{
+    background: #fff;
+}
+.cell{
+    height: 80rpx;
+    display: flex;
+    padding-left: 40rpx;
+    align-items: center;
+    border-bottom: 1px solid rgba(225,230,237,0.5);
+}
+.cell .cellLabel{
+    flex: 1;
+    font-family: PingFangSC-Regular;
+    font-size: 28rpx;
+    color: #848C99;
+    letter-spacing: 0;
+}
+.cell .cellVal{
+    padding-right: 40rpx;
+    font-family: PingFangSC-Regular;
+    font-size: 28rpx;
+    color: #2A2D36;
+    letter-spacing: 0;
+}
+.last{
+    border:0;
+}

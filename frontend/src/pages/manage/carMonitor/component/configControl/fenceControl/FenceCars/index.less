@@ -1,0 +1,106 @@
+.FenceCars{
+  height:100%;
+  .search{
+    padding: 30px;
+    font-size: 0.14rem;
+    .title{
+      font-size: 0.16rem;
+      line-height: 28px;
+      padding-bottom: 10px;
+    }
+    label{
+      margin-right:10px;
+      vertical-align: top;
+      line-height: 28px;
+    }
+    input{
+      text-indent: 8px;
+    }
+    input,select{
+      vertical-align: top;
+      width: 150px;
+      height: 28px;
+      outline: none;
+      border: 1px solid #dedede;
+      border-radius: 3px;
+    }
+    .LabelInput{
+      vertical-align: top;
+    }
+
+  }
+  .car_con{
+    margin:0 30px;
+    border:solid 1px #dfdfdf;
+    box-sizing: border-box;
+    position: relative;
+    .car_header{
+      color:#666;
+      text-align: right;
+      background-color: #fff;
+      position: absolute;
+      top: -20px;
+      right:0;
+      width: 100%;
+      font-size: 0.13rem;
+      .tip{
+        float: left;
+        .iconfont{
+          font-size: 13px;
+        }
+        .choose_way{
+          display: none;
+          position: absolute;
+          width:200px;
+          padding: 10px;
+          border-radius: 5px;
+          text-align: left;
+          color:#111;
+          background-color: #f7f7f7;
+          &.show{
+            display: block;
+          }
+          .flag{
+            outline: solid 2px #cc6;
+          }
+        }
+      }
+    }
+    .carList{
+      height: 100%;
+      overflow: scroll;
+      .car_item{
+        margin:10px;
+        border:solid 1px #dfdfdf;
+        display: inline-block;
+        border-radius: 3px;
+        box-sizing: border-box;
+        width: 7em;
+        line-height: 28px;
+        text-align: center;
+        user-select: none;
+        &.active{
+          background-color: #169bd5;
+          color:#fff;
+          border-color: #169bd5;
+        }
+        &.flag{
+          outline: solid 2px #cc6;
+        }
+      }
+    }
+
+  }
+  .save_con{
+    padding: 30px;
+    text-align: right;
+  }
+  .btn{
+    margin-left: 10px;
+    width: 100px;
+    line-height: 28px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+  }
+}

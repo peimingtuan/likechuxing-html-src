@@ -1,0 +1,43 @@
+//@import "./iconfont/iconfont.css";
+@import "../../../../css/common";
+@import "../../../../css/buttons/button-v2";
+.banner {
+  background: no-repeat center;
+  background-size: cover;
+  min-height: 300px;
+  position: relative;
+  overflow: hidden;
+  .slogan_2 {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    margin-top: -0.4rem;
+    color: #fff;
+    font-size: 0.38rem;
+    line-height: 0.4rem;
+    letter-spacing: 0.3em;
+    margin-left: 0.2em;
+    span {
+      vertical-align: top;
+      display: inline-block;
+      font-size: 0.26rem;
+      margin: 0 0.1rem;
+      line-height: 0.4rem;
+      opacity: 0.8;
+    }
+  }
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+@media screen and (max-width: 496px) {
+  .banner {
+    .slogan_2 {
+      margin-top: -0.2rem;
+      font-size: 0.2rem;
+    }
+  }
+}

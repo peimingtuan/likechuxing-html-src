@@ -1,0 +1,31 @@
+//- Created by garvey on 2018-11-27.
+doctype html
+html(lang="zh-cmn-Hans")
+  head
+    meta(charset="UTF-8")
+
+    title #{htmlWebpackPlugin.options.title}
+
+    //- 额外的script，通常为第三方sdk
+    each script in htmlWebpackPlugin.options.assets.scripts
+      script(type="text/javascript" src!=script)
+
+    //- 额外的style，通常为第三方sdk
+    each style in htmlWebpackPlugin.options.assets.styles
+      link(rel="stylesheet" href!=style )
+
+    //- 此处会插入其它meta值，由html-webpack-plugin插入
+
+    //- 此处会插入项目style，由html-webpack-plugin插入
+
+  body
+
+    //- <div id='app'></div>
+    if htmlWebpackPlugin.options.appMountId
+      div(id=htmlWebpackPlugin.options.appMountId)
+
+    //- 分包出来的DLL的js
+    each script in htmlWebpackPlugin.options.dll
+      script(type="text/javascript" src!=script)
+
+    //- 此处会插入项目script，由html-webpack-plugin插入

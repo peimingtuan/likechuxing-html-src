@@ -1,0 +1,9 @@
+//- Created by garvey on 2018/3/23.
+.box
+    .title.fs12 费用明细
+    .content
+        .cost.fs13
+            for k in data
+                if(k.value)
+                    .fee #{k.text}（元）
+                        span #{k.value}

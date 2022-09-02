@@ -1,0 +1,229 @@
+.faultdetail-content {
+    background: #fff;
+    padding: .5rem;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.faultdetail-content p span {
+    display: inline-block;
+    margin-top: .3rem;
+
+}
+
+.faultdetail-content .brand_name,
+.faultdetail-content .carqube{
+    padding-right:.4rem;
+    border-right:1px solid #e7e7e7;
+}
+
+.faultdetail-content .carqube,.faultdetail-content .remain_km{
+    margin-left:.2rem;
+}
+
+.faultdetail-content .trouble_id {
+    margin-left: .3rem;
+    padding: .1rem .3rem;
+    border: 1px solid #f6f6f6;
+}
+
+.faultdetail-content .getnet{
+    margin-top:.2rem;
+    padding: .3rem 0rem;
+    line-height: 1rem;
+    position: relative;
+    border:none!important;
+}
+
+.faultdetail-content .daoh{
+    /*width:.8rem;*/
+    position: absolute;
+    right: 0;
+    top: .3rem;
+}
+
+.faultdetail-content img {
+    width: 1rem;
+}
+
+.faultdetail-content .location {
+    padding-left:.3rem;
+    border-left:1px solid #e7e7e7;
+}
+
+.faultdetail-content .location img{
+    width:.6rem;
+    position:relative;
+    top: -.1rem;
+}
+
+.faultdetail-content p span .font1 {
+    color: #999999;
+    margin-right: .1rem;
+}
+
+/*备注信息展示*/
+.faultdetail-content .trouble-remark {
+    margin-top:.3rem;
+    line-height: 1.2rem;
+}
+
+/*上报故障类型*/
+.faultwork-top {
+    box-sizing: border-box;
+    margin-top: .5rem;
+    padding: 0 .5rem;
+    height: 2rem;
+    line-height: 2rem;
+    background: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.faultwork-top .span1 {
+    font-weight: bold;
+}
+
+.faultwork-top .span2 {
+    color:#a3a3a3;
+}
+
+.faultwork-top .span3 {
+    font-family: 'iconfont';
+    font-size: .8rem;
+    color: #a3a3a3;
+    position: relative;
+    top: -.1rem;
+}
+
+.faultwork-top .addbold{
+    color:#494b51!important;
+}
+
+.newbuilt-nextbtn {
+    position: fixed;
+    box-sizing: border-box;
+    bottom: 0;
+    width: 100%;
+    padding: .5rem;
+    background: #fff;
+    box-shadow: 0px -2px 1px #eaeaea;
+}
+
+.newbuilt-nextbtn button {
+    width: 15rem;
+    line-height: 1.9rem;
+    text-align: center;
+    color: #fff;
+    background: #d1d1d1;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.submit-btn{
+    background: #333!important;
+}
+
+.carstatus {
+    padding: 0 .5rem;
+    line-height: 2rem;
+    font-size: .7rem;
+}
+
+/*输入框样式*/
+.newbuilt-text {
+    padding:.5rem;
+}
+
+.newbuilt-text .p2 {
+    position: relative;
+    width: 15rem;
+    height: 6rem;
+    border: 1px solid gray;
+}
+
+.newbuilt-text .p2 span {
+    position: absolute;
+    left: -.4rem;
+    top: 0;
+    color: red;
+}
+
+.newbuilt-text .void_write {
+    box-sizing: border-box;
+    width: 15rem;
+    height: 6rem;
+    padding: .5rem;
+    outline: none;
+    background: #f7f7f7;
+    border: none;
+    border-radius: 2px;
+}
+
+/*弹层故障类型*/
+.faultcontent {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 16rem;
+    height: 18rem;
+    background: #fff;
+}
+
+.faultcontent .title {
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.faultcontent .close-btn {
+    font-family: 'iconfont';
+    margin-left: .5rem;
+    color: #44a8ec;
+}
+
+.faultcontent .content {
+    height: 16rem;
+    overflow-y: scroll;
+}
+
+.faultcontent .content p {
+    height: 2rem;
+    line-height: 2rem;
+    padding-left: .5rem;
+    border-bottom: 2px solid #f6f6f6;
+}
+
+.faultcontent .content p .choice-type {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.faultcontent .content p .choice {
+    display: inline-block;
+    color: #44a8ec;
+    border-bottom: 2px solid #44a8ec;
+}
+
+.faultcontent ul li {
+    padding-left: .5rem;
+    line-height: 2rem;
+}
+
+/*一级分类*/
+.faulttype-list li img {
+    width: 1rem;
+    margin-left: 1rem;
+}
+
+.font-color {
+    color: #44a8ec;
+}
+
+/*二级分类*/
+.faultchoice-list li img {
+    width: 1rem;
+    margin-left: 1rem;
+}

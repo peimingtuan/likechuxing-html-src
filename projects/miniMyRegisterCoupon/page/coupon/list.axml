@@ -1,0 +1,36 @@
+<view class="container">
+    <view class="text" a:if="{{show_footer}}">
+        <view>领取成功</view>
+        <view>以下优惠券已发送至您账户中</view>
+        <view>登录[立刻出行]APP即可使用</view>
+    </view>
+    <view class="listWrap">
+        <view class="listItem" a:for="{{list}}">
+            <view class="iBody">
+                <view class="listLeft">
+                    <text class="title">{{item.name}}</text>
+                    <text class="desc" a:for="{{item.des}}">{{item}}</text>
+                </view>
+                <view class="listRight">
+                    <view class="numWrap" a:if="{{item.type!=2}}">
+                        <text class="yuan">￥</text>
+                        <text class="num">{{item.value}}</text>
+                    </view>
+                    <view class="numWrap" a:else>
+                        <text class="num">免费</text>
+                    </view>
+                    <view class="type">
+                        <text class="typeText">{{['通用券','满减券','免费券'][item.type]}}</text>
+                    </view>
+                </view>
+            </view>
+            <view class="iFooter">
+                <text class="time">{{item.time}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="text" a:if="{{show_footer}}">
+        <view>应用市场搜索下载<text class="download" onTap="toDownload">"立刻出行"</text>APP</view>
+        <view>体验免费用车</view>
+    </view>
+</view>

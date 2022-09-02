@@ -1,0 +1,93 @@
+.close-editrefueling {
+    position: absolute;
+    left: 1.5rem;
+    top: .1rem;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.editrefueling-top {
+    position: absolute;
+    top: .5rem;
+    width: 95%;
+    padding: 0 2.5%;
+}
+
+.editrefueling-top .netpoint {
+    display: inline-block;
+    width: 85%;
+    line-height: 1.8rem;
+    border-radius: 3px;
+    background: #fff;
+    text-align: center;
+    font-size: .6rem;
+    color: #bdbdbd;
+}
+/*导航按钮*/
+.editrefueling-top .navigation {
+    display: inline-block;
+    line-height: 1.8rem;
+    border-radius: 2px;
+    text-align: center;
+    width:13%;
+    background:#fff;
+}
+
+.editrefueling-bottom {
+    width: 95%;
+    position: fixed;
+    bottom: .8rem;
+    padding: 0 2.5%;
+}
+
+.editrefueling-bottom button {
+    width: 100%;
+    height: 1.8rem;
+    background: #d1d1d1;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    text-align: center;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.editrefueling-button {
+    background: #333 !important;
+}
+
+/*去除加油站信息在地图上的系统展示*/
+.BMap_pop {
+    display: none !important;
+}
+
+.BMap_shadow {
+    display: none !important;
+}
+/*去除加油站信息在高德地图上的系统展示*/
+.amap-info{
+    display:none;
+}
+/*刷新按钮*/
+.refure-operation {
+    position: fixed;
+    bottom: 4rem;
+    right: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    z-index: 100;
+}
+
+.refure-operation img{
+    width:2.5rem;
+}

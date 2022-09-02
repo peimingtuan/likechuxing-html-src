@@ -1,0 +1,36 @@
+*{
+    font-size: .6rem;
+    font-family: 'PingFangSC-Regular';
+    box-sizing: border-box;
+    margin:0;
+}
+ul{
+    list-style: none;
+}
+.left{
+    float:left;
+}
+.right{
+    float:right;
+}
+.none{
+    display:none!important;
+}
+@font-face {
+    font-family: 'iconfont';  /* project id 509131 */
+    src: url('//at.alicdn.com/t/font_509131_lpn1dii3muwvobt9.eot');
+    src: url('//at.alicdn.com/t/font_509131_lpn1dii3muwvobt9.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_509131_lpn1dii3muwvobt9.woff') format('woff'),
+    url('//at.alicdn.com/t/font_509131_lpn1dii3muwvobt9.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_509131_lpn1dii3muwvobt9.svg#iconfont') format('svg');
+}
+input::-webkit-input-placeholder {
+    color: #cccccc;
+}
+input:-moz-input-placeholder {
+    color: #cccccc;
+}
+
+input:-ms-input-placeholder {
+    color: #cccccc;
+}

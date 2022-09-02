@@ -1,0 +1,51 @@
+@import "reset.css";
+
+.bg-img{
+  background :url('../../images/bg.png') no-repeat top;
+  background-size: 100% auto;
+}
+
+.download_btn{
+  &::before{
+    content: '';
+    display:inline-block;
+    vertical-align: middle;
+    width: 1.6em;
+    height: 1em;
+    background: url(../../images/download.png) no-repeat center top;
+    background-size: 56% auto;
+  }
+  margin:0.1rem 0;
+  vertical-align: middle;
+  color:#fff;
+  border:none;
+  width: 16em;
+  height: 0.38rem;
+  background-color:#373839;
+  border-radius: 5px;
+}
+
+.main_color_btn{
+  text-indent: 0.2em;
+  letter-spacing: 0.2em;
+  line-height: 0.36rem;
+  width: 2rem;
+  border:none;
+  border-radius: 0.18rem;
+  color:#fff;
+  background-color: #e84656;
+  font-weight: 300;
+}
+.main_color_btn.disabled{
+  background-color: #9fa0a0;
+}
+.main_color_btn.dark{
+  background-color: #25213e;
+}
+.main_color_btn.border{
+  color:#e84656;
+  background-color: #fff;
+  box-sizing: border-box;
+  border:solid 1px #e84656;
+  font-weight: 400;
+}

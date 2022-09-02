@@ -1,0 +1,139 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: #F2F2F2;
+    position: relative;
+}
+.title{
+    height: 80rpx;
+    display: flex;
+    align-items: center;
+    padding-left: 30rpx;
+    font-size: 24rpx;
+    color: #aaa;
+}
+.select-box{
+    height: 320rpx;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: space-around;
+    background: #fff;
+    padding: 30rpx;
+    margin-top: -20rpx;
+}
+.select-box .item{
+    width: 224rpx;
+    height: 124rpx;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    border: 1px solid #F2F2F2;
+    border-radius: 2px;
+    position: relative;
+}
+.select-box .item .icon{
+    width: 64rpx;
+    height: 64rpx;
+    background: url('/image/tequanlabel.png') no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.select-box .item.on{
+    border: 1px solid #131313;
+}
+.item .label{
+    font-size: 34rpx;
+    color: #111;
+}
+.item .label .unit{
+    font-size: 26rpx;
+    color: #111;
+}
+.item .desc{
+    font-size: 26rpx;
+    color: #A7A7A7;
+    margin-top: 10rpx;
+}
+.select-box .isFirst:first-child .desc{
+    color: #E04731;
+}
+.footer{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 140rpx;
+    text-align: center;
+    font-size: 24rpx;
+    color: #aaa;
+}
+.btn{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    padding-bottom: 20rpx;
+    width: 100%;
+}
+.btnTxt{
+    font-size: 32rpx;
+    color: #fff;
+    width: 100%;
+    height: 88rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4A4B50;
+    border-radius: 6rpx;
+}
+.header{
+    display: flex;
+    align-items: flex-end;
+    padding-top: 20rpx;
+    background: #fff;
+    margin-top: 20rpx;
+}
+.header .title{
+    font-family: PingFangSC-Regular;
+    font-size: 36rpx;
+    color: #111111;
+    vertical-align: bottom;
+}
+.header .tip{
+    font-family: PingFangSC-Regular;
+    font-size: 24rpx;
+    line-height: 72rpx;
+    color: #ED3800;
+    margin-left: 24rpx;
+}
+.info{
+    padding:30rpx;
+    background: #fff;
+    border-top: 1px solid #f2f2f2;
+}
+.info-title{
+    display: flex;
+    margin-bottom: 8rpx;
+}
+.info-title .icon{
+    width:52rpx;
+    height: 28rpx;
+    background: url('/image/tequan.png') no-repeat;
+    background-size: 100% 100%;
+    margin-right: 18rpx;
+}
+.info-title .info-title-txt{
+    font-family: PingFangSC-Regular;
+    font-size: 30rpx;
+    color: #111111;
+}
+.info .desc-item{
+    font-family: PingFangSC-Regular;
+    font-size: 24rpx;
+    color: #3F3F3F;
+    line-height: 20px;
+}

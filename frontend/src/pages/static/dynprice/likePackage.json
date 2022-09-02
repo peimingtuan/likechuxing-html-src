@@ -1,0 +1,25 @@
+{
+  "id": 3010,
+  "zh_name": "静态页-动态价格规则",
+  "name": "dynprice",
+  "group": "static",
+  "ver": "1.1.0",
+  "bundle_vendor": false,
+  "copy":true,
+  "input_file": {
+    "index": [
+      "index.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/static/dynprice/",
+    "publicPath": "/",
+    "filename": "js/static_dynprice/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.html"
+    ],
+    "importAll":false
+  }
+}

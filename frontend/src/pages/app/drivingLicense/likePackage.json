@@ -1,0 +1,23 @@
+{
+  "id": 1002,
+  "zh_name": "行驶证",
+  "name": "drivingLicense",
+  "group": "app",
+  "ver": "1.4.0",
+  "bundle_vendor": false,
+  "input_file": {
+    "index": [
+      "index.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/app/drivingLicense/",
+    "publicPath": "/",
+    "filename": "js/app_drivingLicense/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.html"
+    ]
+  }
+}

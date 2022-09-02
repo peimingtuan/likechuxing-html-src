@@ -1,0 +1,29 @@
+//- Created by garvey on 2018/1/14.
+include ../../../template/base/h5
+    include ../../../template/head/viewport
+    include ../../../template/head/noTelephone
+    include ../../../template/head/wx120
+    title 邀好友 领百元现金
+body
+    .header
+        .banner
+    .gift_box
+        .box
+            .whiteBox
+                .content
+                    .moneyBox.clearfix
+                        .float-left.con-box
+                            .title.fs15 可提现金额
+                            .money
+                                span.num.fs34#money -
+                                span.yuan.fs13 元
+                            button.btn.main_color_btn.fs15.disabled#cash 提取现金
+                        .float-right.con-box
+                            .title.fs15 已邀请好友
+                            .count.money
+                                span.num.fs34#invite-num -
+                                span.yuan.fs13 人
+                            button.btn.second_color_btn.fs15.invite 邀请记录
+    .link_con
+        span.link.fs13#toHistory 提现记录
+    .details

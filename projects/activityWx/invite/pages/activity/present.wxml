@@ -1,0 +1,71 @@
+<view class="bg">
+  <view class="SharePage">
+    <view class="mask" wx:if="{{step===0}}">{{login_text}}</view>
+    <view class="box delay1 animated faster slideInDown" wx:if="{{step>0}}">
+
+      <view class="step1" wx:if="{{step===1}}">
+        <view wx:if="{{soldOut}}" class="desc">
+          <view>今天的小额话费被抢光啦，</view>
+          <view>赶快行动，完成下一步可得<span class="strong">50元</span>话费哦！</view>
+        </view>
+        <view class="opt-box">
+          <view class="pos">
+            <input 
+            placeholder="输入手机号开启大礼包" 
+            class="input" 
+            maxlength="11" 
+            bindinput="bindKeyInput" />
+          </view>
+          <view class="pos" wx:if="{{show_code}}">
+          <input 
+            placeholder="输入验证码" 
+            class="input half" 
+            maxlength="4" 
+            bindinput="bindKeyInput2" />
+            <view class='get' bindtap="getCode">{{code_text}}</view>
+          </view>
+          <button class="btn main_color_btn" bindtap="submit">点击领取</button>
+        </view>
+      </view>
+
+      <view class="step2" wx:if="{{step===2}}">
+        <view class="desc big" wx:if="{{!soldOut &&new_user && allow_city}}">
+          <view>您的话费已发放</view>
+          <view wx:if="{{new_user && allow_city}}">认证驾照后可再领<span class="strong">50元</span>话费</view>
+        </view>
+        <view class="desc big" wx:else>
+          <view wx:if="{{allow_city}}">认证驾照后可领<span class="strong">50元</span>话费</view>
+        </view>
+        <view class="opt-box step1">
+          <button wx:if="{{allow_city}}" class="btn main_color_btn" bindtap="toLicense">点击继续领取礼包</button>
+          <button wx:else class="btn main_color_btn" bindtap="toLicense">点击认证</button>
+        </view>
+        <view class="desc mini" wx:if="{{allow_city}}">
+          完成以下步骤即可获得全部<span class="warn">300元</span>礼包
+          <view>(顺序不分先后)</view>
+        </view>
+      </view>
+
+      <view class="rules" wx:if="{{!allow_city || (step===1&&rules.length>0)}}">
+        <view wx:for="{{rules}}" wx:key="{{index}}" class="rule">
+          <span class="index">{{index+1}}、</span>{{item}}</view>
+      </view>
+
+      <view class="rules2" wx:if="{{allow_city && step===2}}">
+        <view class="item clearfix" wx:for="{{content}}" wx:key="{{item.title}}">
+                    <view class="t-l" >{{item.title}}</view>
+                    <view class="t-r">
+                        <view wx:for="{{item.des}}" wx:for-item="cell" wx:key="{{cell}}">{{cell}}</view>
+                    </view>
+                </view>
+      </view>
+
+
+    </view>
+
+    <view class="header delay2 animated faster slideInDown" wx:if="{{step>0}}">
+      <view class="title"></view>
+    </view>
+  </view>
+  <view class="footer" bindtap="clear"></view>
+</view>

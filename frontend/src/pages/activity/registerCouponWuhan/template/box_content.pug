@@ -1,0 +1,27 @@
+//- Created by garvey on 2017/11/15.
+-require('./box_content.less')
+    //- 通用开始
+    if (type === 1)
+        p 1. 下载“立刻出行”APP，完成注册认证后即可租车。
+        p
+            | 2. 输入手机号码注册领取
+            b 50元
+            | 优惠券（相当于免费用车3小时+30公里）。
+    else if (type === 2)
+        p 1. 网点遍布各大商圈及生活区，让您出行更便捷。
+        p
+            | 2. 当前优惠最低只需
+            b 1
+            | 元／公里+
+            b 0.1
+            | 元 / 分钟。
+        img(src=require('../images/cars.jpg'))
+    else if (type === 3)
+        img(src=require('../images/step.jpg'))
+    else
+        p
+            b.noMLeft 立刻出行（LIKE）
+            | ，基于移动互联网的汽车分时共享平台，致力于解决城市出行问题，为租客带来更加舒适、快捷的自驾出行体验。
+        p 用户无需负担油费电费，网点密布覆盖，全天随租随走，手机一键取还。
+        p 喜欢你就，立刻出发！
+        //- 通用结束

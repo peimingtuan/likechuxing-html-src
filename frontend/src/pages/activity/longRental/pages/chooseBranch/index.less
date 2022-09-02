@@ -1,0 +1,85 @@
+.ChooseBranch{
+  padding: 0.15rem 0;
+  .chooseBranch{
+    padding: 0 0.2rem;
+  }
+  .search{
+    width: 100%;
+    position: relative;
+    line-height: 0.2rem;
+    color:#999;
+    text-indent: 0.22rem;
+    &::before{
+      content: '';
+      background: url('../../images/icon_search.png') no-repeat center;
+      background-size: 80%;
+      width: 0.2rem;
+      height: 0.2rem;
+      display: block;
+      position: absolute;
+    }
+    .search_btn{
+      color:#ed3800;
+      float: right;
+      border-left:solid 1px #f7d4d1;
+    }
+  }
+  .branch_list{
+    min-height: 2rem;
+    .empty{
+      color:#999;
+      text-align: center;
+      padding: 0.8rem 0;
+    }
+  }
+}
+
+.history.delete{
+    width: 0.2rem;
+    height: 0.2rem;
+    display: block;
+    position: absolute;
+    background: url('../../images/icon_delete.png') no-repeat center;
+    background-size: 90%;
+    top:0.1rem;
+    right:0
+}
+
+.BranchBox{
+  position: relative;
+  padding: 0.1rem 0;
+  border-bottom: solid 1px #F1E7C6;
+  &:nth-last-of-type(1){
+    border-bottom: none;
+  }
+  .icon{
+    position: absolute;
+    width: 0.2rem;
+    height: 0.2rem;
+    background:url('../../images/icon_branch.png') no-repeat center;
+    background-size: 90%;
+    top:50%;
+    margin-top: -0.1rem;
+    &.same{
+      background-image: url('../../images/icon_branch_same.png');
+    }
+    &.history{
+      background-image: url('../../images/icon_branch_history.png');
+    }
+  }
+  .branch{
+    margin:0 0.6rem 0 0.24rem;
+    .fs12{
+      color:#999;
+    }
+  }
+  .distance{
+    text-align: right;
+    position: absolute;
+    width: 0.6rem;
+    right:0;
+    line-height: 0.2rem;
+    margin-top: -0.1rem;
+    top:50%;
+  }
+}

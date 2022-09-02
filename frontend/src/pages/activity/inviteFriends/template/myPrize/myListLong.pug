@@ -1,0 +1,12 @@
+- var prize_img = img_prize
+div.my_prize
+    .float_con
+        .prize_left
+            .prize_title 我的奖品
+            if prize_img == '未获奖'
+                p.noPrize 未获奖
+            else
+                img#prize_img(src=prize_img)
+        .prize_right
+            .prize_title 我的排名
+            p.num #{my_index}

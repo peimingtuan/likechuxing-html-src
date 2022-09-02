@@ -1,0 +1,48 @@
+@import '../../../css/config';
+.Alarm{
+  display: inline-block;
+  width: @headerHeight*0.5;
+  height:100%;
+  vertical-align: top;
+  position: relative;
+  .iconfont{
+    position: relative;
+    color:#515151;
+    font-size: @headerHeight*0.5;
+    &.info:after{
+      content:'';
+      position: absolute;
+      width:4px;
+      height: 4px;
+      border-radius: 2px;
+      top:2px;
+      right:2px;
+      background-color:#ed3800;
+      font-weight: 900;
+    }
+  }
+  >.container{
+    position: absolute;
+    width: 0;
+    //height: 0;
+    top:22px;
+    right:0;
+    overflow: hidden;
+    transition: 600ms ease-in-out;
+    transition-property: height,width,opacity;
+    background-color: #fff;
+    opacity: 0;
+    border:solid 1px #dbdbdb;
+    border-radius: 3px;
+    &.show{
+      width: 700px;
+      opacity: 1;
+    }
+    .icon-guanbi1{
+      position: absolute;
+      top:0;
+      right:4px;
+      color:#fff
+    }
+  }
+}

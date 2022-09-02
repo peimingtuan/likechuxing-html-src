@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+    <meta content="telephone=no, address=no" name="format-detection">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="no-cache" http-equiv="pragma">
+    <meta content="0" http-equiv="expires">
+    <meta name="full-screen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>添加跟进记录</title>
+    <script>
+        var htmlBq = document.documentElement;
+
+        function allSize() {
+            var htmlWidth = htmlBq.clientWidth;
+            if (htmlWidth >= 640) {
+                htmlBq.style.fontSize = '40px';
+            } else if (htmlWidth < 640 && htmlWidth >= 320) {
+                htmlBq.style.fontSize = htmlWidth / (640 / 40) + 'px';
+            } else if (htmlWidth < 320) {
+                htmlBq.style.fontSize = '20px';
+            }
+        }
+        allSize();
+        window.onresize = function () {
+            allSize();
+        };
+    </script>
+</head>
+<body>
+<script>
+    !(function(c,b,d,a){c[a]||(c[a]={});c[a].config={pid:"gruqqi6cbp@6594c08d3216a5d",imgUrl:"https://arms-retcode.aliyuncs.com/r.png?"};
+        with(b)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("crossorigin","",src=d)
+    })(window,document,"https://retcode.alicdn.com/retcode/bl.js","__bl");
+</script>
+<div class="addrecord-content">
+
+</div>
+<div class="addrecord-text">
+    <p class="p2">
+        <span>*</span>
+    <textarea class="void_write" placeholder="请填写跟进内容，200字以内" maxlength="200">
+</textarea>
+    </p>
+</div>
+<div class="addrecord-nextbtn">
+    <button>提交</button>
+</div>
+</body>
+</html>

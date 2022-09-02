@@ -1,0 +1,44 @@
+
+.MainBox{
+  padding: 0.17rem 0.2rem;
+  position: relative;
+  .huazhou{
+    top:0;
+    width: 94%;
+    left:3%;
+    height: 0.17rem;
+    display: block;
+    position: absolute;
+    background: url('../../images/huazhou.png') no-repeat center;
+    background-size: 100% 100%;
+    &.mirror{
+      transform:scaleY(-1);
+      top:auto;
+      bottom:0;
+    }
+  }
+  .box_header,.box_footer{
+    width: 100%;
+    height: 0.4rem;
+    background: url('../../images/biankuang.png') no-repeat center;
+    background-size: 100% 100%;
+  }
+  .box_footer{
+    transform:scaleY(-1);
+  }
+  .footer_text{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    line-height: 0.2rem;
+    color:#999;
+    bottom:0.1rem;
+  }
+  .content{
+    position: relative;
+    height: 100%;
+  }
+  .bg_color{
+    background-color:#fff5d7;
+  }
+}

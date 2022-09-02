@@ -1,0 +1,41 @@
+@import '../../../css/config';
+.active_menu(){
+  color:@mainColor;
+  background-color: mix(@mainColor, transparent, 10%);
+  border-color:#d1d1d1;
+  border-right:solid 3px @mainColor
+}
+
+.Menu{
+  background-color: #f7f7f7;
+  width: 160px;
+  height: 100%;
+  border-right:solid 1px #dbdbdb;
+  transition: width 0.4s;
+  .menu_list{
+    .item{
+      padding: 0.1rem;
+      text-align: center;
+      color:@whiteBgFont;
+      border:solid 1px transparent;
+      border-right-width: 3px;
+      transition: border,background 400ms ;
+      overflow: hidden;
+      &.active{
+        .active_menu()
+      }
+      &:hover{
+        .active_menu()
+      }
+      .icon{
+        display: none;
+        width: 30px;
+        height:30px;
+        background: no-repeat center;
+        background-size: 100%;
+        float: right;
+        opacity: 0.8;
+      }
+    }
+  }
+}

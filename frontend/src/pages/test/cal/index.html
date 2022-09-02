@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算</title>
+    <style>
+        .box {
+            width: 600px;
+            margin: 0 auto;
+        }
+        .top{
+            margin-top: 30px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="box">
+    <div class="con">
+        <div class="item">
+            <label>底价
+                <input class="input" id="a" type="number"/>
+            </label>
+        </div>
+        <div class="item">
+            <label>售价
+                <input class="input" id="b" type="number"/>
+            </label>
+        </div>
+        <div class="item">
+            <label>数量
+                <input class="input" id="c" type="number"/>
+            </label>
+        </div>
+        <div class="item top">
+            <label>一倍税
+                <input class="input" id="s1" type="number"/>
+            </label>
+        </div>
+        <div class="item">
+            <label>二倍税
+                <input class="input" id="s2" type="number"/>
+            </label>
+        </div>
+        <div class="item">
+            <label>二+倍税
+                <input class="input" id="s3" type="number"/>
+            </label>
+        </div>
+        <div class="item">
+            <label>利润
+                <input class="input" id="s4" type="number"/>
+            </label>
+        </div>
+    </div>
+    <div class="btn-con">
+        <button id="btn">计算</button>
+    </div>
+</div>
+<script>
+  $('#btn').click(function () {
+    var a = $('#a').val()
+    var b = $('#b').val()
+    var c = $('#c').val()
+    if (!a || !b || !c) {
+      alert('前三项必填')
+      return
+    }
+
+    var s1,s2,s3,s4
+
+    if(b <= 2*a){
+      s1=a*0.11*c
+      s2=(b-a)*0.17*c
+      s3=0
+    }else{
+      s1=a*0.11*c
+      s2=a*0.17*c
+      s3=(b-2*a)*0.2*c
+    }
+
+    s4 = (b-a)*c - (s1+s2+s3)
+
+    $('#s1').val(s1)
+    $('#s2').val(s2)
+    $('#s3').val(s3)
+    $('#s4').val(s4)
+  })
+</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+//- Created by garvey on 2017/12/18.
+-require('./goodsBox.less')
+li.goods.animated.fast.fadeInUp(data-id=id style='animation-delay:'+delay+'ms;')
+    .desc
+        if (type == 0)
+            .name.fs18 #{name}
+        else if (type === -1)
+            .name.fs16(style="color:#999") #{name}
+        else
+            .name.fs16 #{name}
+        if (!!cost)
+            .cost.fs14 #{cost}
+                span.fs12  里程积分
+        if (isHot)
+            .hot.fs18
+    .goods_img(style="background-image:url("+img+")")
+    if(soldOut)
+        .soldOut 售罄

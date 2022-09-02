@@ -1,0 +1,26 @@
+{
+  "id": 4028,
+  "zh_name": "管理端App-办公用车工单",
+  "name": "manageOrderOfficecar",
+  "group": "manage",
+  "bundle_vendor": false,
+  "copy":true,
+  "dll":[
+    "vuer"
+  ],
+  "input_file": {
+    "index": [
+      "index.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/manage/manageOrderOfficecar/",
+    "publicPath": "/",
+    "filename": "js/manage_manageOrderOfficecar/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.html"
+    ]
+  }
+}

@@ -1,0 +1,176 @@
+#carwashdetail .header{
+    padding:.12rem;
+    background:#fff;
+    /*border-bottom:1px solid #dcdcdc;*/
+}
+
+#carwashdetail .header .span1{
+    color: #999999;
+}
+
+#carwashdetail .header  .font1{
+    font-weight:bold;
+}
+
+#carwashdetail .header  .span2{
+    padding:0 .12rem;
+    border-radius:2px;
+    border:1px solid #999999;
+}
+
+#carwashdetail .header  .span3{
+    padding:0 .12rem 0 0;
+    border-right:1px solid #dcdcdc;
+}
+
+#carwashdetail .header  .span4{
+    padding:0 .12rem;
+    line-height:.35rem;
+}
+
+#carwashdetail .header  .span5{
+    padding:0 .12rem;
+    line-height:.35rem;
+}
+
+#carwashdetail .net-info{
+    display:flex;
+    display: -webkit-flex; /* Safari */
+    justify-content:space-between;
+}
+
+#carwashdetail .net-name{
+    width: 3rem;
+    color: gray;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#carwashdetail .daoh1{
+    width: .2rem;
+    height:.2rem;
+}
+
+/*流程图样式*/
+#carwashdetail .flowstatus {
+    margin-top: .12rem;
+    width: 100%;
+    height: 1.05rem;
+    background: #fff;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+#carwashdetail .flowstatus .p1 {
+    margin: 0 .12rem;
+    padding:.12rem 0;
+    height: .351rem;
+}
+
+#carwashdetail .flowstatus .p2 {
+    margin-top:.12rem;
+    position: relative;
+    height: .42rem;
+    text-align: center;
+}
+
+#carwashdetail .flowstatus span img {
+    width: .234rem;
+}
+
+#carwashdetail .flowstatus .p2 .size {
+    display:inline-block;
+    /*width:2rem;*/
+    text-align: center;
+}
+
+#carwashdetail .flowstatus .p2 .size font{
+    font-size:.12rem;
+}
+
+#carwashdetail .flowstatus .p2 .line {
+    display:inline-block;
+    width:.5rem;
+    height:2px;
+    background:#ededed;
+    position: relative;
+    top: -.211rem;
+}
+
+#carwashdetail .carwashdetail-list li {
+    position: relative;
+    line-height: .562rem;
+    background: #fff;
+    padding-left: .12rem;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+/*当前操作步骤字体颜色*/
+#carwashdetail .carwashdetail-list .stepcolor{
+    color:#44a8ec!important;
+}
+
+#carwashdetail .carwashdetail-list .forbidden{
+    color:#c8c8c8;
+}
+
+#carwashdetail .carwashdetail-list li span:last-of-type {
+    font-family: 'iconfont';
+    position: absolute;
+    right: .234rem;
+}
+
+/*操作记录*/
+#carwashdetail .carwashdetail-history {
+    margin-top: .12rem;
+    padding: .12rem;
+    background: #fff;
+    margin-bottom: .94rem;
+}
+
+#carwashdetail .carwashdetail-history p {
+    line-height: .468rem;
+}
+
+#carwashdetail .carwashdetail-history li span {
+    display: inline-block;
+    margin-right: .234rem;
+    line-height: .281rem;
+    word-break: break-all;
+}
+
+#carwashdetail .carwashdetail-history .check {
+    font-family: 'iconfont';
+    color: #d1d1d1;
+    position: absolute;
+    right: 0;
+}
+
+#carwashdetail .check font {
+    color: #adadad;
+}
+
+/*底部按钮*/
+#carwashdetail .carwashdetail-btn {
+    display:flex;
+    display: -webkit-flex; /* Safari */
+    justify-content:space-between;
+    position: fixed;
+    bottom: 0;
+    width: 3.75rem;
+    padding: .12rem;
+    background: #fff;
+    box-shadow: 1px -2px 2px #e8e8e8;
+}
+
+#carwashdetail .carwashdetail-btn button {
+    width: 1.7rem;
+    line-height: .445rem;
+    text-align: center;
+    /*color: #fff;*/
+    background: #fff;
+    outline: none;
+    border: 1px solid #333;
+    border-radius: 2px;
+    box-sizing: border-box;
+}

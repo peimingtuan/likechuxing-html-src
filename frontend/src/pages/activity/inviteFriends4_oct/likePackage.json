@@ -1,0 +1,25 @@
+{
+  "id": 2034,
+  "zh_name": "立刻合伙人十月榜单",
+  "name": "inviteFriends4_oct",
+  "group": "activity",
+  "ver": "1.0.0",
+  "bundle_vendor": false,
+  "copy":true,
+  "input_file": {
+    "index": [
+      "index.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/activity/inviteFriends4_oct/",
+    "publicPath": "/",
+    "filename": "js/activity_inviteFriends4_oct/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.pug"
+    ],
+    "importAll":false
+  }
+}

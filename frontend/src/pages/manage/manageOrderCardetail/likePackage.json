@@ -1,0 +1,26 @@
+{
+  "id": 4081,
+  "zh_name": "钉钉工单车辆详情",
+  "name": "manageOrderCardetail",
+  "group": "manage",
+  "bundle_vendor": false,
+  "copy": true,
+  "input_file": {
+    "index": ["index.js"],
+    "rentcarlist": [
+      "rentcarlist.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/manage/manageOrderCardetail/",
+    "publicPath": "/",
+    "filename": "js/manage_manageOrderCardetail/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.html",
+      "rentcarlist.html"
+    ],
+    "importAll":false
+  }
+}

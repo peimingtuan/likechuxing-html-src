@@ -1,0 +1,35 @@
+.moneyBox{
+  text-align: center;
+  .money{
+    color:#242248;
+    margin-top: 0.05rem;
+    span{
+      line-height: 0.5rem;
+    }
+  }
+  .desc{
+    color:#656565;
+  }
+  .btn_con{
+    margin:0.1rem 0 0.15rem;
+  }
+  .link_con{
+    text-align: right;
+    .link{
+      display: inline-block;
+      line-height: 0.2rem;
+      color:#373737;
+      text-align: center;
+      vertical-align: top;
+      &::after{
+        content: '';
+        display: inline-block;
+        vertical-align: top;
+        width: 0.2rem;
+        height: 0.2rem;
+        background: url('../images/icon_rightArrow.png') no-repeat right;
+        background-size: 60%;
+      }
+    }
+  }
+}

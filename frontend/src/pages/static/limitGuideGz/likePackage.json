@@ -1,0 +1,23 @@
+{
+  "id": 3018,
+  "zh_name": "说明页_限行用车指南_广州",
+  "name": "limitGuideGz",
+  "group": "static",
+  "ver": "1.0.0",
+  "bundle_vendor": false,
+  "copy":true,
+  "input_file": {
+    "index": ["index.js"]
+  },
+  "output_file": {
+    "path": "/dist/static/limitGuideGz/",
+    "publicPath": "/",
+    "filename": "js/static_limitGuideGz/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.pug"
+    ],
+    "importAll":false
+  }
+}

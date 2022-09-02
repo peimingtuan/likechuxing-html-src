@@ -1,0 +1,120 @@
+.charing-content {
+    width: 100%;
+    height: 1.58rem;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.charing-content span {
+    box-sizing: border-box;
+    font-family: 'iconfont';
+    display: inline-block;
+    width: 32%;
+    line-height: 1rem;
+    margin-top: .29rem;
+    text-align: center;
+    border-right: 1px solid #fbfbfb;
+}
+
+.charingList li {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 5.3rem;
+    padding: .8rem .5rem;
+    border-bottom: 2px solid #dcdcdc;
+}
+
+.charingList li:nth-of-type(even) {
+    background: #f8f8f8;
+}
+
+.charingList li span {
+    display: inline-block;
+    padding: .1rem;
+    line-height: .8rem;
+}
+
+.charingList li span:nth-of-type(2) {
+    position:absolute;
+    right:.5rem;
+    padding: .1rem .3rem;
+    border: 1px solid #f6f6f6;
+}
+.charingList li span:nth-of-type(3),.charingList li span:nth-of-type(4),
+.charingList li span:nth-of-type(5){
+    color:#b5b5b5;
+}
+
+/*ɸѡ����*/
+.confirm_content2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: #fff;
+    overflow: hidden;
+}
+.confirm-carstate > span {
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    margin-right: .8rem;
+    margin-top: .5rem;
+    padding: .4rem 1rem;
+    border: 1px solid #e7e7e7;
+}
+
+.confirm-reset {
+    margin-right: .3rem;
+    background: #d8d8d8;
+}
+
+.confirm-sure {
+    color: #fff;
+    background: #333333;
+}
+/*排序弹框*/
+.confirm-title2 {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    line-height: 2rem;
+}
+.close-confirm2 {
+    font-family: iconfont;
+    position: absolute;
+    left: .3rem;
+}
+.confirm-content2 {
+    padding: .5rem;
+}
+.confirm-carstate2 > span {
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    margin-right: .8rem;
+    margin-top: .5rem;
+    padding: .4rem 1rem;
+    border: 1px solid #e7e7e7;
+}
+.confirm-bottom2{
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: .5rem;
+}
+.confirm-bottom2 button {
+    width: 100%;
+    line-height: 1.79rem;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+/*颜色控制*/
+.color,.sortcar-color,.confirm-sure2{
+    background: #333;
+    color: #fff;
+}

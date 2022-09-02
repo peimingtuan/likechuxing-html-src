@@ -1,0 +1,25 @@
+{
+  "id": 2024,
+  "zh_name": "用户自助加油多返10%活动",
+  "name": "refuel",
+  "desc": "用户自助加油多返10%活动",
+  "group": "activity",
+  "ver": "1.0.0",
+  "bundle_vendor": false,
+  "input_file": {
+    "index": [
+      "index.js"
+    ]
+  },
+  "copy": true,
+  "output_file": {
+    "path": "./dist/activity/refuel/",
+    "publicPath": "/",
+    "filename": "js/activity_refuel/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.html"
+    ]
+  }
+}

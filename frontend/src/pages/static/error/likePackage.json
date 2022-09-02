@@ -1,0 +1,29 @@
+{
+  "id": 3004,
+  "zh_name": "错误页",
+  "name": "errors",
+  "group": "static",
+  "ver": "1.0.0",
+  "bundle_vendor": false,
+  "copy":true,
+  "input_file": {
+    "404": [
+      "404.js"
+    ],
+    "500": [
+      "404.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/static/errors/",
+    "publicPath": "/",
+    "filename": "js/static_errors/[name].js"
+  },
+  "template": {
+    "list": [
+      "404.pug",
+      "500.pug"
+    ],
+    "importAll":false
+  }
+}

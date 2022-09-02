@@ -1,0 +1,23 @@
+{
+  "id": 1012,
+  "zh_name": "用户指南",
+  "name": "userDoc",
+  "group": "app",
+  "bundle_vendor": true,
+  "copy": true,
+  "input_file": {
+    "comingSoon": [
+      "comingSoon.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/app/userDoc/",
+    "publicPath": "/",
+    "filename": "js/app_userDoc/[name].js"
+  },
+  "template": {
+    "list": [
+      "comingSoon.pug"
+    ]
+  }
+}

@@ -1,0 +1,145 @@
+page{
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+}
+.mapWrap{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.mapStyle{
+    height: 100%;
+    flex: 1;
+}
+
+.footer{
+    height: 0;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    background: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.box{
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding: 30rpx 30rpx 10rpx;
+}
+.carWrap{
+    display: flex;
+    justify-content: space-between;
+}
+.carWrap .carInfo{
+    margin-top: 30rpx;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10rpx;
+}
+.carWrap .carInfo .name{
+    font-family: PingFangSC-Medium;
+    font-size: 34rpx;
+    color: #22252C;
+}
+.carWrap .carInfo .carDesc{
+    font-family: PingFangSC-Regular;
+    font-size: 24rpx;
+    color: #848C99;
+    margin-top: 10rpx;
+}
+.carImgWrap{
+    margin-top: 16rpx;
+}
+.carImg{
+    width:225rpx;
+    height: 112rpx;
+}
+.time{
+    font-family: PingFangSC-Regular;
+    font-size: 22rpx;
+    color: #848C99;
+    margin-bottom: 28rpx;
+}
+.btnGroup{
+    display: flex;
+    flex-wrap: wrap;
+}
+.btnGroup .btn{
+    width: 32%;
+    height: 70rpx;
+    border: 1px solid #E4E4E4;
+    border-radius: 2px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: PingFangSC-Regular;
+    font-size: 24rpx;
+    color: #22252C;
+    margin-bottom: 20rpx;
+    margin-right: 2%;
+}
+.btnGroup .btn:nth-child(3n){
+    margin-right: 0;
+}
+.address{
+    font-family: PingFangSC-Regular;
+    font-size: 24rpx;
+    color: #2A2D36;
+    margin-top: 12rpx;
+    margin-bottom: 20rpx;
+}
+.address .start{
+    display: flex;
+    align-items: center;
+    font-size: 26rpx;
+    padding: 10rpx;
+    color: #22252C;
+}
+.address .end{
+    display: flex;
+    align-items: center;
+    font-size: 26rpx;
+    padding: 10rpx;
+    color: #22252C;
+}
+.address .icon{
+    font-size: 26rpx;
+    color: #9B9B9B;
+}
+.fee-wrap{
+    display: flex;
+    height: 40rpx;
+    justify-content: space-between;
+    align-content: center;
+    padding: 10rpx;
+}
+.time{
+    font-size: 24rpx;
+    color: #9B9B9B;
+}
+.fee{
+    font-size: 24rpx;
+    color: #22252C;
+}
+.fee .num{
+    font-size: 36rpx;
+    color: #EA3918;
+    margin-right: 6rpx;
+}
+.line-wrap{
+    padding: 0 10rpx 30rpx;
+}
+.line-wrap .line{
+    height: 1px;
+    transform: scaleY(0.5);
+    background: #E4E4E4;
+}
+.first{
+    padding: 10rpx 10rpx 20rpx;
+}

@@ -1,0 +1,70 @@
+@import '../../../css/config';
+.TrackSettings{
+  position: absolute;
+  right:@headerHeight*0.5;
+  top:@headerHeight*0.3;
+  background-color: @mainBg;
+  border-radius: 3px;
+  padding: 3px;
+  .Settings{
+    background-color: inherit;
+    display: inline-block;
+    margin:0 3px;
+    &.hidden{
+      display: none;
+    }
+    input[type="checkbox"]{
+      height: 30px;
+      margin-right: 4px;
+    }
+    .setting_icon{
+      padding: 2px;
+      width: 30px;
+      height:30px;
+      font-size: 30px;
+      color:#555
+    }
+    .menu{
+      display: none;
+      text-align: center;
+      background-color: inherit;
+      position: absolute;
+      width: 100%;
+      min-width: 128px;
+      right:0;
+      top:35px;
+      border-radius: 0 0 3px 3px;
+      padding: 4px 0;
+      .title{
+        font-size: 14px;
+        padding: 4px 0;
+        border-bottom: solid 1px #dbdbdb;
+        margin:0 1em
+      }
+      .item{
+        line-height: 24px;
+        &.disabled{
+          opacity: 0.6;
+        }
+      }
+    }
+    &:hover{
+      .menu{
+        display: block;
+      }
+    }
+  }
+}
+
+.Cutline{
+  .item{
+    margin:5px 0;
+  }
+  .img{
+    height: 30px;
+  }
+  .tip{
+    display: inline-block;
+    width: 4em;
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": 4012,
+  "zh_name": "热力图",
+  "name": "heatmap2",
+  "group": "manage",
+  "ver": "1.0.0",
+  "bundle_vendor": false,
+  "copy":true,
+  "input_file": {
+    "index": [
+      "index.js"
+    ],
+    "open":["open.js"]
+  },
+  "output_file": {
+    "path": "/dist/manage/heatmap2/",
+    "publicPath": "/",
+    "filename": "js/manage_heatmap2/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.html",
+      "open.html"
+    ],
+    "templateRoot": "./src/pages/manage/heatmap2/"
+  }
+}

@@ -1,0 +1,237 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.dispatch-top {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 16rem;
+    box-sizing: border-box;
+    padding: 0 .5rem;
+    height: 2rem;
+    line-height: 1rem;
+    font-size: .5rem;
+    /*white-space: nowrap;*/
+    background: #fff;
+    z-index: 100;
+}
+
+#dispatch-map {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.dispatch-search {
+    position: absolute;
+    left: 0;
+    top: 2.5rem;
+    width: 15rem;
+    padding: 0 .5rem;
+    z-index: 100;
+}
+
+.dispatch-search .net-enter {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 15rem;
+    line-height: 1.8rem;
+    padding-left: 2rem;
+    border-radius: 3px;
+    background: #fff;
+    color: #bdbdbd;
+}
+
+.dispatch-search .icon {
+    font-family: 'iconfont';
+    display: inline-block;
+    width: 1.8rem;
+    line-height: 1.8rem;
+    text-align: center;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    left: .5rem;
+    top: 0;
+}
+
+/*刷新按钮*/
+.refure-dispatchpage {
+    position: fixed;
+    bottom: 6rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    z-index: 100;
+}
+
+.refure-dispatchpage img {
+    width: 2rem;
+}
+
+/*定位icon*/
+.current_location2 {
+    position: fixed;
+    bottom: 3.5rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    z-index: 100;
+}
+
+.current_location2 img {
+    vertical-align: middle;
+    width: 2rem;
+}
+
+/*返回*/
+.netdispatch-bottom {
+    width: 95%;
+    position: fixed;
+    bottom: .8rem;
+    padding: 0 2.5%;
+}
+
+.netdispatch-bottom button {
+    width: 100%;
+    height: 1.8rem;
+    background: #187aeb;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    text-align: center;
+    color: #fff;
+}
+
+/*导航弹框*/
+.navition-bottom {
+    box-sizing: border-box;
+    position: fixed;
+    bottom: .8rem;
+    left: .5rem;
+    width: 15rem;
+    height: 4rem;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.navition-bottom .left {
+    box-sizing: border-box;
+    padding: .8rem;
+    width: 11rem;
+    height: 4rem;
+    border-right: 1px solid #dcdcdc;
+}
+
+.navition-bottom .left span {
+    width: 9.4rem;
+    display: inline-block;
+    line-height: 1.2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.navition-bottom .left .address {
+    color: #999999;
+}
+
+.navition-bottom .right {
+    box-sizing: border-box;
+    width: 4rem;
+    height: 4rem;
+    text-align: center;
+}
+
+.navition-bottom .right img {
+    width: 1.5rem;
+    vertical-align: middle;
+    margin-top: .9rem;
+}
+
+/*小图标*/
+.amap-marker .marker-route {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url("../../image/dispatch/white-net.png") no-repeat;
+    background-size: 50px;
+}
+
+.amap-marker .marker-route2 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url("../../image/dispatch/black-net.png") no-repeat;
+    background-size: 50px;
+}
+
+/*大图标*/
+.amap-marker .bigmarker-route {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: url("../../image/dispatch/bigwhite-net.png") no-repeat;
+    background-size: 60px;
+}
+
+.amap-marker .bigmarker-route2 {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: url("../../image/dispatch/bigblack-net.png") no-repeat;
+    background-size: 60px;
+}
+
+.amap-marker .div1 {
+    box-sizing: border-box;
+    width: 70px;
+    height: 24px;
+    white-space: nowrap;
+    padding: 2px;
+    position: absolute;
+    left: 28px;
+    top: -8px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.amap-marker .div1 .span1 {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    box-sizing: border-box;
+    line-height: 18px;
+    margin-right: 8px;
+    background: #333;
+    border-radius: 50%;
+    text-align: center;
+    font-size: .4rem;
+    color: #fff;
+    position: absolute;
+    left: 2px;
+    top: 3px;
+}
+
+.amap-marker .div1 .span2 {
+    display: inline-block;
+    width: 18px;
+    line-height: 18px;
+    font-size: .4rem;
+    position: absolute;
+    left: 30px;
+    top: 3px;
+}
+
+.amap-marker .div1 .span3 {
+    display: inline-block;
+    width: 18px;
+    line-height: 18px;
+    font-size: .4rem;
+    position: absolute;
+    left: 50px;
+    top: 3px;
+}

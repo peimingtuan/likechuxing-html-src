@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <title>邀请好友</title>
+    <script>
+        var htmlBq = document.documentElement;
+
+        function allSize() {
+            var htmlWidth = htmlBq.clientWidth;
+            if (htmlWidth >= 640) {
+                htmlBq.style.fontSize = '40px';
+            } else if (htmlWidth < 640 && htmlWidth >= 320) {
+                htmlBq.style.fontSize = htmlWidth / (640 / 40) + 'px';
+            } else if (htmlWidth < 320) {
+                htmlBq.style.fontSize = '20px';
+            }
+        }
+        allSize();
+        window.onresize = function () {
+            allSize();
+        };
+    </script>
+</head>
+<body>
+<div class="banner">
+    <img src="" alt=""/>
+</div>
+<div class="content-fixed">
+    <p class="first">分享获<span><font>30</font>元</span>优惠券
+    </p>
+    <p class="second">邀请好友，获得优惠出行机会</p>
+    <p class="third">我的专享优惠码 长按复制</p>
+    <p class="four"><span class="span1">加载中...</span></p>
+    <div class="bottom">
+        <div class="info-left">
+            <img src="" alt=""/><br/>
+            微信
+        </div>
+        <div class="info-right">
+            <img src="" alt=""/><br/>
+            朋友圈
+        </div>
+    </div>
+    <p class="five">查看邀请规则</p>
+</div>
+</body>
+</html>

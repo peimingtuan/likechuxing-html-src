@@ -1,0 +1,195 @@
+@import '../../../../css/reset.css';
+* {
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+.none {
+    display: none !important;
+}
+input::-webkit-input-placeholder {
+    color: #b8babc;
+    font-size: .13rem;
+}
+
+input:-moz-input-placeholder {
+    color: #b8babc;
+    font-size: .13rem;
+}
+
+input:-ms-input-placeholder {
+    color: #b8babc;
+    font-size: .13rem;
+}
+.color{
+    color:#b8babc!important;
+}
+body{
+    background:#eeeef0;
+}
+.left{
+    float:left;
+}
+.right{
+    float:right;
+}
+@font-face {
+    font-family: 'iconfont';  /* project id 628835 */
+    src: url('//at.alicdn.com/t/font_628835_nj4psi92p9jrwwmi.eot');
+    src: url('//at.alicdn.com/t/font_628835_nj4psi92p9jrwwmi.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_628835_nj4psi92p9jrwwmi.woff') format('woff'),
+    url('//at.alicdn.com/t/font_628835_nj4psi92p9jrwwmi.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_628835_nj4psi92p9jrwwmi.svg#iconfont') format('svg');
+}
+.top{
+    position:fixed;
+    top:0;
+    width:100%;
+    height:1.25rem;
+    padding:0 .15rem;
+    background:#fff;
+    z-index:100;
+    border-bottom: 1px solid #e1e1e3;
+}
+.top .p1{
+    margin-top:.1rem;
+    font-size:.17rem;
+    height:.2rem;
+    text-align: center;
+}
+.top .p1 span{
+    display:inline-block;
+    line-height:.2rem;
+    text-align: center;
+}
+.top .p1 .right{
+    font-family: 'iconfont';
+}
+.top .p2{
+    height:.2rem;
+    text-align: center;
+}
+.top .p2 span{
+    display:inline-block;
+    line-height:.2rem;
+    color:#b7b7b7;
+    font-size:.13rem;
+    text-align: center;
+}
+.top .p2 span:nth-of-type(2){
+    position:relative;
+}
+.select{
+    margin:.2rem auto;
+    position:relative;
+}
+.select-value{
+    margin:0;
+    padding:0;
+    width:2.6rem;
+    height:.3rem;
+    padding-left:.4rem;
+    outline: none;
+    border:1px solid #bababc;
+    border-radius:3px;
+}
+.select-btn{
+    margin:0;
+    padding:0;
+    width:.7rem;
+    height:.3rem;
+    outline: none;
+    color:#fff;
+    text-align: center;
+    border:none;
+    background:#333;
+    font-size:.17rem;
+    border-radius:3px;
+}
+.select img{
+    position:absolute;
+    left:.08rem;
+    top:.04rem;
+    width:.2rem;
+}
+
+/*列表2*/
+.count-list2{
+    margin:1.45rem .1rem .2rem;
+}
+
+.count-list2 li{
+    /*margin-bottom:.15rem;*/
+    padding:0 .05rem;
+    background:#fff;
+    border-radius: 3px;
+}
+
+.count-list2 li .p0{
+    position:relative;
+    height:.4rem;
+}
+.count-list2 li .p0 .span3 font{
+    font-family: 'iconfont';
+    color:red;
+}
+.count-list2 li .p1{
+    position:relative;
+    padding-top:.2rem;
+    height:.5rem;
+    border-top:1px solid #e1e1e3;
+}
+.count-list2 li .p2{
+    position:relative;
+    height:.5rem;
+    padding-bottom:.2rem;
+}
+.count-list2 li .p0 span{
+    position:absolute;
+    display:inline-block;
+    line-height:.4rem;
+}
+.count-list2 li .p1 span,.count-list li .p2 span{
+    position:absolute;
+    display:inline-block;
+    line-height:.2rem;
+}
+
+.count-list2 li p .span1{
+    left:0;
+}
+.count-list2 li p .span2{
+    left:1.3rem;
+}
+.count-list2 li p .span3{
+    right:0;
+}
+.count-list2 li .p1 .span3{
+    color:red;
+}
+.count-list2 li .p2 .span3{
+    color:#b7b7b7;
+}
+/*/!**改动/*/
+.count-list2 .li1{
+    margin-top:.15rem;
+}
+.count-list2 .li1:first-of-type {
+    margin-top:0!important;
+}
+.count-list2 .li2 .p2{
+    position:relative;
+}
+.count-list2 .li2 .p2 span{
+    position:absolute;
+}
+.count-list2 .li2 .p2 .span1{
+    left:0;
+}
+.count-list2 .li2 .p2 .span2{
+    left:1.3rem;
+}
+.count-list2 .li2 .p2 .span3{
+    right:0;
+}

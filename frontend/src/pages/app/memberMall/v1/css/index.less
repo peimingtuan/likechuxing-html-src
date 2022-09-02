@@ -1,0 +1,59 @@
+@import "./common/reset.css";
+//@import "./common/font.less";
+@import "../../../../css/buttons/button";
+
+body{
+  background-color:#f2f2f2 ;
+}
+
+.MyScore{
+  background-color: #fff;
+  .scoreBox{
+    position: relative;
+    padding: 0.15rem 0;
+    margin-left: 0.2rem;
+    color:#111;
+    .title{
+      vertical-align:top;
+      line-height: 0.2rem;
+      .ques{
+        vertical-align:top;
+        display: inline-block;
+        width: 0.2rem;
+        height: 0.2rem;
+        background: url('../images/ques.jpg') no-repeat center;
+        background-size: 67%;
+      }
+    }
+    .btn_container{
+      height: 0.2rem;
+      position: absolute;
+      right:0.15rem;
+      margin-top: -0.1rem;
+      top:50%;
+      .button{
+        .white_btn();
+        display: inline-block;
+        text-align: center;
+        border-color:  #494B51;
+        color:#494B51;
+        padding: 1px 0;
+        box-sizing: content-box;
+        width: 0.66rem;
+        margin-left: 0.12rem;
+      }
+    }
+  }
+  .how{
+    border-top:solid 1px #f2f2f2;
+    color:#999;
+    padding: 0.05rem 0;
+    margin-left:0.2rem;
+  }
+}
+
+.GoodsList{
+  margin-top: 0.1rem;
+  background-color: #fff;
+  overflow: hidden;
+}

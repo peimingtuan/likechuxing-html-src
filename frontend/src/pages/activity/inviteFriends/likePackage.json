@@ -1,0 +1,71 @@
+{
+  "id": 2002,
+  "zh_name": "邀请好友得iphoneX",
+  "name": "inviteFriends",
+  "group": "activity",
+  "ver": "1.0.0",
+  "bundle_vendor": true,
+  "input_file": {
+    "index": [
+      "index.js"
+    ],
+    "license": [
+      "license.js"
+    ],
+    "shareIndex": [
+      "shareIndex.js"
+    ],
+    "explain": [
+      "explain.js"
+    ],
+    "static": [
+      "static.js"
+    ],
+    "winnerList": [
+      "winnerList.js"
+    ],
+    "myPrize": [
+      "myPrize.js"
+    ],
+    "login": [
+      "login.js"
+    ],
+    "activitylogin": [
+      "activitylogin.js"
+    ],
+    "myList": [
+      "myList.js"
+    ],
+    "myListLong": [
+      "myListLong.js"
+    ],
+    "myAddress": [
+      "myAddress.js"
+    ],
+    "editAddress": [
+      "editAddress.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/activity/inviteFriends/",
+    "publicPath": "/",
+    "filename": "js/activity_inviteFriends/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.html",
+      "license.html",
+      "shareIndex.html",
+      "explain.html",
+      "static.html",
+      "winnerList.html",
+      "myPrize.html",
+      "login.html",
+      "activitylogin.html",
+      "myList.html",
+      "myListLong.html",
+      "myAddress.html",
+      "editAddress.html"
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": 2022,
+  "zh_name": "通勤老司机招募",
+  "name": "commutingSign",
+  "group": "activity",
+  "bundle_vendor": true,
+  "dll":[
+    "vue"
+  ],
+  "copy": true,
+  "input_file": {
+    "index":[
+      "index.js"
+    ],
+    "detail":[
+      "detail.js"
+    ],
+    "form": [
+      "form.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/activity/commutingSign/",
+    "publicPath": "/",
+    "filename": "js/activity_commutingSign/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.pug",
+      "detail.pug",
+      "form.pug"
+    ]
+  }
+}

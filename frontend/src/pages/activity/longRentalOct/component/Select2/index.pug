@@ -1,0 +1,22 @@
+//- Created by garvey on 2017/12/22.
+-require('./index.less')
+.LikeSelect
+    .mask.animated.fast.fadeIn
+    .selectBox.animated.fast.slideInUp
+        .header
+            span.left 取消
+            span.name #{name}
+            span.right 确定
+        .options
+            .border
+            .swiper-container
+                .swiper-wrapper
+                    each k in options
+                        .swiper-slide #{k.name}
+        .options2
+            .border
+            .swiper-container2
+                .swiper-wrapper
+                    each k in options2
+                        .swiper-slide #{k.name}
+

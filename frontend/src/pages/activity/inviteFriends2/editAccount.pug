@@ -1,0 +1,22 @@
+//- Created by garvey on 2018/1/14.
+include ../../../template/base/h5
+    include ../../../template/head/viewport
+    include ../../../template/head/noTelephone
+    title 输入账号
+body
+    .bg-img
+    .edit
+        .editBox.fs14
+            .tip
+                p *
+                    span.strong 支付宝
+                    |账号的姓名
+                p 需要与登录立刻出行账号的姓名一致
+            .input_con
+                p.fs14 请填写您的姓名
+                input#realname.fs14(type="text")
+            .input_con
+                p.fs14 请填写您的支付宝账号
+                input#account.fs14(type="text")
+            .btn_con
+                button.btn.main_color_btn.fs15 下一步

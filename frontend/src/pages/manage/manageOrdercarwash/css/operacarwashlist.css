@@ -1,0 +1,25 @@
+/*<!-- 列表样式-->*/
+#operacarwashlist .carwashlistlist li {
+    margin-bottom: .12rem;
+    padding: .12rem;
+    background: #fff;
+}
+
+#operacarwashlist .carwashlistlist li span{
+    display:inline-block;
+}
+
+#operacarwashlist .carwashlistlist li .span1{
+    color: #999999;
+}
+
+#operacarwashlist .carwashlistlist li .font1{
+    font-weight:bold;
+}
+
+#operacarwashlist .carwashlistlist li .span3{
+    margin-top:.12rem;
+    padding:.05rem .12rem;
+    border-radius:2px;
+    border:1px solid #dcdcdc;
+}

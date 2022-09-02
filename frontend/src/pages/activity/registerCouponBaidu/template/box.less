@@ -1,0 +1,36 @@
+.box{
+  margin:0.1rem 0.15rem;
+  background-color: #fff;
+  border-radius: 2px;
+  overflow: hidden;
+  .title{
+    padding: 0.15rem;
+    border-bottom: solid 1px #f2f2f2;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      left:-0.06rem;
+      bottom:-0.06rem;
+      display: block;
+      width: 0.12rem;
+      height:0.12rem;
+      border-radius: 50%;
+      background-color: #f2f2f2;
+    }
+    &::after{
+      content: '';
+      position: absolute;
+      right:-0.06rem;
+      bottom:-0.06rem;
+      display: block;
+      width: 0.12rem;
+      height:0.12rem;
+      border-radius: 50%;
+      background-color: #f2f2f2;
+    }
+  }
+  .content{
+    padding: 0.15rem;
+  }
+}

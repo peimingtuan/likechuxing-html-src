@@ -1,0 +1,24 @@
+.FilterBox {
+  margin: 0.1rem 0;
+  .filter-title {
+    color: #999;
+  }
+  .filter-list {
+    margin: 0 -0.05rem;
+    .filter-item {
+      display: inline-block;
+      box-sizing: border-box;
+      padding: 0.05rem 0.1rem;
+      border: 1px solid #cdcdcd;
+      border-radius: 3px;
+      margin: 0.05rem;
+      transition-property: background-color,color,border-color;
+      transition-duration: 300ms ;
+      &.active {
+        border-color:#333;
+        background-color: #333333;
+        color: #FFFFFF;
+      }
+    }
+  }
+}

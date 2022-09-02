@@ -1,0 +1,92 @@
+.afterphoto-content {
+    padding: 1rem 1.8rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+}
+
+.afterphoto-content div {
+    display: inline-block;
+}
+
+.afterphoto-content > div {
+    margin-left: .68rem;
+    margin-bottom: 1rem;
+}
+
+.afterphoto-content > div > p {
+    text-align: center;
+    line-height: 2rem;
+}
+
+.afterphoto-content > div > div {
+    position: relative;
+    width: 5.2rem;
+    height: 5.2rem;
+    background: #f4f4f4;
+}
+
+.uploadIcon {
+    font-family: 'iconfont';
+    font-size: 1.38rem;
+    position: absolute;
+    left: 1.91rem;
+    top: 1.3rem;
+}
+
+.number {
+    position: absolute;
+    left: 1.91rem;
+    top: 2.9rem;
+}
+
+.end-photo {
+    display: inline-block;
+    position: absolute;
+    left: 1.45rem;
+    top: 1.3rem;
+    font-size: .8rem;
+}
+
+.check-photo {
+    display: inline-block;
+    position: absolute;
+    left: 1rem;
+    top: 3.3rem;
+    color: #43aff7;
+}
+
+.swat-photo {
+    display: inline-block;
+    position: absolute;
+    left: 3.1rem;
+    top: 3.3rem;
+    color: #43aff7;
+}
+
+.afterphoto-nextbtn {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 5% 2.5%;
+    background: #fff;
+    box-shadow: 0px -2px 1px #eaeaea;
+}
+
+.afterphoto-nextbtn button {
+    width: 95%;
+    line-height: 1.9rem;
+    text-align: center;
+    color: #fff;
+    background: #d1d1d1;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.afterphoto-nextbutton {
+    background: #333 !important;
+}

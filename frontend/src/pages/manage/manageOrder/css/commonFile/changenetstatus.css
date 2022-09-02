@@ -1,0 +1,64 @@
+.endwork-netname,.endwork-floor p {
+    padding: .5rem;
+    line-height: 2.3rem;
+    background: #fff;
+}
+
+.endwork-netname input, .endwork-floor input{
+    height: 1.2rem;
+    line-height: 1.2rem;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+.choice-net{
+    width:65%;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.endwork-floor input::-webkit-input-placeholder, .endwork-netname input::-webkit-input-placeholder{
+    font-size: .6rem;
+}
+
+.endwork-floor{
+    margin-top: .5rem;
+}
+
+.endwork-floor p {
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.endwork-netname span:nth-of-type(2),
+.endwork-floor p > span:nth-of-type(2) {
+    color: #b7b7b7;
+}
+
+.endwork-icon {
+    font-family: 'iconfont';
+    float: right;
+}
+
+.endworkname-submit {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 5% 2.5%;
+    box-shadow: 0px -2px 1px #eaeaea;
+}
+
+.endworkname-submit button {
+    width: 95%;
+    line-height: 1.9rem;
+    text-align: center;
+    color: #fff;
+    background: #d1d1d1;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.endworkname-button {
+    background: #333 !important;
+}

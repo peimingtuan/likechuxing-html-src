@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的奖品</title>
+    <link rel="stylesheet" href="css/activity.css">
+</head>
+	<body>
+		<div class="mygift"></div>
+		<!--点击领取奖品，弹出层默认不显示-->
+		<div class="prize_get" style="display:none">
+			<div class="get_remove"></div>
+		</div>
+
+		<script src="js/zepto.min.js"></script>
+		<script>
+		/**
+		 * 我的奖品列表
+		 */
+		function myGift () {
+			$.ajax({
+				url: 'http://119.23.14.132:6079/activity-turntable/my-prize',
+				type: 'post',
+				data:{uuid:"1508211636967173",sign:"CLGKV7K5B5J6LJSPMVJB3WW4CSY7MCVQ"},
+				success: function(data) {
+				
+					// 循环遍历我的奖品列表
+					var item;
+                    $.each(data.data.list,function(i, result){
+                        item ='<div class="prize_container"><div class="time"><p>'+result.time+'</p></div><img src="imgs/prize.png" alt=""><div class="prize_ticket"><span>券加券码：'+result.exchange_code+' </span><span class="copy">复制</span></div></div>';  
+						$(".mygift").append(item);
+                    });
+				}
+			});
+		}
+		myGift();
+		</script>
+	</body>
+</html>

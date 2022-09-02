@@ -1,0 +1,5 @@
+<view class="contianer">
+    <view class="icon"></view>
+    <view class="title">温馨提示</view>
+    <view class="desc">该地区小程序停止使用,更多功能请见立刻出行APP</view>
+</view>

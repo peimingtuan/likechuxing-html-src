@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>大转盘</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/kinerLottery.css">
+
+    <style>
+    </style>
+    <script src="../../../../../../demo/test/calVerify.js"></script>
+</head>
+
+<body>
+
+<div class="boss">
+    <div class="header">
+        <img src="imgs/header.png" alt="">
+    </div>
+    <ul class="gift_box">
+        <li class="gift_box_re"><img src="imgs/Refresh.png" alt=""><a>刷新</a></li>
+        <li class="gift_box_gi"><img src="imgs/gift.png" alt=""><a href="myPrize.html">我的奖品</a></li>
+    </ul>
+    <div class="aa">
+        <div id="box" class="box">
+            <div class="outer KinerLottery KinerLotteryContent"><img src="./imgs/lotteryContent.png"></div>
+            <!-- 大转盘分为三种状态：活动未开始（no-start）、活动进行中(start)、活动结束(completed),可通过切换class进行切换状态，js会根据这3个class进行匹配状态 -->
+            <div class="inner KinerLotteryBtn start"></div>
+            <!--“我的奖品”弹出层-->
+            <div class="popups_box">
+            <div class="remove"></div>
+            </div>
+            <div class="share">
+                <button class="btnShare" onclick="btnShare()">点击分享可抽奖</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <script src="js/zepto.min.js"></script>
+    <script src="js/kinerLottery.js"></script>
+    <script src="js/cookie.js"></script>
+    <script>
+	
+		/**
+		 * 获取参数
+		 */
+		 function GetQueryString(name) {
+		   var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)","i");
+		   var r = window.location.search.substr(1).match(reg);
+		   if (r!=null) return unescape(r[2]); return null;
+		}
+		var uuid = '1508330582415467';
+		//var uuid = GetQueryString('uuid');
+		var sign = 'K9QF78NNNJ9TRCHPTKHNLGWVSYAZCPJD';
+		//var sign = GetQueryString('sign');
+		var sin;
+	
+		/**
+		 * 判断是否分享页面还是APP内页面、活动是否开始、是否新老用户、抽奖次数
+		 */
+		function initCheckData() {
+		
+			$.ajax({
+				url: 'http://119.23.14.132:6079/activity-turntable/can-choose-num',
+				type: 'post',
+				data:{uuid:uuid,sign:sign},
+				success: function(data) {
+					var num = data.data.available_num;
+				
+					// 判断用户是否登录
+					if (data.status == 6001) {
+						alert('请登录或者注册后再来领取奖励~');
+						$(".inner ").attr("class", "inner KinerLotteryBtn no-start");
+					}
+				
+					//活动未开始(no-start)
+					if (data.data.is_begin == 0) {
+						$(".inner ").attr("class", "inner KinerLotteryBtn no-start");
+					}
+					
+					//活动进行中(start)
+					if (data.data.is_begin == 1 && data.data.available_num > 0) {
+						$(".inner").addClass("start");
+					}
+					
+					//活动结束(completed)
+					if (data.data.is_begin == 2) {
+						$(".inner").addClass("completed");
+					}
+					
+					// 判断是否新老用户
+					if (data.data.is_new == 1) {
+						$(".share").append("<p>恭喜您有1次抽奖机会~</p>");
+					}
+					
+					
+					// 判断是否分享过
+					if (data.data.is_share == 1 && data.data.is_new == 0) {
+						var desc = '<p>恭喜您有'+num+'次抽奖机会~</p>';
+						$(".btnShare").css("display","none");
+						$(".share").append(desc); 
+					}
+					
+					if (data.data.is_new == 0 && data.data.is_share == 0 && data.data.available_num > 0) {
+						var desc = '<p>恭喜您有'+num+'次抽奖机会~</p>';
+						$(".share").append(desc); 
+					}
+				}
+			});
+		}
+		initCheckData();
+		
+		
+		/**
+		 * 点击分享
+		 */
+		 function btnShare () {
+			$.ajax({
+				url: 'http://119.23.14.132:6079/activity-turntable/share',
+				type: 'post',
+				data:{uuid:uuid,sign:sign},
+				success: function(data) {
+				}
+			});
+		}
+	
+    /**
+     * 根据转盘旋转角度判断获得什么奖品
+     * @param deg
+     * @returns {*}
+     */
+    var whichAward = function(deg) {
+
+        if ((deg > 330 && deg <= 360) || (deg > 0 && deg <= 30)) { //IPhone X
+            return "IPhone X";
+        } else if ((deg > 30 && deg <= 90)) { //IPhone8
+            return "IPhone8";
+        } else if (deg > 90 && deg <= 150) { //电影兑换券
+            return "电影兑换券";
+        } else if (deg > 150 && deg <= 210) { //谢谢参与
+            return "谢谢参与";
+        } else if (deg > 210 && deg <= 270) { //10元用车体验券
+            return "10元用车体验券";
+        } else if (deg > 270 && deg <= 330) { //大疆无人机
+            return "大疆无人机";
+        }
+    }
+
+    var KinerLottery = new KinerLottery({
+        rotateNum: 8, //转盘转动圈数
+        body: "#box", //大转盘整体的选择符或zepto对象
+        direction: 0, //0为顺时针转动,1为逆时针转动
+
+        //disabledHandler: function(key) {
+
+            //switch (key) {
+                //case "noStart":
+                    //alert("活动尚未开始");
+                    //break;
+                //case "completed":
+                    //alert("活动已结束");
+                    //break;
+            //}
+
+        //}, //禁止抽奖时回调
+
+        clickCallback: function() {
+		
+			//数据保护(判断活动是否未开始跟已结束)
+			initCheckData();
+			
+			// 获取后台领奖接口
+			$.ajax({
+				url: 'http://119.23.14.132:6079/activity-turntable/choose-prize',
+				type: 'post',
+				data:{uuid:uuid,sign:sign},
+				success: function(data) {
+					//这里是PHP直接返回的是一个角度!             
+					sin = data.data.deg;
+				}
+			});
+			this.goKinerLottery(Math.floor(Math.random() * 360));
+
+        }, //点击抽奖按钮,再次回调中实现访问后台获取抽奖结果,拿到抽奖结果后显示抽奖画面
+
+        KinerLotteryHandler: function(deg) {
+            alert("恭喜您获得:" + whichAward(deg));
+        } //抽奖结束回调
+    });
+    </script>
+</body>
+</html>

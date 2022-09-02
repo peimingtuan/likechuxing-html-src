@@ -1,0 +1,51 @@
+{
+  "id": 2011,
+  "zh_name": "百万红包_6小时0元_武汉",
+  "name": "millionGift_wh",
+  "group": "activity",
+  "bundle_vendor": true,
+  "copy": true,
+  "input_file": {
+    "index": [
+      "index.js"
+    ],
+    "list": [
+      "list.js"
+    ],
+    "history": [
+      "history.js"
+    ],
+    "cashSucc": [
+      "cashSucc.js"
+    ],
+    "confirmAccount": [
+      "confirmAccount.js"
+    ],
+    "editAccount": [
+      "editAccount.js"
+    ],
+    "explain": [
+      "explain.js"
+    ],
+    "share": [
+      "share.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/activity/millionGift_wh/",
+    "publicPath": "/",
+    "filename": "js/activity_millionGift_wh/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.pug",
+      "list.pug",
+      "history.pug",
+      "cashSucc.pug",
+      "confirmAccount.pug",
+      "editAccount.pug",
+      "explain.pug",
+      "share.pug"
+    ]
+  }
+}

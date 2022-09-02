@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+    <meta content="telephone=no, address=no" name="format-detection">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="no-cache" http-equiv="pragma">
+    <meta content="0" http-equiv="expires">
+    <meta name="full-screen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>故障工单列表</title>
+    <script>
+        var htmlBq = document.documentElement;
+
+        function allSize() {
+            var htmlWidth = htmlBq.clientWidth;
+            if (htmlWidth >= 640) {
+                htmlBq.style.fontSize = '40px';
+            } else if (htmlWidth < 640 && htmlWidth >= 320) {
+                htmlBq.style.fontSize = htmlWidth / (640 / 40) + 'px';
+            } else if (htmlWidth < 320) {
+                htmlBq.style.fontSize = '20px';
+            }
+        }
+        allSize();
+        window.onresize = function () {
+            allSize();
+        };
+    </script>
+    <script src="https://g.alicdn.com/dingding/open-develop/1.9.0/dingtalk.js"></script>
+</head>
+<body>
+<script>
+    !(function (c, b, d, a) {
+        c[a] || (c[a] = {});
+        c[a].config = {pid: "gruqqi6cbp@6594c08d3216a5d", imgUrl: "https://arms-retcode.aliyuncs.com/r.png?"};
+        with (b)with (body)with (insertBefore(createElement("script"), firstChild))setAttribute("crossorigin", "", src = d)
+    })(window, document, "https://retcode.alicdn.com/retcode/bl.js", "__bl");
+</script>
+<div class="faultlist-content">
+    <span class="faultlistSelect">&#xe605;&nbsp;&nbsp;搜索</span>
+    <span class="faultlistFilter">&#xe638;&nbsp;&nbsp;筛选</span>
+    <span class="faultlistSort">&#xe602;&nbsp;&nbsp;排序</span>
+    <span class="faultlistRefle">&#xe8d0;&nbsp;&nbsp;刷新</span>
+</div>
+<div class="faultlist-map none">
+    <span class="check-map"><img src=""/>查看地图网点</span>
+    <span class="check-chartmap"><img src=""/>查看热力图</span>
+</div>
+<!--faultList-->
+<ul class="faultList">
+
+</ul>
+<!--排序提示框-->
+<div class="sort_window common_cover none">
+    <div class="sort_content">
+        <div class="sort-title">
+            排序
+            <span class="close-sort">&#xe601;</span>
+        </div>
+        <ul class="sort-list">
+            <li class="range-sort sort-color">距离网点从近到远<input type="hidden" value="1"/><img src=""/></li>
+            <li class="timenum-sort">处理时长从大到小<input type="hidden" value="2"/><img class="none" src=""/></li>
+        </ul>
+    </div>
+</div>
+<!--confirm筛选提示框-->
+<div class="faultlist_window common_cover none">
+    <div class="faultlist_content">
+        <div class="faultlist-title">
+            筛选
+            <span class="close-faultlist">&#xe601;</span>
+        </div>
+        <div class="confirm-faultlist">
+            <p class="title">车辆状态</p>
+
+            <p class="confirm-carstate">
+                <span class="allcarstate color">全部<input type="hidden" value=""/></span>
+                <span class="state">待处理<input type="hidden" value="0"/></span>
+                <span class="state">处理中<input type="hidden" value="1"/></span>
+                <span class="state">已完成<input type="hidden" value="2"/></span>
+            </p>
+
+            <p class="title">网点类型</p>
+
+            <p class="confirm-netstyle readios">
+                <span class=""><input class="all" type="radio" name="netstyle" value="-1" checked/>全部网点</span><span class=""><input type="radio" name="netstyle" value="0"/>B类网点</span><span class=""><input type="radio" name="netstyle" value="1"/>B+类网点</span>
+            </p>
+
+            <p class="title">上报来源</p>
+
+            <p class="confirm-talkstyle readios">
+                <span class=""><input class="all talkstyle" type="radio" name="talkstyle" value="-1" checked/>全部来源</span><span class=""><input type="radio" name="talkstyle" value="1"/>客服上报</span><span class=""><input type="radio" name="talkstyle" value="0"/>运维上报</span><span class=""><input type="radio" name="talkstyle" value="2"/>系统上报</span>
+            </p>
+
+            <p class="title faulttype-report none">上报故障类型</p>
+
+            <div class="content2 faulttype-report none">
+                <p class="bold">
+                    <span class="choice-type2">全部</span> 一 <span class="choice2">全部</span><span class="right">&#xe603;</span>
+                </p>
+            </div>
+
+            <p class="title">处理故障类型</p>
+
+            <div class="content">
+                <p class="bold">
+                    <span class="choice-type">全部</span> 一 <span class="choice">全部</span><span class="right">&#xe603;</span>
+                </p>
+            </div>
+
+        </div>
+        <!-- 上报故障类型-->
+        <div class="faulttype2 none">
+            <!-- 一级分类-->
+            <ul class="faulttype-list2 none">
+
+            </ul>
+            <!--二级分类-->
+            <ul class="faultchoice-list2 none">
+
+            </ul>
+        </div>
+        <!-- 处理故障类型-->
+        <div class="faulttype none">
+            <!-- 一级分类-->
+            <ul class="faulttype-list none">
+
+            </ul>
+            <!--二级分类-->
+            <ul class="faultchoice-list none">
+
+            </ul>
+        </div>
+        <div class="carstate-bottom">
+            <button class="carstate-reset">重置</button><button class="carstate-sure">确定</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

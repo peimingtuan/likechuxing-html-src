@@ -1,0 +1,49 @@
+.jobList_m{
+  margin:0.4rem 0;
+  .title{
+    font-size: 0.184rem;
+    color:#333;
+    text-align: center;
+  }
+  .city_list{
+    margin: 0.2rem 0;
+    .cityName{
+      font-size: 0.14rem;
+      color:#333;
+      span{
+        font-size: 0.12rem;
+        color:#999;
+      }
+    }
+    .job_list{
+      overflow: hidden;
+      width: 100%;
+      li {
+        width: 50%;
+        box-sizing: border-box;
+        float: left;
+        line-height: 1.6;
+        cursor: pointer;
+        color: #333;
+        span{
+          color:#999;
+          font-size: 0.1rem;
+          word-break: keep-all;
+        }
+        &::before {
+          content: ' · ';
+        }
+        &:hover {
+          color: #000;
+        }
+      }
+      li.empty{
+        font-size: 0.14rem;
+        line-height: 2;
+        &::before{
+          content:''
+        }
+      }
+    }
+  }
+}

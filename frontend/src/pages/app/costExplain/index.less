@@ -1,0 +1,68 @@
+@import '../../../css/reset.css';
+
+body{
+  background-color: #f2f2f2;
+  border-top:solid 1px transparent;
+}
+
+.box{
+  background-color: #fff;
+  margin-top: 0.1rem;
+  padding-top: 0.06rem;
+  .title{
+    line-height: 0.34rem;
+    margin-left: 0.2rem;
+    border-bottom: solid 1px #f2f2f2;
+    color:#999;
+  }
+  .content{
+    margin-left: 0.2rem;
+    padding: 0.1rem 0.2rem 0.1rem 0;
+    color:#111;
+  }
+  &:nth-last-of-type(1){
+    margin-bottom: 0.4rem;
+  }
+}
+
+.cost{
+  .fee{
+    line-height: 0.22rem;
+    span{
+      float: right;
+    }
+  }
+}
+
+.item{
+  position: relative;
+  padding: 0.03rem 0;
+  line-height: 0.2rem;
+  .index{
+    position: absolute;
+  }
+  .text{
+    margin-left: 1em;
+  }
+}
+
+.list{
+  background-color: #fff;
+  line-height: 0.22rem;
+  li{
+    position: relative;
+    padding: 0.1rem 0;
+    border-bottom:solid 1px #f2f2f2;
+    &:nth-last-of-type(1){
+      border:none
+    }
+  }
+  .point_icon{
+    height: 0.4rem;
+    position: absolute;
+    top:0.1rem;
+  }
+  p{
+    margin-left:0.5rem
+  }
+}

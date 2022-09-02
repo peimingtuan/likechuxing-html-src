@@ -1,0 +1,37 @@
+//- Created by garvey on 2017/12/21. @xurr on 2018/06/06  修改：1、去掉冒号 2、title字体颜色变为#999
+-require('./addressShow.less')
+.box.goods.fs14
+    label
+        span.word2.fc99 物
+        span.fc99 品
+        span.mg5 #{extra_info.name}
+    if (status_desc === '待发货')
+        .notMail.fs12 待发货
+    else
+        .mailed.fs12 已发货
+.box.name.fs14
+    label
+        span.word3.fc99 收件
+        span.fc99 人
+        span.mg5 #{extra_info.logistic_user_name}
+.box.phone.fs14
+    label
+        span.word3.fc99 手机
+        span.fc99 号
+        span.mg5 #{extra_info.logistic_user_phone}
+.box.address.fs14
+    label.add_label
+        span.fc99.mg_other 详细地址
+    .add.mg5 #{extra_info.logistic_address}
+if (status_desc === '待发货')
+    .footer.fs12 如需更改请联系立刻出行客服热线：400-666－2333
+else
+    .box.name.fs14
+        label
+            span.fc99 物流公司
+            span.mg5 #{extra_info.express_name}
+    .box.name.fs14
+        label
+            span.fc99 快递单号 
+            span.mg5 #{extra_info.express_no}
+

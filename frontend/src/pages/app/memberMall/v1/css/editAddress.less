@@ -1,0 +1,66 @@
+@import "./common/reset.css";
+//@import "./common/font.less";
+@import "../../../../css/buttons/button";
+
+html,body{
+  background-color: #fff;
+}
+
+.box{
+  position: relative;
+  line-height: 0.2rem;
+  padding: 0.15rem 0.2rem;
+  border-bottom: solid 1px #f2f2f2;
+  color:#333;
+  .word3{
+    letter-spacing: 0.5em;
+  }
+  label{
+    width: 100%;
+    display: inline-block;
+  }
+  input,textarea{
+    vertical-align: top;
+    border:none;
+  }
+  textarea{
+    resize : none;
+    overflow-y:visible;
+    padding: 0;
+    height:0.2rem;
+  }
+  .close{
+    display:none;
+    position: absolute;
+    top:0.15rem;
+    right:0.2rem;
+    width: 0.2rem;
+    height: 0.2rem;
+    background: url('../images/close.png') no-repeat center;
+    background-size: 90%;
+  }
+  .rightArrow{
+    position: absolute;
+    top:0.15rem;
+    right:0.2rem;
+    width: 0.2rem;
+    height: 0.2rem;
+    background: url('../images/arrow_right.png') no-repeat center;
+    background-size: auto 100%;
+  }
+}
+
+.btn_con{
+  height:0.66rem;
+  padding: 0.1rem;
+  box-sizing: border-box;
+  position: absolute;
+  bottom:0;
+  width: 100%;
+  button{
+    .dark_btn();
+    width: 100%;
+    height: 100%;
+  }
+}
+

@@ -1,0 +1,27 @@
+.returnpicture-content {
+    padding: 1rem 1.75rem;
+}
+
+.returnpicture-content .left {
+    margin-right: 1rem;
+}
+
+.returnpicture-content > div {
+    margin-bottom: 1rem;
+}
+
+.returnpicture-content > div > p {
+    text-align: center;
+    line-height: 2rem;
+}
+
+.returnpicture-content > div > div {
+    position: relative;
+    width: 5.2rem;
+    height: 5.2rem;
+    background: #f4f4f4;
+}
+.returnpicture-content img{
+    width:5.2rem;
+    height: 5.2rem;
+}

@@ -1,0 +1,18 @@
+<view class="container" a:if="{{pageIsShow}}">
+    <text class="header">* 请检查车辆外观并选择车伤部位</text>
+    <view class="bg">
+        <view class="hover {{item.class}}" a:for="{{imgList}}" id="{{item.id}}" a:if="{{item.isShow}}"></view>
+    </view>
+</view>
+<view class="footer" a:if="{{pageIsShow}}">
+    <scroll-view scroll-x="{{true}}" class="scrollBox">
+        <view class="swiper" style="width:{{partsImg.length*176+partsImg.length*40}}rpx">
+            <view class="swiper-item" a:for="{{partsImg}}" onTap="preview" data-index="{{index}}">
+                <image src="{{item}}" mode="aspectFill" class="itemImg"/>
+            </view>
+        </view>
+    </scroll-view>
+</view>
+<view class="loadingBox" a:if="{{!pageIsShow}}">
+    <view class="loadingIcon"></view>
+</view>

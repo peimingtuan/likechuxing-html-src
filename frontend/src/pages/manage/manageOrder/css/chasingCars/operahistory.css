@@ -1,0 +1,30 @@
+.history-list{
+    padding:.5rem;
+    box-sizing:border-box;
+    margin-bottom:4rem;
+}
+.history-list li{
+    border-bottom:1px solid #dcdcdc;
+}
+.history-list li p{
+    line-height:1.2rem;
+}
+.back-btn {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 5% 2.5%;
+    background: #fff;
+}
+
+.back-btn button {
+    width: 95%;
+    line-height: 1.9rem;
+    text-align: center;
+    color: #fff;
+    background: #333333;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    box-sizing: border-box;
+}

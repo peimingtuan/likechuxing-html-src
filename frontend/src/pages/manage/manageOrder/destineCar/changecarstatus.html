@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+    <meta content="telephone=no, address=no" name="format-detection">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="no-cache" http-equiv="pragma">
+    <meta content="0" http-equiv="expires">
+    <meta name="full-screen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>更改车辆状态</title>
+    <script>
+        var htmlBq = document.documentElement;
+
+        function allSize() {
+            var htmlWidth = htmlBq.clientWidth;
+            if (htmlWidth >= 640) {
+                htmlBq.style.fontSize = '40px';
+            } else if (htmlWidth < 640 && htmlWidth >= 320) {
+                htmlBq.style.fontSize = htmlWidth / (640 / 40) + 'px';
+            } else if (htmlWidth < 320) {
+                htmlBq.style.fontSize = '20px';
+            }
+        }
+        allSize();
+        window.onresize = function () {
+            allSize();
+        };
+    </script>
+</head>
+<body>
+<div class="padDis">
+    <form id="statusForm" action="">
+        <div class="list-items">
+            <ul>
+                <li>
+                    <input type="radio" value="1" name="status" id="status1">
+                    <label for="status1">空闲</label>
+                </li>
+                <li>
+                    <input type="radio" value="37" name="status" id="status37">
+                    <label for="status37">预约空闲</label>
+                </li>
+                <!--<li>-->
+                <!--<input type="radio" value="2" name="status" id="status2">-->
+                <!--<label for="status2">租赁中</label>-->
+                <!--</li>-->
+                <li>
+                    <input type="radio" value="3" name="status" id="status3">
+                    <label for="status3">长租空闲</label>
+                </li>
+                <!--<li>
+                    <input type="radio" value="4" name="status" id="status4">
+                    <label for="status4">长租租赁中</label>
+                </li>-->
+                <li>
+                    <input type="radio" value="20" name="status" id="status20">
+                    <label for="status20">车辆整备</label>
+                </li>
+                <!--<li>-->
+                    <!--<input type="radio" value="32" name="status" id="status32">-->
+                    <!--<label for="status32">车辆故障</label>-->
+                <!--</li>-->
+
+                <!--<li>-->
+                <!--<input type="radio" value="21" name="status" id="status21">-->
+                <!--<label for="status21">缺电下线</label>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<input type="radio" value="22" name="status" id="status22">-->
+                    <!--<label for="status22">充电/加油</label>-->
+                <!--</li>-->
+                <!--<li>
+                    <input type="radio" value="25" name="status" id="status25">
+                    <label for="status25">保险</label>
+                </li>-->
+                <!--<li>
+                    <input type="radio" value="30" name="status" id="status30">
+                    <label for="status30">调度</label>
+                </li>-->
+                <!--<li>-->
+                    <!--<input type="radio" value="31" name="status" id="status31">-->
+                    <!--<label for="status31">维修</label>-->
+                <!--</li>-->
+
+                <!--<li>-->
+                    <!--<input type="radio" value="33" name="status" id="status33">-->
+                    <!--<label for="status33">保养</label>-->
+                <!--</li>-->
+                <li>
+                    <input type="radio" value="34" name="status" id="status34">
+                    <label for="status34">巡检</label>
+                </li>
+                <!--<li>-->
+                    <!--<input type="radio" value="35" name="status" id="status35">-->
+                    <!--<label for="status35">年检</label>-->
+                <!--</li>-->
+                <!--<li>
+                    <input type="radio" value="36" name="status" id="status36">
+                    <label for="status36">洗车</label>
+                </li>
+                <li>
+                    <input type="radio" value="23" name="status" id="status23">
+                    <label for="status23">办公用车</label>
+                </li>-->
+            </ul>
+        </div>
+        <div class="forget">
+            <textarea name="" id="changeDes" cols="30" rows="10" placeholder="备注原因" maxlength="200"></textarea>
+        </div>
+        <div class="bottom-btn-box">
+            <button type="button" id="statusSure" class="bottom-btn">确定</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

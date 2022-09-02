@@ -1,0 +1,65 @@
+#checkwashcost .cost-list li{
+    padding:0 .12rem;
+    line-height: .484rem;
+    background: #fff;
+}
+
+#checkwashcost .cost-list li:first-of-type{
+    border-top:1px solid #f6f6f6;
+    margin-bottom:.12rem;
+}
+
+#checkwashcost .cost-list li:not(:first-of-type){
+    border-bottom:1px solid #f6f6f6;
+}
+
+#checkwashcost .cost-list input{
+    height: .281rem;
+    line-height: .281rem;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    width:2rem;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+
+#checkwashcost  .wash-addresss{
+    width:2.2rem!important;
+}
+
+#checkwashcost .cost-list input::-webkit-input-placeholder{
+    font-size: .14rem;
+}
+
+#checkwashcost .endwork-icon {
+    font-family: 'iconfont';
+    color: #b7b7b7;
+}
+
+#checkwashcost .cost-photo{
+    padding-top:.12rem;
+    background:#fff;
+    margin-bottom:.82rem;
+}
+
+#checkwashcost .cost-photo> p {
+    margin-left:.12rem;
+    width:1.22rem;
+    text-align: center;
+    line-height:.468rem;
+}
+
+#checkwashcost .cost-photo>div {
+    margin:0 .12rem;
+    position: relative;
+    width: 1.22rem;
+    height: 1.22rem;
+    background: #f4f4f4;
+}
+
+#checkwashcost .cost-photo>div img{
+    width: 1.22rem;
+    height: 1.22rem;
+}

@@ -1,0 +1,35 @@
+{
+  "id": 1016,
+  "zh_name": "app2.2.0广州开四停四",
+  "name": "k4t4",
+  "group": "app",
+  "ver": "1.0.0",
+  "bundle_vendor": true,
+  "copy": true,
+  "dll":[
+    "vueFull"
+  ],
+  "input_file": {
+    "detail": ["detail.js"],
+    "detailIn": ["detailIn.js"],
+    "detailOut": ["detailOut.js"],
+    "detailOutPermit": ["detailOutPermit.js"],
+    "dispatchOut": ["dispatchOut.js"],
+    "reserve": ["reserve.js"]
+  },
+  "output_file": {
+    "path": "/dist/app/k4t4/",
+    "publicPath": "/",
+    "filename": "js/app_k4t4/[name].js"
+  },
+  "template": {
+    "list": [
+      "detail.html",
+      "detailIn.html",
+      "detailOut.html",
+      "detailOutPermit.html",
+      "dispatchOut.html",
+      "reserve.html"
+    ]
+  }
+}

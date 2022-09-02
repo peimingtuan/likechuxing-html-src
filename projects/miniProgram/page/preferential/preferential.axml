@@ -1,0 +1,50 @@
+<view class="container" a:if="{{pageIsShow}}">
+  <view class="header">
+    <input type="text" placeholder="请输入兑换码" class="formInput" placeholder-class="placeholderClass" onInput="getCode"/>
+    <view class="btn" onTap="convertCoupon">兑换</view>
+  </view>
+  <view class="block" a:if="{{coupon.length>0}}">
+    <view class="block-header">
+      <view class="title">优惠券{{coupon_cnt}}个</view>
+      <view class="more" a:if="{{coupon_cnt>2}}" onTap="goCoupon">查看更多></view>
+    </view>
+    <view class="block-item {{index==0?'mb':''}}" a:for="{{coupon}}">
+      <card-item 
+        name="{{item.name}}"
+        case="{{item.case}}"
+        time="{{item.time}}"
+        money="{{item.money}}"
+        numCase="{{item.numCase}}"
+        couponType="{{item.type}}"
+        freeTime="{{item.freeTime}}"
+      />
+    </view>
+  </view>
+  <view class="block" a:if="{{coupon_cash_cnt}}">
+    <view class="block-header">
+      <view class="title">红包{{coupon_cash_cnt}}个</view>
+      <view class="more" a:if="{{coupon_cash_cnt>2}}" onTap="goHongbao">查看更多></view>
+    </view>
+    <view class="block-item {{index==0?'mb':''}}" a:for="{{coupon_cash}}">
+      <card-item
+        type="1"
+        name="{{item.name}}"
+        case="{{item.case}}"
+        time="{{item.time}}"
+        money="{{item.money}}"
+        numCase="{{item.numCase}}"
+        couponType="{{item.type}}"
+        freeTime="{{item.freeTime}}"
+      />
+    </view>
+  </view>
+  <view a:if="{{(!coupon_cnt) && (!coupon_cash_cnt)}}" class="empty">暂无优惠券和红包</view>
+  <view class="footer">
+      <view class="footerBtn" onTap="goCouponHistory">
+          <text class="footerBtnText">查看历史优惠></text>
+      </view>
+  </view>
+</view>
+<view class="loadingBox" a:if="{{!pageIsShow}}">
+    <view class="loadingIcon"></view>
+</view>

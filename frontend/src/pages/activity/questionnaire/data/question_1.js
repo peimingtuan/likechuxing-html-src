@@ -1,0 +1,97 @@
+/*************************************************
+ * Copyright (C), since 2017, Likechuxing Tech. Co., Ltd.
+ * File name: question_1
+ * Author: garvey sunjiawei@likechuxing.com
+ * Version: 1.0.0
+ * Date: 2019-01-15-10:45
+ * Description:
+ *
+ *************************************************/
+module.exports = [
+  {
+    id:1,
+    type:'radio_s',
+    require:true,
+    name:'您是如何知道立刻出行的？',
+    radios:[
+      {id:1,label:'亲友推荐'},
+      {id:2,label:'线下推广'},
+      {id:3,label:'线下广告'},
+      {id:4,label:'车身标识吸引'},
+      {id:5,label:'其它',needInput:true}
+    ]
+  },
+  {
+    id:2,
+    type:'radio_s',
+    require:true,
+    name:'您在网点取还车是否方便？',
+    radios:[
+      {id:1,label:'是'},
+      {id:2,label:'否'}
+    ]
+  },
+  {
+    id:3,
+    type:'radio_s',
+    require:true,
+    name:'您的APP开关门是否顺畅？',
+    radios:[
+      {id:1,label:'是'},
+      {id:2,label:'否'}
+    ]
+  },
+  {
+    id:4,
+    type:'radio_s',
+    require:true,
+    name:'您对车况（外观、内饰、性能）是否满意？',
+    radios:[
+      {id:1,label:'是'},
+      {id:2,label:'否'}
+    ]
+  },
+  {
+    id:5,
+    type:'radio_s',
+    require:true,
+    name:'您对车内卫生情况是否满意？',
+    radios:[
+      {id:1,label:'是'},
+      {id:2,label:'否'}
+    ]
+  },
+  {
+    id:6,
+    type:'radio_s',
+    require:true,
+    name:'您的驾驶体验是否满意？',
+    radios:[
+      {id:1,label:'是'},
+      {id:2,label:'否'}
+    ]
+  },
+  {
+    id:7,
+    type:'radio_s',
+    require:true,
+    name:'您是否会继续使用立刻出行？',
+    radios:[
+      {id:1,label:'是'},
+      {id:2,label:'否'}
+    ]
+  },
+  {
+    id:8,
+    type:'grade',
+    require:true,
+    name:'您愿意给立刻出行打几分？（满分10分）'
+  },
+  {
+    id:9,
+    type:'textarea',
+    require:false,
+    maxlength:200,
+    name:'您对立刻出行有何其他意见或建议？'
+  }
+]

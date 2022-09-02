@@ -1,0 +1,12 @@
+//- Created by garvey on 2017/10/27.
+.carDamage_container
+    img.carDamage_bg(src=img_bg)
+    -for (var i=0;i<img_list.length;i++)
+        img.part(data-id=i+1 src=img_list[i])
+    if clickable
+        -for (var i=0;i<img_list.length;i++)
+            .area(data-area=i+1 data-areaid=i+1)
+        //- 下为额外点击区域（文字和区域分离过远）
+        -var extra_click_area = [2,3,8,10,15,16]
+        -for (var i=20;i<extra_click_area.length+20;i++)
+            .area(data-area=i data-areaid=extra_click_area[i-20])

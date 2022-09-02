@@ -1,0 +1,303 @@
+.netdetail-content {
+    width: 100%;
+    /*height: 6rem;*/
+    box-sizing: border-box;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.netdetail-content > p:first-of-type {
+    /*height: 3rem;*/
+    padding: .5rem;
+    background: #FFFFFF;
+}
+
+.netdetail-content > p:last-of-type {
+    /*height: 1rem;*/
+    padding: .5rem;
+}
+
+.netdetail-content > div {
+    direction: rtl;
+    padding-right: .5rem;
+    background: #FFFFFF;
+}
+
+.netdetail-content img {
+    margin-right: .3rem;
+    width: .8rem;
+    vertical-align: middle;
+}
+
+.netdetail-content span {
+    display: inline-block;
+    line-height: 1rem;
+}
+.netdetail-content .net-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 12rem;
+}
+
+.netdetail-content .right font, .navigation-icon font {
+    padding: 0 .2rem;
+}
+
+.find-norecordcar {
+    margin: 0 0 .5rem;
+    border: 1px solid;
+    padding: .1rem .3rem;
+    border-radius: 2px;
+}
+
+.netdetailList li:last-of-type {
+    margin-bottom: 1rem;
+}
+
+.netdetailList li {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    padding: .6rem .5rem .4rem .5rem;
+    border-bottom: 1px solid #f6f6f6;
+    background: #ffffff;
+    margin-bottom: .47rem;
+}
+
+.netdetailList li span .font1 {
+    color: #999999;
+    margin-right: .1rem;
+}
+
+/*.netdetailList li:nth-of-type(even) {
+    background: #f8f8f8;
+}*/
+
+.netdetailList li>span {
+    display: inline-block;
+    line-height: 1rem;
+    padding: .1rem;
+    margin-top: .15rem;
+}
+
+.netdetailList li>span:nth-of-type(2) {
+    color: #666666;
+}
+
+.netdetailList li>span:nth-of-type(3),.netdetailList li>span:nth-of-type(4),.netdetailList li>span:nth-of-type(5) {
+    margin-right: .2rem;
+    border: 1px solid #dcdcdc;
+    height: 1rem;
+}
+.netdetailList li>span:nth-of-type(6) {
+    border: 1px solid #dcdcdc;
+    height: 1rem;
+}
+
+.netdetailList li > div {
+    text-align: right;
+}
+
+.netdetailList li .car-notnet {
+    border: 1px solid black;
+    padding: .1rem .3rem;
+    border-radius: 2px;
+}
+
+.netdetail-nextbtn {
+    position: fixed;
+    bottom: 0;
+    width: 16rem;
+    padding: .5rem;
+    background: #fff;
+    box-sizing: border-box;
+    box-shadow: 0px -2px 1px #eaeaea;
+}
+
+.netdetail-nextbtn button {
+    width: 15rem;
+    line-height: 1.9rem;
+    text-align: center;
+    background: #fff;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.submit-info {
+    border: 1px solid #44a8ec !important;
+    color: #44a8ec;
+}
+
+/*����*/
+.common_cover2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .44);
+    z-index: 10;
+}
+
+.net-content1 {
+    width: 12rem;
+    height: 6rem;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    margin-top: -3rem;
+    margin-left: -6rem;
+    box-sizing: border-box;
+}
+
+.net-content2 {
+    width: 12rem;
+    height: 8rem;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    margin-top: -4rem;
+    margin-left: -6rem;
+    box-sizing: border-box;
+}
+
+.net-content1 .top {
+    padding: 1rem 0;
+    text-align: center;
+    height: 4rem;
+    line-height: 1rem;
+    box-sizing: border-box;
+}
+
+.net-content2 .top {
+    padding: 1rem 0;
+    text-align: center;
+    height: 6rem;
+    line-height: 1rem;
+    box-sizing: border-box;
+}
+
+.net-content1 .top .span1, .net-content2 .top .span1 {
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.net-content1 .bottom, .net-content2 .bottom {
+    box-sizing: border-box;
+    height: 2rem;
+    border-top: 1px solid #ececec;
+}
+
+.net-content1 .bottom span, .net-content2 .bottom span {
+    display: inline-block;
+    width: 6rem;
+    line-height: 1.95rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.net-content1 .qure, .net-content2 .qure2 {
+    color: #65b7ef;
+    border-left: 1px solid #ececec;
+}
+
+.net-content2 .plate-num {
+    width: 10rem;
+    height: 1.2rem;
+    margin-top: .5rem;
+}
+/*xurr 0927*/
+.limit{
+	padding: .03rem .06rem;
+    border-radius: 2px;
+    width: 2.6rem;
+    text-align: center;
+    position: absolute;
+    right: .5rem;
+    top: 1rem;
+}
+.limit1{
+	border: 1px solid #ed3800;
+	color: #ef5633;
+}
+.limit2{
+	border: 1px solid #ff9500;
+	color: #ff9500;
+}
+.three_title,.three_type{
+	display: flex;
+	display: -webkit-flex;
+}
+.three_title{
+	margin-bottom: .35rem;
+	margin-top: .35rem;
+}
+.is_drive,.is_park,.is_stay,.three_title b{
+	  display: flex;
+	  display: -webkit-flex;
+    width: .77rem;
+    height: .77rem;
+    line-height: .77rem!important;
+    /*font-size: .14rem;*/
+    text-align: center;
+    border-radius: 3px;
+    margin-right: 1.49rem;
+    justify-content: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    font-weight: normal;
+}
+
+.is_drive{
+	color: #fff;
+	background-color: #b6e088;
+}
+.is_park{
+	color: #fff;
+	background-color: #ff8e8e;
+}
+.is_stay{
+	color: #fff;
+	background-color: #D2D2D2;
+}
+.note_dec{
+	    text-align: left;
+    margin-top: .6rem;
+
+}
+.move_note{
+	padding-top: 0.06rem;
+	display: flex;
+	display: -webkit-flex;
+	align-items: flex-start;
+	-webkit-align-items: flex-start;
+	justify-content: flex-start;
+	width: 100%;
+	line-height: .77rem;
+}
+.move_note .note_titles{
+	display: inline-block;
+	white-space: nowrap;
+	flex: 10%;
+}
+.note_con{
+	flex: 90%;
+	/*margin-left: .15rem;*/
+	
+}
+.dot_line{
+	display: inline-block;
+	width: 100%;
+	height: 1px;
+	border-bottom: 1px dashed #e9e9e9;
+}
+body.netdetail{
+	background: #F6F6F6!important;
+}

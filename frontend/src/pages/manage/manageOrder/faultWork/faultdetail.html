@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+    <meta content="telephone=no, address=no" name="format-detection">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="no-cache" http-equiv="pragma">
+    <meta content="0" http-equiv="expires">
+    <meta name="full-screen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>故障工单</title>
+    <script>
+        var htmlBq = document.documentElement;
+
+        function allSize() {
+            var htmlWidth = htmlBq.clientWidth;
+            if (htmlWidth >= 640) {
+                htmlBq.style.fontSize = '40px';
+            } else if (htmlWidth < 640 && htmlWidth >= 320) {
+                htmlBq.style.fontSize = htmlWidth / (640 / 40) + 'px';
+            } else if (htmlWidth < 320) {
+                htmlBq.style.fontSize = '20px';
+            }
+        }
+        allSize();
+        window.onresize = function () {
+            allSize();
+        };
+    </script>
+    <script src="https://g.alicdn.com/dingding/open-develop/1.9.0/dingtalk.js"></script>
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.4&key=91ed10906005ee88866f14fd9f076e8b"></script>
+</head>
+<body class="body none">
+<script>
+    !(function(c,b,d,a){c[a]||(c[a]={});c[a].config={pid:"gruqqi6cbp@6594c08d3216a5d",imgUrl:"https://arms-retcode.aliyuncs.com/r.png?"};
+        with(b)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("crossorigin","",src=d)
+    })(window,document,"https://retcode.alicdn.com/retcode/bl.js","__bl");
+</script>
+<div class="faultdetail-content">
+    <p>
+        <span class="plate_no inline"></span>
+        <span class="trouble_id"></span><br/>
+        <span class="brand_name"></span>
+        <span class="carqube">自研</span>
+        <span class="remain_km"></span>
+        <span class="right location">
+            <img src=""/>
+            当前位置
+        </span>
+    </p>
+    <div class="getnet">
+        <div>
+            <img class="mapb" src=""/>
+            <span class="branch_addr inline"></span><br/>
+        </div>
+        <img src="" class="daoh1 daoh" />
+    </div>
+    <div class="div1">
+        <span class="border-color"></span>
+        <span class="span5 status_name"></span><br/>
+        <span class="troule-type">上报类型：1111111</span>
+    </div>
+    <!-- 新增备注信息展示-->
+    <div class="trouble-remark">故障备注：</div>
+</div>
+<!--故障流程图-->
+<div class="fault-flow">
+    <p class="p1">
+        <span class="">工单流程</span>
+        <span class="more">更多</span>
+    </p>
+    <p class="p2">
+        <span class="span1">创建<br/>成功</span>
+        <span class="span2">工单<br/>结束</span>
+        <span class="span3 none"></span>
+        <span class="span-left"></span>
+        <span class="span-length">
+        </span>
+        <span class="span-right"></span>
+        <span class="span4">处理中</span>
+    </p>
+</div>
+<ul class="fault-list">
+    <li class="true">1.更换自配件<img class="open-show right" src="">
+        <ul class="change-list">
+            <li class="change-before"><font>更换前拍照</font><span class="right">&#xe623;</span></li>
+            <li class="change-parts"><font>更换配件</font><span class="right">&#xe623;</span></li>
+            <li class="change-after"><font>更换后拍照</font><span class="right">&#xe623;</span></li>
+        </ul>
+    </li>
+    <li class="adddealtype">2.添加处理类型<span class="right">&#xe623;</span></li>
+    <li class="problemrecord">3.处理车辆问题记录<span class="right">&#xe623;</span></li>
+    <li class="returnphoto none"><font>4.</font>还车拍照<span class="right">&#xe623;</span></li>
+    <li class="endworkpage"><font>5.</font>输入车位结束工单<span class="right">&#xe623;</span></li>
+</ul>
+<!--更多弹框-->
+<div class="alert_window common_cover none">
+    <div class="common_content">
+        <ul>
+            <li>更多<span class="close-icon">&#xe601;</span></li>
+            <li class="payment">1.出场缴费，点这里</li>
+            <li class="addrcord">2.添加跟进记录，点这里</li>
+            <li class="service">3.转交至维修组处理</li>
+            <li class="needother">4.转交其他组处理，点这里</li>
+            <li class="needother2">5.转交至故障组处理</li>
+        </ul>
+    </div>
+</div>
+<div class="fault-history">
+    <p>操作历史</p>
+    <ul class="history-list">
+
+    </ul>
+</div>
+<div class="faultdetail-btn">
+    <button class="open-door">开门</button>
+    <button class="close-door">锁门</button>
+    <button class="select-net">查询网点</button>
+</div>
+
+<!--遗失物品弹窗-->
+<div class="lostBox">
+    <div class="box">
+        <div class="title">发现遗失物品？</div>
+        <p class="desc">该车辆由用户上报，可能存在以下遗失物品，请仔细检查车辆，若发现该物品请点击"确认发现该物品"并及时送至指定办公室</p>
+        <div class="item">
+            物品名称：<span id="lost"></span>
+        </div>
+        <div class="item">
+            物品详情：<span id="lost_detail"></span>
+        </div>
+        <div class="btn-con">
+            <button class="btn main" id="lost_yes">确认发现该物品</button>
+            <button class="btn main" id="lost_no">未发现该物品</button>
+            <button class="btn" id="lost_cancel">取消</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

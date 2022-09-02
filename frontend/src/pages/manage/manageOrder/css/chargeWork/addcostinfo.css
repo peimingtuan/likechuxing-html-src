@@ -1,0 +1,131 @@
+#addcostinfo{
+    height:100%;
+}
+
+#addcostinfo .endwork-netname{
+    padding: .5rem .5rem 0;
+    line-height: 2.3rem;
+    background: #fff;
+}
+
+#addcostinfo .endwork-netname li{
+    border-top:1px solid #f6f6f6;
+}
+
+#addcostinfo .endwork-netname input{
+    height: 1.2rem;
+    line-height: 1.2rem;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+#addcostinfo .choice-net{
+    width:60%;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+#addcostinfo .endwork-netname input::-webkit-input-placeholder{
+    font-size: .6rem;
+}
+
+#addcostinfo .endwork-icon {
+    font-family: 'iconfont';
+    color: #b7b7b7;
+}
+
+#addcostinfo .cost-finshtime{
+    margin-top:.5rem;
+    padding-left:.5rem;
+    padding-right:.5rem;
+    line-height:2.3rem;
+    background:#fff;
+}
+
+#addcostinfo .cost-finshtime font{
+    font-family: 'iconfont';
+    color: #b7b7b7;
+}
+
+#addcostinfo .cost-photo{
+    margin-top:.5rem;
+    padding-top:.5rem;
+    background:#fff;
+    margin-bottom:3.5rem;
+}
+
+#addcostinfo .cost-photo> p {
+    margin-left:.5rem;
+    width:5.2rem;
+    text-align: center;
+    line-height: 2rem;
+}
+
+#addcostinfo .cost-photo>div {
+    margin:0 .5rem;
+    position: relative;
+    width: 5.2rem;
+    height: 5.2rem;
+    background: #f4f4f4;
+}
+
+#addcostinfo .uploadIcon {
+    font-family: 'iconfont';
+    font-size: 1.38rem;
+    position: absolute;
+    left: 1.91rem;
+    top: 1.91rem;
+}
+
+#addcostinfo .end-photo{
+    display:inline-block;
+    position:absolute;
+    left: 1.45rem;
+    top: 1.3rem;
+    font-size: .8rem;
+}
+
+#addcostinfo .check-photo{
+    display:inline-block;
+    position:absolute;
+    left: 1rem;
+    top: 3.3rem;
+    color:#43aff7;
+}
+
+#addcostinfo .swat-photo{
+    display:inline-block;
+    position:absolute;
+    left: 3.1rem;
+    top: 3.3rem;
+    color:#43aff7;
+}
+
+#addcostinfo .endworkname-submit{
+    position: fixed;
+    bottom: 0;
+    left:0;
+    width:16rem;
+    padding:.5rem;
+    background: #fff;
+    box-shadow: 1px -2px 2px #e8e8e8;
+}
+
+#addcostinfo .endworkname-submit button {
+    width: 15rem;
+    line-height: 1.9rem;
+    color:#fff;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    box-sizing: border-box;
+    background: #d1d1d1;
+}
+
+#addcostinfo .submit-btn{
+    background:#333!important;
+    border:none;
+    color:#fff;
+}
+

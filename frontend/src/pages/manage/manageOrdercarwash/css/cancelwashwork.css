@@ -1,0 +1,111 @@
+#cancelwashwork .header{
+    padding:0 .12rem;
+    height:.46rem;
+    position:relative;
+    background: #fff;
+}
+
+#cancelwashwork .header input{
+    width:3.51rem;
+    margin:.05rem 0;
+    line-height:.35rem;
+}
+
+#cancelwashwork .header-icon {
+    position:absolute;
+    right:.12rem;
+    top:.153rem;
+    font-family: 'iconfont';
+    color: #b7b7b7;
+}
+
+ #cancelwashwork .top{
+     margin:.12rem 0;
+    padding:0 .12rem;
+    height:.46rem;
+     background:#fff;
+    /*border-bottom:1px solid #dcdcdc;*/
+}
+
+#cancelwashwork .top span {
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    margin-right: .23rem;
+    margin-top: .12rem;
+}
+
+#cancelwashwork .top input {
+    margin-right: .046rem;
+    margin-left: .07rem;
+    width: .187rem;
+    height: .187rem;
+    position: relative;
+    top: .046rem;
+}
+
+/*拍照样式*/
+#cancelwashwork .photo-content {
+    /*padding: .234rem .4rem;*/
+    padding:0 .12rem .12rem;
+    margin-bottom: .468rem;
+    background:#fff;
+}
+
+#cancelwashwork .photo-content > p {
+    line-height: .468rem;
+}
+
+#cancelwashwork .photo-content div {
+    display: inline-block;
+}
+
+#cancelwashwork .photo-content > div {
+    margin-left: .35rem;
+    margin-bottom: .468rem;
+}
+
+#cancelwashwork .photo-content > div > div {
+    position: relative;
+    width: 1.22rem;
+    height: 1.22rem;
+    background: #f4f4f4;
+}
+
+#cancelwashwork .uploadIcon {
+    font-family: 'iconfont';
+    font-size: .323rem;
+    position: absolute;
+    left: .447rem;
+    top: .304rem;
+}
+
+#cancelwashwork .number {
+    position: absolute;
+    left: .17rem;
+    top: .679rem;
+}
+
+#cancelwashwork .end-photo {
+    display: inline-block;
+    position: absolute;
+    left: .34rem;
+    top: .304rem;
+    font-size: .187rem;
+}
+
+#cancelwashwork .check-photo {
+    display: inline-block;
+    position: absolute;
+    left: .234rem;
+    top: .773rem;
+    color: #43aff7;
+}
+
+#cancelwashwork .swat-photo {
+    display: inline-block;
+    position: absolute;
+    left: .726rem;
+    top: .773rem;
+    color: #43aff7;
+}

@@ -1,0 +1,44 @@
+{
+  "id": 2014,
+  "zh_name": "百万红包南京",
+  "name": "millionGift_nj",
+  "group": "activity",
+  "bundle_vendor": true,
+  "copy": true,
+  "input_file": {
+    "index": [
+      "index.js"
+    ],
+    "history": [
+      "history.js"
+    ],
+    "confirmAccount": [
+      "confirmAccount.js"
+    ],
+    "editAccount": [
+      "editAccount.js"
+    ],
+    "explain": [
+      "explain.js"
+    ],
+    "share": [
+      "share.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/activity/millionGift_nj/",
+    "publicPath": "/",
+    "filename": "js/activity_millionGift_nj/[name].js"
+  },
+  "template": {
+    "list": [
+      "getOpenId.pug",
+      "index.pug",
+      "history.pug",
+      "confirmAccount.pug",
+      "editAccount.pug",
+      "explain.pug",
+      "share.pug"
+    ]
+  }
+}

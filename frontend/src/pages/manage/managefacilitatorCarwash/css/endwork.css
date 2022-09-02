@@ -1,0 +1,57 @@
+#endwork .header{
+    padding:.12rem;
+    background:#fff;
+    /*border-bottom:1px solid #dcdcdc;*/
+}
+
+#endwork .header .span1{
+    font-weight:bold;
+    margin-right:.12rem;
+    line-height:.35rem;
+}
+
+#endwork .header .span0{
+    line-height:.35rem;
+}
+
+#endwork .header  .span3{
+    padding:0 .12rem 0 0;
+    line-height:.35rem;
+    border-right:1px solid #dcdcdc;
+}
+
+#endwork .header  .span4{
+    padding:0 .12rem;
+    line-height:.35rem;
+}
+
+#endwork .net-info{
+    display:flex;
+    display: -webkit-flex; /* Safari */
+    justify-content:space-between;
+}
+
+#endwork .net-name{
+    width: 3rem;
+    color: gray;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#endwork .daoh1{
+    width: .2rem;
+    height:.2rem;
+}
+
+/*备注信息*/
+#endwork .remark-div{
+    margin-top:.12rem;
+    padding:.12rem 0;
+    background:#fff;
+}
+
+#endwork .remark-div p{
+    line-height:.234rem;
+    margin-left:.12rem;
+}

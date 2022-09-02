@@ -1,0 +1,72 @@
+.as-wrap{
+    .as-mask{
+        position: fixed;
+        top:0;
+        left: 0;
+        width:100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .7);
+    }
+    .as-box{
+        position: fixed;
+        bottom:0;
+        left: 0;
+        width: 100%;
+        background: #f2f2f2;
+        .as-item{
+            height: .4rem;
+            line-height: .4rem;
+            text-align: center;
+            background: #fff;
+            margin-bottom: 0.01rem
+        }
+        .cancel-item{
+            margin-top: 0.05rem;
+            margin-bottom: 0;
+        }
+    }
+}
+.as-fadeIn{
+    animation: as-fade-in .35s forwards
+}
+.as-slideUp{
+    animation: as-slide-up .35s forwards
+}
+.as-fadeOut{
+    animation: as-fade-out .35s forwards
+}
+.as-slideDown{
+    animation: as-slide-down .35s forwards
+}
+@keyframes as-fade-in{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes as-fade-out{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes as-slide-up{
+    0%{
+        transform: translateY(100%)
+    }
+    100%{
+        transform: translateY(0)
+    }
+}
+@keyframes as-slide-down{
+    0%{
+        transform: translateY(0)
+    }
+    100%{
+        transform: translateY(100%)
+    }
+}

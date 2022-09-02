@@ -1,0 +1,166 @@
+.ChooseBranch{
+  // padding: 0.15rem 0;
+  position: relative;
+  .serchBox{
+    padding:0 .2rem;
+    box-sizing: border-box;
+    background: #fff;
+    border-bottom: 1px solid #F5F5F5;
+    .search{
+      width: 100%;
+      position: relative;
+      line-height: 0.2rem;
+      color:#999;
+      text-indent: 0.22rem;
+      padding: .27rem 0;
+    &::before{
+      content: '';
+      background: url('../../images/icon_search.png') no-repeat center;
+      background-size: 80%;
+      width: 0.2rem;
+      height: 0.2rem;
+      display: block;
+      position: absolute;
+    }
+    .keyword{
+      border:none;
+      border-radius: 0;
+      background-color: transparent;
+      line-height: 0.2rem;
+    }
+    .search_btn{
+      color:#ed3800;
+      float: right;
+      border-left:solid 1px #f7d4d1;
+    }
+  }
+  }
+  .branchTitle{
+    height: .48rem;
+    line-height: .48rem;
+    padding-left: .2rem;
+    .branch_list{
+      min-height: 2rem;
+    }
+  }
+  .result_con{
+    // padding: 0 0.2rem;
+    position: absolute;
+    top: .75rem;
+    background: #FFF;
+    overflow: scroll;
+    width: 100%;
+    display: none;
+    .ResultBox{
+      position: relative;
+      padding: 0.1rem 0;
+      padding:.2rem;
+      border-bottom: solid 1px #F5F5F5;
+      &:nth-last-of-type(1){
+        border-bottom: none;
+      }
+      .icon{
+        position: absolute;
+        width: 0.2rem;
+        height: 0.2rem;
+        background:url('../../images/icon_branch.png') no-repeat center;
+        background-size: 90%;
+        top:50%;
+        margin-top: -0.1rem;
+        &.same{
+          background-image: url('../../images/icon_branch_same.png');
+        }
+        &.history{
+          background-image: url('../../images/icon_branch_history.png');
+        }
+      }
+      .position{
+        margin-left:0.24rem;
+        .title{
+            padding-bottom: .04rem;
+            font-size:15px;
+            color:#111111;
+          }
+          .desc{
+            padding-top: .04rem;
+            color:#999;
+            font-size:12px;
+          }
+      }
+    }
+  }
+}
+
+.history.delete{
+    width: 0.2rem;
+    height: 0.2rem;
+    display: block;
+    position: absolute;
+    background: url('../../images/icon_delete.png') no-repeat center;
+    background-size: 90%;
+    top: 0.15rem;
+    right:.2rem;
+}
+
+.BranchBox{
+  position: relative;
+  padding:.15rem .2rem;
+  border-bottom: solid 1px #f5f5f5;
+  background: #fff;
+  &:nth-last-of-type(1){
+    border-bottom: none;
+  }
+  .icon{
+    position: absolute;
+    width: 0.2rem;
+    height: 0.2rem;
+    background:url('../../images/icon_branch.png') no-repeat center;
+    background-size: 90%;
+    top:50%;
+    margin-top: -0.1rem;
+    &.same{
+      background-image: url('../../images/icon_branch_same.png');
+    }
+    &.history{
+      background-image: url('../../images/icon_branch_history.png');
+    }
+  }
+  .branch{
+    margin:0 0.6rem 0 0.24rem;
+    .name{
+      font-size: 14px;
+      color:#333;
+    }
+    .address{
+      font-size: 12px;
+      color:#999;
+    }
+  }
+  .distance{
+    text-align: right;
+    position: absolute;
+    width: 0.7rem;
+    right:0;
+    line-height: 0.2rem;
+    margin-top: -0.1rem;
+    top:50%;
+    padding-right: .2rem;
+  }
+}
+
+
+.historyBox{
+  .historyTitle{
+    position: relative;
+    height: .48rem;
+    line-height: .48rem;
+    padding-left: .2rem;
+  }
+}
+
+
+.empty{
+  color:#999;
+  text-align: center;
+  padding: 0.8rem 0;
+}

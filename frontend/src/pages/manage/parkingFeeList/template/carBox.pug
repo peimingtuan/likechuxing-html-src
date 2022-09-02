@@ -1,0 +1,15 @@
+-require('./carBox.less')
+li.carBox
+    .item
+        span #{compose} - #{status_des}
+    .item 网点:
+        span #{branch_name}
+    .item 类型:
+        span #{biz_type}
+    .item 时长:
+        span #{stop_long}
+    .item 开始:
+        span #{predict_time}
+    .item 费用:
+        span #{predict_fee}
+    button.blue_btn.leave(data-id=id) 出场

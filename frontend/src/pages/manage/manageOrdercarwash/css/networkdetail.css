@@ -1,0 +1,142 @@
+#networkdetail .header {
+    padding: .12rem;
+    background: #fff;
+}
+
+#networkdetail .header .p1 {
+    font-size: .15rem;
+    font-weight: bold;
+    line-height: .28rem;
+}
+
+#networkdetail .header .p2 {
+    display: flex;
+    display: -webkit-flex; /* Safari */
+    justify-content: space-between;
+    line-height: .28rem;
+}
+
+#networkdetail .header .net-name {
+    width: 3rem;
+    color: gray;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#networkdetail .header .daoh1{
+    position:relative;
+    top:-.05rem;
+}
+
+#networkdetail .header img {
+    width: .23rem;
+}
+
+#networkdetail .carwash-num {
+    padding: 0 .12rem;
+    line-height: .45rem;
+}
+
+#networkdetail .carwash-num span {
+    display: inline-block;
+    padding: 0 .02rem;
+}
+
+/*列表*/
+#networkdetail .detail-list{
+    /*margin-bottom:1rem;*/
+}
+
+#networkdetail .detail-list li {
+    margin-bottom: .12rem;
+    padding: .12rem;
+    background: #fff;
+}
+
+#networkdetail .detail-list li span{
+    display:inline-block;
+}
+
+#networkdetail .detail-list li .span1{
+    color: #999999;
+}
+
+#networkdetail .detail-list li .font1{
+    font-weight:bold;
+}
+
+#networkdetail .detail-list li .span2{
+    padding:0 .12rem;
+    border-radius:2px;
+    border:1px solid #999999;
+}
+
+#networkdetail .detail-list li .span3{
+    padding:0 .12rem 0 0;
+    border-right:1px solid #dcdcdc;
+}
+
+#networkdetail .detail-list li .span4{
+    padding:0 .12rem;
+    line-height:.35rem;
+}
+
+#networkdetail .detail-list li .div1{
+    border:1px dashed #dcdcdc;
+    padding:.06rem .06rem .06rem 0;
+    background:#fdfdfd;
+}
+
+#networkdetail .detail-list li .div1 span{
+    line-height:.2rem;
+}
+
+#networkdetail .detail-list li .div1 .span5{
+    border-left:3px solid #feb224;
+    color:#feb224;
+    padding-left:.1rem;
+}
+
+#networkdetail .carwashlistlist li .div1 .normal{
+    border-left:3px solid #494b51!important;
+    color:#494b51!important;
+}
+
+#networkdetail .detail-list .div1 .right font{
+    padding:0 .05rem;
+}
+
+#networkdetail .detail-list li .div1 .work-time{
+    margin-top:.06rem;
+}
+
+#networkdetail .detail-list li .div1 .work-time,
+#networkdetail .detail-list li .div1 .stop-add{
+    line-height:.28rem;
+    padding-left:.1rem;
+}
+
+#networkdetail .detail-list li .div2{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height:.45rem;
+}
+
+#networkdetail .detail-list li .div3{
+    text-align: right;
+}
+
+#networkdetail .detail-list li .div3 span{
+    padding:.08rem 0;
+    border:1px solid #999999;
+    border-radius:3px;
+    width: 1.2rem;
+    text-align: center;
+}
+
+#networkdetail .detail-list li .div3 .fit{
+    color:#fff;
+    background:#666566;
+}

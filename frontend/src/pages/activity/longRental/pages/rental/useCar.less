@@ -1,0 +1,101 @@
+.UseCar{
+  padding:0.15rem 0;
+  .useCar{
+      padding: 0 0.2rem;
+      .car_info {
+        position: relative;
+        padding-bottom: 0.2rem;
+        margin-bottom: 0.1rem;
+        border-bottom: none;
+        .desc {
+          padding: 0.05rem 0;
+          box-sizing: border-box;
+          height: 0.6rem;
+          color: #333;
+          .name {
+            line-height: 0.3rem;
+          }
+          .price {
+            line-height: 0.2rem;
+            color: #999;
+            .money {
+              color: #333;
+            }
+          }
+        }
+        .img {
+          position: absolute;
+          right: 0;
+          top: 0.05rem;
+          height: 0.6rem;
+        }
+      }
+      .icon.car_guide{
+        display: inline-block;
+        width: 0.56rem;
+        height: 0.3rem;
+        background: url('../../images/car_guide.png') no-repeat center;
+        background-size: 100%;
+        vertical-align: top;
+        margin:0 0.05rem
+      }
+    }
+  .branch{
+    border-bottom: none;
+    overflow: hidden;
+    .branchName{
+      position: relative;
+      margin-top: 0.1rem;
+      line-height: 0.22rem;
+      padding-right: 3.1em;
+      .change_end_point{
+        position: absolute;
+        top:0;
+        right:0;
+        line-height: 0.14rem;
+        margin-top: 0.04rem;
+        padding-left:1em;
+        border-left:solid 1px #F7D4D1;
+      }
+    }
+  }
+  .tips{
+    margin:0.15rem 0;
+    text-align: center;
+    color: #BCA4A4;
+  }
+  .btn_con{
+    justify-content:center;
+    display: flex;
+    margin:0.1rem 0;
+    a{
+      display: inline-block;
+    }
+    .btn_short{
+      line-height: 0.62rem;
+    }
+    .btn_square{
+      p{
+        margin-top: 0.15rem;
+      }
+    }
+  }
+  .link_con{
+    justify-content:center;
+    display: flex;
+    width: 110%;
+    margin-left:-5%;
+    .link{
+      display: inline-block;
+      text-align: center;
+      padding: 0 0.9em;
+      line-height: 0.14rem;
+      margin:0.03rem auto;
+      color:#ed3800;
+      &.mid{
+        border-left:solid 1px #EAABAB;
+        border-right:solid 1px #EAABAB;
+      }
+    }
+  }
+}

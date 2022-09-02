@@ -1,0 +1,24 @@
+//- Created by garvey on 2017/11/8.
+include ../../../template/base/h5
+    include ../../../template/head/viewport
+    title 立刻出行
+    include ../../../template/head/seo_meta
+body
+    include ./template/header
+    .banner
+        .main_download
+            .slogan 喜欢你就·立刻出发
+            .title 立刻出行APP下载
+            a#download_ios(href="javascript:void(0)")
+                img(src=require('./images/download_ios_white.png'))
+            a#download_android(href="javascript:void(0)")
+                img(src=require('./images/download_android_white.png'))
+        img.phone(src=require('./images/phone_2.png'))
+    .app_show
+        .animate_container
+            img(src=require('./images/app_3.png'))
+            img(src=require('./images/app_1.png'))
+            .desc
+                |24小时随时用车
+                br
+                |手机一键取还

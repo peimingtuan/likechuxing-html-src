@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+    <meta content="telephone=no, address=no" name="format-detection">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="no-cache" http-equiv="pragma">
+    <meta content="0" http-equiv="expires">
+    <meta name="full-screen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>结束故障工单</title>
+    <script>
+        var htmlBq = document.documentElement;
+
+        function allSize() {
+            var htmlWidth = htmlBq.clientWidth;
+            if (htmlWidth >= 640) {
+                htmlBq.style.fontSize = '40px';
+            } else if (htmlWidth < 640 && htmlWidth >= 320) {
+                htmlBq.style.fontSize = htmlWidth / (640 / 40) + 'px';
+            } else if (htmlWidth < 320) {
+                htmlBq.style.fontSize = '20px';
+            }
+        }
+        allSize();
+        window.onresize = function () {
+            allSize();
+        };
+    </script>
+</head>
+<body class="body none">
+<script>
+    !(function(c,b,d,a){c[a]||(c[a]={});c[a].config={pid:"gruqqi6cbp@6594c08d3216a5d",imgUrl:"https://arms-retcode.aliyuncs.com/r.png?"};
+        with(b)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("crossorigin","",src=d)
+    })(window,document,"https://retcode.alicdn.com/retcode/bl.js","__bl");
+</script>
+<div class="endwork-netname">
+    <span>网点名称：</span>
+    <input class="choice-net input-foucs" type="text" value="" placeholder="请选择网点" readonly/>
+    <span class="endwork-icon right">&#xe623;</span>
+</div>
+<div class="endwork-floor">
+    <p class="choice-floor">
+        <span>楼层：</span>
+        <input class="floors input-foucs" type="text" value="" placeholder="请选择楼层" readonly />
+        <span class="endwork-icon right">&#xe623;</span>
+    </p>
+
+    <p>
+        <span>车位号：</span>
+        <input class="carposinum input-foucs" type="text" value="" placeholder="请输入车位号"/>
+    </p>
+</div>
+<div class="endwork-state">
+    <span>更改车辆状态：</span>
+    <input class="car-state input-foucs" type="text" value="" placeholder="请选择车辆状态" readonly/>
+    <input class="car-stateid" type="hidden" value="" />
+    <span class="endwork-icon right">&#xe623;</span>
+</div>
+<div class="remark-info">
+    <span class="none">*</span>
+  <textarea class="void_writeinfo" placeholder="请输入车辆状态备注信息，200字以内" maxlength="200">
+</textarea>
+</div>
+<div class="endworkname-submit">
+    <button>提交</button>
+</div>
+<!--alert弹框1-->
+<div class="net-contentwindow1 common_cover3 none">
+    <div class="net-content1">
+        <span class="close-icon">&#xe601;</span>
+        <div class="top">
+            车机里程为0，请检查车机
+        </div>
+        <div class="bottom">
+            <span class="cancel">取消</span><span class="qure">继续提交</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>

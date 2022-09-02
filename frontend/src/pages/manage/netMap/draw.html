@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, user-scalable=no"/>
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.7&key=1135da1a2c87ca0cf650a41f9fa84fa6&plugin=AMap.PolyEditor"></script>
+    <script type="text/javascript" src="https://webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script>
+    <title>draw</title>
+    <style>
+        *{
+            margin:0;
+        }
+        #container{
+            width:100vw;
+            height:100vh
+        }
+        .button-group{
+            position: fixed;
+            bottom:50px;
+            right:40px
+        }
+    </style>
+</head>
+<body>
+<div id="container"></div>
+<div class="button-group">
+    <button onClick="start()">开始</button>
+    <input type="button" class="button" value="开始编辑多边形" onClick="editor.startEditPolygon()"/>
+    <input type="button" class="button" value="结束编辑多边形" onClick="editor.closeEditPolygon()"/>
+</div>
+</body>
+</html>

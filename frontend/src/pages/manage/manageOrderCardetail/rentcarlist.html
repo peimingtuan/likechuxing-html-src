@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+    <meta content="telephone=no, address=no" name="format-detection">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="no-cache" http-equiv="pragma">
+    <meta content="0" http-equiv="expires">
+    <meta name="full-screen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>非租赁车辆状态列表</title>
+    <script>
+        var htmlBq = document.documentElement;
+
+        function allSize() {
+            var htmlWidth = htmlBq.clientWidth;
+            if (htmlWidth >= 640) {
+                htmlBq.style.fontSize = '40px';
+            } else if (htmlWidth < 640 && htmlWidth >= 320) {
+                htmlBq.style.fontSize = htmlWidth / (640 / 40) + 'px';
+            } else if (htmlWidth < 320) {
+                htmlBq.style.fontSize = '20px';
+            }
+        }
+        allSize();
+        window.onresize = function () {
+            allSize();
+        };
+    </script>
+    <script src="https://g.alicdn.com/dingding/open-develop/1.9.0/dingtalk.js"></script>
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.4&key=91ed10906005ee88866f14fd9f076e8b"></script>
+</head>
+<body>
+<script>
+    !(function(c,b,d,a){c[a]||(c[a]={});c[a].config={pid:"gruqqi6cbp@6594c08d3216a5d",imgUrl:"https://arms-retcode.aliyuncs.com/r.png?"};
+        with(b)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("crossorigin","",src=d)
+    })(window,document,"https://retcode.alicdn.com/retcode/bl.js","__bl");
+</script>
+<div class="rentcar-content">
+    <span class="rentcarSelect">&#xe605;&nbsp;&nbsp;搜索</span>
+    <span class="rentcarFilter">&#xe638;&nbsp;&nbsp;筛选</span>
+    <span class="rentcarSort">&#xe602;&nbsp;&nbsp;排序</span>
+    <span class="rentcarRefle">&#xe8d0;&nbsp;&nbsp;刷新</span>
+</div>
+<ul class="rentcarList">
+</ul>
+<!--confirm提示框-->
+<div class="confirm_window common_cover none">
+    <div class="confirm_content common_content content-filter">
+        <div class="confirm-title">
+            筛选
+            <span class="close-confirm">&#xe601;</span>
+        </div>
+        <div class="confirm-content">
+            <p>网点</p>
+
+            <p class="confirm-netpoint">
+                <span class="allnet color">全部网点<input type="hidden" value=""/></span>
+                <span class="net">B类网点<input type="hidden" value="1"/></span>
+                <span class="net">B+类网点<input type="hidden" value="2"/></span>
+                <span class="net">加油站<input type="hidden" value="3"/></span>
+            </p>
+
+            <p>车辆</p>
+
+            <p class="confirm-carstate">
+                <span class="allcarstate color">全部车辆<input type="hidden" value=""/></span>
+                <span class="state">加油状态<input type="hidden" value="1"/></span>
+            </p>
+
+            <p>车辆类型</p>
+
+            <p class="confirm-style readios">
+                        <span class=""><input class="all" type="radio" name="chargestyle" value="0"
+                                              checked/>全部</span>
+                <span class=""><input type="radio" name="chargestyle" value="1"/>电车</span>
+                <span class=""><input type="radio" name="chargestyle" value="2"/>油车</span>
+            </p>
+        </div>
+        <div class="confirm-bottom">
+            <button class="confirm-reset">重置</button>
+            <button class="confirm-sure">确定</button>
+        </div>
+    </div>
+</div>
+<!--排序提示框-->
+<div class="sort_window common_cover none">
+    <div class="sort_content">
+        <div class="sort-title">
+            排序
+            <span class="close-sort">&#xe601;</span>
+        </div>
+        <ul class="sort-list">
+            <li class="range-sort sort-color">距离网点从近到远<input type="hidden" value="1"/><img  src=""/></li>
+            <li class="num-sort">状态时长从大到小<input type="hidden" value="2"/><img class="none" src=""/></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

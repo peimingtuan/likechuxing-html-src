@@ -1,0 +1,62 @@
+/*#checknofitwork .header{*/
+    /*padding:0 .12rem;*/
+    /*line-height:.46rem;*/
+    /*background: #fff;*/
+    /*overflow: hidden;*/
+    /*text-overflow: ellipsis;*/
+    /*white-space: nowrap;*/
+/*}*/
+
+/*#checknofitwork .top{*/
+    /*margin:.12rem 0;*/
+    /*padding:0 .12rem;*/
+    /*height:.46rem;*/
+    /*background:#fff;*/
+    /*/!*border-bottom:1px solid #dcdcdc;*!/*/
+/*}*/
+
+/*#checknofitwork .top span {*/
+    /*box-sizing: border-box;*/
+    /*display: inline-block;*/
+    /*text-align: center;*/
+    /*margin-right: .23rem;*/
+    /*margin-top: .12rem;*/
+/*}*/
+
+/*#checknofitwork .top input {*/
+    /*margin-right: .046rem;*/
+    /*margin-left: .07rem;*/
+    /*width: .187rem;*/
+    /*height: .187rem;*/
+    /*position: relative;*/
+    /*top: .046rem;*/
+/*}*/
+
+/*拍照样式*/
+#checknofitwork .photo-content {
+    /*padding: .234rem .4rem;*/
+    padding:.12rem;
+    margin-bottom: .468rem;
+    background:#fff;
+}
+
+#checknofitwork .photo-content div {
+    display: inline-block;
+}
+
+#checknofitwork .photo-content > div {
+    margin-left: .35rem;
+    margin-bottom: .468rem;
+}
+
+#checknofitwork .photo-content > div > div {
+    position: relative;
+    width: 1.22rem;
+    height: 1.22rem;
+    background: #f4f4f4;
+}
+
+#checknofitwork .photo-content > div .img-circle{
+    width: 1.22rem;
+    height: 1.22rem;
+}

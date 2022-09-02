@@ -1,0 +1,322 @@
+.faultdetail-content {
+    background: #fff;
+    padding: .5rem;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.faultdetail-content p span {
+    display: inline-block;
+    margin-top: .3rem;
+
+}
+
+.faultdetail-content .brand_name,
+.faultdetail-content .carqube{
+    padding-right:.4rem;
+    border-right:1px solid #e7e7e7;
+}
+
+.faultdetail-content .carqube,.faultdetail-content .remain_km{
+    margin-left:.2rem;
+}
+
+.faultdetail-content .trouble_id {
+    margin-left: .3rem;
+    padding: .1rem .3rem;
+    border: 1px solid #f6f6f6;
+}
+
+.faultdetail-content .getnet{
+    margin-top:.2rem;
+    padding: .3rem 0rem;
+    line-height: 1rem;
+    position: relative;
+    border:none!important;
+}
+
+.faultdetail-content .getnet div{
+    width: 13rem;
+}
+
+.faultdetail-content .daoh{
+    /*width:.8rem;*/
+    position: absolute;
+    right: 0;
+    top: .3rem;
+}
+
+.faultdetail-content img {
+    width: 1rem;
+}
+
+.faultdetail-content .location {
+    padding-left:.3rem;
+    border-left:1px solid #e7e7e7;
+}
+
+.faultdetail-content .location img{
+    width:.6rem;
+    position:relative;
+    top: -.1rem;
+}
+
+.faultdetail-content p span .font1 {
+    color: #999999;
+    margin-right: .1rem;
+}
+
+.faultdetail-content .div1{
+    border:1px dashed #dcdcdc;
+    padding:.25rem .25rem .25rem 0;
+    background:#fdfdfd;
+    position:relative;
+}
+
+.faultdetail-content .div1 span{
+    line-height:1rem;
+}
+
+.faultdetail-content .div1 .border-color{
+    display: inline-block;
+    width: 5px;
+    background: #feb224;
+    height: 1rem;
+    border-radius: 0 3px 3px 0;
+    position:absolute;
+}
+
+.faultdetail-content .div1 .span5{
+    color:#feb224;
+    padding-left:15px;
+}
+
+.faultdetail-content .div1 .troule-type{
+    margin-top:.25rem;
+    line-height:1.1rem;
+    padding-left:.5rem;
+}
+
+
+/*备注信息展示*/
+.faultdetail-content .trouble-remark {
+    margin-top:.3rem;
+    line-height: 1.2rem;
+}
+
+/*故障工单流程图*/
+.fault-flow {
+    margin-top: .5rem;
+    padding-top: .5rem;
+    width: 100%;
+    height: 4rem;
+    background: #fff;
+}
+
+.fault-flow p {
+    margin: 0 .5rem;
+}
+
+.fault-flow .p1 {
+    padding-bottom: .2rem;
+    height: 1rem;
+}
+
+.fault-flow .p1 .more {
+    float: right;
+    color:#44a8ec;
+    margin-right: .3rem;
+}
+
+.fault-flow .p2 {
+    position: relative;
+    height: 2rem;
+    text-align: center;
+}
+
+.fault-flow .p2 span {
+    position: absolute;
+}
+
+.fault-flow .p2 .span1 {
+    left: .3rem;
+    top: .3rem;
+}
+
+.fault-flow .p2 .span2 {
+    right: .3rem;
+    top: .3rem;
+}
+
+.fault-flow .p2 .span3 {
+    left: 1.9rem;
+    top: 0rem;
+    display: inline-block;
+    padding: 0 .1rem;
+    background: #d8d8d8;
+    border-radius: 3px;
+}
+
+.fault-flow .p2 .span4 {
+    left: 6.5rem;
+    top: 0rem;
+    display: inline-block;
+    padding: 0 .1rem;
+    background: #d8d8d8;
+    border-radius: 3px;
+}
+
+.fault-flow .p2 .span-left {
+    left: 1.95rem;
+    top: 1.1rem;
+    display: inline-block;
+    width: 2rem;
+    height: .05rem;
+    background: #d8d8d8;
+    border-radius: 3px;
+}
+
+.fault-flow .p2 .span-length {
+    left: 4.5rem;
+    top: 1rem;
+    width: 6rem;
+    height: .15rem;
+    display: inline-block;
+    background: #d8d8d8;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.fault-flow .p2 .span-right {
+    left: 11rem;
+    top: 1.1rem;
+    display: inline-block;
+    width: 2rem;
+    height: .05rem;
+    background: #d8d8d8;
+    border-radius: 3px;
+}
+
+.fault-list > li {
+    line-height: 2.2rem;
+    padding: 0 .5rem;
+    background: #fff;
+    border-top: 1px solid #f6f6f6;
+}
+
+.fault-list li > span {
+    font-family: 'iconfont';
+    font-size: .8rem;
+}
+
+.fault-list li .open-show {
+    width: 1rem;
+    margin-top: .6rem;
+}
+
+.change-list li {
+    padding: 0 0 0 .5rem;
+    line-height: 2.2rem;
+    border-top: 1px solid #f6f6f6;
+}
+
+.fault-list .true {
+    height: 2.2rem;
+    overflow-y: hidden;
+}
+
+/*更多弹框*/
+.common_content {
+    position: absolute;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100%;
+    min-height: 8.2rem;
+    background-color: #fff;
+    overflow: hidden;
+    color: #474747;
+}
+
+.common_content li {
+    box-sizing: border-box;
+    padding: 0 .5rem;
+    width: 100%;
+    line-height: 2rem;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.common_content li:first-of-type {
+    position: relative;
+    text-align: center;
+}
+
+.common_content li:last-of-type {
+    border-bottom: none;
+}
+
+.close-icon {
+    position: absolute;
+    font-family: 'iconfont';
+    left: .5rem;
+}
+
+.alert-bottom {
+    position: absolute;
+    bottom: .5rem;
+    padding-left: .5rem;
+}
+
+/*底部按钮样式*/
+.faultdetail-btn {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 5% 2.5%;
+    background: #fff;
+    box-shadow: 0px -2px 1px #eaeaea;
+}
+
+.faultdetail-btn button {
+    width: 31%;
+    line-height: 1.9rem;
+    text-align: center;
+    /*color: #fff;*/
+    background: #fff;
+    outline: none;
+    border: 1px solid #333;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.open-door {
+    margin-right: 0;
+}
+
+/*操作历史*/
+.fault-history {
+    margin-top: .5rem;
+    padding: .5rem;
+    background: #fff;
+    margin-bottom: 4rem;
+}
+
+.fault-history p {
+    line-height: 2rem;
+}
+
+.fault-history li span {
+    display: inline-block;
+    margin-right: 1rem;
+    line-height: 1.2rem;
+    word-break: break-all;
+}
+
+.fault-history .check {
+    font-family: 'iconfont';
+    color: #d1d1d1;
+    position: absolute;
+    right: 0;
+}
+
+.check font {
+    color: #adadad;
+}

@@ -1,0 +1,173 @@
+body > p {
+    margin: .5rem;
+    line-height: 1.2rem;
+}
+
+body > p span {
+    display: inline-block;
+    width: 5rem;
+    text-align: center;
+    color: #9c9c9c;
+}
+
+.img1, .img2 {
+    width: 5rem;
+}
+
+body .solve-trouble {
+    margin: 0 .5rem;
+}
+
+body .solve-trouble span {
+    display: inline-block;
+    width: 4.5rem;
+    line-height: 1.1rem;
+    border: 1px solid #808080;
+    text-align: center;
+    margin-right: .2rem;
+    margin-bottom: .3rem;
+    position: relative;
+}
+
+.img3 {
+    width: .8rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/*分类列表*/
+.outer-trouble {
+    position: relative;
+    height: 9.8rem;
+}
+
+.outer-trouble ul {
+    position: absolute;
+}
+
+.left-ul {
+    left: 0;
+}
+
+.center-ul {
+    left: 5rem;
+}
+
+.right-ul {
+    left: 10rem;
+}
+
+/*已处理按钮*/
+.troule-btn {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 16rem;
+    margin-left: 0;
+    padding: .5rem;
+    background: #fff;
+}
+
+.troule-btn button {
+    width: 15rem;
+    line-height: 1.9rem;
+    text-align: center;
+    color: #fff;
+    background: #d1d1d1;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+/*已选样式*/
+.check-color {
+    border: 1px solid red !important;
+}
+
+.check-color font {
+    color: red;
+}
+
+/*按钮点亮*/
+.addcolor {
+    background: #333 !important;
+}
+
+/*确认弹框*/
+.sure_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 13rem;
+    height: 10rem;
+    margin-top: -5rem;
+    margin-left: -6.5rem;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.sure_content .title {
+    line-height: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sure_content .title span {
+    margin: 0 .3rem;
+}
+
+.sure_content .center {
+    margin: 0 .8rem;
+}
+
+.sure_content .center span {
+    display: inline-block;
+    width: 5.5rem;
+    text-align: center;
+    line-height: 1.1rem;
+    color: #7b7b7b;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.sure-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 13rem;
+    height: 2rem;
+    box-sizing: border-box;
+    border-top: 1px solid #ededed;
+}
+
+.sure-bottom span {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 6.4rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.alert-sure {
+    border-left: 1px solid #ededed;
+    color: #73bef0;
+}
+/*处理完成样式*/
+.finsh_trouble{
+    background:#fff;
+    height:7rem;
+    text-align: center;
+}
+.finsh_trouble img{
+    margin-top: 1.8rem;
+    width: 2rem;
+    margin-bottom: .5rem;
+}
+.deal-trouble{
+    text-align:center;
+    line-height:2rem;
+}

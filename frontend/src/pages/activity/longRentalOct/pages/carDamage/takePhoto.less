@@ -1,0 +1,47 @@
+.TakePhoto{
+  // padding: 0.15rem 0;
+  .takePhoto{
+    // padding: 0 0.2rem;
+    .takePhoneBtn{
+      padding: .7rem .2rem 0;
+    }
+  }
+  .photoList{
+    // margin:0 -0.08rem;
+    padding: 0.18rem .2rem 1rem;
+    overflow: hidden;
+    background: #FFF;
+    .PhotoBox{
+      width: 50%;
+      float: left;
+      .title{
+        text-align: center;
+        line-height: 0.3rem;
+      }
+      .photo_container{
+        position: relative;
+        width: 1.6rem;
+        height: 1.3rem;
+        border-radius:2px;
+        background:#f3f3f3 url('../../images/camera.png') no-repeat center;
+        background-size: contain;
+        margin:0 auto;
+        .close{
+          background:url('../../images/close.png') no-repeat center;
+          background-size: 100%;
+          width: 0.2rem;
+          height: 0.2rem;
+          position: absolute;
+          right:-0.1rem;
+          top:-0.1rem;
+          z-index: 10;
+        }
+      }
+      .file{
+        display: none;
+      }
+
+    }
+  }
+
+}

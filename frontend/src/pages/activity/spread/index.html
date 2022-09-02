@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, user-scalable=no"/>
+    <title>立刻出行</title>
+    <script src="/js/config/env.js"></script>
+</head>
+<body>
+<section class="step_3" style="display: none">
+    <div class="tip">
+        <div class="gray"></div>
+        <span>红包领取成功</span>
+    </div>
+    <p class="coupon_title">50 元租车优惠券<br /><span class="tt">已放入您的账户</span></p>
+    <div class="btn_con">
+        <p>- 下载「立刻出行」app使用 -</p>
+        <img src="/images/activity_spread/download_ios.png" class="btn download_ios" />
+        <img src="/images/activity_spread/download_android.png" class="btn download_android" />
+    </div>
+    <img src="/images/activity_spread/slogan.png" class="slogan"/>
+</section>
+<section class="step_2">
+    <div class="tip">
+        <div class="gray"></div>
+        <span>输入手机号立即领取新用户 50 元租车优惠券</span>
+    </div>
+    <p class="coupon_title">50 元租车优惠券</p>
+    <div class="input_con">
+        <div class="label">
+            <span>请输入手机号：</span>
+            <input type='text' maxlength="11" class="input" id="phone" />
+        </div>
+        <div class="label">
+            <span>请输入验证码：</span>
+            <input type='text' maxlength="4" class="input" id="code" />
+            <button class="get_code btn disable">获取验证码</button>
+        </div>
+
+        <button class="get_coupon btn disable">立即领取</button>
+    </div>
+    <img src="/images/activity_spread/slogan.png" class="slogan"/>
+</section>
+<section class="step_1" >
+    <div class="footer">
+        <ul class="three_detail">
+            <li>1. 共享汽车取还方便</li>
+            <li>2. 网点密布广州市区</li>
+            <li>3. 无需担负油费电费</li>
+        </ul>
+        <p>
+            - 下载「立刻出行」APP，认证后即可租车<br />
+            - 在活动页面输入手机号领取 50 元优惠券，可免费租车 3 小时 30 公里
+        </p>
+        <img src="/images/activity_spread/steps.png" class="steps"/>
+    </div>
+</section>
+<div class="header">
+    <div class="text">
+        <img class="logo" src="/images/activity_spread/logo.png" />
+        <p>立刻出行发了一个红包</p>
+        <p class="title">免费租车</p>
+        <p>打开红包立刻体验</p>
+    </div>
+    <div class="open_con">
+        <img src="/images/activity_spread/logo.png" class="logo" />
+        <img src="/images/activity_spread/btn-open.png" class="btn open" />
+    </div>
+</div>
+<div id="toast-con" style="display: none;position:fixed;width:100vw;height: 100vh;top:0;left:0;z-index:1">
+    <p id="toast-msg" style="width: 70vw;padding: 10px;background: rgba(0,0,0,0.8);border-radius: 3px;color: #fff;text-align: center;margin:40vh auto 0"></p>
+</div>
+</body>
+</html>

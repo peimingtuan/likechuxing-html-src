@@ -1,0 +1,26 @@
+{
+  "id": 4085,
+  "zh_name": "管理APP钉钉-故障工单",
+  "name": "manageFaultwork",
+  "group": "manage",
+  "copy": true,
+  "bundle_vendor": false,
+  "dll":[
+    "vuer"
+  ],
+  "input_file": {
+    "index": [
+      "index.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/manage/manageFaultwork/",
+    "publicPath": "/",
+    "filename": "js/manage_manageFaultwork/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.html"
+    ]
+  }
+}

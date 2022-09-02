@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+    <meta content="telephone=no, address=no" name="format-detection">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="no-cache" http-equiv="pragma">
+    <meta content="0" http-equiv="expires">
+    <meta name="full-screen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>网点车辆详情</title>
+    <script>
+        var htmlBq = document.documentElement;
+
+        function allSize() {
+            var htmlWidth = htmlBq.clientWidth;
+            if (htmlWidth >= 640) {
+                htmlBq.style.fontSize = '40px';
+            } else if (htmlWidth < 640 && htmlWidth >= 320) {
+                htmlBq.style.fontSize = htmlWidth / (640 / 40) + 'px';
+            } else if (htmlWidth < 320) {
+                htmlBq.style.fontSize = '20px';
+            }
+        }
+        allSize();
+        window.onresize = function () {
+            allSize();
+        };
+    </script>
+</head>
+<body class="netdetail">
+<script>
+    !(function(c,b,d,a){c[a]||(c[a]={});c[a].config={pid:"gruqqi6cbp@6594c08d3216a5d",imgUrl:"https://arms-retcode.aliyuncs.com/r.png?"};
+        with(b)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("crossorigin","",src=d)
+    })(window,document,"https://retcode.alicdn.com/retcode/bl.js","__bl");
+</script>
+<div class="netdetail-content none">
+   <p>
+       <span class="net-name"><img src="" class="img1"/><font>海淀区西二旗地面停车场</font></span>
+       <span class="navigation-icon right"><img src="" class="img2"/>导航</span><br/>
+   </p>
+    <div><span class="find-norecordcar none">发现未记录车辆</span></div>
+    <p>
+        <span>全部车辆</span>
+        <span class="right">共<font>11</font>辆</span>
+    </p>
+</div>
+<ul class="netdetailList">
+
+</ul>
+<div class="netdetail-nextbtn">
+    <button>网点车辆数据报错</button>
+</div>
+<!--alert弹框1-->
+<div class="net-contentwindow1 common_cover2 none">
+    <div class="net-content1">
+        <div class="top">
+            <span class="span1">确认该车辆不在网点？</span><br/>
+            <span class="plate">车牌号：<font>粤AJ5552</font></span>
+        </div>
+        <div class="bottom">
+            <span class="cancel">取消</span><span class="qure">确认</span>
+        </div>
+    </div>
+</div>
+<!--alert弹框2-->
+<div class="net-contentwindow2 common_cover2 none">
+    <div class="net-content2">
+        <div class="top">
+            <span class="span1">请输入车牌号</span><br/>
+            <span>该网点未记录车辆的车牌号</span><br/>
+            <input type="text" class="plate-num" value="" autofocus="autofocus"/>
+        </div>
+        <div class="bottom">
+            <span class="cancel2">取消</span><span class="qure2">确认</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>

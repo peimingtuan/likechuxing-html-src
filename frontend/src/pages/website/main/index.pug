@@ -1,0 +1,40 @@
+//- Created by garvey on 2017/11/7.
+include ../../../template/base/h5
+    include ../../../template/head/viewport
+    title 立刻出行
+    include ../../../template/head/seo_meta
+    //include ../../../template/head/ali_video
+    include ../../../template/head/videojs
+body
+    include ./template/header
+    .banner
+        .slogan
+            p.s 用车，非常简单
+            p.l 喜欢你就
+            p.l 立刻出发
+            a(href="download.html")
+                button#slogan_download 下载 APP
+    .int_con
+        .introduce
+            .why
+                .title 为什么选择立刻出行？
+                p 便宜 / 便捷 / 舒适 / 贴心
+            .what
+                img.phone(src=require('./images/phone.jpg'))
+                .desc
+                    .title 立刻出行
+                    .content
+                        |共享经济浪潮下顺势而生的汽车共享出行服务平台。将移动互联网与汽车分时租赁深度结合，打破传统汽车出行模式，服务于城市内短途出行需求。
+                    a(href="about.html")
+                        button#toAbout 查看公司介绍
+            .video
+                .mask
+                    img.video_mask(src=require('./images/video_mask.jpg'))
+                    .video_text
+                        .content 观看视频
+                    img.video_start(src=require('./images/video_start.png'))
+                    //.prism-player#J_prismPlayer(style="position: absolute")
+            .how
+                .title 使用流程
+                img(src=require('./images/steps.png'))
+                img(src=require('./images/car.png'))

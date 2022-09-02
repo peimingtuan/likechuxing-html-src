@@ -1,0 +1,143 @@
+* {
+    font-size: .14rem;
+    color: #494B51;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+p,
+a,
+em,
+img,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h2,
+h3 {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+    outline: none;
+}
+
+.none {
+    display: none !important;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+img {
+    outline: none;
+    vertical-align: middle;
+}
+
+.inline {
+    display: inline !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+ul {
+    list-style: none;
+    -webkit-margin-after: 0;
+    -webkit-margin-before: 0;
+    -webkit-padding-start: 0;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #b0b0b0;
+}
+
+input:-moz-input-placeholder, textarea:-moz-input-placeholder {
+    color: #b0b0b0;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color: #b0b0b0;
+}
+
+@font-face {
+    font-family: 'iconfont';  /* project id 509131 */
+    src: url('//at.alicdn.com/t/font_509131_x0ostpbnylvaq0k9.eot');
+    src: url('//at.alicdn.com/t/font_509131_x0ostpbnylvaq0k9.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_509131_x0ostpbnylvaq0k9.woff') format('woff'),
+    url('//at.alicdn.com/t/font_509131_x0ostpbnylvaq0k9.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_509131_x0ostpbnylvaq0k9.svg#iconfont') format('svg');
+}
+
+.clearfix::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+/*筛选底部按钮共用样式*/
+.box-footer{
+    width: 3.75rem;
+    margin: 0 -.2rem -.15rem;
+    padding: 10px .2rem 0;
+    box-sizing: border-box;
+    background: #fff;
+    height: 60px;
+    box-shadow: 0 -2px 1px #eaeaea;
+}
+.box-footer button{
+    width:47%;
+}
+
+/*toast提示颜色*/
+.like-toast .msg{
+    color:#fff;
+}
+
+/*排序弹框*/
+.sort_content{
+    margin-bottom: -.1rem;
+}
+.sort_content li {
+    line-height: .4rem;
+    border-top: 1px solid #ededed;
+    position: relative;
+}
+
+.sort_content li img {
+    position: absolute;
+    right: 0;
+    top: .08rem;
+    width: .234rem;
+    vertical-align: middle;
+}
+.is_sort{
+    color: #44a8ec;
+}
+.no_sort{
+    color: #494B51;
+}
+
+/*列表页loading样式*/
+.status_text{
+    color:#999;
+    margin:1rem auto;
+    text-align: center;
+}

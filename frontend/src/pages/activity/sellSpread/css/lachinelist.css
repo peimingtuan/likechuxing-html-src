@@ -1,0 +1,106 @@
+@import '../../../../css/reset.css';
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+.none {
+    display: none !important;
+}
+
+.color {
+    color: #b8babc !important;
+}
+@font-face {
+    font-family: 'iconfont';  /* project id 628835 */
+    src: url('//at.alicdn.com/t/font_628835_nj4psi92p9jrwwmi.eot');
+    src: url('//at.alicdn.com/t/font_628835_nj4psi92p9jrwwmi.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_628835_nj4psi92p9jrwwmi.woff') format('woff'),
+    url('//at.alicdn.com/t/font_628835_nj4psi92p9jrwwmi.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_628835_nj4psi92p9jrwwmi.svg#iconfont') format('svg');
+}
+body {
+    padding: 0 .15rem;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.top {
+    position: fixed;
+    top: 0;
+    width: 3.48rem;
+    height: .9rem;
+    background: #fff;
+    z-index: 100;
+    border-bottom: 1px solid #e1e1e3;
+}
+
+.top .p1 {
+    font-size: .17rem;
+    height: .4rem;
+}
+
+.top .p1 span {
+    display: inline-block;
+    line-height: .4rem;
+}
+
+.top .p2, .top .p3 {
+    height: .2rem;
+}
+
+.top .right font {
+    color: red;
+    font-family: 'iconfont';
+}
+
+.lach-list {
+    margin-top: .9rem;
+}
+
+.lach-list li {
+    padding: .15rem 0;
+    height: .9rem;
+    border-bottom: 1px solid #e1e1e3;
+}
+
+.lach-list li p {
+    height: .3rem;
+    position: relative;
+}
+
+.lach-list li p span {
+    position: absolute;
+    display: inline-block;
+    line-height: .3rem;
+}
+
+.lach-list li p .span1 {
+    left: 0;
+}
+
+.lach-list li p .span2 {
+    left: 1.3rem;
+}
+
+.lach-list li p .span3 {
+    right: 0;
+}
+
+.lach-list li .p1 .span3 {
+    color: red;
+}
+
+.lach-list li .p2 .span3 {
+    color: #b7b7b7;
+}

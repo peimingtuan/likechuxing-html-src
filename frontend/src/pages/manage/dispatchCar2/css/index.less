@@ -1,0 +1,62 @@
+@import "./reset.css";
+
+.table-head {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width:640px;
+  td {
+    background-color: #555555;
+    color: #fff;
+    position: relative;
+  }
+}
+
+.refresh{
+  position: fixed;
+  bottom:0.5rem;
+  right:0.2rem;
+  border-radius: 3px;
+  width: 0.4rem;
+  height: 0.36rem;
+  background: #222 url('../images/refresh.png') no-repeat center;
+  background-size: auto 60%;
+  transition: all 200ms;
+  opacity: 0.6;
+  &:active{
+    transform: scale(0.98);
+  }
+}
+
+.btn_con{
+  width: 100%;
+  text-align: center;
+  padding: 0.15rem 0;
+  #loadMore{
+    font-size: 0.15rem;
+    background-color: #222;
+    color:#fff;
+    width: 1.6rem
+  }
+}
+
+.msg{
+  text-align: center;
+  padding: 0.2rem 0 0.8rem;
+  color:#999
+}
+
+table {
+  text-align: center;
+  background-color: #dbdbdb;
+  .red {
+    color: red
+  }
+
+  tr {
+    background-color: #EAEAEA;
+    &:nth-of-type(odd) {
+      background-color: #D9D9D9;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "pages": [
+    "pages/activity/present",
+    "pages/activity/invite",
+    "pages/user/license",
+    "pages/user/licenseInfo"
+    
+  ],
+  "window": {}
+}

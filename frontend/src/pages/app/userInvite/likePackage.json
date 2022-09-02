@@ -1,0 +1,24 @@
+{
+  "id":1013,
+  "zh_name":"好友邀请",
+  "name":"userInvite",
+  "group":"app",
+  "bundle_vendor":true,
+  "copy":true,
+  "input_file":{
+    "index":["index.js"],
+    "invitationRules":[ "invitationRules.js"],
+    "landingPage":[ "landingPage.js"],
+    "couponVoucher":[ "couponVoucher.js"]
+  },
+  "output_file":{
+    "path":"/dist/app/userInvite/",
+    "publicPath":"/",
+    "filename": "js/app_userInvite/[name].js"
+  },
+  "template":{
+    "list":[
+      "index.html","invitationRules.html","landingPage.html","couponVoucher.html"
+    ]
+  }
+}

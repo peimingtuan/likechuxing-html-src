@@ -1,0 +1,45 @@
+<view class="searchWrap">
+    <view class="search">
+        <view class="searchIcon"></view>
+        <input  placeholder="搜索目的地附近的网点" class="input" placeholder-class="placeholderclass" onInput="_searchBranch"/>
+    </view>
+</view>
+<view class="wrap">
+    <view class="listWrap" a:if="{{resList.length}}">
+        <view class="resList">
+            <view class="listItem" a:for="{{resList}}" onTap="_select" data-key="{{index}}">
+                <view class="icon"></view>
+                <view class="info">
+                    <text class="title">{{item.title}}</text>
+                    <text class="address">{{item.address}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="listWrap">
+        <view class="resList">
+            <view class="listItem" onTap="samePickAddr">
+                <view class="circle"></view>
+                <view class="info">
+                    <text class="title">同取车网点</text>
+                    <text class="address">{{pickInfo.name}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="listWrap" a:if="{{historyList.length}}">
+        <view class="listHeader">
+            <text class="label">历史搜索</text>
+            <view class="deleteBtn" onTap="_removeSearchHistory"></view>
+        </view>
+        <view class="resList">
+            <view class="listItem" a:for="{{historyList}}" onTap="selectHistory" data-key="{{index}}">
+                <view class="icon"></view>
+                <view class="info">
+                    <text class="title">{{item.title}}</text>
+                    <text class="address">{{item.address}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

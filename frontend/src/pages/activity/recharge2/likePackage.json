@@ -1,0 +1,21 @@
+{
+  "id": 2041,
+  "zh_name": "充值分期返活动20190110",
+  "name": "recharge2",
+  "group": "activity",
+  "bundle_vendor": false,
+  "copy": true,
+  "dll": [
+    "jquery"
+  ],
+  "input_file": {
+    "index": [
+      "index.js"
+    ]
+  },
+  "template": {
+    "list": [
+      "index.html"
+    ]
+  }
+}

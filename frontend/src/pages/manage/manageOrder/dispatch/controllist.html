@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+    <meta content="telephone=no, address=no" name="format-detection">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="no-cache" http-equiv="pragma">
+    <meta content="0" http-equiv="expires">
+    <meta name="full-screen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>调度列表</title>
+    <script>
+        var htmlBq = document.documentElement;
+
+        function allSize() {
+            var htmlWidth = htmlBq.clientWidth;
+            if (htmlWidth >= 640) {
+                htmlBq.style.fontSize = '40px';
+            } else if (htmlWidth < 640 && htmlWidth >= 320) {
+                htmlBq.style.fontSize = htmlWidth / (640 / 40) + 'px';
+            } else if (htmlWidth < 320) {
+                htmlBq.style.fontSize = '20px';
+            }
+        }
+        allSize();
+        window.onresize = function () {
+            allSize();
+        };
+    </script>
+    <script src="https://g.alicdn.com/dingding/open-develop/1.9.0/dingtalk.js"></script>
+</head>
+<body>
+<script>
+    !(function(c,b,d,a){c[a]||(c[a]={});c[a].config={pid:"gruqqi6cbp@6594c08d3216a5d",imgUrl:"https://arms-retcode.aliyuncs.com/r.png?"};
+        with(b)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("crossorigin","",src=d)
+    })(window,document,"https://retcode.alicdn.com/retcode/bl.js","__bl");
+</script>
+<div class="controlist-content">
+    <p class="p1">
+        <span class="controlContentSelect">&#xe605;&nbsp;&nbsp;搜索</span>
+        <span class="controlContentFilter">&#xe638;&nbsp;&nbsp;筛选</span>
+        <span class="controlSort">&#xe602;&nbsp;&nbsp;排序</span>
+        <span class="controlContentRefle">&#xe8d0;&nbsp;&nbsp;刷新</span>
+    </p>
+    <p class="p2">
+        <span class="check-net left">查看地图网点</span>
+        <span class="show-dock right">调度说明</span>
+    </p>
+</div>
+<ul class="controlList">
+
+</ul>
+<!--排序提示框-->
+<div class="controlsort_window common_cover none">
+    <div class="controlsort_content">
+        <div class="controlsort-title">
+            排序
+            <span class="controlclose-sort">&#xe601;</span>
+        </div>
+        <ul class="controlsort-list">
+            <li class="controlnum-sort controlsort-color">默认排序<input type="hidden" value="1"/><img  src=""/></li>
+            <li class="controlrange-sort">距离网点从近到远<input type="hidden" value="2"/><img class="none" src=""/></li>
+        </ul>
+    </div>
+</div>
+<!--调度说明弹框-->
+<div class="control_window none">
+    <div class="control_content">
+        <p class="title">
+            调度说明
+        </p>
+       <p class="p1">调度说明：每日根据“需调入”列表，将车辆调入或调出测试网点，需确保早7:00前“需调入”列表值为0
+       </p>
+        <p class="p2">
+            当值显示为<span>正数</span>时<br/>
+            结果为应<span>调入</span>车辆，使车数变为“0”;
+        </p>
+        <p class="p3">
+            当值显示为<span>负数</span>时<br/>
+            结果为应<span>调出</span>车辆，使车数变为“0”;
+        </p>
+        <p class="p4">
+            当值显示为<span>“0”</span>时<br/>
+            结果为<span>不需要</span>车辆调度；
+        </p>
+        <p class="p5">
+            备注：将车辆调度完成后截图保存
+        </p>
+    </div>
+    <div class="control_bottom">
+        <img src=""/>
+    </div>
+</div>
+<!--confirm筛选提示框-->
+<div class="dispatch_window common_cover none">
+    <div class="dispatch_content">
+        <div class="dispatch-title">
+            筛选
+            <span class="close-dispatch">&#xe601;</span>
+        </div>
+        <div class="confirm-dispatch">
+            <p>完成状态</p>
+
+            <p class="confirm-carstate">
+                <span class="allcarstate color">全部<input type="hidden" value=""/></span>
+                <span class="state"> 未完成网点 <input type="hidden" value="0"/></span>
+            </p>
+        </div>
+        <div class="dispatch-bottom">
+            <button class="carstate-reset">重置</button><button class="carstate-sure">确定</button>
+        </div>
+    </div>
+</body>
+</html>

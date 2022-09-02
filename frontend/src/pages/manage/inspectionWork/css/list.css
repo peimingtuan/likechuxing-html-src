@@ -1,0 +1,209 @@
+/*<!-- 列表样式-->*/
+#worklist .list{
+    margin-bottom: .12rem;
+    padding: .12rem;
+    background: #fff;
+}
+
+#worklist .list span{
+    display:inline-block;
+}
+
+#worklist .list .span1{
+    color: #999999;
+}
+
+#worklist .list .font1{
+    font-weight:bold;
+}
+
+#worklist .list .span2{
+    padding:0 .12rem;
+    border-radius:2px;
+    border:1px solid #999999;
+}
+
+#worklist .list .span3{
+    padding:0 .12rem 0 0;
+    border-right:1px solid #dcdcdc;
+}
+
+#worklist .list .span4{
+    padding:0 .11rem;
+    line-height:.35rem;
+}
+
+#worklist .list .carqube{
+    padding:0 0 0 .12rem;
+    border-left:1px solid #dcdcdc;
+}
+
+#worklist .list .div1{
+    border:1px dashed #dcdcdc;
+    padding:.06rem .06rem .06rem 0;
+    background:#fdfdfd;
+}
+
+#worklist .list .div1 span{
+    line-height:.2rem;
+}
+
+#worklist .list .div1 .border-color{
+    width: 5px;
+    background: #feb224;
+    height: .2rem;
+    border-radius: 0 4px 4px 0;
+    position:absolute;
+}
+
+/*巡检中橙色*/
+#worklist .list .div1 .span5{
+    color:#feb224;
+    padding-left:14px;
+}
+
+/*待巡检红色*/
+#worklist .list .div1 .wait{
+    color:#fd495c!important;
+}
+
+#worklist .wait-color{
+    background:#fd495c!important;
+}
+
+/*已完成*/
+#worklist .list .div1 .normal{
+    color:#79d312!important;
+}
+
+#worklist .normal-color{
+    background:#79d312!important;
+}
+
+#worklist .list .net-name{
+    width:3.5rem;
+    color:gray;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    margin-bottom: .05rem;
+}
+
+#worklist .list .div1 .right font{
+    padding:0 .05rem;
+}
+
+#worklist .list .div1 .work-time{
+    margin-top:.06rem;
+    line-height:.28rem;
+    padding-left:15px;
+}
+
+/*备注信息展示*/
+#worklist .list .trouble-remark {
+    margin-top:.07rem;
+    line-height: .281rem;
+}
+
+/*筛选弹框*/
+#worklist .carstock_window {
+    display:none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.44);
+    z-index: 10000
+}
+
+#worklist .carstock_content {
+    position: absolute;
+    bottom:-100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+}
+
+#worklist .carstock-title {
+    padding:.12rem;
+    text-align: center;
+    font-size: .187rem;
+    line-height: .351rem;
+    border-bottom:1px solid #f7f7f7;
+}
+
+#worklist .close-carstock {
+    font-family: 'iconfont';
+    font-size: .187rem;
+    color: #71bdf5;
+    float: left;
+}
+
+#worklist .confirm-carstock>div{
+    padding:0 .12rem;
+}
+
+#worklist .confirm-carstock > div.title{
+    margin-top: .1rem;
+    line-height: .2rem;
+    color:#b6b6b6;
+}
+
+#worklist .confirm-carcity > span,
+#worklist .confirm-carworkstate > span {
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    margin-right: .07rem;
+    margin-top: .1rem;
+    padding: .06rem .1rem;
+    border: 1px solid #e7e7e7;
+    border-radius: 2px;
+    background:#f0f2f5;
+}
+
+#worklist .confirm-carcity > span:last-of-type,
+#worklist .confirm-carworkstate > span:last-of-type{
+    margin-bottom: .1rem;
+}
+
+#worklist .center-part{
+    height:.12rem;
+    background:#f6f6f6;
+}
+
+#worklist .carstate-bottom {
+    box-sizing: border-box;
+    display:flex;
+    display: -webkit-flex; /* Safari */
+    justify-content:space-between;
+}
+
+#worklist .carstate-bottom button {
+    width: 1.875rem;
+    line-height: .468rem;
+    text-align: center;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+#worklist .carstate-reset {
+    color:#259bef;
+    background:#fff;
+    box-shadow: 0px -2px 1px #eaeaea;
+}
+
+#worklist .carstate-sure {
+    color: #fff;
+    background: #259bef;
+    box-shadow: 0px -2px 1px #259bef;
+}
+
+/*颜色控制*/
+#worklist .color {
+    background: #e6f3ff!important;
+    color: #259bef;
+    border:1px solid #259bef!important;
+}

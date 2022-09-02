@@ -1,0 +1,39 @@
+{
+  "id": 2016,
+  "zh_name": "成都拉新活动",
+  "name": "sellSpread",
+  "group": "activity",
+  "bundle_vendor": false,
+  "copy": true,
+  "input_file": {
+    "index": [
+      "index.js"
+    ],
+    "lachinelist":[
+      "lachinelist.js"
+    ],
+    "activeshow":[
+      "activeshow.js"
+    ],
+    "countlist":[
+      "countlist.js"
+    ],
+    "enteringinfo":[
+      "enteringinfo.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/activity/sellSpread/",
+    "publicPath": "/",
+    "filename": "js/activity_sellSpread/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.html",
+      "lachinelist.html",
+      "activeshow.html",
+      "countlist.html",
+      "enteringinfo.html"
+    ]
+  }
+}

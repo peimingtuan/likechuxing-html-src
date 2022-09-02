@@ -1,0 +1,35 @@
+@import './config';
+.inputClearBar(){
+  content: '';
+  width: 70%;
+  height: 1px;
+  position: absolute;
+  left:15%;
+  top:50%;
+  background-color: #fff;
+}
+
+.inputClearBtn{
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  width: 18px;
+  height:18px;
+  top:50%;
+  margin-top: -9px;
+  right:5px;
+  background-color: #ddd;
+  border-radius: 50%;
+  &::before{
+    .inputClearBar();
+    transform: rotate(45deg);
+  }
+  &::after{
+    .inputClearBar();
+    transform: rotate(-45deg);
+  }
+}
+
+.boxShadow{
+  box-shadow: 2px 2px 5px @mainColor;
+}

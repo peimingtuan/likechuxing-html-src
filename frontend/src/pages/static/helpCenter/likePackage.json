@@ -1,0 +1,25 @@
+{
+  "id": 3011,
+  "zh_name": "静态页-帮助中心",
+  "name": "helpCenter",
+  "group": "static",
+  "ver": "1.1.0",
+  "bundle_vendor": false,
+  "copy":true,
+  "input_file": {
+    "index": [
+      "index.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/static/helpCenter/",
+    "publicPath": "/",
+    "filename": "js/static_helpCenter/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.html"
+    ],
+    "importAll":false
+  }
+}

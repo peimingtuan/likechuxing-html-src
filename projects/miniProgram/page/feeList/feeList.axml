@@ -1,0 +1,125 @@
+<view class="container" a:if="{{pageIsShow}}">
+    <view class="header">
+        <view class="item">
+            <text class="num">{{info.distance}}公里</text>
+            <text>里程</text>
+        </view>
+        <view class="item">
+            <text  class="num">{{h?h+'小时':''}}{{m}}分钟</text>
+            <text>用时</text>
+        </view>
+        <view class="item">
+            <text  class="num">{{info.actual_fee}}元</text>
+            <text>费用</text>
+        </view>
+    </view>
+    <view class="title">
+        <view class="line"></view>
+        <view class="titleTxt">
+            <text >查看费用</text>
+        </view>
+        <view class="line"></view>
+    </view>
+    <view class="desc">
+        <text>{{price_desc}}</text>
+        <text class="sdew_fee" a:if="{{price_insurance>0}}">{{price_insurance}}元/小时 不计免赔服务</test>
+    </view>
+    <view class="title">
+        <view class="line"></view>
+        <view class="titleTxt">
+            <text >费用明细</text>
+        </view>
+        <view class="line"></view>
+    </view>
+    <view class="wrap">
+        <view class="cell">
+            <text>总里程(公里)</text>
+            <text>{{info.distance}}</text>   
+        </view>
+        <view class="cell">
+            <text>总时长(时间)</text>
+            <text>{{h?h+'小时':''}}{{m}}分钟</text>
+        </view>
+        <view class="cell">
+            <text>里程费(元)</text>
+            <text>{{info.km_fee}}</text> 
+        </view>
+        <view class="cell" >
+            <text>用时费(元)</text>
+            <text>{{info.time_fee}}</text>
+        </view>
+        <view class="cell" a:if="{{info.parking_fee_in!='0.00'}}">
+            <text>还车附加费(元)</text>
+            <text>{{info.parking_fee_in}}</text>
+        </view>
+        <view class="divier"></view>
+        <view class="cell cellTitle">
+            <text>应付(元)</text>
+            <text>{{info.fee_total}}</text>
+        </view>
+        <view class="cell" >
+            <text>优惠券(元)</text>
+            <text>- {{info.coupon_fee}}</text>
+        </view>
+        <view class="cell" >
+            <text>红包(元)</text>
+            <text>- {{info.coupon_cash_fee}}</text>
+        </view>
+        <view class="divier"></view>
+        <view class="cell">
+            <text>惠后应付</text>
+            <text>{{rental_actual_fee|| "0.00"}}</text>
+        </view>
+        <view class="cell" a:if="{{price_insurance>0}}">
+            <text>不计免赔服务（元）</text>
+            <text>{{info.fee_total_insurance}}</text>
+        </view>
+        <view class="cell" a:if="{{rental_zero_money>0}}">
+            <text>0里程免单优惠</text>
+            <text>-{{rental_zero_money}}</text>
+        </view>
+        <view class="cell">
+            <text>余额(元)</text>
+            <text>- {{info.balance}}</text>
+        </view>
+        <view class="divier"></view>
+        <view class="pay">
+            <text>实付(元)：</text>
+            <text class="num">{{info.actual_fee}}</text>
+        </view>
+    </view>
+    <view class="title">
+        <view class="line"></view>
+        <view class="titleTxt">
+            <text >操作记录</text>
+        </view>
+        <view class="line"></view>
+    </view>
+    <view class="wrap timeList">
+        <view class="cell first">
+            <text>{{pay_time}}</text>
+            <text>系统扣款成功</text>
+        </view>
+        <view class="cell item">
+            <text>{{end_time}}</text>
+            <text>还车成功</text>
+            <view class="itemcircle"></view>
+            <view class="itemcircle2"></view>
+        </view>
+        <view class="cell item">
+            <text>{{begin_time}}</text>
+            <text>已开始</text>
+            <view class="itemcircle"></view>
+            <view class="itemcircle2"></view>
+        </view>
+        <view class="cell item">
+            <text>{{book_time}}</text>
+            <text>预订成功</text>
+            <view class="itemcircle"></view>
+            <view class="itemcircle2"></view>
+        </view>
+    </view>
+</view>
+<view class="loadingBox" a:if="{{!pageIsShow}}">
+    <view class="loadingIcon"></view>
+</view>

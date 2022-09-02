@@ -1,0 +1,24 @@
+{
+  "id": 1005,
+  "zh_name": "优惠券兑换记录",
+  "name": "couponExchangeList",
+  "group": "app",
+  "ver": "1.0.0",
+  "copy":true,
+  "bundle_vendor": false,
+  "input_file": {
+    "index": [
+      "index.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/app/couponExchangeList/",
+    "publicPath": "/",
+    "filename": "js/app_couponExchangeList/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.html"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+//- Created by garvey on 2017/11/29.
+include ../../../template/base/h5
+    include ../../../template/head/viewport
+    title 调度车辆
+body
+    .table-head
+        table
+            colgroup
+                col(style="width:10%")
+                col(style="width:40%")
+                col(style="width:10%")
+                col(style="width:10%")
+            thbody
+                tr
+                    td 行数
+                    td
+                        input(type="type" id="search_branch_name" placeholder="搜索网点名")
+                    td 建议车辆数
+                    td 需调入
+    .table-body
+        table
+            colgroup
+                col(style="width:10%")
+                col(style="width:40%")
+                col(style="width:10%")
+                col(style="width:10%")
+            tbody
+    .refresh

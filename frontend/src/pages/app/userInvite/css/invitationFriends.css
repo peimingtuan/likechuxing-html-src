@@ -1,0 +1,98 @@
+/*banner图*/
+.banner img {
+    width: 100%;
+}
+
+.content-fixed {
+    position: fixed;
+    left: 4%;
+    bottom: 0;
+    width: 92%;
+    height: 15.78rem;
+    padding: 1.49rem 2.56rem;
+    border-radius: 2px;
+    background: #fff;
+}
+
+.content-fixed > p {
+    text-align: center;
+}
+
+.content-fixed .first {
+    font-size: 1.02rem;
+    line-height:1.11rem;
+    color: #111111;
+}
+
+.content-fixed .first span {
+    font-family: 'PingFangSC-Medium';
+    display: inline-block;
+    padding: 0 .3rem;
+    font-size: 1.02rem;
+    color: #ED3800;
+    font-weight:bold;
+}
+.content-fixed .first span font{
+    font-size: 1.28rem;
+}
+.content-fixed .second {
+    margin-top: .64rem;
+    font-size: .6rem;
+    line-height:.64rem;
+    color: #999999;
+}
+
+.content-fixed .third {
+    margin-top: 1.62rem;
+    font-size: .6rem;
+    line-height:.64rem;
+    color: #999999;
+}
+
+.content-fixed .four {
+    margin-top: .51rem;
+}
+
+.content-fixed .four span {
+    display: inline-block;
+    width: 4.736rem;
+    line-height: 1.11rem;
+    background: url("../images/backgoud.png") no-repeat center;
+    background-size: 100%;
+    color: #111111;
+    font-size: .7rem;
+}
+
+.content-fixed .bottom {
+    margin-top: 1.7rem;
+    border-top: 1px solid #F2F2F2;
+    color: #999999;
+    height:4.1rem;
+}
+
+.info-left img, .info-right img {
+    width: 1.87rem;
+}
+
+.info-left {
+    margin-top: 1.1rem;
+    float: left;
+    width: 50%;
+    text-align: center;
+    font-size:.5rem;
+}
+
+.info-right {
+    margin-top: 1.1rem;
+    width: 50%;
+    text-align: center;
+    float: right;
+    font-size:.5rem;
+}
+
+.five {
+    margin-top: .9rem;
+    color:#999999;
+    font-size:.5rem;
+    line-height:0.55rem;
+}

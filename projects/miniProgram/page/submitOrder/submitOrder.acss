@@ -1,0 +1,136 @@
+page{
+    background:#F4F5F7;
+    position: relative;
+    bottom: 0;
+    padding-bottom: 150rpx;
+}
+.wrap{
+    background: #fff;
+    padding-left: 24rpx;
+    padding-right: 30rpx;
+}
+.cell{
+    height: 105rpx;
+    border-bottom: 1px solid #F4F5F7;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background: #fff;
+}
+.label{
+    font-family: PingFangSC-Regular;
+    font-size: 28rpx;
+    color: #2A2D36;
+}
+.rightLabel{
+    font-family: PingFangSC-Regular;
+    font-size: 28rpx;
+    color: #E27E7E;
+}
+.arrow{
+    width: 14rpx;
+    height: 26rpx;
+    background: url('/image/arrow.png') no-repeat;
+    background-size: 100% 100%;
+    margin-left: 8rpx;
+}
+.rightWrap{
+    height: 105rpx;
+    display: flex;
+    align-items:center;
+}
+.switchBtn{
+    margin-left: 6rpx;
+}
+.detail{
+    flex:1;
+}
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width:100%;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    padding-bottom: 30rpx;
+}
+.btnWrap{
+    height: 104rpx;
+    background: #2B2E37;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 104rpx;
+}
+.btnText{
+    font-family: PingFangSC-Regular;
+    font-size: 34rpx;
+    color: #FFFFFF;
+    text-align: center;
+}
+.total{
+    height: 188rpx;
+    display: flex;
+    justify-content: flex-end;
+}
+.totalItem{
+    height: 188rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.numWrap{
+    margin-bottom: 12rpx;
+    display: flex;
+    align-items: center;
+}
+.num{
+    font-family: PingFangSC-Regular;
+    font-size: 32rpx;
+    font-size: 16px;
+color: #2A2D36;
+}
+.numDesc{
+    font-family: PingFangSC-Regular;
+    font-size: 28rpx;
+    color: #2A2D36;
+}
+.openBtn{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.openBtnDesc{
+    font-family: PingFangSC-Regular;
+    font-size: 22rpx;
+    color: #848C99;
+}
+.arrow-drop{
+    width: 15rpx;
+    height: 10rpx;
+    background: url('/image/arrow-drop.png') no-repeat;
+    background-size: 100% 100%;
+    margin-left: 6rpx;
+}
+.arrow-down{
+    width: 15rpx;
+    height: 10rpx;
+    background: url('/image/arrow-drop.png') no-repeat;
+    background-size: 100% 100%;
+    margin-left: 6rpx;
+    transform: rotate(180deg)
+}
+.listItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56rpx;
+    font-family: PingFangSC-Regular;
+    font-size: 24rpx;
+    color: #848C99;
+    padding-left: 80rpx;
+    padding-right: 70rpx;
+}
+.footerList{
+    margin-top: 30rpx;
+    padding-bottom: 36rpx;
+}

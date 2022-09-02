@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+    <meta content="telephone=no, address=no" name="format-detection">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="no-cache" http-equiv="pragma">
+    <meta content="0" http-equiv="expires">
+    <meta name="full-screen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>可调入车辆</title>
+    <script>
+        var htmlBq = document.documentElement;
+
+        function allSize() {
+            var htmlWidth = htmlBq.clientWidth;
+            if (htmlWidth >= 640) {
+                htmlBq.style.fontSize = '40px';
+            } else if (htmlWidth < 640 && htmlWidth >= 320) {
+                htmlBq.style.fontSize = htmlWidth / (640 / 40) + 'px';
+            } else if (htmlWidth < 320) {
+                htmlBq.style.fontSize = '20px';
+            }
+        }
+        allSize();
+        window.onresize = function () {
+            allSize();
+        };
+    </script>
+    <script src="https://g.alicdn.com/dingding/open-develop/1.9.0/dingtalk.js"></script>
+    <script type="text/javascript"
+            src="https://webapi.amap.com/maps?v=1.4.4&key=91ed10906005ee88866f14fd9f076e8b"></script>
+</head>
+<body>
+<script>
+    !(function (c, b, d, a) {
+        c[a] || (c[a] = {});
+        c[a].config = {pid: "gruqqi6cbp@6594c08d3216a5d", imgUrl: "https://arms-retcode.aliyuncs.com/r.png?"};
+        with (b)with (body)with (insertBefore(createElement("script"), firstChild))setAttribute("crossorigin", "", src = d)
+    })(window, document, "https://retcode.alicdn.com/retcode/bl.js", "__bl");
+</script>
+<div class="adjustable-content">
+    <div class="div1">
+        <span class="adjustableSelect">&#xe605;&nbsp;&nbsp;搜索</span>
+        <span class="adjustableFilter">&#xe638;&nbsp;&nbsp;筛选</span>
+        <span class="adjustableRefle">&#xe8d0;&nbsp;&nbsp;刷新</span>
+    </div>
+    <div class="div2">
+        <span>查看地图网点</span>
+    </div>
+</div>
+<ul class="adjustableList">
+
+</ul>
+<!--confirm筛选提示框-->
+<div class="carstock_window2 common_cover none">
+    <div class="carstock_content2">
+        <div class="carstock-title2">
+            筛选
+            <span class="close-carstock2">&#xe601;</span>
+        </div>
+        <div class="confirm-carstock2">
+            <p>可行驶天数</p>
+
+            <p class="confirm-carstate">
+                <span class="allcarstate color">全部<input type="hidden" value=""/></span>
+                <span class="state">粤A<input type="hidden" value="1"/></span>
+                <span class="state">3天<input type="hidden" value="3"/></span>
+                <span class="state">4天<input type="hidden" value="4"/></span>
+            </p>
+        </div>
+        <div class="carstate-bottom">
+            <button class="carstate-reset">重置</button>
+            <button class="carstate-sure">确定</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

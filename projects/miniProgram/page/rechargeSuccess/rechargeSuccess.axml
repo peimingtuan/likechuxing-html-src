@@ -1,0 +1,39 @@
+<view class="container" a:if="{{pageIsShow}}">
+    <view class="wrap" >
+        <image src="../../image/passedTheCertification.png" mode="aspectFit"  class="icon"/>
+        <view class="title">充值成功</view>
+        <view class="desc" onTap="toggle">
+            <view class="text">查看所赠特权</view>
+            <view class="icon {{show?'on':''}}"></view>
+        </view>
+        <view class="list" a:if="{{show}}">
+            <view class="item">
+                <view class="top">
+                    <view class="title">余额</view>
+                    <view class="money">{{info.voucher.gift_balance}}元</view>
+                </view>
+                <view class="label" onTap="goAcount">已有 {{info.balance}} 元></view>
+            </view>
+            <view class="item" a:if="{{coupon.length}}">
+                <view class="top">
+                    <view class="title">优惠券</view>
+                    <view class="money" a:for="{{coupon}}">{{item.money}}元 x {{item.cnt}}</view>
+                </view>
+                <view class="label" onTap="goHongbao">已有 {{info.coupon_cnt}} 张></view>
+            </view>
+            <view class="item" a:if="{{coupon_cash.length}}">
+                <view class="top">
+                    <view class="title">红包</view>
+                    <view class="money" a:for="{{coupon_cash}}">{{item.money}}元 x {{item.cnt}}</view>
+                </view>
+                <view class="label" onTap="goCoupon">已有 {{info.coupon_cash_cnt}} 个></view>
+            </view>
+        </view>
+    </view>
+    <view class="btn">
+        <view class="btnTxt" onTap="goIndexPage">立刻用车</view>
+    </view>
+</view>
+<view class="loadingBox" a:if="{{!pageIsShow}}">
+    <view class="loadingIcon"></view>
+</view>

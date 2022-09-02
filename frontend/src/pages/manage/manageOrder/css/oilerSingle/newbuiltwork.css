@@ -1,0 +1,78 @@
+.cardetail-content {
+    background: #fff;
+    padding: .5rem;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.cardetail-content span {
+    display: inline-block;
+    margin-top: .3rem;
+    padding: .3rem .5rem;
+    border: 1px solid #fff;
+}
+
+
+.cardetail-content .getnet, .cardetail-content .returnnet{
+    /*color: #9c9c9c;*/
+    padding: .3rem 0rem;
+    line-height: 1rem;
+    position: relative;
+}
+
+.cardetail-content .getnet div, .cardetail-content .returnnet div{
+    width: 13rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.cardetail-content .daoh{
+    width:.8rem;
+    position: absolute;
+    right: 0;
+    top: .3rem;
+}
+
+.cardetail-content img {
+    /*position: absolute;*/
+    /*top: .4rem;*/
+    /*left: 0;*/
+    width: 1rem;
+}
+
+.park_fee{
+    position: relative;
+    left: 2.5rem;
+}
+
+.cardetail-content p span .font1 {
+    color: #999999;
+    margin-right: .1rem;
+}
+
+.carsingle-nextbtn {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 5% 2.5%;
+    background: #fff;
+    box-shadow: 0px -2px 1px #eaeaea;
+}
+
+.carsingle-nextbtn button {
+    width: 95%;
+    line-height: 1.9rem;
+    text-align: center;
+    color: #fff;
+    background: #333333;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.carstatus {
+    padding-left: .5rem;
+    line-height: 2rem;
+    font-size: .7rem;
+}

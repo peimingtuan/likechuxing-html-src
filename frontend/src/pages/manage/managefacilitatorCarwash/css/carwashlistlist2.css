@@ -1,0 +1,87 @@
+/*头部搜索*/
+#carwashlist2 .header{
+    padding:.12rem;
+    background:#fff;
+    display:flex;
+    display: -webkit-flex; /* Safari */
+    justify-content:space-between;
+    border-bottom:1px solid #dcdcdc;
+}
+
+#carwashlist2 .search{
+    width:3rem;
+    height:.35rem;
+    line-height:.35rem;
+    border-radius:20px;
+    background:#f5f5f5;
+    padding-left:.1rem;
+}
+
+#carwashlist2 .iconfont{
+    font-family: 'iconfont';
+    font-size:.16rem;
+}
+
+#carwashlist2 .placeholder{
+    color: #b0b0b0;
+}
+
+#carwashlist2 .rightIcon{
+    font-family: 'iconfont';
+    font-size:.234rem;
+    width:.3rem;
+    height:.35rem;
+    line-height:.35rem;
+    text-align: center;
+}
+
+/*<!-- 列表样式-->*/
+#carwashlist2 .carwashlistlist{
+    margin-bottom:.234rem;
+}
+
+#carwashlist2 .carwashlistlist li{
+    margin-bottom:.12rem;
+    padding:.12rem;
+    background:#fff;
+}
+
+#carwashlist2 .carwashlistlist li span{
+    display:inline-block;
+    line-height:.28rem;
+}
+
+#carwashlist2 .carwashlistlist li .span1{
+    font-size:.15rem;
+    font-weight: bold;
+}
+
+#carwashlist2 .carwashlistlist li .net-name{
+    width:3.5rem;
+    color:gray;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+#carwashlist2 .carwashlistlist li .selectcar{
+    font-size:.15rem;
+    line-height:.35rem;
+}
+
+#carwashlist2 .carwashlistlist li .selectcar font{
+    font-size:.15rem;
+    color:#f38361;
+}
+#carwashlist2 .carwashlistlist li img{
+    width:.23rem;
+    vertical-align: middle;
+    margin-right:.02rem;
+}
+#carwashlist2 .carwashlistlist li .color-icon{
+    position: relative;
+    top: -.02rem;
+    width:5px;
+    height:5px;
+    border-radius:50%;
+    background:#108ee9;
+}

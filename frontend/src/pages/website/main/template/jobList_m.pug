@@ -1,0 +1,12 @@
+//- Created by garvey on 2017/11/17.
+ul.city_list
+    li
+        .cityName #{cityFullName}
+            span
+        ul.job_list
+            if ( jobs.length === 0)
+                li.empty 暂无开放职位
+            else
+                each k in jobs
+                    li.job_detail(data-id=k.id) #{k.display_name}
+                        span #{'（' + k.recruit_count + '人）'}

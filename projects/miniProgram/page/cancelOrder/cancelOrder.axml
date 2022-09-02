@@ -1,0 +1,36 @@
+<view class="container" a:if="{{pageIsShow}}">
+    <view class="header">
+        <view>
+            <text>取消订单将收取</text>
+            <text class="num">{{fee}}</text>
+            <text>元超时费</text>
+        </view>
+        <view>
+            <text>你当日还可以取消</text>
+            <text class="num">{{count}}</text>
+            <text>次，超时将限制出行</text>
+        </view>
+    </view>
+    <view class="checkList">
+        <view class="listItem {{item.isChecked?'active':''}}" a:for="{{checkList}}" key="{{index}}" data-key="{{index}}" onTap="select">
+            <text>{{item.des}}</text>
+        </view>
+    </view>
+    <view class="textareaWrap">
+        <textarea 
+        placeholder="我想说（更多建议）"
+        placeholder-class="placeholder-class" 
+        maxlength=50
+        onInput="getText"
+        name="textarea"/>
+    </view>
+    <view class="btn {{isActive?'active':''}}" onTap="post">
+        <text>提交</text>
+    </view>
+    <view class="footer">
+        <text>我们会努力，为您提供更好的服务</text>
+    </view>
+</view>
+<view class="loadingBox" a:if="{{!pageIsShow}}">
+    <view class="loadingIcon"></view>
+</view>

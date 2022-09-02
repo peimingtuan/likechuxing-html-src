@@ -1,0 +1,156 @@
+@import '../../../../css/reset.css';
+
+* {
+    box-sizing: border-box;
+}
+
+.none {
+    display: none !important;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+@font-face {
+    font-family: 'iconfont';  /* project id 628835 */
+    src: url('//at.alicdn.com/t/font_628835_nj4psi92p9jrwwmi.eot');
+    src: url('//at.alicdn.com/t/font_628835_nj4psi92p9jrwwmi.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_628835_nj4psi92p9jrwwmi.woff') format('woff'),
+    url('//at.alicdn.com/t/font_628835_nj4psi92p9jrwwmi.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_628835_nj4psi92p9jrwwmi.svg#iconfont') format('svg');
+}
+
+body {
+    position: relative;
+    width: 100%;
+    background: #fff;
+}
+
+.top {
+    margin-top: .1rem;
+    margin-left: .25rem;
+    margin-right:.25rem;
+    height: .3rem;
+}
+
+.top img {
+    width: 1.02rem;
+}
+
+.close-btn{
+    font-family: 'iconfont';
+    font-size:.18rem;
+}
+
+.record {
+    margin: .42rem .35rem .36rem;
+}
+
+.record input {
+    margin: 0;
+    padding: 0;
+    width: 2.04rem;
+    height: .41rem;
+    outline: none;
+    -webkit-outline: none;
+    border-radius: 3px;
+    padding-left: .117rem;
+    border: 1px solid #d7d7d9;
+    font-size: .16rem;
+}
+
+.record button {
+    margin: 0;
+    padding: 0;
+    width: .95rem;
+    font-size: .16rem;
+    outline: none;
+    border: none;
+    height: .41rem;
+    text-align: center;
+    border-radius: 3px;
+    float: right;
+    color: #fff;
+    background: #333;
+}
+
+input::-webkit-input-placeholder {
+    color: #b8babc;
+    font-size: .16rem;
+}
+
+input:-moz-input-placeholder {
+    color: #b8babc;
+    font-size: .16rem;
+}
+
+input:-ms-input-placeholder {
+    color: #b8babc;
+    font-size: .16rem;
+}
+
+.make-code {
+    margin: 0 .35rem;
+    position: relative;
+    height: 2.5rem;
+}
+
+.make-code p {
+    text-align: center;
+    line-height: .25rem;
+    font-size: .18rem;
+}
+
+.make-code .img1 {
+    width: 1.6rem;
+    position: absolute;
+    left: .73rem;
+    top: .5rem;
+}
+
+.code-image {
+    position:relative;
+    margin: .3rem auto 0;
+    width: 1.75rem;
+    height: 1.8rem;
+    z-index: 100;
+    background: url("../images/code.png") no-repeat;
+    background-size: 100%;
+}
+.code-image img{
+    position: absolute;
+    left: .065rem;
+    top: .06rem;
+    width: 1.62rem;
+}
+.button-k {
+    margin: .1rem .8rem 0;
+    text-align: center;
+    height: .36rem;
+}
+
+.button-k img {
+    width: .93rem;
+}
+
+.bottom {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: -100;
+    width: 100%;
+    height: 1.45rem;
+    background: url("../images/bottom.png") no-repeat;
+    background-size: 100%;
+}
+
+#canvas{
+    width:1.5rem;
+    height:1.5rem;
+    opacity: 0;
+}

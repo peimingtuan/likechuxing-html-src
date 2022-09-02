@@ -1,0 +1,19 @@
+<view class="container">
+    <view class="header">
+        <view class="leftLine">
+            <view class="circle"></view>
+        </view>
+        <text class="title">邀请规则</text>
+        <view class="rightLine">
+            <view class="circle"></view>
+        </view>
+    </view>
+    <view class="content">
+        <view class="p">
+            <text class="desc">分享给好友，TA在优惠券输入“优惠码”，兑换成功即可获得3张优惠券。</text>
+        </view>
+        <view class="p">
+            <text class="desc">好友用车（有效里程大于或等于5公里），您也可以获得一张30元优惠券奖励</text>
+        </view>
+    </view>
+</view>

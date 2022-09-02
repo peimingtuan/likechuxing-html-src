@@ -1,0 +1,29 @@
+{
+  "id": 4014,
+  "zh_name": "用车数量展示",
+  "name": "dispatchCar3",
+  "desc":"邢新学用，pc端",
+  "group": "manage",
+  "ver": "1.0.0",
+  "bundle_vendor": false,
+  "copy":true,
+  "dll":[
+    "vue"
+  ],
+  "input_file": {
+    "index": [
+      "index.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/manage/dispatchCar3/",
+    "publicPath": "/",
+    "filename": "js/manage_dispatchCar3/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.html"
+    ],
+    "templateRoot": "./src/pages/manage/dispatchCar3/"
+  }
+}

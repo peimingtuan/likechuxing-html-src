@@ -1,0 +1,21 @@
+<view class="wrap {{type?'hong':''}} {{status?'disabled':''}}" onTap="click" data-key="{{index}}">
+    <view class="info-wrap">
+        <view class="name">{{name}}</view>
+        <view class="case">{{case}}</view>
+        <view class="time">{{time}}</view>
+    </view>
+    <view class="num-wrap" a:if="{{couponType!=2}}">
+        <view class="num">
+            <text>￥</text>
+            <text class="money">{{money}}</text>
+        </view>
+        <view class="num-case" a:if="{{numCase}}">满{{numCase}}可用</view>
+    </view>
+    <view class="num-wrap" a:if="{{couponType==2}}">
+        <view class="num">
+            <text class="money">{{freeTime}}小时</text>
+        </view>
+        <view class="num-case" >免费用车</view>
+    </view>
+    <view class="select {{selected?'on':''}}"></view>
+</view>

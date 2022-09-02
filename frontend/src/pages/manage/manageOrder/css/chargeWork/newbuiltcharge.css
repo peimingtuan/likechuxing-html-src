@@ -1,0 +1,117 @@
+#newbuiltcharge{
+    height:100%;
+}
+
+/*ͷ����ʽ*/
+#newbuiltcharge .top{
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    /*height: 4.8rem;*/
+    padding:.5rem;
+    margin-bottom: .5rem;
+    background: #fff;
+}
+
+#newbuiltcharge .top span .font1{
+    color:#999999;
+    margin-right:.1rem;
+}
+
+#newbuiltcharge .top span {
+    display: inline-block;
+    line-height: 1.2rem;
+}
+
+#newbuiltcharge .top span img{
+    width:1rem;
+    margin-right:.3rem;
+}
+
+#newbuiltcharge .top span:nth-of-type(2) {
+    line-height: 1rem;
+    padding: .1rem;
+    margin-top: .15rem;
+    margin-right: .2rem;
+    border: 1px solid #f6f6f6;
+}
+
+#newbuiltcharge .top span:nth-of-type(3) {
+    line-height: 1rem;
+    padding: .1rem;
+    margin-top: .15rem;
+    margin-right: .2rem;
+    border: 1px solid #f6f6f6;
+}
+
+#newbuiltcharge .top span:nth-of-type(4) {
+    line-height: 1rem;
+    padding: .1rem;
+    margin-top: .15rem;
+    border: 1px solid #f6f6f6;
+}
+
+#newbuiltcharge .top .branch_addr{
+    margin-top:.5rem;
+}
+
+#newbuiltcharge .bottom{
+    padding:0 .5rem;
+    position:relative;
+    background:#fff;
+    height:6rem;
+}
+
+#newbuiltcharge .bottom span{
+    display:inline-block;
+}
+
+#newbuiltcharge .bottom .title{
+    line-height:2rem;
+}
+
+#newbuiltcharge .bottom .style{
+    text-align: center;
+    /*margin-right: 1rem;*/
+    /*line-height:1.5rem;*/
+    width:3rem;
+    font-size:.58rem;
+}
+
+#newbuiltcharge .bottom .style:last-of-type{
+    position: absolute;
+    width: 5rem;
+}
+
+#newbuiltcharge .bottom img{
+    width:1.2rem;
+    margin-bottom: .5rem;
+}
+
+#newbuiltcharge .status{
+    padding:0 .5rem;
+    margin-top:.5rem;
+    line-height:2rem;
+}
+
+#newbuiltcharge .endworkname-submit{
+    position: fixed;
+    bottom: 0;
+    left:0;
+    width:16rem;
+    padding:.5rem;
+    background: #fff;
+    box-shadow: 1px -2px 2px #e8e8e8;
+}
+
+#newbuiltcharge .endworkname-submit button {
+    width: 15rem;
+    line-height: 1.9rem;
+    text-align: center;
+    outline: none;
+    border:none;
+    color:#fff;
+    border-radius: 2px;
+    box-sizing: border-box;
+    background: #333;
+}

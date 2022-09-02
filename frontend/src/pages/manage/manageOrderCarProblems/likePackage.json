@@ -1,0 +1,23 @@
+{
+  "id": 4020,
+  "zh_name": "管理app钉钉-车辆问题列表",
+  "name": "manageOrderCarProblems",
+  "group": "manage",
+  "copy": true,
+  "bundle_vendor": false,
+  "input_file": {
+    "proOrder": [
+      "proOrder.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/manage/manageOrderCarProblems/",
+    "publicPath": "/",
+    "filename": "js/manage_manageOrderCarProblems/[name].js"
+  },
+  "template": {
+    "list": [
+      "proOrder.html"
+    ]
+  }
+}

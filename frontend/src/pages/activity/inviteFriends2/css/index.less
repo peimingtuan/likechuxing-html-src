@@ -1,0 +1,53 @@
+@import "./common/common";
+.gift_box{
+  margin-top: 0.1rem;
+}
+.moneyBox{
+  margin: 0.1rem -0.2rem;
+  text-align: center;
+  .con-box{
+    text-align: center;
+    width: 50%;
+    box-sizing: border-box;
+    &.float-right{
+      border-left:1px solid #d6e2e9
+    }
+  }
+  .money{
+    margin-top: 0.05rem;
+    span{
+      line-height: 0.5rem;
+    }
+  }
+  .desc{
+    color:#656565;
+  }
+  .btn_con{
+    margin:0.1rem 0 0.15rem;
+  }
+
+}
+.details{
+  text-align: center;
+  margin-top: 0.1rem;
+}
+.link_con{
+  margin: 0.15rem 0;
+  text-align: center;
+  .link{
+    display: inline-block;
+    line-height: 0.2rem;
+    text-align: center;
+    vertical-align: top;
+    &::after{
+      content: '';
+      display: inline-block;
+      vertical-align: top;
+      width: 0.2rem;
+      height: 0.2rem;
+      background: url('../images/icon_rightArrow.png') no-repeat center 25%;
+      background-size: 60%;
+    }
+  }
+}
+

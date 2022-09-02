@@ -1,0 +1,103 @@
+@import "reset.css";
+.header{
+  .banner{
+    width: 100%;
+    height: 2.3rem;
+    background: url('../../images/banner.jpg') no-repeat top;
+    background-size: 100%;
+    &.h{
+      height:2.95rem;
+      background-image: url('../../images/banner_h.jpg');
+    }
+    &.hh{
+      height:3.39rem;
+      background-image: url('../../images/banner_hh.jpg');
+    }
+  }
+}
+.bg-img{
+  width: 100%;
+  height: 1.46rem;
+  background :url('../../images/header.jpg') no-repeat top;
+  background-size: 100% auto;
+
+}
+.cash{
+  padding: 0.3rem 0;
+  text-align: center;
+  .money{
+    line-height: 1.3;
+    #money{
+      color:#ffd233
+    }
+  }
+
+}
+
+.download_btn{
+  &::before{
+    content: '';
+    display:inline-block;
+    vertical-align: middle;
+    width: 1.6em;
+    height: 1em;
+    background: url(../../images/download.png) no-repeat center top;
+    background-size: 56% auto;
+  }
+  margin:0.1rem 0;
+  vertical-align: middle;
+  color:#fff;
+  border:none;
+  width: 16em;
+  height: 0.38rem;
+  background-color:#373839;
+  border-radius: 5px;
+}
+
+.btn{
+  //text-indent: 0.2em;
+  //letter-spacing: 0.2em;
+  padding: 0;
+  height: 0.32rem;
+  width: 1.1rem;
+  border:none;
+  border-radius: 0.18rem;
+  color:#fff;
+  font-weight: 300;
+  &.main_color_btn{
+    background-color: #08c6ff;
+  }
+  &.second_color_btn{
+    background-color: #fed31c;
+  }
+  &.dark_color_btn{
+    background-color:#373839 ;
+  }
+}
+
+.main_color_btn.disabled{
+  background-color: #9fa0a0;
+}
+.main_color_btn.dark{
+  background-color: #25213e;
+}
+.main_color_btn.border{
+  color:#e84656;
+  background-color: #fff;
+  box-sizing: border-box;
+  border:solid 1px #e84656;
+  font-weight: 400;
+}
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.float-left{
+  float: left!important;
+}
+
+.float-right{
+  float:  right!important;
+}

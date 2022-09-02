@@ -1,0 +1,94 @@
+@import '../../css/common/color';
+@import "../winnerList8/list_header";
+@import '../myPrize/index';
+.text_desc{
+  font-size: 0.13rem;
+  text-align: center;
+  padding: 0.15rem;
+  clear: both;
+  .strong{
+    font-size: 0.16rem;
+    color:@mainred;
+    padding: 0 0.05rem;
+  }
+}
+.invite_history{
+  padding: 0.15rem;
+  line-height: 0.2rem;
+  .detail_title {
+    position: relative;
+    font-weight: bold;
+    background-color: #fdd74e;
+    width: 8em;
+    margin-left: -0.23rem;
+    text-indent: 0.2rem;
+    border-radius: 2px;
+    font-size: 0.12rem;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-right: solid 0.1rem #fffdf5;
+      border-top: solid 0.1rem transparent;
+      border-bottom: solid 0.1rem transparent;
+    }
+  }
+  li{
+    overflow: hidden;
+    border-bottom: dashed 1px #dfdfdf;
+    padding: 0.1rem 0;
+    .flo{
+      float:left;
+      text-align: center;
+      &.index{
+        line-height: 0.35rem;
+        font-size: 0.16rem;
+        font-weight: bold;
+        width: 7%;
+      }
+      &.second{
+        width: 38%;
+        .phone_no{
+          font-size: 0.15rem;
+        }
+        .time{
+          font-size: 0.12rem;
+          color:#999;
+          white-space: nowrap;
+          transform: scale(0.88);
+        }
+      }
+      &.third{
+        line-height: 0.35rem;
+        font-size: 0.12rem;
+        width: 25%;
+      }
+      &.four{
+        height:0.35rem;
+        width: 30%;
+        .btn{
+          border:none;
+          padding: 0;
+          background: @mainred;
+          color:#fff;
+          width:90%;
+          height: 0.2rem;
+          margin:0.075rem 5%;
+          font-size: 0.12rem;
+          border-radius: 0.1rem 0.08rem 0.08rem 0.08rem;
+          &.disabled{
+            background-color: #999;
+
+          }
+        }
+      }
+    }
+    &:nth-last-of-type(1){
+      border:none
+    }
+  }
+  .red{
+    color:@mainred;
+  }
+}

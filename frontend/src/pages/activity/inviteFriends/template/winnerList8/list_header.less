@@ -1,0 +1,31 @@
+@import '../../css/common/color';
+.list_header{
+  clear:both;
+  font-size: 0.11rem;
+  text-align: right;
+  padding: 0.08rem 0.2rem;
+  .refresh{
+    position: relative;
+    .icon{
+      &.active{
+        transform: rotate(720deg);
+        transition-duration: 800ms;
+        transition-timing-function: ease-in-out;
+      }
+      content: '';
+      position: absolute;
+      display: block;
+      height: 1em;
+      width: 1em;
+      background: url('../../images/refresh.png') no-repeat center;
+      background-size: 100%;
+      top:50%;
+      margin-top: -0.5em;
+      left:-1.5em
+    }
+  }
+  .dead_time{
+    color:@mainred;
+    text-align: left;
+  }
+}

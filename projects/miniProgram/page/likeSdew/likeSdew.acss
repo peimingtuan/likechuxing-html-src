@@ -1,0 +1,51 @@
+page{
+    padding: 40rpx 40rpx 60rpx;
+}
+.sdewTitle{
+    padding-bottom: 50rpx;
+}
+.sdewTitle .title{
+    display: block;
+    font-size: 46rpx;
+    line-height: 46rpx;
+    padding-bottom: 20rpx;
+}
+.sdewTitle .detail{
+    font-size: 28rpx;
+    color: #111111;
+    line-height: 40rpx;
+}
+
+.sdewItem{
+    padding-bottom: 40rpx;
+}
+.sdewItem .itmeTitle{
+    font-size: 30rpx;
+    color: #111111;
+    line-height: 30rpx;
+    padding-bottom: 30rpx;
+}
+.sdewItem .itmeDetailA{
+    font-size: 28rpx;
+    color: #555555;
+    line-height: 40rpx;
+    padding-bottom: 12rpx;
+}
+.sdewItem .itmeDetailB{
+    font-size: 28rpx;
+    color: #555555;
+    line-height: 40rpx;
+    padding-left: 34rpx;
+    position: relative
+}
+
+.sdewItem .itmeDetailB .number{
+    position: absolute;
+    left: 0;
+}
+
+.explain{
+    font-size: 24rpx;
+    color: #999999;
+    line-height: 32rpx;
+}

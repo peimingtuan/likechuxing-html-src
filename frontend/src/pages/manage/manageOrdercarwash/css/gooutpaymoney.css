@@ -1,0 +1,180 @@
+#gooutpaymoney .faultpayment-content {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 1.12rem;
+    padding: .12rem;
+    margin-bottom: .12rem;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+#gooutpaymoney .faultpayment-content span .font1 {
+    color: #999999;
+    margin-right: .02rem;
+}
+
+#gooutpaymoney .faultpayment-content span {
+    display: inline-block;
+    line-height: .281rem;
+}
+
+#gooutpaymoney .faultpayment-content span img {
+    width: .234rem;
+    margin-right: .07rem;
+}
+
+#gooutpaymoney .faultpayment-content span:nth-of-type(2) {
+    float: right;
+    color: #999;
+}
+
+#gooutpaymoney .faultpayment-content span:nth-of-type(3) {
+    line-height: .234rem;
+    padding: .02rem;
+    margin-top: .035rem;
+    margin-right: .047rem;
+    border: 1px solid #f6f6f6;
+}
+
+#gooutpaymoney .faultpayment-content span:nth-of-type(4) {
+    line-height: .234rem;
+    padding: .02rem;
+    margin-top: .035rem;
+    margin-right: .047rem;
+    border: 1px solid #f6f6f6;
+}
+
+#gooutpaymoney .faultpayment-content span:nth-of-type(5) {
+    line-height: .234rem;
+    padding: .02rem;
+    margin-top: .035rem;
+    border: 1px solid #f6f6f6;
+}
+
+/*输入框样式*/
+#gooutpaymoney .text-content {
+    margin: .12rem;
+}
+
+#gooutpaymoney .text-content .p0 {
+    line-height: .49rem;
+}
+
+#gooutpaymoney .text-content .p0 span {
+    display: inline-block;
+    height: .468rem;
+    padding: 0 .07rem;
+}
+
+#gooutpaymoney .text-content .p0 input {
+    margin-right: .046rem;
+}
+
+#gooutpaymoney .text-content .p1 {
+    height: .351rem;
+}
+
+#gooutpaymoney .text-content .p2 {
+    margin-top: .12rem;
+    height: .936rem;
+    border: 1px solid gray;
+}
+
+/*增加费用类型*/
+#gooutpaymoney .text-content .p3 {
+    height: .351rem;
+}
+
+#gooutpaymoney .text-content .p3 .righticon {
+    font-family: 'iconfont';
+}
+
+#gooutpaymoney .parkingfee, .fee-type {
+    box-sizing: border-box;
+    width: 2.34rem;
+    border: none;
+    padding-left: .12rem;
+    line-height: .33rem;
+    height: .33rem;
+    outline: none;
+    border-radius: 2px;
+}
+
+#gooutpaymoney .text-content .void_write {
+    box-sizing: border-box;
+    width: 100%;
+    height: .91rem;
+    padding: .12rem;
+    outline: none;
+    background: #f7f7f7;
+    border: none;
+    border-radius: 2px;
+}
+
+/*拍照样式*/
+#gooutpaymoney .photo-du {
+    line-height: .281rem;
+    padding-left: .12rem;
+}
+
+#gooutpaymoney .getpicture-content {
+    padding: .07rem .12rem .585rem;
+    height: 1.76rem;
+}
+
+#gooutpaymoney .getpicture-content .left {
+    margin-right: .14rem;
+}
+
+#gooutpaymoney .getpicture-content > div {
+    margin-bottom: .234rem;
+}
+
+#gooutpaymoney .getpicture-content > div > p {
+    text-align: center;
+    line-height: .234rem;
+}
+
+#gooutpaymoney .getpicture-content > div > div {
+    position: relative;
+    width: .983rem;
+    height: .983rem;
+    background: #f4f4f4;
+}
+
+#gooutpaymoney .parkfee {
+    color: #d1d1d1;
+    font-size: .12rem;
+}
+
+#gooutpaymoney .uploadIcon {
+    font-family: 'iconfont';
+    font-size: .323rem;
+    position: absolute;
+    left:.33rem;
+    top: .33rem;
+}
+
+#gooutpaymoney .end-photo {
+    display: inline-block;
+    position: absolute;
+    left: .22rem;
+    top: .187rem;
+    font-size: .187rem;
+}
+
+#gooutpaymoney .check-photo {
+    display: inline-block;
+    position: absolute;
+    left: .12rem;
+    top: .656rem;
+    color: #43aff7;
+}
+
+#gooutpaymoney .swat-photo {
+    display: inline-block;
+    position: absolute;
+    left:.61rem;
+    top: .656rem;
+    color: #43aff7;
+}

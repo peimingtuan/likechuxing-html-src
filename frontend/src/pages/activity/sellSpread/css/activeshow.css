@@ -1,0 +1,109 @@
+@import '../../../../css/reset.css';
+* {
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+.none {
+    display: none !important;
+}
+@font-face {
+    font-family: 'iconfont';  /* project id 628835 */
+    src: url('//at.alicdn.com/t/font_628835_nj4psi92p9jrwwmi.eot');
+    src: url('//at.alicdn.com/t/font_628835_nj4psi92p9jrwwmi.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_628835_nj4psi92p9jrwwmi.woff') format('woff'),
+    url('//at.alicdn.com/t/font_628835_nj4psi92p9jrwwmi.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_628835_nj4psi92p9jrwwmi.svg#iconfont') format('svg');
+}
+body{
+    padding:0 .15rem;
+}
+.top{
+    margin-top:.3rem;
+    text-align:center;
+    font-size:.17rem;
+    color:#a9a9ab;
+}
+.bottom{
+    margin-top:.15rem;
+    text-align:center;
+    font-size:.17rem;
+    color:#a9a9ab;
+}
+.top span,.bottom span{
+    padding:0 .1rem;
+    color:#111;
+}
+.show-top{
+    height:3.95rem;
+    padding-bottom: .1rem;
+    border-bottom: 1px solid #dcdcdc;
+}
+.show-bottom{
+    margin-bottom:.25rem;
+}
+.show-top p, .show-bottom p{
+    margin-top:.05rem;
+    position:relative;
+    padding-left:.25rem;
+    line-height:.2rem;
+    font-size:.137rem;
+    color:#0b0b0b;
+}
+.show-top img, .show-bottom img{
+    position:absolute;
+    left:0;
+    top:.025rem;
+    width:.15rem;
+    vertical-align: middle;
+}
+.show-top .p2 img,.show-top .p5 img{
+    top:.035rem;
+}
+.show-top .p2,.show-top .p5{
+    line-height:.22rem;
+}
+.show-top .p2 span,.show-top .p5 span{
+    font-family: 'iconfont';
+    color:#a7a7a7;
+    padding-right:.02rem;
+}
+.show-list{
+    margin:.1rem 0;
+}
+.show-list li:first-of-type{
+    box-sizing: border-box;
+    height:.5rem;
+    /*border-top:1px solid gray;*/
+}
+.show-list li:first-of-type span{
+    display:inline-block;
+    width:33%;
+    height:.5rem;
+    padding-top:.05rem;
+    float:left;
+    border:1px solid gray;
+    text-align: center;
+}
+.show-list li:last-of-type{
+    height:.3rem;
+}
+.show-list li:last-of-type span{
+    display:inline-block;
+    width:33%;
+    height:.3rem;
+    padding-top:.05rem;
+    float:left;
+    border:1px solid gray;
+    text-align: center;
+}
+.show-list li span{
+    border-right:none!important;
+}
+.show-list li span:last-of-type {
+    border-right:1px solid gray!important;
+}
+.show-list li:last-of-type span{
+    border-top:none!important;
+}

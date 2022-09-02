@@ -1,0 +1,23 @@
+{
+  "id": 3007,
+  "zh_name": "说明页_广州开四停四",
+  "name": "limitDetailGz",
+  "group": "static",
+  "ver": "1.1.0",
+  "bundle_vendor": false,
+  "copy":true,
+  "input_file": {
+    "index": ["index.js"]
+  },
+  "output_file": {
+    "path": "/dist/static/limitDetailGz/",
+    "publicPath": "/",
+    "filename": "js/static_limitDetailGz/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.pug"
+    ],
+    "importAll":false
+  }
+}

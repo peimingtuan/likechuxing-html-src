@@ -1,0 +1,17 @@
+//- Created by garvey on 2018/1/14.
+-require('./historyBox.less')
+each k in list
+    li.historyBox.clearfix
+        if (k.type === '1')
+            .float-left
+                .phone_no.fs12 #{k.phone_no}
+                .desc.fs14 用车成功
+            .float-right
+                .time.fs12 #{k.time}
+                .change.fs12.yellow #{k.change_value}
+        else
+            .float-left
+                .desc.fs14.double 提现成功
+            .float-right
+                .time.fs12 #{k.time}
+                .change.fs12 #{k.change_value}

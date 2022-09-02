@@ -1,0 +1,119 @@
+*{margin:0;padding:0}
+ul,li{
+  list-style: none;
+}
+button{
+  margin:2px auto;
+  display: block;
+  padding: 3px 8px;
+}
+.map{
+  width: 49vw;
+  height: 50vh;
+  float:left;
+  box-sizing: border-box;
+}
+.border-top{
+  width: 100%;
+  border-top: solid 1px #dbdbdb;
+}
+#play{
+  display: inline-block;
+  float: right;
+  margin:0 auto;
+  height: 22px;
+  padding: 0 5px;
+}
+.hot{
+  position: absolute;
+  bottom:50px;
+  width: 260px;
+  left:5%;
+  background-color: #fff;
+  padding: 8px;
+  border-radius: 5px;
+  border: solid 1px #ddd;
+  box-shadow: 2px 2px 5px #111;
+  #slider{
+    margin: 5px;
+  }
+}
+.box{
+  position: absolute;
+  top:50px;
+  right:30px;
+  padding: 5px 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: solid 1px #ddd;
+  box-shadow: 2px 2px 5px #111;
+}
+.desc{
+  font-size: 12px;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  border-radius: 50%;
+  color:#fff;
+  border:solid 1px #fff;
+  background: #222;
+}
+.input_con{
+  position: fixed;
+  width: 13em;
+  max-width: 100%;
+  background-color: #fff;
+  border-left:solid 1px #DBDBDB;
+  border-bottom:solid 1px #DBDBDB;
+  right:0;
+  top:0;
+  border-radius: 0 0 0 10px;
+  z-index: 10;
+  padding: 5px 15px;
+  font-size: 16px;
+  input,select{
+    width:8em;
+  }
+  button{
+    width:13em;
+    height: 2em;
+    background-color: #333;
+    color:#fff;
+    border:none;
+    border-radius: 5px;
+    margin:3px 0;
+    &#branch{
+      width: 8em;
+      margin-left:5em;
+    }
+    &#save_hot{
+      width: 8em;
+      margin-left:5em;
+    }
+  }
+  .info{
+    width:100%;
+    padding: 5px 0;
+    text-align: center;
+  }
+  .info_con{
+    display: none;
+    &>div{
+      border-top:solid 1px #DBDBDB;
+      padding: 5px 0;
+    }
+    #show_hot_level{
+      li{
+        opacity: 0.8;
+        color:#111;
+        padding: 0 1em;
+        &:nth-last-of-type(1){
+          color:#EEE
+        }
+      }
+    }
+  }
+}
+label{line-height:2em}
+.btn{width: 5em;font-size: 14px;}

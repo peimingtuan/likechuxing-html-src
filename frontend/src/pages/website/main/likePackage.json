@@ -1,0 +1,45 @@
+{
+  "id": 1,
+  "zh_name": "官网",
+  "name": "main",
+  "group": "website",
+  "ver": "1.0.0",
+  "lastUpdateTime": "2017-11",
+  "lastUpdateDesc": "1.0.0",
+  "bundle_vendor": true,
+  "copy": {
+    "directory": "../../likechuxing-html/websiteNew/",
+    "files": "../../likechuxing-html/websiteNew/"
+  },
+  "input_file": {
+    "index": [
+      "index.js"
+    ],
+    "about": [
+      "about.js"
+    ],
+    "job": [
+      "job.js"
+    ],
+    "cooperation": [
+      "cooperation.js"
+    ],
+    "download": [
+      "download.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/website/main/",
+    "publicPath": "/",
+    "filename": "js/website_main/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.pug",
+      "about.pug",
+      "download.pug",
+      "cooperation.pug",
+      "job.pug"
+    ]
+  }
+}

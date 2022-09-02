@@ -1,0 +1,86 @@
+/**
+    字号
+*/
+.f12{
+    font-size: .12rem;
+}
+.f14{
+    font-size: .14rem;
+}
+.f16{
+    font-size: .16rem;
+}
+
+/**
+    flex
+*/
+.fc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fb{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fd{
+    display: flex;
+    align-items: center;
+}
+
+/**
+    边框
+*/
+.b{
+    border: 1px solid #979797;
+
+}
+.bb{
+    border-bottom: 1px solid #979797;
+}
+.br(@radius:2px){
+    border-radius: @radius;
+}
+
+/**
+    宽高
+*/
+.wh(@w,@h){
+    width: @w;
+    height: @h;
+}
+
+/**
+    颜色
+*/
+.c3{
+    color: #333;
+}
+.c9{
+    color: #999;
+}
+.cb{
+    color: #44A8EC;
+}
+.fco(@f,@c){
+   font-size: @f;
+   color: @c;
+}
+/**
+    1px线
+*/
+.bb1px{
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        transform: scaleY(.5);
+        background: #f6f6f6;
+    }
+}
+

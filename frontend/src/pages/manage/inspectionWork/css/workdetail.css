@@ -1,0 +1,125 @@
+/*流程图样式*/
+#workdetail .flowstatus {
+    margin-top:.12rem;
+    width: 100%;
+    height: 1.05rem;
+    background: #fff;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+#workdetail .flowstatus .p1 {
+    margin: 0 .12rem;
+    padding:.12rem 0;
+    height: .351rem;
+}
+
+#workdetail .flowstatus .moremany{
+    color:#259bef;
+}
+
+#workdetail .flowstatus .p2 {
+    margin-top:.12rem;
+    position: relative;
+    height: .42rem;
+    text-align: center;
+}
+
+#workdetail .flowstatus span img {
+    width: .234rem;
+}
+
+#workdetail .flowstatus .p2 .size {
+    display:inline-block;
+    /*width:2rem;*/
+    text-align: center;
+}
+
+#workdetail .flowstatus .p2 .size font{
+    font-size:.12rem;
+}
+
+#workdetail .flowstatus .p2 .line {
+    display:inline-block;
+    width:.3rem;
+    height:2px;
+    background:#ededed;
+    position: relative;
+    top: -.211rem;
+}
+
+#workdetail .detail-list li {
+    position: relative;
+    line-height: .562rem;
+    background: #fff;
+    padding-left: .12rem;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+/*当前操作步骤字体颜色*/
+#workdetail .detail-list .stepcolor{
+    color:#44a8ec!important;
+}
+
+#workdetail .detail-list .forbidden{
+    color:#c8c8c8;
+}
+
+#workdetail .detail-list li span:last-of-type {
+    font-family: 'iconfont';
+    position: absolute;
+    right: .234rem;
+}
+
+/*操作记录*/
+#workdetail .detail-history {
+    margin-top: .12rem;
+    padding: .12rem;
+    background: #fff;
+    margin-bottom: .94rem;
+}
+
+#workdetail .detail-history p {
+    line-height: .468rem;
+}
+
+#workdetail .detail-history li span {
+    display: inline-block;
+    margin-right: .234rem;
+    line-height: .281rem;
+    word-break: break-all;
+}
+
+#workdetail .detail-history .check {
+    font-family: 'iconfont';
+    color: #d1d1d1;
+    position: absolute;
+    right: 0;
+}
+
+#workdetail .check font {
+    color: #adadad;
+}
+
+/*底部按钮*/
+#workdetail .detail-btn {
+    display:flex;
+    display: -webkit-flex; /* Safari */
+    justify-content:space-between;
+    position: fixed;
+    bottom: 0;
+    width: 3.75rem;
+    padding: .12rem;
+    background: #fff;
+    box-shadow: 1px -2px 2px #e8e8e8;
+}
+
+#workdetail .detail-btn button {
+    width: 1.1rem;
+    line-height: .351rem;
+    text-align: center;
+    background: #fff;
+    outline: none;
+    border: 1px solid #333;
+    border-radius: 2px;
+    box-sizing: border-box;
+}

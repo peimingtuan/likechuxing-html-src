@@ -1,0 +1,196 @@
+.icon(){
+  width: 0.2rem;
+  height: 0.2rem;
+  background: no-repeat center;
+  background-size: 100%;
+}
+
+.EditRental{
+  padding: 0.2rem 0;
+  .tips{
+    padding:0.05rem 0.15rem;
+    background-color: #FEFED9;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    top:0;
+    z-index: 20;
+    line-height: 0.2rem;
+    &.hidden{
+      display:none;
+    }
+    span{
+      display: inline-block;
+      vertical-align: top;
+    }
+    .icon_suona{
+      .icon();
+     background-image: url('../../images/icon_suona.png') ;
+      margin-right: 0.5em;
+    }
+    .icon_close_red{
+      .icon();
+      background-image: url('../../images/icon_close_red.png');
+      background-size: 60%;
+      float:right;
+    }
+  }
+  .editContent{
+    padding: 0 0.2rem;
+  }
+  .car_info{
+    position: relative;
+    padding-bottom: 0.1rem;
+    .desc{
+      padding: 0.05rem 0;
+      box-sizing: border-box;
+      height: 0.6rem;
+      color:#333;
+      .name{
+        line-height: 0.3rem;
+      }
+      .price{
+        line-height: 0.2rem;
+        color:#999;
+        .money{
+          color:#333;
+        }
+      }
+    }
+    .img {
+      position: absolute;
+      right: 0;
+      top: 0.05rem;
+      height: 0.6rem;
+    }
+  }
+  .time_parent{
+    padding-bottom: 0;
+  }
+  .time_select{
+    height: 0.46rem;
+    position: relative;
+    &::before{
+      content:'';
+      width: 0.32rem;
+      height: 1px;
+      position: absolute;
+      background-color: #999;
+      left:50%;
+      top:50%;
+      margin-left:-0.16rem;
+    }
+    .empty_time{
+      color:#ED3800;
+      line-height: 0.46rem;
+      width: 40%;
+      position: absolute;
+      top:0;
+      left:0;
+      &:nth-of-type(2){
+        left:auto;
+        right:0;
+        text-align: right;
+      }
+    }
+    .time_con{
+      margin-top: 0.06rem;
+      width: 7em;
+      position: absolute;
+      line-height: 0.20rem;
+      top:0;
+      left:0;
+      &:nth-of-type(2){
+        left:auto;
+        right:0;
+      }
+    }
+    .dura{
+
+      text-align: center;
+      color:#ff9500;
+      line-height: 0.16rem;
+      top:0.08rem;
+      position: absolute;
+      width: 4em;
+      left:50%;
+      margin-left: -2em;
+    }
+  }
+  .branch_select{
+    margin-top: 0.07rem;
+    .point{
+      line-height: 0.3rem;
+      position: relative;
+      &::after{
+        content: '';
+        right:0;
+        top:0.05rem;
+        position: absolute;
+        width: 0.15rem;
+        height: 0.2rem;
+        background: url('../../images/icon_rightArrow_2.png') no-repeat center;
+        background-size: 100%;
+      }
+      .label{
+        position: absolute;
+        width: 5em;
+        top:0;
+        left:0;
+      }
+      .point_name{
+        text-align: right;
+        margin-left: 5em;
+        margin-right: 0.2rem;
+      }
+    }
+  }
+  .cost{
+    margin-top: 0.06rem;
+    .total{
+      line-height: 0.32rem;
+      .qa{
+        display: inline-block;
+        vertical-align: top;
+        width: 0.32rem;
+        height: 0.32rem;
+        background: url('../../images/icon_qa.png') no-repeat 20% 50%;
+        background-size: 62.5%;
+      }
+    }
+    .item{
+      position: relative;
+      line-height: 0.22rem;
+      color:#999;
+      margin-left: 0.8em;
+      &::before{
+        content: "";
+        position: absolute;
+        display: block;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        margin-top:-2px;
+        margin-left:-2px;
+        background-color: #999;
+        top:50%;
+        left:-0.6em;
+      }
+      .icon_discount{
+        display: inline-block;
+        position: absolute;
+        width:0.4rem;
+        height: 0.2rem;
+        background: url('../../images/icon_discount.png') no-repeat center;
+        background-size: auto 70%;
+        &.hidden{
+          display: none;
+        }
+      }
+    }
+    .toPay{
+      margin:0.1rem 0.06rem 0;
+    }
+  }
+}
+

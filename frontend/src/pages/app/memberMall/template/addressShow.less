@@ -1,0 +1,64 @@
+.status_desc(){
+  line-height: 0.18rem;
+  width: 5em;
+  border:solid 1px;
+  border-radius: 2px;
+  position: absolute;
+  right:0.15rem;
+  margin-top: -0.09rem;
+  top:50%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.box{
+  position: relative;
+  line-height: 0.2rem;
+  padding: 0.15rem 0.2rem;
+  border-bottom: solid 1px #f2f2f2;
+  color:#333;
+  .fc99{//xurr 180606
+      color: #999;
+  }
+  .mg5{//xurr 180606
+     margin-left: 1em; 
+  }
+  .word3{
+    letter-spacing: 0.5em;
+  }
+  .word2{
+    letter-spacing: 2em;
+  }
+  input,textarea{
+    vertical-align: top;
+    border:none;
+  }
+  textarea{
+    resize : none;
+    overflow-y:visible;
+    padding: 0;
+    height:0.2rem;
+  }
+  &.address{
+    .add{
+      margin-left: 5em;
+      margin-top: -0.2rem;
+      line-height: 0.2rem;
+    }
+  }
+  &.goods{
+    position: relative;
+    .notMail{
+      .status_desc();
+      border-color: #ED3800;
+      color:#ED3800;
+      background: rgba(237,56,0,0.05);
+    }
+    .mailed{
+      .status_desc();
+      border-color:#5FB500;
+      color:#5FB500;
+      background: rgba(126,211,33,0.05);
+    }
+  }
+}

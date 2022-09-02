@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+    <meta content="telephone=no, address=no" name="format-detection">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="no-cache" http-equiv="pragma">
+    <meta content="0" http-equiv="expires">
+    <meta name="full-screen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>调度工单</title>
+    <script>
+        var htmlBq = document.documentElement;
+
+        function allSize() {
+            var htmlWidth = htmlBq.clientWidth;
+            if (htmlWidth >= 640) {
+                htmlBq.style.fontSize = '40px';
+            } else if (htmlWidth < 640 && htmlWidth >= 320) {
+                htmlBq.style.fontSize = htmlWidth / (640 / 40) + 'px';
+            } else if (htmlWidth < 320) {
+                htmlBq.style.fontSize = '20px';
+            }
+        }
+        allSize();
+        window.onresize = function () {
+            allSize();
+        };
+    </script>
+    <script src="https://g.alicdn.com/dingding/open-develop/1.9.0/dingtalk.js"></script>
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.4&key=91ed10906005ee88866f14fd9f076e8b"></script>
+</head>
+<body class="body none">
+<script>
+    !(function (c, b, d, a) {
+        c[a] || (c[a] = {});
+        c[a].config = {pid: "gruqqi6cbp@6594c08d3216a5d", imgUrl: "https://arms-retcode.aliyuncs.com/r.png?"};
+        with (b)with (body)with (insertBefore(createElement("script"), firstChild))setAttribute("crossorigin", "", src = d)
+    })(window, document, "https://retcode.alicdn.com/retcode/bl.js", "__bl");
+</script>
+<div class="newoiler-content">
+    <p class="p1">
+    </p>
+
+    <div class="getnet">
+        <div>
+            取：
+            <img class="newoiler-mapb" src=""/>
+            <span class="branch_addr inline"></span><br/>
+            <span class="park_fee inline"></span>
+        </div>
+        <img src="" class="daoh1 daoh" />
+    </div>
+    <div class="returnnet none">
+        <div>
+            还：
+            <img class="newoiler-mapb2" src=""/>
+            <span class="branch_addr2 inline"></span><br/>
+        </div>
+        <img src="" class="daoh2 daoh" />
+    </div>
+</div>
+<div class="flowstatus">
+    <p class="p1">
+        <span class="left">工单流程</span>
+        <span class="right moremany">更多</span>
+    </p>
+
+    <p class="p2">
+        <span class="span1">创建<br/>成功</span>
+        <span class="span2">工单<br/>结束</span>
+        <img src="" alt=""/>
+        <span class="span3">待取车</span>
+        <span class="span4 none">待还车</span>
+        <span class="span5 none">待结束</span>
+        <span class="span6">1.取车验车单</span>
+        <span class="span7">2.还车验车单</span>
+        <span class="span8">3.楼层车位</span>
+    </p>
+</div>
+<ul class="newoiler-list">
+    <li class="add-single check-btn">1、<span class="span_get">添加取车验车单</span><span class="span2">&#xe623;</span></li>
+    <li class="add-returncar">2、<span class="span_add">添加还车验车单</span><span>&#xe623;</span></li>
+    <li class="edit-endworklist">3、<span class="span_return">还车输入车位结束工单</span><span>&#xe623;</span></li>
+</ul>
+<div class="newoiler-history">
+    <p>操作历史</p>
+    <ul>
+        <li>
+
+        </li>
+    </ul>
+</div>
+<div class="newoiler-btn">
+    <button class="open-door">开门</button>
+    <button class="close-door">锁门</button>
+    <button class="select-net">查询网点</button>
+    <button class="urgent_in none">紧急</button>
+    <button class="adjustable_in none">调离</button>
+</div>
+<!--alert弹框-->
+<div class="alert_window common_cover none">
+    <div class="common_content">
+        <ul>
+            <li>更多<span class="close-icon">&#xe601;</span></li>
+            <li class="nonfindcar">1.新建故障工单，点这里！</li>
+            <li class="payment">2.出场缴费，点这里！</li>
+            <li class="needoiler">3.车辆需要加油，点这里！</li>
+        </ul>
+    </div>
+</div>
+
+<!--遗失物品弹窗-->
+<div class="lostBox">
+    <div class="box">
+        <div class="title">发现遗失物品？</div>
+        <p class="desc">该车辆由用户上报，可能存在以下遗失物品，请仔细检查车辆，若发现该物品请点击"确认发现该物品"并及时送至指定办公室</p>
+        <div class="item">
+            物品名称：<span id="lost"></span>
+        </div>
+        <div class="item">
+            物品详情：<span id="lost_detail"></span>
+        </div>
+        <div class="btn-con">
+            <button class="btn main" id="lost_yes">确认发现该物品</button>
+            <button class="btn main" id="lost_no">未发现该物品</button>
+            <button class="btn" id="lost_cancel">取消</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

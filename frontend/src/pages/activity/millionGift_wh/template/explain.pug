@@ -1,0 +1,38 @@
+//- Created by garvey on 2018/1/14.
+-require('./explain.less')
+.ActivityExplain
+    .item
+        .title.fs14 活动时间
+        .desc.fs13 2018年1月31日 —— 2018年2月9日
+    .item
+        .title.fs14 活动内容
+        .desc.fs12 活动期间每日首单，享6小时免费开并分百万现金。
+    .item
+        .title.fs14 活动规则
+        ul.desc_ul.fs12
+            li
+                .index ①
+                .desc_li 活动期间，用户每日首单（里程大于0）可享6小时内免费开，超过6小时正常计费。
+            li
+                .index ②
+                .desc_li 每日首单前6小时内行驶的里程可兑换等额现金，即1公里兑换1元现金，每日上限50元。
+            if(channel === 'wxad')
+                li
+                    .index ③
+                    .desc_li 订单结束后，按系统提示提交支付宝信息（须为本人名下支付宝账户）可进行提现，审核通过后，提现金额将实时存入该支付宝账户。
+            else
+                li
+                    .index ③
+                    .desc_li 订单结束后，按系统提示提交支付宝信息（须为本人名下支付宝账户）可进行提现，审核通过后，提现金额将实时存入该支付宝账户。
+            li
+                .index ④
+                .desc_li 获赠现金可累计，每次申请将按照账户最高金额提现。
+            li
+                .index ⑤
+                .desc_li 每个用户每日仅限首单（以下单时间为准）参与活动。
+            li
+                .index ⑥
+                .desc_li 活动期间可提现金额累计达到200元的用户，可获得春节长租13天免费用车资格。名额有限，先到先得。
+            li
+                .index ⑦
+                .desc_li 可提现金额请在2月11日前完成提取，逾期未提将视为放弃相关奖励。

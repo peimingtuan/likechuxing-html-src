@@ -1,0 +1,32 @@
+@import '../../../css/config';
+
+
+.TrackTab{
+  background-color: 	lighten(@mainColor, 40%);
+  position: relative;
+  .tab_con{
+    font-size: 13px;
+    overflow: hidden;
+    .tab{
+      color: contrast(lighten(@mainColor, 40%));
+      width: 50%;
+      float: left;
+      text-align: center;
+      line-height: 36px;
+    }
+  }
+  .chooseFlag{
+    position: absolute;
+    bottom:0;
+    margin-left: -8px;
+    border:solid 8px transparent;
+    border-bottom-color: contrast(lighten(@mainColor, 40%));
+    transition: all 400ms;
+    &.left{
+      left:25%;
+    }
+    &.right{
+      left:75%;
+    }
+  }
+}

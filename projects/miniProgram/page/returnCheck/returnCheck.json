@@ -1,0 +1,6 @@
+{
+    "defaultTitle":"还车检查",
+    "usingComponents":{
+        "picker":"/component/picker/picker"
+    }
+}

@@ -1,0 +1,55 @@
+.large_img_container{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left:0;
+  top: 0;
+  background: #000;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  z-index: 80;
+  .header{
+    position: absolute;
+    z-index: 10;
+    top:0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
+    height: 30px;
+    .close{
+      float: right;
+      line-height: 30px;
+      padding:0 15px;
+      color:#fff
+    }
+  }
+}
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+}

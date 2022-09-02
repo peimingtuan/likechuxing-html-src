@@ -1,0 +1,56 @@
+@import '../../../../css/buttons/button';
+.ExchangeHistoryBox{
+  margin: 0.1rem;
+  padding-left:0.2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.08);
+
+  .header{
+    font-size: 0.14rem;
+    line-height: 0.4rem;
+    border-bottom: solid 1px #f2f2f2;
+    .status{
+      margin-right: 0.15rem;
+    }
+
+    .cancel{
+      color:#DFDFDF;
+    }
+    .during{
+      color:#ed3800;
+    }
+  }
+  .desc{
+    position: relative;
+    padding: 0.25rem 0;
+    min-height: 1rem;
+    box-sizing: border-box;
+    color:#111;
+    line-height: 0.2rem;
+    .img_con{
+      height: 1.2rem;
+      width: 1.2rem;
+      position: absolute;
+      right:0;
+      top:50%;
+      margin-top: -0.6rem;
+      img{
+        height: 100%;
+        width:100%;
+      }
+    }
+    .time,.code{
+      color:#999;
+    }
+    .btn_con{
+      padding-top:0.1rem ;
+      button{
+        .white_btn();
+        border-color: #494B51;
+        color:#494B51;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+}

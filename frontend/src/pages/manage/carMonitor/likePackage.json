@@ -1,0 +1,24 @@
+{
+  "id": 4006,
+  "zh_name": "车辆监控",
+  "name": "carMonitor",
+  "group": "manage",
+  "ver":"1.2.0",
+  "bundle_vendor": true,
+  "copy": true,
+  "input_file": {
+    "index": [
+      "index.jsx"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/manage/carMonitor/",
+    "publicPath": "/",
+    "filename": "js/manage_carMonitor/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.pug"
+    ]
+  }
+}

@@ -1,0 +1,169 @@
+/*<!-- 列表样式-->*/
+#myworklist .list{
+    margin-bottom: .12rem;
+    padding: .12rem;
+    background: #fff;
+}
+
+#myworklist .list span{
+    display:inline-block;
+}
+
+#myworklist .list .span1{
+    color: #999999;
+    margin-bottom: .12rem;
+}
+
+#myworklist .list .span1 .font1{
+    font-weight:bold;
+}
+
+#myworklist .list .div1{
+    border:1px dashed #dcdcdc;
+    padding:.06rem .06rem .06rem 0;
+    background:#fdfdfd;
+}
+
+#myworklist .list .div1 span{
+    line-height:.2rem;
+}
+
+#myworklist .list .div1 .border-color{
+    width: 5px;
+    background: #feb224;
+    height: .2rem;
+    border-radius: 0 4px 4px 0;
+    position:absolute;
+}
+
+/*巡检中橙色*/
+#myworklist .list .div1 .work-status{
+    color:#feb224;
+    padding-left:14px;
+}
+/*待巡检*/
+#myworklist .list .div1 .wait{
+    color:#fd495c!important;
+}
+
+#myworklist .wait-color{
+    background:#fd495c!important;
+}
+
+/*已完成*/
+#myworklist .list .div1 .normal{
+    color:#79d312!important;
+}
+
+#myworklist .normal-color{
+    background:#79d312!important;
+}
+
+#myworklist .list .div1 .right font{
+    padding:0 .05rem;
+}
+
+#myworklist .list .div1 .work-time{
+    margin-top:.06rem;
+    line-height:.28rem;
+    padding-left:15px;
+}
+
+#myworklist .list .div1 .work-time font{
+   color:#999999;
+}
+/*筛选弹框*/
+#myworklist .carstock_window {
+    display:none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.44);
+    z-index: 10000
+}
+
+#myworklist .carstock_content {
+    position: absolute;
+    bottom:-100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+}
+
+#myworklist .carstock-title {
+    padding:.12rem;
+    text-align: center;
+    font-size: .187rem;
+    line-height: .351rem;
+    border-bottom:1px solid #f7f7f7;
+}
+
+#myworklist .close-carstock {
+    font-family: 'iconfont';
+    font-size: .187rem;
+    color: #71bdf5;
+    float: left;
+}
+
+#myworklist .confirm-carstock>div{
+    padding:0 .12rem;
+}
+
+#myworklist .confirm-carstock > div.title{
+    margin-top: .1rem;
+    line-height: .2rem;
+    color:#b6b6b6;
+}
+
+#myworklist .confirm-carworkstate > span{
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    margin-right: .07rem;
+    margin-top: .1rem;
+    padding: .06rem .1rem;
+    border: 1px solid #e7e7e7;
+    border-radius: 2px;
+    background:#f0f2f5;
+}
+
+#myworklist .confirm-carworkstate> span:last-of-type{
+    margin-bottom: .1rem;
+}
+
+#myworklist .carstate-bottom {
+    box-sizing: border-box;
+    display:flex;
+    display: -webkit-flex; /* Safari */
+    justify-content:space-between;
+}
+
+#myworklist .carstate-bottom button {
+    width: 1.875rem;
+    line-height: .468rem;
+    text-align: center;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+#myworklist .carstate-reset {
+    color:#259bef;
+    background:#fff;
+    box-shadow: 0px -2px 1px #eaeaea;
+}
+
+#myworklist .carstate-sure {
+    color: #fff;
+    background: #259bef;
+    box-shadow: 0px -2px 1px #259bef;
+}
+
+/*颜色控制*/
+#myworklist .color {
+    background: #e6f3ff!important;
+    color: #259bef;
+    border:1px solid #259bef!important;
+}

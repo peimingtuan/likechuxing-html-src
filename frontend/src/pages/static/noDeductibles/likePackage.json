@@ -1,0 +1,25 @@
+{
+  "id": 3023,
+  "zh_name": "静态页-不计免赔说明",
+  "name": "noDeductibles",
+  "group": "static",
+  "ver": "1.1.0",
+  "bundle_vendor": false,
+  "copy":true,
+  "input_file": {
+    "index": [
+      "index.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/static/noDeductibles/",
+    "publicPath": "/",
+    "filename": "js/static_noDeductibles/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.html"
+    ],
+    "importAll":false
+  }
+}

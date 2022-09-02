@@ -1,0 +1,16 @@
+//- Created by garvey on 2018/1/14.
+-require('./historyBox.less')
+ul.historyList
+    each k in list
+        li.historyBox
+            .left
+                .time.fs12 #{k.time}
+                .remain.fs14 可提现金：#{k.remain}
+            if (k.sign_type == 0)
+                .right.yellow.fs12
+                    .desc #{k.desc}
+                    .change #{k.change}
+            else
+                .right.green.fs12
+                    .desc #{k.desc}
+                    .change #{k.change}

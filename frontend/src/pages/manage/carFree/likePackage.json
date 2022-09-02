@@ -1,0 +1,25 @@
+{
+  "id": 4013,
+  "zh_name": "空闲车辆数",
+  "name": "carFree",
+  "group": "manage",
+  "ver": "1.0.0",
+  "bundle_vendor": false,
+  "copy":true,
+  "input_file": {
+    "index": [
+      "index.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/manage/carFree/",
+    "publicPath": "/",
+    "filename": "js/manage_carFree/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.html"
+    ],
+    "templateRoot": "./src/pages/manage/heatmap2/"
+  }
+}

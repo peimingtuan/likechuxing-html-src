@@ -1,0 +1,26 @@
+- var prize_img = img_prize
+- var img_loadMore = img_load_more
+div.my_prize
+    .list_header
+        span.refresh
+            span.icon
+            | 刷新
+        .dead_time 截至#{dead_time}
+    .float_con
+        .prize_left
+            .prize_title 我的排名
+            p.num #{my_index}
+        .prize_right
+            .prize_title 我的奖品
+            if prize_img == ''
+                p.num -
+            else
+                img#prize_img(src=prize_img)
+    .text_desc
+        each val in text_desc
+            p!=val
+    !=invite_btn
+    .invite_history
+        .detail_title 邀请记录
+        ul.invite_list
+        //img#loadMore(src=img_loadMore)

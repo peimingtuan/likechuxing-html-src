@@ -1,0 +1,26 @@
+{
+  "id": 4082,
+  "zh_name": "运维结束工单",
+  "name": "endwork",
+  "group": "manage",
+  "copy": true,
+  "bundle_vendor": false,
+  "dll":[
+    "vuer"
+  ],
+  "input_file": {
+    "index": [
+      "index.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/manage/endwork/",
+    "publicPath": "/",
+    "filename": "js/manage_endwork/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.html"
+    ]
+  }
+}

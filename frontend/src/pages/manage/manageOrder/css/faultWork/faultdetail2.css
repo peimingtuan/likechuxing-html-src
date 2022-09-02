@@ -1,0 +1,345 @@
+.body{
+    background:#fff;
+}
+
+.faultdetail-content {
+    background: #fff;
+    padding: .5rem;
+}
+
+.faultdetail-content p span {
+    display: inline-block;
+    margin-top: .3rem;
+
+}
+
+.faultdetail-content .brand_name,
+.faultdetail-content .carqube{
+    padding-right:.4rem;
+    border-right:1px solid #e7e7e7;
+}
+
+.faultdetail-content .carqube,.faultdetail-content .remain_km{
+    margin-left:.2rem;
+}
+
+.faultdetail-content .trouble_id {
+    margin-left: .3rem;
+    padding: .1rem .3rem;
+    border: 1px solid #f6f6f6;
+}
+
+.faultdetail-content .getnet{
+    margin-top:.2rem;
+    padding: .3rem 0rem;
+    line-height: 1rem;
+    position: relative;
+    border:none!important;
+}
+
+.faultdetail-content .getnet div{
+    width: 13rem;
+}
+
+.faultdetail-content .daoh{
+    /*width:.8rem;*/
+    position: absolute;
+    right: 0;
+    top: .3rem;
+}
+
+.faultdetail-content img {
+    width: 1rem;
+}
+
+.faultdetail-content .location {
+    padding-left:.3rem;
+    border-left:1px solid #e7e7e7;
+}
+
+.faultdetail-content .location img{
+    width:.6rem;
+    position:relative;
+    top: -.1rem;
+}
+
+.faultdetail-content p span .font1 {
+    color: #999999;
+    margin-right: .1rem;
+}
+
+.faultdetail-content .div1{
+    border:1px dashed #dcdcdc;
+    padding:.25rem .25rem .25rem 0;
+    background:#fdfdfd;
+    position:relative;
+}
+
+.faultdetail-content .div1 span{
+    line-height:1rem;
+}
+
+.faultdetail-content .div1 .border-color{
+    display: inline-block;
+    width: 5px;
+    background: #feb224;
+    height: 1rem;
+    border-radius: 0 3px 3px 0;
+    position:absolute;
+}
+
+.faultdetail-content .div1 .border-color2{
+    background: #e84856!important;
+}
+
+.faultdetail-content .div1 .status_name{
+    color:#feb224;
+    padding-left:15px;
+}
+
+.faultdetail-content .div1 .normal{
+    color:#e84856!important;
+}
+
+.faultdetail-content .div1 .troule-type{
+    margin-top:.25rem;
+    line-height:1.1rem;
+    padding-left:15px;
+}
+
+
+/*备注信息展示*/
+.faultdetail-content .trouble-remark {
+    margin-top:.3rem;
+    line-height: 1.2rem;
+}
+
+.div-center{
+    background:#f6f6f6;
+    height:.5rem;
+}
+
+/*故障工单流程图*/
+.fault-flow {
+    padding-top: .5rem;
+    width: 100%;
+    height: 4rem;
+    background: #fff;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.fault-flow p {
+    margin: 0 .5rem;
+}
+
+.fault-flow .p1 {
+    padding-bottom: .2rem;
+    height: 1rem;
+}
+
+.fault-flow .p1 .more {
+    float: right;
+    color:#44a8ec;
+    margin-right: .3rem;
+}
+
+.fault-flow .p2 {
+    position: relative;
+    height: 2rem;
+    text-align: center;
+}
+
+.fault-flow .p2 span {
+    position: absolute;
+}
+
+.fault-flow .p2 .span1 {
+    left: .3rem;
+    top: .3rem;
+}
+
+.fault-flow .p2 .span2 {
+    right: .3rem;
+    top: .3rem;
+}
+
+.fault-flow .p2 .span3 {
+    left: 1.9rem;
+    top: 0rem;
+    display: inline-block;
+    padding: 0 .1rem;
+    background: #d8d8d8;
+    border-radius: 3px;
+}
+
+.fault-flow .p2 .span4 {
+    left: 6.5rem;
+    top: 0rem;
+    display: inline-block;
+    padding: 0 .1rem;
+    background: #d8d8d8;
+    border-radius: 3px;
+}
+
+.fault-flow .p2 .span-left {
+    left: 1.95rem;
+    top: 1.1rem;
+    display: inline-block;
+    width: 2rem;
+    height: .05rem;
+    background: #d8d8d8;
+    border-radius: 3px;
+}
+
+.fault-flow .p2 .span-length {
+    left: 4.5rem;
+    top: 1rem;
+    width: 6rem;
+    height: .15rem;
+    display: inline-block;
+    background: #d8d8d8;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.fault-flow .p2 .span-right {
+    left: 11rem;
+    top: 1.1rem;
+    display: inline-block;
+    width: 2rem;
+    height: .05rem;
+    background: #d8d8d8;
+    border-radius: 3px;
+}
+
+.fault-list > li {
+    line-height: 2.2rem;
+    padding: 0 .5rem;
+    background: #fff;
+    border-top: 1px solid #f6f6f6;
+}
+
+.fault-list li > span {
+    font-family: 'iconfont';
+    font-size: .8rem;
+}
+
+.fault-list li .open-show {
+    width: 1rem;
+    margin-top: .6rem;
+}
+
+.fault-list .true {
+    height: 2.2rem;
+    overflow-y: hidden;
+}
+
+.task,.task2{
+    /*position: fixed;*/
+    /*left: 3rem;*/
+    /*bottom: 3.5rem;*/
+    margin-left:3rem;
+    margin-top:2rem;
+    width: 10rem;
+    text-align: center;
+}
+
+.task-top{
+    box-sizing: border-box;
+    width:6rem;
+    height:6rem;
+    margin-left:2rem;
+    background:#f28100;
+    border-radius:50%;
+    padding:1.5rem 0;
+}
+
+.task-top span{
+    display:inline-block;
+    line-height:1.5rem;
+    font-size:1rem;
+    color:#fff;
+}
+
+.task-bottom,.task-bottom2{
+    white-space:nowrap;
+    margin-top:.5rem;
+}
+
+.task-top2{
+    box-sizing: border-box;
+    width:6rem;
+    height:6rem;
+    margin-left:2rem;
+    background:#00aaf2;
+    border-radius:50%;
+    padding:2.2rem 0;
+}
+
+.task-top2 span{
+    display:inline-block;
+    line-height:1.6rem;
+    font-size:1rem;
+    color:#fff;
+}
+
+/*修改备注弹框*/
+.editremark_window{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.44);
+    z-index: 100;
+}
+
+.editremark{
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-left:-6rem;
+    margin-top:-7.5rem;
+    box-sizing:border-box;
+    width:12rem;
+    /*height:15rem;*/
+    border-radius:10px;
+    background:#f2f2f2;
+    overflow:hidden;
+}
+
+.editremark .center{
+    margin:.5rem;
+    /*height:6.5rem;*/
+    border-radius:2px;
+    position:relative;
+}
+
+.editremark .center p{
+    letter-spacing: 1px;
+    line-height: .8rem;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.editremark .center .p1{
+    font-weight: bold;
+}
+
+.editremark .center .p2{
+    font-size: .56rem;
+    color:#f26663;
+}
+
+.editremark .bottom{
+    margin-top:.5rem;
+}
+
+.editremark .bottom li{
+    border-top:1px solid #cbcbcb;
+    line-height:1.9rem;
+    text-align:center;
+    font-size:.8rem;
+    color:#007aff;
+}

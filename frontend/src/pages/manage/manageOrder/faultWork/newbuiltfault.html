@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+    <meta content="telephone=no, address=no" name="format-detection">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="no-cache" http-equiv="pragma">
+    <meta content="0" http-equiv="expires">
+    <meta name="full-screen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>新建故障工单</title>
+    <script>
+        var htmlBq = document.documentElement;
+
+        function allSize() {
+            var htmlWidth = htmlBq.clientWidth;
+            if (htmlWidth >= 640) {
+                htmlBq.style.fontSize = '40px';
+            } else if (htmlWidth < 640 && htmlWidth >= 320) {
+                htmlBq.style.fontSize = htmlWidth / (640 / 40) + 'px';
+            } else if (htmlWidth < 320) {
+                htmlBq.style.fontSize = '20px';
+            }
+        }
+        allSize();
+        window.onresize = function () {
+            allSize();
+        };
+    </script>
+    <script src="https://g.alicdn.com/dingding/open-develop/1.9.0/dingtalk.js"></script>
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.4&key=91ed10906005ee88866f14fd9f076e8b"></script>
+</head>
+<body class="body none">
+<script>
+    !(function(c,b,d,a){c[a]||(c[a]={});c[a].config={pid:"gruqqi6cbp@6594c08d3216a5d",imgUrl:"https://arms-retcode.aliyuncs.com/r.png?"};
+        with(b)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("crossorigin","",src=d)
+    })(window,document,"https://retcode.alicdn.com/retcode/bl.js","__bl");
+</script>
+<div class="newbuilt-content">
+    <span class="plate_no inline"></span>
+    <span class="status_name"></span>
+    <span class="chengdu-limt right none">今日限行</span><br/>
+    <span class="brand_name"></span>
+    <span class="carqube"></span>
+    <span class="remain_km"></span>
+     <span class="right location">
+            <img src=""/>
+            当前位置
+        </span>
+    <div class="getnet">
+        <div>
+            取：
+            <img class="mapb" src=""/>
+            <span class="branch_addr inline"></span><br/>
+            <span class="park_fee inline"></span>
+        </div>
+        <img src="" class="daoh1 daoh" />
+    </div>
+    <div class="returnnet none">
+        <div>
+            还：
+            <img class="mapb2" src=""/>
+            <span class="branch_addr2 inline"></span><br/>
+        </div>
+        <img src="" class="daoh2 daoh" />
+    </div>
+    <!-- 新增备注信息-->
+    <div class="bottom ">
+        <span class="span1">备注:</span>
+        <span class="span2"></span>
+    </div>
+</div>
+<div class="faultwork-top">
+    <span class="span1">故障类型：</span>
+    <span class="span2">请选择上报故障类型</span>
+    <span class="span3 right">&#xe623;</span>
+</div>
+<div class="newbuilt-text">
+    <p class="p2">
+        <span>*</span>
+    <textarea class="void_write" placeholder="请填写备注信息，200字以内(必填)" maxlength="200">
+</textarea>
+    </p>
+</div>
+<div class="carstatus">
+    提交后，该车的车辆状态将变为"故障"状态
+</div>
+<div class="newbuilt-nextbtn">
+    <button>提交</button>
+</div>
+<!--选择上报故障类型弹层-->
+<div class="fault-type common_cover none">
+    <div class="faultcontent">
+        <p class="title">故障分类
+            <span class="close-btn left">&#xe601;</span>
+        </p>
+
+        <div class="content">
+            <p>
+                <span class="choice-type none">停车费类</span>
+                <span class="choice">请选择</span>
+            </p>
+            <!-- 一级分类-->
+            <ul class="faulttype-list">
+
+            </ul>
+            <!--二级分类-->
+            <ul class="faultchoice-list none">
+
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

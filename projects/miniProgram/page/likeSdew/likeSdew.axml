@@ -1,0 +1,25 @@
+<view class="sdewTitle">
+  <view class="title">不计免赔服务说明</view>
+  <view class="detail">不计免赔服务是“立刻出行”针对基本保险升华的一项服务，可对会员用车中发生车辆损坏，减少会员损失。</view>
+</view>
+
+<view class="sdewItem">
+  <view class="itmeTitle">1、计费规则</view>
+  <view class="itmeDetailA">3元/时优选车型，夜间0点-6点免费</view>
+  <view class="itmeDetailA">5元/时精选车型，夜间0点-6点免费</view>
+</view>
+
+<view class="sdewItem">
+  <view class="itmeTitle">2、赔偿说明</view>
+  <view class="itmeDetailB"><text class="number">a.</text>非必买服务，会员购买不计免赔服务后，无需承担本车保险理赔范围以内1500元（含1500元）以下的本车车损费用。会员未购买不计免赔服务，需承担所有车辆损失及因维修造成的车辆停运损失费（300元/天）；</view>
+  <view class="itmeDetailB"><text class="number">b.</text>购买不计免赔服务的会员维修、定损1500元以内无需承担停运损失费，高于1500元且维修天数超过2天须按实际产生天数收取车辆停运损失费（300元/天）；</view>
+  <view class="itmeDetailB"><text class="number">c.</text>会员购买不计免赔服务，若使用期间车辆发生重大事故导致车辆残值受损，会员须以事故前评估车价的20%承担车辆贬值损失；</view>
+</view>
+
+<view class="sdewItem">
+  <view class="itmeTitle">3、不免除以下费用</view>
+  <view class="itmeDetailB"><text class="number">a.</text>保险理赔范围外，或因会员使用车辆期间未履行有效报案流程、理赔手续而导致保险公司拒赔的事故；</view>
+  <view class="itmeDetailB"><text class="number">b.</text>因会员使用车辆期间违法违规导致车辆被扣而产生的停运损失费（300元/天），停运天数按车辆实际被扣天数计算；</view>
+</view>
+
+<view class="explain">注：具体赔偿范围及赔付金额以保险公司条款为准，但保险公司免赔或拒赔的部分将由会员自行承担。</view>

@@ -1,0 +1,17 @@
+<view class="lui-picker-container" a:if="{{visible}}">
+    <view class="lui-mask {{className[0]}}" hidden="{{!visible}}" catchTap="hide"></view>
+    <view class="lui-picker {{className[1]}}">
+        <view class="lui-picker-header">
+            <text class="lui-picker-header-btn" catchTap="onCancel">取消</text>
+            <text class="lui-picker-header-title">楼层</text>
+            <text class="lui-picker-header-btn" catchTap="onConfirm">确定</text>
+        </view>
+        <view class="lui-picker-body">
+            <picker-view onChange="onChange" value="{{defaultValue}}">
+               <picker-view-column>
+                    <view a:for="{{pickerData}}">{{item}}</view>
+                </picker-view-column>
+            </picker-view>
+        </view>
+    </view>
+</view>

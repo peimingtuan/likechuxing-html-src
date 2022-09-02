@@ -1,0 +1,26 @@
+{
+  "id": 4033,
+  "zh_name": "管理端App-挪车工单",
+  "name": "manageOrderMovecar",
+  "group": "manage",
+  "bundle_vendor": false,
+  "copy":true,
+  "dll":[
+    "vuer"
+  ],
+  "input_file": {
+    "index": [
+      "index.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/manage/manageOrderMovecar/",
+    "publicPath": "/",
+    "filename": "js/manage_manageOrderMovecar/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.html"
+    ]
+  }
+}

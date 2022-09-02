@@ -1,0 +1,24 @@
+{
+  "id": 4029,
+  "zh_name": "年检工单",
+  "name": "annualReview",
+  "group": "manage",
+  "ver": "0.0.1",
+  "bundle_vendor": false,
+  "copy":true,
+  "input_file": {
+    "index": [
+      "index.js"
+    ] 
+  },
+  "output_file": {
+    "path": "/dist/manage/annualReview/",
+    "publicPath": "/",
+    "filename": "js/manage_annualReview/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.html"
+    ]
+  }
+}

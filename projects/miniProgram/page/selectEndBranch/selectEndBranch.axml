@@ -1,0 +1,44 @@
+<view class="container" a:if="{{pageIsShow}}">
+    <view class="mapWrap">
+        <map 
+            id="map"
+            style="height:100%"
+            class="mapStyle"
+            markers="{{markers}}" 
+            style="flex:1" 
+            longitude="{{longitude}}" 
+            latitude="{{latitude}}"
+            controls="{{controls}}"
+            onControlTap="controltap"
+            show-location="true"
+            scale="{{scale}}"
+            onTap="pressMap"
+            onRegionChange="regionChange"
+            onMarkerTap="onMarkerTap">   
+        </map>
+    </view>
+    <view class="footer" id="footer" a:if="{{!show}}" >
+        <view class="btnTip" >
+            <text class="tipText">请在地图上选择还车网点</text>
+        </view>
+    </view> 
+    <view class="box"  a:if="{{show}}" >
+        <view class="dotWrap">
+            <text class="dotTitle">{{returnName}}</text>
+            <text>{{returnAddress}}</text>
+            <view a:if="{{num!='0.00'}}">
+                <text>还车附加费</text>
+                <text class="num">{{num}}</text>
+                <text>元</text>
+            </view>  
+        </view>
+        <view class="likeBtnWrap">
+            <view class="likeBtn" onTap="getReturnCarDot">
+                <text>确认选择</text>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="loadingBox" a:if="{{!pageIsShow}}">
+    <view class="loadingIcon"></view>
+</view>

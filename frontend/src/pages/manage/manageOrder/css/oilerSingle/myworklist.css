@@ -1,0 +1,24 @@
+.close-worklist {
+    position: absolute;
+    left: 1.5rem;
+    top: .1rem;
+}
+
+.workList li {
+    position: relative;
+    width: 100%;
+    line-height: 2rem;
+    background: #fff;
+    padding-left: .5rem;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.workList li:nth-of-type(even) {
+    background: #f8f8f8;
+}
+
+.workList li span:last-of-type {
+    font-family: 'iconfont';
+    position: absolute;
+    right: 1rem;
+}

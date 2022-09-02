@@ -1,0 +1,9 @@
+{
+  "backgroundColor": "#04060d",
+  "backgroundColorTop": "#04060d",
+  "backgroundColorBottom": "#04060d",
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#04060d",
+  "navigationBarTitleText": "立刻出行",
+  "navigationBarTextStyle": "white"
+}

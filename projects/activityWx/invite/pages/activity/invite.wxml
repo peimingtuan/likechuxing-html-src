@@ -1,0 +1,61 @@
+<view class="bg">
+  <view class="SharePage">
+    <view class="mask" wx:if="{{!open_id}}">{{login_text}}</view>
+    <view class="box delay1 animated faster slideInDown" wx:if="{{step>0}}">
+
+      <view class="step1" wx:if="{{step===1}}">
+        <view wx:if="{{soldOut}}" class="desc">
+          <view>今天的话费已经抢光啦，</view>
+          <view>明天在这里不见不散哦！</view>
+        </view>
+        <view class="opt-box">
+          <view class="t-l">
+            <input 
+            placeholder="输入手机号最高领10元话费" 
+            class="input t-l" 
+            maxlength="11" 
+            bindinput="bindKeyInput" />
+          </view>
+          <view class="t-l pos">
+          <input 
+            placeholder="输入验证码" 
+            class="input t-l" 
+            maxlength="4" 
+            bindinput="bindKeyInput2" />
+            <view class='get' bindtap="getCode">{{code_text}}</view>
+          </view>
+          <button class="btn main_color_btn" bindtap="submit">点击领取</button>
+        </view>
+      </view>
+
+      <view class="step2" wx:if="{{step===2}}">
+        <view class="desc big" wx:if="{{!soldOut}}">
+          <view>您的话费已发放</view>
+          <view wx:if="{{new_user}}">上传驾照再领<span class="strong">50元</span>话费</view>
+        </view>
+        <view class="desc big" wx:else>
+          <view wx:if="{{new_user}}">上传驾照可领<span class="strong">50元</span>话费</view>
+        </view>
+        <view class="opt-box step1" wx:if="{{new_user}}">
+          <button class="btn main_color_btn" bindtap="toLicense">点击领取</button>
+        </view>
+        <view class="desc mini">
+          通过认证后50元话费24小时内到账
+        </view>
+      </view>
+
+      <view class="rules" wx:if="{{rules.length>0}}">
+        <view class="title">活动规则</view>
+        <view wx:for="{{rules}}" wx:key="{{index}}" class="rule">
+          <span class="index">{{index+1}}</span>{{item}}</view>
+      </view>
+
+
+    </view>
+
+    <view class="header delay2 animated faster slideInDown" wx:if="{{step>0}}">
+      <view class="title"></view>
+    </view>
+  </view>
+  <view class="footer" bindtap="clear"></view>
+</view>

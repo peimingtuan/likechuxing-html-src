@@ -1,0 +1,69 @@
+page{
+    background: #fff;
+}
+.container{
+    width:100%;
+    height: 100%;
+}
+.wrap{
+    margin-top: 350rpx;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.icon{
+    width: 120rpx;
+    height: 120rpx;
+    margin-bottom: 32rpx;
+}
+.title{
+    font-family: PingFangSC-Regular;
+    font-size: 34rpx;
+    color: #22252C;
+}
+.titleDesc{
+    font-family: PingFangSC-Regular;
+    font-size: 28rpx;
+    color: #848c99;
+    margin-top: 16rpx;
+}
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30rpx;
+    position: fixed;
+    bottom:0;
+    left: 0;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+}
+.footerDescLabel{
+    font-family: PingFangSC-Regular;
+    font-size: 22rpx;
+    color: #999999;
+    letter-spacing: 0;
+}
+.tel{
+    font-family: PingFangSC-Regular;
+    font-size: 22rpx;
+    color: #5d7baf;
+    letter-spacing: 0;
+    line-height: 32rpx;
+}
+.btn{
+    width: 100%;
+    height: 104rpx;
+    background: #282B34;
+    border-radius: 2px;
+    text-align: center;
+    line-height: 104rpx;
+    margin-top: 32rpx;
+}
+.btnText{
+    font-family: PingFangSC-Regular;
+    font-size: 34rpx;
+    color: #FFFFFF;
+}

@@ -1,0 +1,27 @@
+{
+  "id": 4008,
+  "zh_name": "管理App中运维调度车辆数",
+  "name": "dispatchCar2",
+  "desc":"调度人员用，手机版",
+  "group": "manage",
+  "bundle_vendor": false,
+  "copy": {
+    "directory": "../../likechuxing-html/manage/",
+    "files": "../../likechuxing-html/manage/dispatchCar/"
+  },
+  "input_file": {
+    "index": [
+      "index.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/manage/dispatchCar2/",
+    "publicPath": "/",
+    "filename": "js/manage_dispatchCar2/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.pug"
+    ]
+  }
+}

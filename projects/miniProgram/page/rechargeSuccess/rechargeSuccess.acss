@@ -1,0 +1,136 @@
+page{
+    background: #fff;
+}
+.container{
+    width:100%;
+    height: 100%;
+}
+.wrap{
+    margin-top: 252rpx;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.icon{
+    width: 120rpx;
+    height: 120rpx;
+    margin-bottom: 32rpx;
+}
+.title{
+    font-family: PingFangSC-Regular;
+    font-size: 34rpx;
+    color: #22252C;
+}
+.desc{
+    font-family: PingFangSC-Regular;
+    font-size: 24rpx;
+    color: #606060;
+    margin-top: 54rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.desc .text{
+    margin-right: 8rpx;
+}
+.desc .icon{
+    width:0;
+    height:0;
+    border-width:0 10rpx 10rpx;
+    border-style:solid;
+    border-color:transparent transparent #606060;
+    position:relative;
+    top: 14rpx;
+}
+.desc .icon.on{
+    width:0;
+    height:0;
+    border-width:10rpx 10rpx 0;
+    border-style:solid;
+    border-color:#606060 transparent transparent;
+    position:relative;
+}
+.list{
+    width:100%;
+    padding: 30rpx;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.list .item{
+    width: 216rpx;
+    min-height: 224rpx;
+    border: 1px solid #B0B2B5;
+    border-radius: 2px;
+    padding-top: 30rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    padding-bottom: 30rpx;
+    margin-right: 16rpx;
+}
+.list .item:last-child{
+    margin-right: 0;
+}
+.list .item .top{
+    flex-direction: column;
+    align-items: center;
+}
+.list .item .title{
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #111111;
+    margin-bottom: 20rpx;
+    text-align: center;
+}
+.list .item .money{
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #ED3800;
+    margin-bottom: 12rpx;
+}
+.list .item .label{
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #999999;
+}
+.btn{
+    width: 100%;
+    position: fixed;
+    left:0;
+    bottom: 0;
+    padding: 20rpx;
+}
+.btn .btnTxt{
+    height: 92rpx;
+    background: #494B51;
+    border-radius: 2px;
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 92rpx;
+}
+.lui-animation-slide-up{
+    animation: slideUp ease .3s forwards;
+}
+.lui-animation-slide-down{
+    animation: slideDown ease .3s forwards;
+}
+@keyframes slideUp{
+    from{
+        transform: translateY(100%)
+    }
+    to{
+        transform: translateY(0)
+    }
+}
+@keyframes slideDown{
+    from{
+        transform: translateY(0)
+    }
+    to{
+        transform: translateY(100%)
+    }
+}

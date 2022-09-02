@@ -1,0 +1,15 @@
+//- Created by garvey on 2018/1/8.
+-require('./index.less')
+.LikeTimePicker
+    .mask.animated.fast.fadeIn
+    .selectBox.animated.fast.zoomIn
+        .header
+            each k,index in options
+                .tab(data-id=index) #{k.name}
+        .options
+            .border
+            .swiper-container
+                .swiper-wrapper
+        .btn_con
+            a(href="javascript:void(0)").white_btn#cancel 取消
+            a(href="javascript:void(0)").white_btn.red#submit 确定

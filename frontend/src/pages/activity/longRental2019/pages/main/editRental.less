@@ -1,0 +1,567 @@
+.icon() {
+  width: 0.2rem;
+  height: 0.2rem;
+  background: no-repeat center;
+  background-size: 100%;
+}
+
+html {
+  background: #F5F5F5;
+}
+
+.EditRental {
+  .float-right{
+    float:right
+  }
+  .tips {
+    padding: 0.05rem 0.15rem;
+    background-color: #FEFED9;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    top: 0;
+    z-index: 20;
+    line-height: 0.2rem;
+
+    &.hidden {
+      display: none;
+    }
+
+    span {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .icon_suona {
+      .icon();
+      background-image: url('../../images/icon_suona.png');
+      margin-right: 0.5em;
+    }
+
+    .icon_close_red {
+      .icon();
+      background-image: url('../../images/icon_close_red.png');
+      background-size: 60%;
+      float: right;
+    }
+  }
+
+  .insurance-switch {
+    padding-right: 0.32rem;
+    background: url('../../images/switch_false.png') no-repeat right center;
+    background-size: auto 80%;
+
+    &.active {
+      background-image: url('../../images/switch_true.png');
+    }
+  }
+
+  .editContent {
+    padding-bottom: .8rem;
+    .carInfo {
+      height: 1.1rem;
+      background: #f4f4f4;
+      padding: .25rem .12rem 0 .21rem;
+      box-sizing: border-box;
+
+      .desc {
+        float: left;
+
+        .name {
+          padding-top: .12rem;
+          font-size: 14px;
+          color: #333;
+          line-height: 1;
+        }
+
+        .price {
+          // padding-top: .07rem;
+          font-size: 14px;
+          line-height: 0.24rem;
+          // margin-left: -1px;
+        }
+      }
+
+      .img {
+        float: right;
+        width: 1.27rem;
+      }
+
+      .p{
+        font-size: 9px;
+        color: #aaaaaa;
+        float: left;
+        clear: both;
+        margin-top: -.05rem;
+        border: 1px solid #f18e7f;
+        padding: .02rem .03rem;
+        background: #f8eeec;
+        color: #e92000;
+        margin-top: .05rem;
+        border-radius: .02rem;
+      }
+    }
+
+    .ChooseAddress {
+      background: #FFF;
+      box-sizing: border-box;
+      padding: .18rem .21rem .18rem;
+      padding-top: .15rem;
+      border-bottom: 1px solid #F5F5F5;
+      padding-bottom: .15rem;
+
+      .branch_select {
+        .point {
+          line-height: 0.21rem;
+          position: relative;
+
+          &::after {
+            content: '';
+            right: 0;
+            top: 0;
+            position: absolute;
+            width: 0.11rem;
+            height: 0.2rem;
+            background: url('../../images/icon_rightArrow_2.png') no-repeat center;
+            background-size: 100%;
+          }
+
+          .label {
+            position: absolute;
+            width: 5em;
+            top: 0;
+            left: 0;
+            font-size: 14px;
+            color: #111;
+            padding-left: .15rem;
+          }
+
+          .labelRed {
+            background: url('../../images/point_icon1.png') no-repeat left center;
+            background-size: 12px 13px;
+          }
+
+          .labelGre {
+            background: url('../../images/point_icon2.png') no-repeat left center;
+            background-size: 12px 13px;
+          }
+
+          .point_name {
+            text-align: right;
+            margin-left: 5em;
+            margin-right: 0.18rem;
+            font-size: 14px;
+            // color: #999;
+          }
+          .dark{
+            color: #999;
+          }
+        }
+      }
+    }
+
+    .getprice {
+      background: #FFF;
+      box-sizing: border-box;
+      padding: .15rem .2rem .15rem;
+      line-height: 0.2rem;
+      margin-top: .12rem;
+      border-bottom: 1px solid #F5F5F5;
+
+      div {
+        padding-bottom: .15rem;
+        // position: relative;
+       .item {
+          float: right;
+        }
+        .insuranceStyle{
+          padding-right: .35rem;
+        }
+        .redColor {
+          float: none;
+          color: #EC0000
+        }
+
+        .redColor2 {
+          float: none;
+          color: #E90000;
+        }
+
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
+
+      .goExplains {
+        color: #999;
+        padding-right: .2rem;
+        background: url('../../images/goExplains.png') no-repeat right center;
+        background-size: 13px 13px;
+        &.androidbg2{
+          background-position: right 0;
+        }
+      }
+    }
+
+    .depositWrap {
+      background: #FFF;
+      box-sizing: border-box;
+      padding: .15rem .22rem;
+
+      span {
+        float: right;
+        padding-left: .68rem;
+        background: url('../../images/deposit_icon.png') no-repeat left center;
+        background-size: 58px 13px;
+      }
+    }
+
+    .toPay {
+      position: fixed;
+      bottom: 0;
+      padding: .06rem .1rem .06rem .2rem;
+      width: 100%;
+      box-sizing: border-box;
+      background: #FFF;
+      display: flex;
+      align-items: center;
+
+      div {
+        flex: 1;
+
+        span {
+          font-size: 25px;
+          color: #e92000;
+        }
+      }
+
+      .PayBtn {
+        color: #FFF;
+        padding: .15rem .3rem;
+        background: #e92000;
+        font-size: 16px;
+
+        &.disabled {
+          background: #e9e9e9;
+          border-radius: 2px;
+          color: #cecece;
+        }
+      }
+    }
+  }
+
+  .car_info {
+    position: relative;
+    padding-bottom: 0.1rem;
+
+    .desc {
+      padding: 0.05rem 0;
+      box-sizing: border-box;
+      height: 0.6rem;
+      color: #333;
+
+      .name {
+        line-height: 0.3rem;
+      }
+
+      .price {
+        line-height: 0.2rem;
+        color: #999;
+
+        .money {
+          color: #333;
+        }
+      }
+    }
+
+    .img {
+      position: absolute;
+      right: 0;
+      top: 0.05rem;
+      height: 0.6rem;
+    }
+  }
+
+  .time_parent {
+    padding-bottom: 0;
+  }
+
+  .time_select {
+    height: 0.46rem;
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 0.32rem;
+      height: 1px;
+      position: absolute;
+      background-color: #999;
+      left: 50%;
+      top: 50%;
+      margin-left: -0.16rem;
+    }
+
+    .empty_time {
+      color: #ED3800;
+      line-height: 0.46rem;
+      width: 40%;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      &:nth-of-type(2) {
+        left: auto;
+        right: 0;
+        text-align: right;
+      }
+    }
+
+    .time_con {
+      margin-top: 0.06rem;
+      width: 7em;
+      position: absolute;
+      line-height: 0.20rem;
+      top: 0;
+      left: 0;
+
+      &:nth-of-type(2) {
+        left: auto;
+        right: 0;
+      }
+    }
+
+    .dura {
+
+      text-align: center;
+      color: #ff9500;
+      line-height: 0.16rem;
+      top: 0.08rem;
+      position: absolute;
+      width: 4em;
+      left: 50%;
+      margin-left: -2em;
+    }
+  }
+}
+
+.ChooseTime {
+  background: #FFF;
+  box-sizing: border-box;
+  padding: .16rem .38rem .16rem .29rem;
+  margin-bottom: .1rem;
+  display: flex;
+  font-size: 14px;
+
+  .duration {
+    text-align: center;
+    background: url('../../images/datePicker_bar.png') no-repeat bottom center;
+    background-size: auto 0.03rem;
+
+    .day {
+      color: #fff;
+      vertical-align: top;
+      display: inline-block;
+      transform: translateY(-0.04rem);
+      border-radius: 4px;
+      padding: 0 5px;
+      background-color: #e92000;
+    }
+  }
+
+  div {
+    &:nth-child(1) {
+      span {
+        color: #77C72E
+      }
+    }
+
+    &:nth-child(2) {
+      flex: 1;
+    }
+
+    &:nth-child(3) {
+      span {
+        color: #E92000
+      }
+    }
+  }
+}
+
+.longRental-date-picker {
+  position: fixed;
+  width: 100vw;
+  min-height: 100vh;
+  top: 0;
+  background: #f9f9f9;
+
+  .calendar-box {
+    background: #fff;
+
+    .month {
+
+      text-align: center;
+      font-weight: 600;
+      padding: 0.1rem 0;
+    }
+
+    .week {
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .week, .days {
+      display: flex;
+      flex-wrap: wrap;
+
+      & > div {
+        text-align: center;
+        width: 14.2857%;
+        box-sizing: border-box;
+      }
+    }
+
+    .days {
+      margin: 0.07rem 0;
+    }
+
+    .date-box {
+      padding: 0.03rem 0;
+      margin: 0.06rem 0;
+      font-size: 15px;
+      color:#333;
+      border:solid 1px transparent;
+      &.holiday{
+        color:#e92000;
+      }
+      &.selected{
+        border-top:solid 1px #dedede;
+        border-bottom: solid 1px #dedede;
+        background: #f4f4f4;
+      }
+
+      &.get{
+        border-radius:2px 0 0 2px;
+        border-left:solid 1px #dedede;
+      }
+      &.end{
+        border-radius:0 2px 2px 0;
+        border-right:solid 1px #dedede;
+      }
+
+      .day{
+        position: relative;
+        .float-flag{
+          position: absolute;
+          font-size: 12px;
+          color:#fff;
+          border-radius: 50%;
+          width: 0.18rem;
+          line-height: 0.18rem;
+          text-align: center;
+          top:0;
+          margin-top:-0.1rem;
+          &.end{
+            right:-1px;
+            background-color: #e92000;
+          }
+          &.get{
+            left:-1px;
+            background-color: #77c72e;
+          }
+        }
+      }
+
+
+      .holiday-box{
+        width: 0.06rem;
+        height: 0.06rem;
+        border-radius: 50%;
+        margin:0 auto;
+        &.active{
+          background-color: #e92000;
+        }
+      }
+
+      .price{
+        font-size: 12px;
+        color:#999;
+      }
+    }
+
+    .cal-tips{
+      font-size: 13px;
+      line-height: 0.2rem;
+      padding-bottom: 0.1rem;
+      color:#666;
+      display: flex;
+      &>div{
+        margin:0.12rem
+      }
+
+      .selected{
+        display: inline-block;
+        vertical-align: top;
+        margin:0.03rem 0.05rem 0.03rem 0;
+        width: 0.14rem;
+        height: 0.14rem;
+        box-sizing: border-box;
+        border-radius: 50%;
+        border:solid 1px #dedede;
+        background: #f4f4f4;
+      }
+
+      .holiday{
+        display: inline-block;
+        vertical-align: top;
+        margin:0.07rem 0.05rem 0.07rem 0;
+        width: 0.06rem;
+        height: 0.06rem;
+        box-sizing: border-box;
+        border-radius: 50%;
+        background-color: #e92000;
+      }
+    }
+  }
+
+  .cal-tips2{
+    padding: 0.15rem 0 0.8rem;
+    font-size: 13px;
+    color:#999;
+    text-align: center;
+  }
+
+  .btn-con{
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    box-sizing: border-box;
+    height: 0.6rem;
+    padding: 0.1rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color:#999;
+
+    .total{
+      line-height: 0.4rem;
+    }
+    .day,.day-text{
+      color:#333;
+    }
+    .day{
+      font-size: 20px;
+    }
+    .btn{
+      font-size: 16px;
+      width: 1.2rem;
+      line-height: 0.4rem;
+      color:#fff;
+      background-color: #E92000;
+      text-align: center;
+      border-radius: 2px;
+    }
+  }
+}
+
+

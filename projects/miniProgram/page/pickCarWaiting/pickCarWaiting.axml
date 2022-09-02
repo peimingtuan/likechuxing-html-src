@@ -1,0 +1,93 @@
+<view class="container" >
+    <view class="mapWrap">
+        <map 
+            id="map"
+            style="height:100%"
+            class="mapStyle"
+            markers="{{markers}}" 
+            include-points="{{markers}}"
+            longitude="{{longitude}}" 
+            latitude="{{latitude}}"
+            controls="{{controls}}"
+            onControlTap="controltap"
+            show-location="true">  
+        </map>
+    </view>
+    <view class="box" animation="{{animationInfo}}" >
+        <view class="cardWrap bottomBorder">
+            <view class="cardItem">
+                <view class="cardLeft">
+                    <view class="titleWrap">
+                        <text class="title">{{info.plate_no}}</text>
+                        <view class="titleLabelWrap" a:if="{{info.is_limit==1}}">
+                            <text class="titleLabel">今日限行</text>
+                        </view>
+                    </view>
+                    <view class="mileageDesc">
+                        <text>{{info.brand_name}}</text>
+                        <text class="circle">·</text>
+                        <text>{{info.model_name}}</text>
+                        <text class="circle">·</text>
+                        <text>{{info.seat_cnt}}</text>
+                    </view>
+                    <view class="priceDesc" a:if="{{info.is_rental_begin==0}}">
+                        <text class="numColor">{{minute}}</text>
+                        <text>后开始计费</text>
+                    </view>
+                    <view class="priceDesc" a:if="{{info.is_rental_begin==1}}" style="{{price_insurance>0?'':'margin-bottom: 9px;'}}">
+                        <text>{{begin_charge_time}}</text>
+                        <text>开始计费</text>
+                        <text class="numColor"> {{info.total_money}} </text>
+                        <text>元</text>
+                    </view>
+                    <view class="sdewDesc" a:if="{{price_insurance>0}}">
+                        <text>不计免赔服务（{{price_insurance}}元/小时）</text>
+                    </view>
+                    <text class="carDetail" data-carInfo="{{info}}" onTap="_goCarDetail">车辆详情 ></text>
+                </view>
+                <view class="cardRight">
+                    <image class="carImg" src="{{info.car_pic}}" mode="aspectFit" />
+                </view>
+            </view>
+        </view>
+        <view class="pickItem">
+            <view class="pickAddress bottomBorder">
+                <text class="address">{{info.begin_branch_name}}</text>
+                <view a:if="{{info.parking_fee_refund!='0.00'}}">
+                    <text>预估停车费</text>
+                    <text class="num">{{info.parking_fee_refund}}元</text>
+                </view>
+            </view>
+            <view class="daohang" onTap="_openLocation"></view>
+        </view>
+        <view class="returnItem bottomBorder" onTap="goReturnCarPage">
+            <text class="address" a:if="{{!info.end_branch_name}}">可还车时选择</text>
+            <text class="address" a:if="{{info.end_branch_name}}">{{info.end_branch_name}}</text>
+            <view a:if="{{info.parking_fee_in!='0.00'}}">
+                <text>还车附加费</text>
+                <text class="num">{{info.parking_fee_in}}元</text>
+                <text></text>
+            </view>
+        </view>
+        <view class="likeBtnWrap">
+            <view class="likeBtn" >
+                <view class="btnItem" onTap="_findCar">
+                    <view class="icon1"></view>
+                    <text>寻车</text>
+                </view>
+                <view class="btnItem" onTap="_driveBtn">
+                    <view class="icon2"></view>
+                    <text>开始用车</text>
+                </view>
+                <view class="btnItem last" onTap="_cancelOrder">
+                    <view class="icon3"></view>
+                    <text>取消订单</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<!-- <view class="loadingBox" a:if="{{!pageIsShow}}">
+    <view class="loadingIcon"></view>
+</view> -->
+

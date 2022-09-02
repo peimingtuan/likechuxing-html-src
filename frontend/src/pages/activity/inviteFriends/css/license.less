@@ -1,0 +1,83 @@
+@import "common/common";
+
+body{
+  background: #F7F7F7 none;
+}
+
+.License {
+  background-color: #F7F7F7;
+  padding: 0 0.15rem;
+}
+
+.header_desc {
+  padding-top: 0.15rem;
+  font-size: 0.12rem;
+  color: #999;
+  text-align: left;
+}
+
+.status_desc {
+
+  font-size: 0.12rem;
+  text-align: left;
+  padding: 0.06rem 0;
+  &.red {
+    color: #ED3800;
+  }
+  &.green {
+    color: #00B400;
+  }
+  &.gray {
+    color: #666;
+  }
+}
+
+.upload_box {
+  height: 1.28rem;
+  background:#f1f1f1 no-repeat center;
+  background-size: contain;
+  margin: 0.15rem 0;
+  position: relative;
+  &.photo_1 {
+    background-image: url('../images/license_default_1.png');
+  }
+  &.photo_2 {
+    background-image: url('../images/license_default_2.png');
+  }
+  &.photo_3 {
+    background-image: url('../images/license_default_3.png');
+  }
+  .desc {
+    text-align: left;
+    font-size: 0.13rem;
+    padding: 0.5em;
+    span {
+      font-size: 0.12rem;
+    }
+  }
+  .camera {
+    position: absolute;
+    right: 0.2rem;
+    top: 50%;
+    margin-top: -0.3rem;
+    width: 0.6rem;
+    height: 0.6rem;
+    color: #333;
+    float: right;
+  }
+}
+
+.btn_con {
+  padding-bottom: 0.15rem;
+  background: #f7f7f7;
+  .sub_btn {
+    width: 100%;
+    height: 0.46rem;
+    font-size: 0.15rem;
+    color: #fff;
+    border:none;
+    &.active{
+      background-color: #111;
+    }
+  }
+}

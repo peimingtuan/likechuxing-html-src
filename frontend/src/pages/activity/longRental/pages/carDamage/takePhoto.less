@@ -1,0 +1,42 @@
+.TakePhoto{
+  padding: 0.15rem 0;
+  .takePhoto{
+    padding: 0 0.2rem;
+  }
+  .photoList{
+    margin:0 -0.08rem;
+    padding: 0.1rem 0;
+    overflow: hidden;
+    .PhotoBox{
+      width: 50%;
+      float: left;
+      .title{
+        text-align: center;
+        line-height: 0.3rem;
+      }
+      .photo_container{
+        position: relative;
+        width: 1.36rem;
+        height: 1.14rem;
+        background:#fffaeb url('../../images/camera.png') no-repeat center;
+        background-size: contain;
+        margin:0 auto;
+        .close{
+          background:url('../../images/close.png') no-repeat center;
+          background-size: 100%;
+          width: 0.2rem;
+          height: 0.2rem;
+          position: absolute;
+          right:-0.1rem;
+          top:-0.1rem;
+          z-index: 10;
+        }
+      }
+      .file{
+        display: none;
+      }
+
+    }
+  }
+
+}

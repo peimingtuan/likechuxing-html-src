@@ -1,0 +1,23 @@
+{
+  "id": 994,
+  "zh_name": "mapSupplyNeed",
+  "name": "mapSupplyNeed",
+  "group": "test",
+  "bundle_vendor": false,
+  "copy": true,
+  "input_file": {
+    "index": [
+      "index.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/test/mapSupplyNeed/",
+    "publicPath": "/",
+    "filename": "js/test_mapSupplyNeed/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.html"
+    ]
+  }
+}

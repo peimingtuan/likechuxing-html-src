@@ -1,0 +1,9 @@
+<view class="container">
+    <view class="icon"></view>
+    <view class="title">
+        <text>立刻还网点说明</text>
+    </view>
+    <view class="desc">
+        <text>此标志为立刻出行非合作网点，您在此取车需正常缴纳停车费</text>
+    </view>
+</view>

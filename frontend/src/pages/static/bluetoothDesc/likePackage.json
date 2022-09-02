@@ -1,0 +1,25 @@
+{
+  "id": 3021,
+  "zh_name": "静态页-蓝牙开关门-LK工单隐私保护说明",
+  "name": "bluetoothDesc",
+  "group": "static",
+  "ver": "1.1.0",
+  "bundle_vendor": false,
+  "copy":true,
+  "input_file": {
+    "index": [
+      "index.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/static/bluetoothDesc/",
+    "publicPath": "/",
+    "filename": "js/static_bluetoothDesc/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.html"
+    ],
+    "importAll":false
+  }
+}

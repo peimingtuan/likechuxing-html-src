@@ -1,0 +1,29 @@
+
+<view class="container">
+    <view class="titleWrap" onTap="go">
+        <text class="title">手机账号登录</text>
+    </view>
+    <view class="formGroup">
+        <input onInput="getPhone" type="number" placeholder="手机号" placeholder-class="placeholderClass"  class="formInput" maxlength=11/>
+    </view>
+    <view class="formGroup">
+        <view class="formLeft">
+            <input onInput="getCode" type="number" placeholder="验证码" placeholder-class="placeholderClass"  class="formRightInput" maxlength=4/>
+        </view>
+        <view class="btn">
+            <view class="btnText">
+                <text a:if="{{!codeIshow}}" class="btnTextClass" onTap="fetchCode">获取验证码</text>
+                <text a:else="{{codeIshow}}" class="btnTextClass">{{count}} s</text>
+            </view>
+        </view>
+    </view>
+    <view class="descBox">
+        <view class="descIcon">
+            <view class="descIconActive"></view>
+        </view>
+        <view class="desc">
+            <text class="descTxt">我已同意</text>
+            <text class="clause" onTap="goLicence">《立刻出行服务条款》</text>
+        </view>
+    </view>
+</view>

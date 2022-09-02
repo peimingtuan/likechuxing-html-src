@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+    <meta content="telephone=no, address=no" name="format-detection">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="no-cache" http-equiv="pragma">
+    <meta content="0" http-equiv="expires">
+    <meta name="full-screen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>出场缴费</title>
+    <script>
+        var htmlBq = document.documentElement;
+
+        function allSize() {
+            var htmlWidth = htmlBq.clientWidth;
+            if (htmlWidth >= 640) {
+                htmlBq.style.fontSize = '40px';
+            } else if (htmlWidth < 640 && htmlWidth >= 320) {
+                htmlBq.style.fontSize = htmlWidth / (640 / 40) + 'px';
+            } else if (htmlWidth < 320) {
+                htmlBq.style.fontSize = '20px';
+            }
+        }
+        allSize();
+        window.onresize = function () {
+            allSize();
+        };
+    </script>
+    <script src="https://g.alicdn.com/dingding/open-develop/1.9.0/dingtalk.js"></script>
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.4&key=91ed10906005ee88866f14fd9f076e8b"></script>
+</head>
+<body class="none">
+<script>
+    !(function(c,b,d,a){c[a]||(c[a]={});c[a].config={pid:"gruqqi6cbp@6594c08d3216a5d",imgUrl:"https://arms-retcode.aliyuncs.com/r.png?"};
+        with(b)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("crossorigin","",src=d)
+    })(window,document,"https://retcode.alicdn.com/retcode/bl.js","__bl");
+</script>
+<div class="cardetail-content">
+    <p>
+        <span class="plate_no inline"></span><br/>
+        <span class="status_name"></span>
+        <span class="remain_km"></span>
+        <span class="brand_name"></span>
+    </p>
+
+    <div class="getnet">
+        <div>
+            取：
+            <img class="mapb" src=""/>
+            <span class="branch_addr inline"></span><br/>
+            <span class="park_fee inline"></span>
+        </div>
+        <img src="" class="daoh1 daoh" />
+    </div>
+    <div class="returnnet none">
+        <div>
+            还：
+            <img class="mapb2" src=""/>
+            <span class="branch_addr2 inline"></span><br/>
+        </div>
+        <img src="" class="daoh2 daoh" />
+    </div>
+</div>
+<div class="payinfo">
+    <p>时长：<span class="span1"></span></p>
+    <p>开始：<span class="span2"></span></p>
+    <p>费用：<span class="span3"></span></p>
+</div>
+<div class="text-content">
+    <p class="p0">
+        凭证类型：<span><input type="radio" class="certificate"  name="certificate" value="1" checked/>发票</span>
+        <span><input type="radio" class="certificate" name="certificate" value="2" />收据</span>
+        <span><input type="radio" class="certificate" name="certificate" value="0" checked/>无</span>
+    </p>
+    <p class="p1">停车费用：<input type="text" value="" class="parkingfee" placeholder="请输入停车费" maxlength="4" />元</p>
+    <!-- 增加费用类型-->
+    <p class="p3">
+        费用类型：
+        <input class="fee-type" type="text" value=""  readonly />
+        <input class="car-feeid" type="hidden" value="" />
+        <span class="righticon">&#xe623;</span>
+    </p>
+    <p class="p2">
+    <textarea class="void_write" placeholder="请填写备注信息,200字以内" maxlength="200">
+</textarea>
+    </p>
+</div>
+<p class="photo-du">请拍摄照片</p>
+<div class="getpicture-content">
+    <div class="left">
+        <div>
+            <input type="hidden" value="" class="image"/>
+            <span class="uploadIcon must">&#xe616;</span>
+            <span class="end-photo none">已上传</span>
+            <span class="check-photo none">查看</span>
+            <span class="swat-photo none must-remove">重拍</span>
+        </div>
+        <p>*车牌号<br/>
+            <span class="parkfee">(产生费用的车辆)</span>
+        </p>
+    </div>
+    <div class="left">
+        <div>
+            <input type="hidden" value="" class="image"/>
+            <span class="uploadIcon must hasicam">&#xe616;</span>
+            <span class="end-photo none">已上传</span>
+            <span class="check-photo none">查看</span>
+            <span class="swat-photo none must-remove">重拍</span>
+        </div>
+        <p>*收费证明</p>
+    </div>
+    <div class="left remove-photo">
+        <div>
+            <input type="hidden" value="" class="image"/>
+            <span class="uploadIcon">&#xe616;</span>
+            <span class="end-photo none">已上传</span>
+            <span class="check-photo none">查看</span>
+            <span class="swat-photo none">重拍</span>
+        </div>
+        <p>临停收费标准</p>
+    </div>
+</div>
+<div class="carsingle-nextbtn">
+    <button>提交</button>
+</div>
+</body>
+</html>

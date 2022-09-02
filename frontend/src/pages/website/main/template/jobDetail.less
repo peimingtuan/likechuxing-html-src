@@ -1,0 +1,110 @@
+.job_details{
+  width: 80%;
+  padding:1rem 0;
+  max-width: 720px;
+  margin: 0 auto;
+  .close{
+    position: relative;
+    width: 4em;
+    cursor: pointer;
+    margin:0.3rem 0;
+    &:hover{
+      text-decoration: underline;
+    }
+    .icon{
+      position: absolute;
+      height: 100%;
+      width:0.15rem;
+      background: url('../images/arrow_left.png') no-repeat center;
+      background-size: auto 70%;
+    }
+    font-size: 0.13rem;
+    text-indent: 0.15rem;
+  }
+  .job_name{
+    margin:0.3rem 0;
+    font-size: 0.184rem;
+  }
+  .requires{
+    margin:0.3rem 0;
+    width: 22em;
+    font-size: 0.11rem;
+    overflow: hidden;
+    li {
+      width: 8em;
+      color:#999;
+      float: left;
+      margin-right: 3em;
+    }
+  }
+  .list{
+    margin:0.3rem 0;
+    .title{
+      color:#999;
+      font-size: 0.1rem;
+    }
+    li{
+      font-size: 0.123rem;
+      margin:0.04rem 0 0.04rem 1em;
+      &::before{
+        content:' · ';
+        display: inline-block;
+        width: 1em;
+        margin-left:-1em
+      }
+    }
+  }
+  .contact{
+    margin:0.06rem 0;
+    font-size:0.11rem;
+    color:#999;
+    span{
+      color:#111;
+      font-size: 0.123rem;
+      font-weight: 300;
+    }
+  }
+}
+
+@media screen and (max-width:496px){
+  .job_details{
+    padding: 0.5rem 0;
+    .close{
+      font-size: 0.14rem;
+    }
+    .job_name{
+      margin:0.2rem 0;
+      font-size: 0.184rem;
+    }
+    .requires{
+      margin:0.2rem 0;
+      font-size: 0.12rem;
+      li {
+        width: 8em;
+        color:#999;
+        float: left;
+        margin-right: 3em;
+      }
+    }
+    .list{
+      margin:0.2rem 0;
+      .title{
+        color:#999;
+        font-size: 0.13rem;
+      }
+      li{
+        font-size: 0.13rem;
+      }
+    }
+    .contact{
+      margin:0.06rem 0;
+      font-size:0.11rem;
+      color:#999;
+      span{
+        color:#111;
+        font-size: 0.123rem;
+        font-weight: 300;
+      }
+    }
+  }
+}

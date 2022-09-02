@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, user-scalable=no"/>
+    <title>兑换记录</title>
+</head>
+<body>
+<ul class="history_list"></ul>
+<div class="loading">
+    <div class="load" data-loader="circle-side"></div>
+    <p>加载中...</p>
+</div>
+<div class="empty">
+    <div class="img"></div>
+    <p>当前暂无兑换记录</p>
+</div>
+<template id="box">
+    <li>
+        <div class="title">$des$<span class="num">$value$</span></div>
+        <div class="des">$code$<span class="time">$time$</span></div>
+    </li>
+</template>
+</body>
+</html>

@@ -1,0 +1,13 @@
+//- Created by garvey on 2017/10/30.
+li.damageBox(data-id=id)
+    .index CarID:#{id}
+    .plate_no #{plate_no + '(' + vin + ')'}
+    ul.part_list
+        each k in parts
+            if k.broken_level == '1'
+                li.parts.important #{k.desc} #{k.report_cnt}
+            else
+                li.parts #{k.desc} #{k.report_cnt}
+    .time 上传时间：#{time}
+
+

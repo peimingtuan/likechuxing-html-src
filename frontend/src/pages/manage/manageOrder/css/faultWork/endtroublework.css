@@ -1,0 +1,162 @@
+.endwork-netname, .endwork-state, .endwork-floor p {
+    padding: .5rem;
+    line-height: 2.3rem;
+    background: #fff;
+}
+
+.endwork-netname input, .endwork-floor input, .endwork-state input {
+    height: 1.2rem;
+    line-height: 1.2rem;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.choice-net {
+    width: 65%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.endwork-floor input::-webkit-input-placeholder, .endwork-netname input::-webkit-input-placeholder,
+.endwork-state input::-webkit-input-placeholder {
+    font-size: .6rem;
+}
+
+.endwork-floor, .endwork-state {
+    margin-top: .5rem;
+}
+
+.endwork-floor p {
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.endwork-netname span:nth-of-type(2), .endwork-state span:nth-of-type(2),
+.endwork-floor p > span:nth-of-type(2) {
+    color: #b7b7b7;
+}
+
+.endwork-icon {
+    font-family: 'iconfont';
+    float: right;
+}
+
+.endworkname-submit {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: .5rem;
+    background: #fff;
+    box-shadow: 0px -2px 1px #eaeaea;
+}
+
+.endworkname-submit button {
+    width: 15rem;
+    line-height: 1.9rem;
+    text-align: center;
+    color: #fff;
+    background: #d1d1d1;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.endworkname-button {
+    background: #333 !important;
+}
+
+/*备注信息样式*/
+.remark-info {
+    margin: .5rem .5rem 3.5rem;
+    width: 15rem;
+    height: 6rem;
+    border: 1px solid gray;
+    position: relative;
+}
+
+.remark-info span {
+    position: absolute;
+    left: -.4rem;
+    top: 0;
+    color: red;
+}
+
+.void_writeinfo {
+    box-sizing: border-box;
+    width: 15rem;
+    height: 6rem;
+    padding: .5rem;
+    outline: none;
+    background: #f7f7f7;
+    border: none;
+    border-radius: 2px;
+}
+
+/*弹框*/
+.common_cover3 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .44);
+    z-index: 100;
+}
+
+.net-content1 {
+    width: 12rem;
+    height: 6rem;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    margin-top: -3rem;
+    margin-left: -6rem;
+    box-sizing: border-box;
+}
+
+.net-content1 .close-icon{
+    display: inline-block;
+    width:1rem;
+    line-height: 1rem;
+    text-align: center;
+    font-family: 'iconfont';
+    position:absolute;
+    right:.2rem;
+    top:.2rem;
+}
+
+.net-content1 .top {
+    padding: 1rem 0;
+    text-align: center;
+    height: 4rem;
+    line-height: 2rem;
+    box-sizing: border-box;
+}
+
+.net-content1 .bottom{
+    box-sizing: border-box;
+    height: 2rem;
+    border-top: 1px solid #ececec;
+}
+
+.net-content1 .bottom span{
+    display: inline-block;
+    width: 6rem;
+    line-height: 1.95rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.net-content1 .qure{
+    color: #65b7ef;
+    border-left: 1px solid #ececec;
+}
+
+.net-content1 .bottom .cance2{
+    width:12rem;
+    color: #65b7ef;
+}

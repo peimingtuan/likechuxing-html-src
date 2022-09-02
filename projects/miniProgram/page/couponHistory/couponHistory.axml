@@ -1,0 +1,20 @@
+<view class="container">
+    <view class="empty" a:if="{{isEmpty}}">
+        <image src="/image/couponEmpty.png" mode="aspectFit"  class="emptyImg"/>
+        <text class="emptyText">暂无历史优惠券</text>
+    </view>
+    <view class="listWrap" a:else="{{!isEmpty}}">
+        <view class="block-item" a:for="{{list}}">
+            <card-item 
+                name="{{item.name}}"
+                case="{{item.case}}"
+                time="{{item.time}}"
+                money="{{item.money}}"
+                numCase="{{item.numCase}}"
+                couponType="{{item.type}}"
+                freeTime="{{item.freeTime}}"
+                status="{{item.status}}"
+            />
+        </view>
+    </view>
+</view>

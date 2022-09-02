@@ -1,0 +1,26 @@
+{
+  "id": 4018,
+  "zh_name": "管理App遗失物品",
+  "name": "manageOrderLostManagement",
+  "group": "manage",
+  "bundle_vendor": false,
+  "copy":true,
+  "dll":[
+    "vuer"
+  ],
+  "input_file": {
+    "index": [
+      "index.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/manage/manageOrderLostManagement/",
+    "publicPath": "/",
+    "filename": "js/manage_manageOrderLostManagement/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.html"
+    ]
+  }
+}

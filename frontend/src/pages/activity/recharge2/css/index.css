@@ -1,0 +1,19 @@
+@import '../../../../css/reset.css';
+html,body{
+    background-color: #e20025;
+}
+.container{
+    position: relative;
+}
+#img{
+    width: 100%;
+}
+
+#btn{
+    opacity: 0;
+    position: absolute;
+    width: 70%;
+    height: 7%;
+    top:86%;
+    left:15%;
+}

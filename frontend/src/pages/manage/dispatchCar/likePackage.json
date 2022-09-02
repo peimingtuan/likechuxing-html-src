@@ -1,0 +1,23 @@
+{
+  "id": 4007,
+  "zh_name": "运维调度车辆数",
+  "name": "dispatchCar",
+  "group": "manage",
+  "bundle_vendor": false,
+  "copy": true,
+  "input_file": {
+    "index": [
+      "index.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/manage/dispatchCar/",
+    "publicPath": "/",
+    "filename": "js/manage_dispatchCar/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.pug"
+    ]
+  }
+}

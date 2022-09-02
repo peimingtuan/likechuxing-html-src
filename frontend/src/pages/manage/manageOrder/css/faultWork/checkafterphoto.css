@@ -1,0 +1,29 @@
+.checkafter-content {
+    padding: 1rem 1.75rem;
+}
+
+.checkafter-content div{
+    display:inline-block;
+}
+
+
+.checkafter-content > div {
+    margin-left:.68rem;
+    margin-bottom: 1rem;
+}
+
+.checkafter-content > div > p {
+    text-align: center;
+    line-height: 2rem;
+}
+
+.checkafter-content > div > div {
+    position: relative;
+    width: 5.2rem;
+    height: 5.2rem;
+    background: #f4f4f4;
+}
+.checkafter-content img{
+    width:5.2rem;
+    height: 5.2rem;
+}

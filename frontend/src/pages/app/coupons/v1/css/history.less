@@ -1,0 +1,44 @@
+@import '../../../../css/font';
+@import '../../../../css/reset.css';
+@import '../../../../component/couponList/coupon';
+
+body{
+  background-color: #f7f7f7;
+}
+
+.wrapper{
+  display: block;
+  overflow: hidden;
+  .text{
+    text-align: center;
+    font-size: 0.12rem;
+    line-height: 34px;
+    color:#999;
+  }
+}
+
+.empty{
+  display: none;
+  position: fixed;
+  top:25%;
+  left:0;
+  width:100%;
+  text-align: center;
+  .img{
+    margin:0 auto;
+    width:60%;
+    height: 1rem;
+    background: url('../images/empty_coupon.png') no-repeat center;
+    background-size: contain;
+  }
+  p{
+    padding-top: 0.1rem;
+    color:#999;
+    font-size: 0.12rem;
+    .check_history_url{
+      color:#333
+    }
+  }
+}
+
+

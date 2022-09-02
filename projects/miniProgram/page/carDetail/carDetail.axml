@@ -1,0 +1,35 @@
+<view class="header">
+    <image class="carImg" src="{{info.car_pic}}" mode="aspectFit" />
+    <view class="desc" a:if="{{info.remain_km}}">
+        <text>续航约</text>
+        <text class="num">{{info.remain_km}}</text>
+        <text>公里</text>
+    </view>
+    <view class="desc">
+        <text class="num">{{info.price_km}}</text>
+        <text>元/公里</text>
+        <text class="num">+ {{info.price_min}}</text>
+        <text>元/分钟</text>
+    </view>
+</view>
+<view class="title">
+    <text>汽车详情</text>
+</view>
+<view class="wrap">
+    <view class="cell">
+        <text class="cellLabel">品牌</text>
+        <text class="cellVal">{{info.brand_name}}{{info.model_name}}</text>
+    </view>
+    <view class="cell">
+        <text class="cellLabel">燃料</text>
+        <text class="cellVal">{{info.power_type}}</text>
+    </view>
+    <view class="cell">
+        <text class="cellLabel">座椅</text>
+        <text class="cellVal">{{info.seat_cnt}}</text>
+    </view>
+    <view class="cell last">
+        <text class="cellLabel">车牌号</text>
+        <text class="cellVal">{{info.plate_no}}</text>
+    </view>
+</view>

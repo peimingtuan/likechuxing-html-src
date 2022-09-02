@@ -1,0 +1,53 @@
+#checkcostinfo{
+    height:100%;
+    background:#f6f6f6;
+}
+
+#checkcostinfo .endwork-netname{
+    padding: .5rem;
+    line-height: 2.3rem;
+    background: #fff;
+}
+
+#checkcostinfo .endwork-netname li{
+    border-top:1px solid #f6f6f6;
+}
+
+#checkcostinfo .choice-net{
+    width:60%;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+
+#checkcostinfo .cost-finshtime{
+    margin-top:.5rem;
+    padding-left:.5rem;
+    line-height:2rem;
+    background:#fff;
+}
+
+#checkcostinfo .cost-photo{
+    margin-top:.5rem;
+    padding-top:.5rem;
+    background:#fff;
+}
+
+#checkcostinfo .cost-photo> p {
+    margin-left:.5rem;
+    width:5.2rem;
+    text-align: center;
+    line-height: 2rem;
+}
+
+#checkcostinfo .cost-photo>div {
+    margin:.5rem;
+    width: 5.2rem;
+    height: 5.2rem;
+    background: #f4f4f4;
+}
+
+#checkcostinfo .cost-photo img{
+    width:5.2rem;
+    height: 5.2rem;
+}

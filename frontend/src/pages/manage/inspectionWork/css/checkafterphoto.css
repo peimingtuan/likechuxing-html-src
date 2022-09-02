@@ -1,0 +1,31 @@
+#checkafterphoto .content {
+    flex-wrap: wrap;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    padding: .234rem .41rem;
+}
+
+#checkafterphoto .content div {
+    display: inline-block;
+}
+
+#checkafterphoto .content > div {
+    margin-bottom: .234rem;
+}
+
+#checkafterphoto .content > div > p {
+    text-align: center;
+    line-height: .468rem;
+}
+
+#checkafterphoto .content > div > div {
+    position: relative;
+    width: 1.22rem;
+    height: 1.22rem;
+    background: #f4f4f4;
+}
+#checkafterphoto .content img{
+    width: 1.22rem;
+    height: 1.22rem;
+}

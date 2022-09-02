@@ -1,0 +1,88 @@
+#recordinspection .show{
+    padding:.05rem;
+    font-size:.12rem;
+    line-height:.234rem;
+    color:#bebebe;
+    margin-bottom:.1rem;
+}
+
+#recordinspection .show img{
+    width:.12rem;
+}
+
+#recordinspection .car-part{
+    margin:0 .12rem;
+}
+
+#recordinspection .last-more{
+    margin-bottom:.8rem;
+}
+
+#recordinspection .car-part .top{
+    text-align: center;
+}
+
+#recordinspection .car-part .top img{
+    width:1.2rem;
+}
+
+#recordinspection .last-more .top img{
+    width:.5rem;
+    height:.01rem;
+}
+
+#recordinspection .car-part .top span {
+    display: inline-block;
+    margin:0 .12rem;
+}
+
+#recordinspection .car-part .content{
+    display:flex;
+    display: -webkit-flex; /* Safari */
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    flex-wrap:wrap;
+}
+
+
+#recordinspection .car-part .content .parts{
+    margin-top:.12rem;
+    margin-left:.09rem;
+    background:#fff;
+    width:1.05rem;
+    height:.8rem;
+    border-radius: 2px;
+}
+
+#recordinspection .parts-text{
+    line-height:.3rem;
+    text-align: center;
+}
+
+#recordinspection .parts-img{
+    text-align: center;
+    line-height: .4rem;
+}
+
+#recordinspection .parts-color{
+    color:#ff9191;
+}
+
+#recordinspection .parts-img img{
+    margin-top:.1rem;
+    width:.3rem;
+}
+
+#recordinspection .abnormal{
+    margin-right:.2rem;
+}
+
+#recordinspection .recall{
+    position:fixed;
+    bottom:.8rem;
+    right:.1rem;
+}
+
+#recordinspection .recall img{
+    width:.468rem;
+}

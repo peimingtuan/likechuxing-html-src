@@ -1,0 +1,206 @@
+#chargepayment .faultpayment-content {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    /*height: 4.8rem;*/
+    padding: .5rem;
+    margin-bottom: .5rem;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+#chargepayment .faultpayment-content span .font1 {
+    color: #999999;
+    margin-right: .1rem;
+}
+
+#chargepayment .faultpayment-content span {
+    display: inline-block;
+    height: 1.2rem;
+    line-height: 1.2rem;
+}
+
+#chargepayment .faultpayment-content span img {
+    width: 1rem;
+    margin-right: .3rem;
+}
+
+#chargepayment .faultpayment-content span:nth-of-type(2) {
+    float: right;
+    color: #999;
+}
+
+#chargepayment .faultpayment-content span:nth-of-type(3) {
+    line-height: 1rem;
+    padding: .1rem;
+    margin-top: .15rem;
+    margin-right: .2rem;
+    border: 1px solid #f6f6f6;
+}
+
+#chargepayment .faultpayment-content span:nth-of-type(4) {
+    line-height: 1rem;
+    padding: .1rem;
+    margin-top: .15rem;
+    margin-right: .2rem;
+    border: 1px solid #f6f6f6;
+}
+
+#chargepayment .faultpayment-content span:nth-of-type(5) {
+    line-height: 1rem;
+    padding: .1rem;
+    margin-top: .15rem;
+    border: 1px solid #f6f6f6;
+}
+
+#chargepayment .carsingle-nextbtn {
+    position: fixed;
+    bottom: 0;
+    width: 16rem;
+    padding: .5rem;
+    background: #fff;
+    box-shadow: 0px -2px 1px #eaeaea;
+}
+
+#chargepayment .carsingle-nextbtn button {
+    width: 15rem;
+    line-height: 1.9rem;
+    text-align: center;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    background: #d1d1d1;
+    box-sizing: border-box;
+}
+
+#chargepayment .submit-btn {
+    background: #333333 !important;
+}
+
+/*输入框样式*/
+#chargepayment .text-content {
+    margin: .5rem;
+}
+
+#chargepayment .text-content .p0 {
+    line-height: 2.1rem;
+}
+
+#chargepayment .text-content .p0 span {
+    display: inline-block;
+    height: 2rem;
+    padding: 0 .3rem;
+}
+
+#chargepayment .text-content .p0 input {
+    margin-right: .2rem;
+}
+
+#chargepayment .text-content .p1 {
+    height: 1.5rem;
+}
+
+#chargepayment .text-content .p2 {
+    margin-top: .5rem;
+    height: 4rem;
+    border: 1px solid gray;
+}
+
+/*增加费用类型*/
+#chargepayment .text-content .p3 {
+    height: 1.5rem;
+}
+
+#chargepayment .text-content .p3 .righticon {
+    font-family: 'iconfont';
+}
+
+#chargepayment .parkingfee, .fee-type {
+    box-sizing: border-box;
+    width: 10rem;
+    border: none;
+    padding-left: .5rem;
+    line-height: 1.4rem;
+    height: 1.4rem;
+    outline: none;
+    border-radius: 2px;
+}
+
+#chargepayment .text-content .void_write {
+    box-sizing: border-box;
+    width: 100%;
+    height: 4rem;
+    padding: .5rem;
+    outline: none;
+    background: #f7f7f7;
+    border: none;
+    border-radius: 2px;
+}
+
+/*拍照样式*/
+#chargepayment .photo-du {
+    line-height: 1.2rem;
+    padding-left: .5rem;
+}
+
+#chargepayment .getpicture-content {
+    padding: .3rem .5rem 2.5rem;
+    height: 7.5rem;
+}
+
+#chargepayment .getpicture-content .left {
+    margin-right: .6rem;
+}
+
+#chargepayment .getpicture-content > div {
+    margin-bottom: 1rem;
+}
+
+#chargepayment .getpicture-content > div > p {
+    text-align: center;
+    line-height: 1rem;
+}
+
+#chargepayment .getpicture-content > div > div {
+    position: relative;
+    width: 4.2rem;
+    height: 4.2rem;
+    background: #f4f4f4;
+}
+
+#chargepayment .parkfee {
+    color: #d1d1d1;
+    font-size: .5rem;
+}
+
+#chargepayment .uploadIcon {
+    font-family: 'iconfont';
+    font-size: 1.38rem;
+    position: absolute;
+    left: 1.41rem;
+    top: 1.41rem;
+}
+
+#chargepayment .end-photo {
+    display: inline-block;
+    position: absolute;
+    left: .95rem;
+    top: .8rem;
+    font-size: .8rem;
+}
+
+#chargepayment .check-photo {
+    display: inline-block;
+    position: absolute;
+    left: .5rem;
+    top: 2.8rem;
+    color: #43aff7;
+}
+
+#chargepayment .swat-photo {
+    display: inline-block;
+    position: absolute;
+    left: 2.6rem;
+    top: 2.8rem;
+    color: #43aff7;
+}

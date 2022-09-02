@@ -1,0 +1,122 @@
+#finshcarwash #container-end {
+    width: 100%;
+    height:2.77rem;
+    margin: 0px;
+}
+
+#finshcarwash .trail {
+    width: 100%;
+    height: 2.77rem;
+    margin: 0px;
+    text-align: center;
+    background: #F6F6F6;
+}
+
+#finshcarwash .trail img {
+    margin-top: .468rem;
+    width: 1.405rem;
+    vertical-align: middle;
+}
+
+#finshcarwash .trail span {
+    font-size: .187rem;
+    color: #999999;
+}
+
+#finshcarwash .center {
+    margin: .12rem auto;
+    width: 1.2rem;
+    height: .094rem;
+    background: #F6F6F6;
+    border-radius: .12rem;
+}
+
+#finshcarwash .content-top {
+    margin: .12rem;
+    line-height: .468rem;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+#finshcarwash .content-top span {
+    font-size: .187rem;
+}
+
+#finshcarwash .content-top .span2 {
+    font-size: .12rem;
+    color: #666666;
+}
+
+#finshcarwash .content {
+    margin: 0 .12rem;
+}
+
+#finshcarwash .content p {
+    position: relative;
+    padding-left: .351rem;
+    line-height: .234rem;
+    margin-bottom: .12rem;
+}
+
+#finshcarwash .content p .span2 {
+    font-size: .12rem;
+    color: #999;
+}
+
+#finshcarwash .content img {
+    position: absolute;
+    left: 0;
+    vertical-align: middle;
+    width: .234rem;
+}
+
+#finshcarwash .door-btn2 {
+    margin: .12rem;
+    height: .468rem;
+}
+
+#finshcarwash .sync-oiler2,#finshcarwash  .open-cardoor2, .close-cardoor2 {
+    display: inline-block;
+    line-height: .351rem;
+    text-align: center;
+    color: #fff;
+    background: #333;
+    width: .937rem;
+    border-radius: .234rem;
+}
+
+#finshcarwash .job-detail2 {
+    font-family: 'iconfont';
+}
+
+#finshcarwash .sync-detail {
+    margin: 0 .12rem 1.05rem;
+}
+
+#finshcarwash .sync-detail font {
+    margin: 0 .07rem;
+}
+
+/*底部按钮*/
+#finshcarwash .content-bottom {
+    display:flex;
+    display: -webkit-flex; /* Safari */
+    justify-content:space-between;
+    position: fixed;
+    bottom: 0;
+    width: 3.75rem;
+    padding: .12rem;
+    background: #fff;
+    box-shadow: 1px -2px 2px #e8e8e8;
+}
+
+#finshcarwash .content-bottom button {
+    width: 1.7rem;
+    line-height: .445rem;
+    text-align: center;
+    /*color: #fff;*/
+    background: #fff;
+    outline: none;
+    border: 1px solid #333;
+    border-radius: 2px;
+    box-sizing: border-box;
+}

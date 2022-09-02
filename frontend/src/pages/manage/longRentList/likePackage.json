@@ -1,0 +1,24 @@
+{
+  "id": 4032,
+  "zh_name": "长租列表",
+  "name": "longRentList",
+  "group": "manage",
+  "ver": "0.0.1",
+  "bundle_vendor": false,
+  "copy":true,
+  "input_file": {
+    "index": [
+      "index.js"
+    ] 
+  },
+  "output_file": {
+    "path": "/dist/manage/longRentList/",
+    "publicPath": "/",
+    "filename": "js/manage_longRentList/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.html"
+    ]
+  }
+}

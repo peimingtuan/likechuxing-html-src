@@ -1,0 +1,33 @@
+<import-sjs from="/sjs/filter.sjs" name="filter" />
+<view class="wrap">
+    <view class="list" a:if="{{!isEmpty}}">
+        <view class="item" a:for="{{list}}" key="{{index}}" data-index="{{index}}" onTap="goDetail">
+            <view class="item-body">
+                <view class="time">
+                    <view class="date">{{filter.timestampToDate(item.time).time}}</view>
+                    <view class="status {{filter.switchClass(item.status)}}">{{item.des}}</view>
+                </view>
+                <view class="car">{{item.model_name}}</view>
+                <view class="desc">
+                    <text>{{filter.numTofixed(item.fee_total)}} 元</text>
+                    <text class="line">|</text>
+                    <text>{{filter.numTofixed(item.distance)}} 公里</text>
+                    <text class="line">|</text>
+                    <text>{{item.total_time}} 分钟</text>
+                </view>
+            </view>
+            <view class="weizhang" a:if="{{item.peccancy_num!=0}}" catchTap="goApp">
+                <view class="icon"></view>
+                <view class="txt">{{item.peccancy_num}}条待处理违章</view>
+            </view>
+        </view>
+    </view>
+    <view a:if="{{loading}}" class="loading">
+        <view class="icon"></view>
+        <view class="text">正在加载更多数据</view>
+    </view>
+    <view class="empty" a:if="{{isEmpty}}">
+        <view class="icon"></view>
+        <view class="des">当前暂无行程</view>
+    </view>
+</view>

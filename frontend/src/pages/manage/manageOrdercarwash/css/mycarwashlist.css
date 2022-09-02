@@ -1,0 +1,80 @@
+/*<!-- 列表样式-->*/
+#mycarwashlist .carwashlistlist li {
+    margin-bottom: .12rem;
+    padding: .12rem;
+    background: #fff;
+}
+
+#mycarwashlist .carwashlistlist li span{
+    display:inline-block;
+}
+
+#mycarwashlist .carwashlistlist li .span1{
+    color: #999999;
+}
+
+#mycarwashlist .carwashlistlist li .font1{
+    font-weight:bold;
+}
+
+#mycarwashlist .carwashlistlist li .span2{
+    padding:0 .12rem;
+    border-radius:2px;
+    border:1px solid #999999;
+}
+
+#mycarwashlist .carwashlistlist li .span3{
+    padding:0 .12rem 0 0;
+    border-right:1px solid #dcdcdc;
+}
+
+#mycarwashlist .carwashlistlist li .span4{
+    padding:0 .12rem;
+    line-height:.35rem;
+}
+
+/*橙色*/
+#mycarwashlist .carwashlistlist li .div1 .span5{
+    border-left:3px solid #feb224;
+    color:#feb224;
+    padding-left:.1rem;
+}
+/*正常*/
+#mycarwashlist .carwashlistlist li .div1 .normal{
+    border-left:3px solid #494b51!important;
+    color:#494b51!important;
+}
+
+#mycarwashlist .carwashlistlist li .net-name{
+    width:3.5rem;
+    color:gray;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+
+#mycarwashlist .carwashlistlist li .div1{
+    border:1px dashed #dcdcdc;
+    padding:.06rem .06rem .06rem 0;
+    background:#fdfdfd;
+}
+
+#mycarwashlist .carwashlistlist li .div1 span{
+    line-height:.2rem;
+}
+
+#mycarwashlist .carwashlistlist li .div1 .span5{
+    border-left:3px solid #feb224;
+    color:#feb224;
+    padding-left:.1rem;
+}
+
+#mycarwashlist .carwashlistlist .div1 .right font{
+    padding:0 .05rem;
+}
+
+#mycarwashlist .carwashlistlist li .div1 .work-time{
+    margin-top:.06rem;
+    line-height:.28rem;
+    padding-left:.1rem;
+}

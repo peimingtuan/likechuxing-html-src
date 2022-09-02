@@ -1,0 +1,57 @@
+@import '../../../css/config';
+.activeCar(){
+  background-color: lighten(@mainColor, 75%);
+  color:@mainColor;
+}
+
+.BranchList{
+  &.hidden{
+    display: none;
+  }
+  ul,li{
+    list-style: none;
+  }
+  .list{
+    border-bottom:solid 1px #dbdbdb;
+    min-height: 290px;
+  }
+  .row{
+    font-size: 14px;
+    padding: 4px 10px;
+    border-bottom:dashed 1px #dbdbdb;
+    position: relative;
+    &.long:hover::after{
+      content: attr(data-name);    //取到data-title属性的值
+      display: inline-block;
+      width:100%;
+      text-align: center;
+      font-size: 12px;
+      line-height: 16px;
+      position: absolute;
+      background-color: #fbeed5;
+      top: -16px;
+      left:0;
+    }
+    &:nth-last-of-type(1){
+      border:none
+    }
+    &:hover{
+      .activeCar()
+    }
+    &.active{
+      .activeCar()
+    }
+    .name{
+      display: inline-block;
+      max-width: 13em;
+      height: 20px;
+      overflow: hidden;
+    }
+    .time{
+      font-size: 13px;
+      color:@whiteBgFont;
+      float: right;
+    }
+  }
+
+}

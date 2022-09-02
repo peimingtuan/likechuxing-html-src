@@ -1,0 +1,10 @@
+<view class="container">
+    <view class="icon"></view>
+    <view class="desc">
+        <text>您的账号已在其他地方登录</text>
+        <text>如需继续使用请重新登录</text>
+    </view>
+    <view class="btn" onTap="reLogin">
+        <text>重新登录</text>
+    </view>
+</view>

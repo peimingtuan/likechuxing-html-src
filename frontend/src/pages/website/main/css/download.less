@@ -1,0 +1,98 @@
+@import './common';
+body{
+  background-color: #f6f8fa;
+}
+
+.banner{
+  background-image: url('../images/banner_3.jpg');
+  .main_download{
+    text-align: center;
+    color:#fff;
+    position: absolute;
+    width: 100%;
+    top: 25%;
+    .slogan{
+      font-size: 0.17rem;
+      text-indent: 1.1em;
+      letter-spacing: 1.1em;
+      color:#fff;
+      opacity: 0.5;
+      font-weight: 100;
+    }
+    .title{
+      font-size: 0.38rem;
+    }
+    img{
+      width: 1.3rem;
+      margin:0.15rem 0.04rem
+    }
+  }
+  .phone{
+    position: absolute;
+    width: 2.2rem;
+    bottom:0;
+    left:50%;
+    margin-left: -1.1rem;
+  }
+}
+
+.app_show{
+  padding: 1rem 0;
+  .animate_container{
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin:7% auto 3%;
+    text-align: right;
+    img{
+      width: 70%;
+      &:nth-of-type(1){
+        filter: drop-shadow(0 0 10px rgba(0,0,0,0.6));
+      }
+      &:nth-of-type(2){
+        position: absolute;
+        right:0;
+        top:0;
+        filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
+      }
+    }
+    &.animate_active{
+      img{
+        transition: all 1s;
+        transition-timing-function: ease-out;
+        &:nth-of-type(1){
+          filter: drop-shadow(25px 35px 10px rgba(0,0,0,0.6));
+        }
+        &:nth-of-type(2){
+          top:-24%;
+          filter: drop-shadow(25px 35px 10px rgba(0,0,0,0.5));
+        }
+      }
+    }
+  }
+  .desc{
+    position: absolute;
+    text-align: left;
+    left:0;
+    top:50%;
+    font-size: 0.27rem;
+    width: 8em;
+  }
+}
+
+@media screen and (max-width:496px){
+  .banner{
+    .phone{
+      width: 2rem;
+      margin-left: -1rem;
+    }
+  }
+  .app_show{
+    .animate_container{
+      .desc{
+        font-size: 0.16rem;
+        top:60%
+      }
+    }
+  }
+}

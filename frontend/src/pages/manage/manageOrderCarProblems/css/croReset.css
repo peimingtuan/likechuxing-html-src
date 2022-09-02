@@ -1,0 +1,47 @@
+a{
+	color:#333;
+}
+input[type=search]{
+	color: #333;
+	border-radius: 0px;
+}
+/*html { height: 100%;overflow-x: hidden;}*/
+body {
+		font-size: 62.5%;
+		 /*line-height: 1;*/
+		 /*font-family: "微软雅黑", Arial, Tahoma, sans-serif;*/
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		-webkit-tap-highlight-color: transparent;
+
+    }
+ input[type="button"], input[type="submit"], input[type="reset"] {-webkit-appearance: none;}
+
+textarea {-webkit-appearance: none;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+ul { list-style: none;}
+
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+strong { font-weight: bold; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+img { border: 0;}
+
+a{ text-decoration:none}
+h1,h2,h3,h4,h5,h6{font-weight:normal; font-size:15px;}
+/*********************改变placeholder样式*********************/
+a:focus,input:focus{
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    /*-webkit-user-modify:read-write-plaintext-only;*/
+}
+input{outline:none;/*去除蓝色边框*/}
+*:focus{outline:none;}
+*, :after, :before{
+	box-sizing: content-box;
+}

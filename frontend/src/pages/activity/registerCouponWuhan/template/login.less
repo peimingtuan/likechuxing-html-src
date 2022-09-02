@@ -1,0 +1,44 @@
+.login{
+  padding:0 0.3rem;
+  button{
+    height:0.4rem;
+    margin:0.05rem 0;
+    font-size: 0.14rem;
+    &#getCode{
+      width:40%;
+      float: right;
+      background-color: #4A4A4A;
+      &.disabled{
+        background-color: #9B9B9B;
+        opacity: 1;
+      }
+    }
+    &#verify{
+      margin-top: 0.1rem;
+      width: 100%;
+      &.disabled{
+        background-color: #DBDBDB;
+        opacity: 1;
+      }
+    }
+  }
+  input{
+    height: 0.4rem;
+    text-indent: 1em;
+    font-size: 0.14rem;
+    font-weight: 400;
+    border:solid 1px #DBDBDB;
+    box-sizing: border-box;
+    margin:0.05rem 0;
+    border-radius: 2px;
+    &:hover{
+      border-color:#111;
+    }
+    &#phone{
+      width:100%
+    }
+    &#code{
+      width: 56%
+    }
+  }
+}

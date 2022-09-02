@@ -1,0 +1,25 @@
+{
+  "id": 3005,
+  "zh_name": "事故取证完成",
+  "name": "afterAccident",
+  "group": "static",
+  "ver": "1.1.0",
+  "bundle_vendor": false,
+  "copy":true,
+  "input_file": {
+    "index": [
+      "index.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/static/afterAccident/",
+    "publicPath": "/",
+    "filename": "js/static_afterAccident/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.pug"
+    ],
+    "importAll":false
+  }
+}

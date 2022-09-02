@@ -1,0 +1,46 @@
+<view class="container">
+    <view class="header">
+        <view>
+            <text class="headerDesc">用车</text>
+            <text class="strong">需要驾驶证、身份证正面照、手持身份证认证照</text>
+        </view>
+        <view>
+             <text class="headerDesc">*立刻出行 承诺对信息进行严格保密</text>
+        </view>
+    </view>
+    <view class="item">
+        <view class="itemHeader">
+            <text class="itemHeaderTitle">驾驶证</text>
+            <text class="itemHeaderSub">(正副本拍一起)</text>
+        </view>
+        <view class="itemBody">
+            <image class="image" src="{{driverLicense}}" mode="aspectFit" />
+            <view class="chooseImageBtn" onTap="chooseDriverLicense"></view>
+        </view>
+    </view>
+    <view class="item">
+        <view class="itemHeader">
+            <text class="itemHeaderTitle">身份证</text>
+            <text class="itemHeaderSub">(正面照)</text>
+        </view>
+        <view class="itemBody">
+            <image class="image" src="{{IDcardImage}}" mode="aspectFit" />
+            <view class="chooseImageBtn" onTap="chooseIDcardImg"></view>
+        </view>
+    </view>
+    <view class="item">
+        <view class="itemHeader">
+            <text class="itemHeaderTitle">手持身份证</text>
+            <text class="itemHeaderSub">(不能挡脸)</text>
+        </view>
+        <view class="itemBody extra">
+            <image class="image" src="{{handelIDcardImage}}" mode="aspectFit" />
+            <view class="chooseImageBtn" onTap="chooseHandleIDcardImg"></view>
+        </view>
+    </view>
+    <view class="footer">
+        <view class="btn {{pass?'btnAvtive':''}}" onTap="postImage">
+            <text class="btnText">提交</text>
+        </view>
+    </view>
+</view>

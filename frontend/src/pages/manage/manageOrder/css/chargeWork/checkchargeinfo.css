@@ -1,0 +1,51 @@
+#checkchargeinfo .endwork-netname{
+    padding: .5rem;
+    line-height: 2.3rem;
+    background: #fff;
+}
+
+#checkchargeinfo .endwork-netname input{
+    height: 1.2rem;
+    line-height: 1.2rem;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+#checkchargeinfo .choice-net{
+    width:65%;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+
+#checkchargeinfo .endwork-netname span:nth-of-type(2){
+    color: #b7b7b7;
+}
+
+#checkchargeinfo .charge-style{
+    margin-top:.5rem;
+    background: #fff;
+}
+
+#checkchargeinfo .charge-style .top{
+    padding:0 .5rem;
+    height:2rem;
+    border-bottom:1px solid #dcdcdc;
+}
+
+#checkchargeinfo .charge-style .top span {
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    margin-right: 1rem;
+    margin-top: .5rem;
+}
+
+#checkchargeinfo .charge-style .top input {
+    margin-right: .2rem;
+    margin-left: .3rem;
+    width: .8rem;
+    height: .8rem;
+    position: relative;
+    top: .2rem;
+}

@@ -1,0 +1,130 @@
+.container{
+    padding-top: 76rpx;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    text-align: center;
+}
+.title{
+    font-family: PingFangSC-Regular;
+    font-size: 40rpx;
+    color: #22252C;
+}
+.subWrap{
+    vertical-align: center;
+    font-weight: 700;
+    margin-top: 20rpx;
+}
+.subText{
+    font-family: PingFangSC-Regular;
+    font-size: 58rpx;
+    color: #000;
+}
+.subTextNum{
+    font-family: PingFangSC-Regular;
+    font-size: 58rpx;
+    color:#da314c;
+}
+.share_btn{
+    opacity:0;
+    width: 120rpx;
+    height: 140rpx;
+    display: block;
+    margin:-140rpx auto;
+}
+.icon{
+    height: 360rpx;
+    background: url('/image/hongbao.png') no-repeat center center;
+    background-size: auto 100%;
+    margin-bottom: 40rpx;
+    margin-top: 20rpx;
+}
+.desc{
+    margin-bottom: 20rpx;
+}
+.code{
+    display: inline-block;
+    padding-left: 28rpx;
+    padding-right: 28rpx;
+    padding-top: 10rpx;
+    padding-bottom: 10rpx;
+    background: #E3E3E3;
+    border-radius: 200rpx;
+    margin-bottom: 92rpx;
+}
+.codeText{
+    font-family: PingFangSC-Regular;
+    font-size: 34rpx;
+    color: #22252C;
+}
+.descText{
+    font-family: PingFangSC-Regular;
+    font-size: 28rpx;
+    color: #5F626B;
+}
+.footerHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40rpx;
+}
+.footerTitle{
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+    font-family: PingFangSC-Regular;
+    font-size: 22rpx;
+    color: #5F626B;
+    letter-spacing: 0;
+}
+.leftLine{
+    width:120rpx;
+    height:1px;
+    background: rgba(151,151,151,0.5);
+    transform: scaleY(0.5)
+}
+.rightLine{
+    width:120rpx;
+    height:1px;
+    background: rgba(151,151,151,0.5);
+    transform: scaleY(0.5)
+}
+.content{
+    margin-top:20rpx;
+}
+.p{
+    margin-bottom:20rpx;
+}
+.desc{
+    font-family: PingFangSC-Regular;
+    font-size: 24rpx;
+    color: #22252C;
+    line-height: 36rpx;
+}
+.alipayIconWrap{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.alipayIcon{
+    width:90rpx;
+    height: 90rpx;
+}
+.alipaySub{
+    font-family: PingFangSC-Regular;
+    font-size: 24rpx;
+    color: #22252C;
+    margin-top: 14rpx;
+}
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 40rpx;
+    text-align: center;
+}
+.footerDesc{
+    font-family: PingFangSC-Regular;
+    font-size: 22rpx;
+    color: #5d7baf;
+    letter-spacing: 0;
+}

@@ -1,0 +1,17 @@
+//- Created by garvey on 2018/3/12.
+-require('./index.less')
+.AreaSelect.animated.fast.fadeIn
+    .mask
+    .selectBox.animated.fast.slideInUp
+        .header
+            p.title 所在区域
+            .close
+        ul.switch.clearfix
+            li.item.lv0.active(data-lv=0) 请选择
+            li.item.lv1(data-lv=1) 城市
+            li.item.lv2(data-lv=2) 区/县
+        .select-container
+            ul.select.lv0
+            ul.select.lv1
+            ul.select.lv2
+

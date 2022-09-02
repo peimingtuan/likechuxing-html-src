@@ -1,0 +1,93 @@
+#addcarwashcost .cost-list li{
+    padding:0 .12rem;
+    line-height: .484rem;
+    background: #fff;
+}
+
+#addcarwashcost .cost-list li:first-of-type{
+    border-top:1px solid #f6f6f6;
+    margin-bottom:.12rem;
+}
+
+#addcarwashcost .cost-list li:not(:first-of-type){
+    border-bottom:1px solid #f6f6f6;
+}
+
+#addcarwashcost .cost-list input{
+    height: .281rem;
+    line-height: .281rem;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    width:2rem;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+
+#addcarwashcost  .wash-addresss{
+    width:2.2rem!important;
+}
+
+#addcarwashcost .cost-list input::-webkit-input-placeholder{
+    font-size: .14rem;
+}
+
+#addcarwashcost .endwork-icon {
+    font-family: 'iconfont';
+    color: #b7b7b7;
+}
+
+#addcarwashcost .cost-photo{
+    padding-top:.12rem;
+    background:#fff;
+    margin-bottom:.82rem;
+}
+
+#addcarwashcost .cost-photo> p {
+    margin-left:.12rem;
+    width:1.22rem;
+    text-align: center;
+    line-height:.468rem;
+}
+
+#addcarwashcost .cost-photo>div {
+    margin:0 .12rem;
+    position: relative;
+    width: 1.22rem;
+    height: 1.22rem;
+    background: #f4f4f4;
+}
+
+#addcarwashcost .uploadIcon {
+    font-family: 'iconfont';
+    font-size:.323rem;
+    position: absolute;
+    left: .447rem;
+    top: .447rem;
+}
+
+#addcarwashcost .end-photo{
+    display:inline-block;
+    position:absolute;
+    left: .34rem;
+    top: .304rem;
+    font-size: .187rem;
+}
+
+#addcarwashcost .check-photo{
+    display:inline-block;
+    position:absolute;
+    left: .234rem;
+    top: .773rem;
+    color:#43aff7;
+}
+
+#addcarwashcost .swat-photo{
+    display:inline-block;
+    position:absolute;
+    left: .73rem;
+    top: .773rem;
+    color:#43aff7;
+}
+

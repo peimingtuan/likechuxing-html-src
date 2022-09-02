@@ -1,0 +1,32 @@
+import './js/rem'
+
+import Vue from 'vue'
+import './css/reset.css'
+import App from './app.vue'
+import router from './router'
+import store from './store/index.js'
+
+import MintUI from 'mint-ui'
+import 'mint-ui/lib/style.css'
+Vue.use(MintUI)
+
+import VueScroller from 'vue-scroller'
+Vue.use(VueScroller)
+
+import preview from 'vue-photo-preview'
+import 'vue-photo-preview/dist/skin.css'
+Vue.use(preview)
+
+import Loading from './components/loading/index.js'
+Vue.use(Loading)
+// require('../../../component/vconsole')
+
+import waterMark from '../../../../other_modules/like-manageOrder/waterMark'
+waterMark({watermark_txt: sessionStorage.getItem('userName') + '-' + sessionStorage.getItem('mobile')});
+
+new Vue({
+  el:"#app",
+  router,
+  store,
+  render: c => c(App)
+});

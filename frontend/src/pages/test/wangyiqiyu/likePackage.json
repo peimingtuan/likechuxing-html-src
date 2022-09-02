@@ -1,0 +1,23 @@
+{
+  "id": 993,
+  "zh_name": "wangyiqiyu",
+  "name": "wangyiqiyu",
+  "group": "test",
+  "bundle_vendor": false,
+  "copy": false,
+  "input_file": {
+    "index": [
+      "index.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/test/wangyiqiyu/",
+    "publicPath": "/",
+    "filename": "js/test_wangyiqiyu/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.html"
+    ]
+  }
+}

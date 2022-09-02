@@ -1,0 +1,26 @@
+{
+    "id": 2025,
+    "zh_name": "铂涛旅行合作领券活动",
+    "name": "boTaoActivity",
+    "group": "activity",
+    "bundle_vendor": true,
+    "copy": true,
+    "input_file": {
+      "index": [
+        "index.js"
+      ]
+    },
+    "dll":[
+        "vue"
+    ],
+    "output_file": {
+      "path": "/dist/activity/boTaoActivity/",
+      "publicPath": "/",
+      "filename": "js/activity_boTaoActivity/[name].js"
+    },
+    "template": {
+      "list": [
+        "index.html"
+      ]
+    }
+  }

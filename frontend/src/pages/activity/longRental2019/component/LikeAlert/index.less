@@ -1,0 +1,127 @@
+@import '../../../../../css/animates';
+@import '../../../../../css/animates/zoomInOut';
+@import '../../../../../css/buttons/button';
+.LikeAlert{
+  position: fixed;
+  z-index: 100;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+
+  .Toast{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom:50%;
+    .msg{
+      display: inline-block;
+      max-width: 78%;
+      min-width: 47%;
+      font-size: 0.15rem;
+      color:#fff;
+      padding: 0.15rem 0.2rem;
+      box-sizing: border-box;
+      border-radius: 2px;
+      background-color: rgba(0,0,0,0.75);
+    }
+  }
+
+  .Mask{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.44);
+  }
+
+  .Alert, .Confirm{
+    .white_btn{
+      color:#333;;
+      border-color:none;
+      background:#e9e9e9;
+      border-radius:2px;
+    }
+    .dark_btn{
+      background-color: none;
+      color: #fff;
+      background:#e90000;
+      border-radius:2px;
+    }
+    .dialogBox {
+      background-color: #FFF;
+      width: 78%;
+      position: absolute;
+      top: 30%;
+      left: 11%;
+      padding: 0.3rem 0.38rem 0.3rem;
+      box-sizing: border-box;
+      border-radius: 2px;
+      color: #494B51;
+      text-align: center;
+      font-size: 0.15rem;
+      line-height: 0.23rem;
+      .activity_header{
+        position: absolute;
+        width: 1.3rem;
+        height: 1rem;
+        // background: url('../../images/alert_header.png') no-repeat center bottom;
+        background-size: 100%;
+        top:-0.94rem;
+        left:50%;
+        margin-left: -0.65rem;
+      }
+      .title { 
+        line-height: 0.3rem; 
+        .login{
+          font-size:16px;
+          color:#e90000;
+          line-height:18px;
+        }
+      }
+      .msg { 
+        margin-top: 0.05rem; 
+        .cancelOrder{
+            font-size:12px;
+            color:#111111;
+            line-height:20px;
+          span{
+            font-size:16px;
+            color:#e90000;
+            line-height:.2rem;         
+          }
+          .hint{
+            color:#e90000;
+            font-size:12px;
+          }
+        }
+        .loginMsg{
+          font-size:12px;
+          color:#111111;
+          line-height:14px;
+        }
+      }
+      .alert_btn_container {
+        height: 0.36rem;
+        padding-top: 0.2rem;
+        button {
+          height: 100%;
+          font-size: 14px;
+          word-break: keep-all;
+          text-align: center;
+          padding: 0;
+        }
+        .btn_row_1 {
+          width: 100%;
+        }
+        .btn_row_2 {
+          width: 46.3%;
+          &:nth-child(1) {
+            float: left
+          }
+          &:nth-child(2) {
+            float: right
+          }
+        }
+      }
+    }
+  }
+}

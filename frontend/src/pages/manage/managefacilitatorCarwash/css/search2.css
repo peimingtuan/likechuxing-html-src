@@ -1,0 +1,107 @@
+#search2 .repair_shop{
+    padding:.12rem;
+    margin-right:.1rem;
+}
+
+#search2 .repair_shop input {
+    height: .4rem;
+    line-height: .4rem;
+    border: none;
+    outline: none;
+    padding: 0;
+    -webkit-appearance: none;
+    width: 3rem;
+    padding-left: .12rem;
+    padding-right: .31rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#search2 .repair_sear {
+    display: inline-block;
+    position: relative;
+}
+
+#search2 .input_clearn {
+    right: .12rem;
+    top: .11rem;
+    position: absolute;
+    width: .18rem;
+}
+
+/*历史记录*/
+#search2 .history_items {
+    z-index: 120;
+    background: #FFFFFF;
+    position: absolute;
+    width: 3.51rem;
+    left: .12rem;
+    border: 1px solid #F0F0F0;
+    overflow: hidden;
+    padding:0 .1rem;
+    box-shadow: 1px 2px 2px #e8e8e8;
+
+}
+
+#search2 .his_list,#search2 .his_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: -webkit-flex;
+    line-height: 1.1;
+    -webkit-justify-content: space-between;
+    -webkit-align-items: center;
+    /*padding: 0.1rem 0.15rem;*/
+}
+
+#search2 .his_list {
+    border-bottom: 1px solid #ededed;
+    padding: 0.1rem 0;
+    line-height: 1.5;
+    /*margin: 0 0.15rem;*/
+}
+
+#search2 .his_close {
+    /*padding: .1rem .15rem;*/
+    text-align: right;
+    color: #ccc;
+    line-height: 1.5;
+    padding: .1rem 0;
+}
+
+#search2 .delete-icon {
+    font-family: iconfont;
+    width: .468rem;
+    line-height: .468rem;
+    font-size: .18rem;
+    display: inline-block;
+    text-align: center;
+}
+
+#search2 .his_clearn {
+    display: inline-block;
+    width: .14rem;
+    height: .14rem;
+}
+
+#search2 .his_clearn img {
+    width: 100%;
+}
+
+#search2 .history_item {
+    padding: 0.1rem 0;
+    line-height: 1.5;
+    border-bottom: 1px solid #ededed;
+}
+
+#search2 .noSearch {
+    text-align: center;
+    padding: .5rem 0;
+    box-shadow: 1px 2px 2px #e8e8e8;
+    background:#fff;
+}
+
+#search2 .noSearch img {
+    width: 0.5rem;
+}

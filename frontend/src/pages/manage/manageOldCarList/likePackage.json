@@ -1,0 +1,26 @@
+{
+  "id": 4021,
+  "zh_name": "老管理app车辆列表",
+  "name": "manageOldCarList",
+  "group": "manage",
+  "ver": "1.0.0",
+  "bundle_vendor": false,
+  "copy": {
+    "directory": "../../likechuxing-html/manage/",
+    "files": "../../likechuxing-html/manage/"
+  },
+  "input_file": {
+    "carList": ["carList.js"]
+  },
+  "output_file": {
+    "path": "/dist/manage/manageOldCarList/",
+    "publicPath": "/",
+    "filename": "js/manage_manageOldCarList/[name].js"
+  },
+  "template": {
+    "list": [
+      "carList.html"
+    ],
+    "importAll":true
+  }
+}

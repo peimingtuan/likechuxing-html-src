@@ -1,0 +1,23 @@
+{
+  "id": 2032,
+  "zh_name": "充值返费活动20180821",
+  "name": "recharge",
+  "group": "activity",
+  "bundle_vendor": false,
+  "copy": true,
+  "input_file": {
+    "index": [
+      "index.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/activity/recharge/",
+    "publicPath": "/",
+    "filename": "js/activity_recharge/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.html"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+//- Created by garvey on 2017/12/15.
+include ../../../template/base/h5
+    include ../../../template/head/viewport
+    include ../../../template/head/noTelephone
+    title 收货地址
+body
+    .box.name.fs14
+        label
+            span.word3 收件
+            span 人：
+            input.value#name(type="text")
+        .close
+    .box.phone.fs14
+        label
+            span.word3 手机
+            span 号：
+            input.value#phone(type="text")
+        .close
+    .box.area.fs14
+        label
+            span 所在地区
+            span ：
+            span.value#area
+        .rightArrow
+    .box.address.fs14
+        label.add_label
+            span 详细地址
+            span ：
+            textarea.value#address.fs14
+        .close
+    .btn_con
+        button#submit.disabled.fs16 提交

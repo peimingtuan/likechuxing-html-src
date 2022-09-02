@@ -1,0 +1,105 @@
+.CarDetail {
+  // padding: 0.15rem 0;
+  .carDetail {
+    // padding: 0 0.2rem;
+    .car_info {
+      position: relative;
+      // padding-bottom: 0.2rem;
+      // margin-bottom: 0.1rem;
+      // border-bottom: none;
+      background: #FFF;
+      padding: .6rem .2rem .5rem;
+      border-bottom: 1px solid #f5f5f5;
+      .desc {
+        // padding: 0.05rem 0;
+        box-sizing: border-box;
+        height: 0.6rem;
+        color: #333;
+        .name {
+          line-height: 0.3rem;
+          font-size:20px;
+          color:#333333;
+          display: flex;
+          align-items: center;
+          .car_guide{
+            width: 0.56rem;
+            height: 0.17rem;
+            border: none;
+            border-radius:2px;
+            font-size:10px;
+            color:#e90000;
+            background: #FFEBEB;
+            padding: 0;
+            margin-left: .05rem;
+            outline: none;
+          }
+        }
+        .price {
+          font-size:16px;
+          color:#666666;
+          .money {
+            color: #333;
+          }
+        }
+      }
+      .img {
+        position: absolute;
+        right: .2rem;
+        top: 0.6rem;
+        width: 1.2rem;
+      }
+    }
+    .branchBox{
+      background: #FFF;
+      padding: .2rem .2rem .5rem;
+      p{
+        &:nth-of-type(1){
+          font-size:12px;
+          color:#999999;
+          padding-bottom: .15rem;
+        }
+        &:nth-of-type(3),&:nth-of-type(4){
+          font-size:12px;
+          color:#111111;
+          padding-bottom: .08rem;
+        }
+      }
+      .branchName{
+        font-size:14px;
+        color:#111111;
+        padding-bottom: .12rem;
+      }
+    }
+    .openBox{
+      padding: .77rem .2rem 0;
+      .link{
+        color:#e90000;
+        margin-top: .28rem;
+        margin-bottom: 0;
+      }
+    }
+  }
+  .branch{
+    .icon.pan{
+      display: inline-block;
+      width: 0.2rem;
+      height: 0.2rem;
+      background: url('../../images/icon_pan.png') no-repeat center;
+      background-size: 70%;
+      vertical-align: top;
+      margin:0 0.05rem
+    }
+    .branchName{
+      margin-top: 0.1rem;
+    }
+    p{
+      line-height: 0.22rem;
+    }
+  }
+  .link{
+    color:#ed3800;
+    text-align: center;
+    margin-top: 0.15rem;
+    margin-bottom: -0.15rem;
+  }
+}

@@ -1,0 +1,128 @@
+page{
+    background: #F2F2F2;
+    padding:20rpx 30rpx;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+}
+.item{
+    background: #fff;
+    margin-bottom: 30rpx;
+    border-radius: 6rpx;
+    position: relative;
+    padding-top: 42rpx;
+}
+.item .item-body{
+     padding:0 64rpx 0 30rpx;
+}
+.item::after{
+    content: '';
+    position: absolute;
+    top: 45rpx;
+    right: 30rpx;
+    width: 14rpx;
+    height: 24rpx;
+    background: url('/image/arrow.png') no-repeat;
+    background-size: 100% 100%;
+}
+.time{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.time .date{
+    font-size: 28rpx;
+    color: #161616;
+}
+.time .status{
+    font-size: 28rpx;
+    color: #D24A26;
+}
+.item .status.cancel{
+    color: #ABABAB;
+}
+.item .status.finish{
+    color: #D24A26;
+    color: #161616;
+}
+.line{
+    margin-left: 16rpx;
+    margin-right: 16rpx;
+}
+.car{
+    font-size: 28rpx;
+    color: #161616;
+    flex: 1;
+    padding-top: 26rpx;
+    margin-bottom: 50rpx;
+}
+.item .desc{
+    font-family: PingFangSC-Regular;
+    font-size: 24rpx;
+    color:#878787;
+    padding-bottom: 36rpx;
+}
+.empty{
+    margin-top: 289rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.empty .icon{
+    width: 165rpx;
+    height: 159rpx;
+    background: url('/image/tripempty.png') no-repeat;
+    background-size: 100% 100%;
+}
+.empty .des{
+    margin-top: 62rpx;
+    font-size: 24rpx;
+    color: #9D9D9D;
+}
+.loading{
+    display: flex;
+    height: 40px;
+    justify-content:center;
+    align-items:center;
+}
+.loading .icon{
+    width: 28rpx;
+    height: 28rpx;
+    background: url('/image/loading.png') no-repeat;
+    background-size: 100% 100%;
+    animation: load 1s linear infinite;
+    margin-right: 10rpx;
+}
+.loading .text{
+    font-size: 26rpx;
+    color: #5B5B5B
+}
+.weizhang{
+    display: flex;
+    align-items: center;
+    height: 33px;
+    position: relative;
+    padding-left: 30rpx;
+}
+.weizhang::before{
+    content: '';
+    height: 1px;
+    width: 100%;
+    transform: scaleY(.5);
+    background: #F2F2F2;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.weizhang .icon{
+    width: 30rpx;
+    height: 30rpx;
+    background: url('/image/weizhangicon.png') no-repeat;
+    background-size:100% 100%;
+    margin-right: 18rpx;
+}
+.weizhang  .txt{
+    font-size: 24rpx;
+    color: #D24A26;
+}

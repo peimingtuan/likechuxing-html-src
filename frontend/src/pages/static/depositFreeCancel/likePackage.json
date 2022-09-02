@@ -1,0 +1,25 @@
+{
+  "id": 3006,
+  "zh_name": "如何取消免押金用车",
+  "name": "depositFreeCancel",
+  "group": "static",
+  "ver": "1.0.0",
+  "bundle_vendor": false,
+  "copy":true,
+  "input_file": {
+    "index": [
+      "index.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/static/depositFreeCancel/",
+    "publicPath": "/",
+    "filename": "js/static_depositFreeCancel/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.pug"
+    ],
+    "importAll":false
+  }
+}

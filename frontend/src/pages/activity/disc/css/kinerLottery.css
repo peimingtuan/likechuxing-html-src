@@ -1,0 +1,289 @@
+@charset "UTF-8";
+
+html {
+    font-size : 20px;
+}
+@media only screen and (min-width: 401px){
+    html {
+        font-size: 25px !important;
+    }
+}
+@media only screen and (min-width: 428px){
+    html {
+        font-size: 26.75px !important;
+    }
+}
+@media only screen and (min-width: 481px){
+    html {
+        font-size: 30px !important;
+    }
+}
+@media only screen and (min-width: 569px){
+    html {
+        font-size: 35px !important;
+    }
+}
+@media only screen and (min-width: 641px){
+    html {
+        font-size: 40px !important;
+    }
+}
+html, body {
+    padding: 0;
+    margin: 0;
+    background: #ffe000;
+    height:43rem;
+}
+
+p,li,b,span,div,strong,h1,h2,h3,h4,h5,h6,a,ul{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.box {
+    width: 14rem;
+    height: 14rem;
+    position: relative;
+    margin: 0 auto;
+    position: absolute;
+    transform: translate(7%,13%);
+    -webkit-transform: translate(7%,13%);
+    -moz-transform: translate(7%,13%);
+    -ms-transform: translate(7%,13%);
+    -o-transform: translate(7%,13%);
+}
+.box .outer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+
+.box .outer img{
+    width: 100%;
+}
+
+.box .inner{
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-image: url(../imgs/lotteryBtn.png);
+    background-size: auto 5rem;
+    background-repeat: no-repeat;
+}
+.box .inner.start:active{
+
+    -webkit-transform: translate(-50%, -50%) scale(.95);
+    -moz-transform: translate(-50%, -50%) scale(.95);
+    -ms-transform: translate(-50%, -50%) scale(.95);
+    -o-transform: translate(-50%, -50%) scale(.95);
+    transform: translate(-50%, -50%) scale(.95);
+}
+
+.box .inner.start{
+    background-position: 0 0;
+}
+.box .inner.no-start{
+    background-position: -5rem 0;
+}
+.box .inner.completed{
+    background-position: -10rem 0;
+}
+.header{
+    width: 100%;
+}
+.header img{
+    width: 100%;
+}
+.gift_boss{
+    width: 100%;
+    height: 1.5rem;
+}
+.gift_box{
+    width: 100%;
+    height: 1.5rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.gift_box li:nth-of-type(1){
+
+}
+.gift_box li:nth-of-type(2){
+
+}
+.gift_box a{
+    font-size: 0.4rem;
+    text-decoration: underline;
+    vertical-align: middle;
+}
+.gift_box_re img{
+    width: 20%;
+}
+.gift_box_gi img{
+    width: 17%;
+}
+.boss{
+    width: 100%;
+    height: 26rem;
+    display: flex;
+    flex-direction: column;
+}
+.prize{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.prize li{
+    margin-top: 0.3rem;
+}
+.prize li:nth-of-type(1){
+    font-size: 0.8rem;
+    color: #ed7048;
+}
+.prize button{
+    font-size: 0.8rem;
+    width: 8.2rem;
+    height: 1.8rem;
+    line-height: 0.8rem;
+    background-color: #ed7048;
+    border: 1px solid black;
+    list-style: none;
+    color: white;
+}
+.popups_box{
+    display: none;
+    z-index: 100;
+    background:url(../imgs/popus.png) no-repeat center top;
+    background-size: 15rem;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 9rem;
+    top: -3rem;
+    /*display: none;*/
+}
+.remove{
+    width: 0.7rem;
+    height: 0.7rem;
+    background:url(../imgs/popups_remove.png)no-repeat center;
+    background-size: 1rem;
+    position: absolute;
+    top: 0.18rem;
+    right: 0.3rem;
+}
+.footer{
+    z-index: 30;
+    position: relative;
+    margin-top: 4.5rem;
+    width: 100%;
+    background: url(../imgs/footer.png)no-repeat center top;
+    /*background-repeat: no-repeat;*/
+    background-size: 14.5rem;
+    height: 12rem;
+    text-align: center;
+	/*display: none;*/
+}
+.loding{
+    z-index: 100;
+    position: absolute;
+    top: 13.5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffe000;
+}
+.loading_cont{
+    display: flex;
+    justify-content: space-around;
+}
+#btn{
+    background-color: black;
+    color: white;
+    width: 5rem;
+    height: 1.4rem;
+    text-align: center;
+    line-height: 1.3rem;
+    border-radius: 13%;
+    list-style: none;
+}
+.log{
+    width: 14rem;
+    height: 2rem;
+    font-size: 0.8rem;
+    color: white;
+    list-style: none;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 1rem;
+    background-color: #e84656;
+    margin-top: 0.3rem;
+}
+.lod_inp{
+    width: 8.5rem;
+    height: 1rem;
+}
+.ap_code{
+    position: absolute;
+    top: 14rem;
+    z-index: 100;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+.ap_code button{
+    font-size: 0.8rem;
+    color: white;
+    background-color: #28a3d8;
+    width: 10rem;
+    height: 2rem;
+    line-height: 2rem;
+    list-style: none;
+}
+/*抽奖机会*/
+.share{
+    z-index: 100;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 14.5rem;
+    align-items: center;
+}
+.share p{
+
+}
+.share button{
+    width: 10rem;
+    height: 2rem;
+    color: white;
+    list-style: none;
+    border: none;
+    background-color:#e84656;
+    line-height: 1rem;
+    font-size: 0.7rem;
+}

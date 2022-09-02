@@ -1,0 +1,292 @@
+page{
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    margin-top: 34rpx;
+    margin-left: 32rpx;
+    font-family: PingFangSC-Light;
+    font-size: 24rpx;
+    color: #999999;
+    line-height: 24rpx;
+}
+.bg{
+    flex: 1;
+    background: url(/image/bg.png) no-repeat;
+    background-size: 100%;
+    position: relative;
+    margin-top: 46rpx;
+}
+.hover{
+    position: absolute;
+    left: 0;
+    top:0;
+    width:100%;
+    height: 100%;
+}
+.area1{
+    background: url(/image/area1.png) no-repeat;
+    background-size: 100%;
+}
+.area2{
+    background: url(/image/area2.png) no-repeat;
+    background-size: 100%;
+}
+.area3{
+    background: url(/image/area3.png) no-repeat;
+    background-size: 100%;
+}
+.area4{
+    background: url(/image/area4.png) no-repeat;
+    background-size: 100%;
+}
+.area5{
+    background: url(/image/area5.png) no-repeat;
+    background-size: 100%;
+}
+.area6{
+    background: url(/image/area6.png) no-repeat;
+    background-size: 100%;
+}
+.area7{
+    background: url(/image/area7.png) no-repeat;
+    background-size: 100%;
+}
+.area8{
+    background: url(/image/area8.png) no-repeat;
+    background-size: 100%;
+}
+.area9{
+    background: url(/image/area9.png) no-repeat;
+    background-size: 100%;
+}
+.area10{
+    background: url(/image/area10.png) no-repeat;
+    background-size: 100%;
+}
+.area11{
+    background: url(/image/area11.png) no-repeat;
+    background-size: 100%;
+}
+.area12{
+    background: url(/image/area12.png) no-repeat;
+    background-size: 100%;
+}
+.area13{
+    background: url(/image/area13.png) no-repeat;
+    background-size: 100%;
+}
+.area14{
+    background: url(/image/area14.png) no-repeat;
+    background-size: 100%;
+}
+.area15{
+    background: url(/image/area15.png) no-repeat;
+    background-size: 100%;
+}
+.area16{
+    background: url(/image/area16.png) no-repeat;
+    background-size: 100%;
+}
+.area17{
+    background: url(/image/area17.png) no-repeat;
+    background-size: 100%;
+}
+.area18{
+    background: url(/image/area18.png) no-repeat;
+    background-size: 100%;
+}
+.area19{
+    background: url(/image/area19.png) no-repeat;
+    background-size: 100%;
+}
+/* 点击区域 */
+.handleArea{
+    position: absolute;
+}
+.handleArea1{
+    width: 168rpx;
+    height: 170rpx;
+    left: 38%;
+    top: 0;
+}
+.handleArea2{
+    width: 140rpx;
+    height: 110rpx;
+    left: 40%;
+    top: 200rpx;
+}
+.handleArea3{
+    width: 105rpx;
+    height: 144rpx;
+    left: 42%;
+    top: 380rpx;
+}
+.handleArea4{
+    width: 142rpx;
+    height: 42rpx;
+    left: 40%;
+    top: 584rpx;
+}
+.handleArea5{
+    width: 165rpx;
+    height: 169rpx;
+    left: 38%;
+    top: 670rpx; 
+}
+.handleArea6{
+    width: 37rpx;
+    height: 42rpx;
+    left: 36%;
+    top: 340rpx;
+}
+.handleArea6label{
+    width: 112rpx;
+    height: 42rpx;
+    left: 20%;
+    top: 42rpx;
+}
+.handleArea7{
+    width: 37rpx;
+    height: 42rpx;
+    left: 58%;
+    top: 340rpx;
+}
+.handleArea7label{
+    width: 112rpx;
+    height: 42rpx;
+    left: 63%;
+    top: 42rpx;
+}
+/* 左前叶子板 */
+.handleArea8label{
+    width: 135rpx;
+    height: 42rpx;
+    left: 3%;
+    top: 135rpx;
+}
+.handleArea8{
+    width: 50rpx;
+    height: 127rpx;
+    left: 23%;
+    top: 203rpx;
+}
+.handleArea9{
+    width: 150rpx;
+    height: 67rpx;
+    left: 3%;
+    top: 237rpx;
+}
+.handleArea10{
+    width: 187rpx;
+    height: 84rpx;
+    left: 3%;
+    top: 330rpx; 
+}
+.handleArea11{
+    width: 187rpx;
+    height: 84rpx;
+    left: 3%;
+    top: 415rpx;
+}
+.handleArea12{
+    width: 150rpx;
+    height: 67rpx;
+    left: 3%;
+    top: 500rpx;
+}
+/* 左后叶子板 */
+.handleArea13label{
+    width: 135rpx;
+    height: 42rpx;
+    left: 3%;
+    top: 635rpx;
+}
+.handleArea13{
+    width: 45rpx;
+    height: 127rpx;
+    left: 23%;
+    top: 508rpx;
+}
+/* 右前叶子板 */
+.handleArea14label{
+    width: 135rpx;
+    height: 42rpx;
+    left: 77%;
+    top: 135rpx;
+}
+.handleArea14{
+    width: 50rpx;
+    height: 127rpx;
+    left: 70%;
+    top: 203rpx;
+}
+.handleArea15{
+    width: 150rpx;
+    height: 67rpx;
+    left: 76%;
+    top: 237rpx;
+}
+.handleArea16{
+    width: 187rpx;
+    height: 84rpx;
+    left: 70%;
+    top: 330rpx;
+}
+.handleArea17{
+    width: 187rpx;
+    height: 84rpx;
+    left: 70%;
+    top: 415rpx;
+}
+.handleArea18{
+    width: 150rpx;
+    height: 67rpx;
+    left: 77%;
+    top: 500rpx;
+}
+/* 右后叶子板 */
+.handleArea19label{
+    width: 135rpx;
+    height: 42rpx;
+    left: 77%;
+    top: 635rpx;
+}
+.handleArea19{
+    width: 45rpx;
+    height: 127rpx;
+    left: 70%;
+    top: 508rpx;
+}
+.footer{
+    height: 160rpx;
+    padding-left: 60rpx;
+    padding-right: 60rpx;
+    margin-bottom: 50rpx;
+    display: flex
+}
+.footer .scrollBox{
+    flex:1;
+    height: 160rpx;
+}
+.footer .scrollBox .swiper{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.footer .scrollBox .swiper .swiper-item{
+    width:176rpx;
+    height: 160rpx;
+    border: 1px solid #ECECEC;
+}
+.itemImg{
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,49 @@
+{
+  "id": 4004,
+  "zh_name": "管理App验车单",
+  "name": "checkDamageOrder",
+  "group": "manage",
+  "ver": "1.0.0",
+  "lastUpdateTime": "2017-10",
+  "lastUpdateDesc": "1.0.0",
+  "bundle_vendor": true,
+  "copy": {
+    "directory": "../../likechuxing-html/manage/",
+    "files": "../../likechuxing-html/manage/checkDamageOrder/"
+  },
+  "input_file": {
+    "index": [
+      "index.js"
+    ],
+    "list": [
+      "list.js"
+    ],
+    "damageDetail": [
+      "damageDetail.js"
+    ],
+    "checkDamageOrderHistory": [
+      "checkDamageOrderHistory.js"
+    ],
+    "operationList": [
+      "operationList.js"
+    ],
+    "dealDamage": [
+      "dealDamage.js"
+    ]
+  },
+  "output_file": {
+    "path": "./dist/manage/checkDamageOrder/",
+    "publicPath": "/",
+    "filename": "js/manage_checkDamageOrder/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.pug",
+      "list.pug",
+      "damageDetail.pug",
+      "checkDamageOrderHistory.pug",
+      "operationList.pug",
+      "dealDamage.pug"
+    ]
+  }
+}

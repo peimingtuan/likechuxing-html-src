@@ -1,0 +1,61 @@
+@import '../css/reset.css';
+
+@lineheight:24px;
+
+header{
+  height: 1.2rem;
+  background: #f2f2f2 url('./images/header.jpg') no-repeat center;
+  background-size: 100%;
+}
+
+.content{
+  font-size: 14px;
+  color:#999;
+  padding: 0 0.2rem 0.5rem;
+  line-height: @lineheight;
+
+  >.detail{
+    padding: 0.2rem 0;
+    .title{
+      font-size: 15px;
+      font-weight: 500;
+    }
+  }
+
+  .step-box{
+    padding: 0.1rem 0;
+    .title{
+      margin: 0.1rem 0;
+      font-size: 18px;
+      color:#111;
+      position: relative;
+      .index{
+        font-size: 14px;
+        position: absolute;
+        display: block;
+        color:#fff;
+        text-align: center;
+        background-color: #ed575d;
+        top:@lineheight*0.1;
+        border-radius: @lineheight*0.8/2;
+        line-height: @lineheight*0.8;
+        height: @lineheight*0.8;
+        width: @lineheight*0.8;
+      }
+      .text{
+        padding-left: @lineheight*1.2;
+      }
+    }
+
+    .detail{
+      margin:0.1rem 0;
+      .strong{
+        color:#111;
+      }
+    }
+  }
+
+  .step{
+    width: 100%;
+  }
+}

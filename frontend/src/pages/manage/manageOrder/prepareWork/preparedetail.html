@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+    <meta content="telephone=no, address=no" name="format-detection">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="no-cache" http-equiv="pragma">
+    <meta content="0" http-equiv="expires">
+    <meta name="full-screen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>整备工单</title>
+    <script>
+        var htmlBq = document.documentElement;
+
+        function allSize() {
+            var htmlWidth = htmlBq.clientWidth;
+            if (htmlWidth >= 640) {
+                htmlBq.style.fontSize = '40px';
+            } else if (htmlWidth < 640 && htmlWidth >= 320) {
+                htmlBq.style.fontSize = htmlWidth / (640 / 40) + 'px';
+            } else if (htmlWidth < 320) {
+                htmlBq.style.fontSize = '20px';
+            }
+        }
+        allSize();
+        window.onresize = function () {
+            allSize();
+        };
+    </script>
+    <script src="https://g.alicdn.com/dingding/open-develop/1.9.0/dingtalk.js"></script>
+</head>
+<body class="none">
+<script>
+    !(function(c,b,d,a){c[a]||(c[a]={});c[a].config={pid:"gruqqi6cbp@6594c08d3216a5d",imgUrl:"https://arms-retcode.aliyuncs.com/r.png?"};
+        with(b)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("crossorigin","",src=d)
+    })(window,document,"https://retcode.alicdn.com/retcode/bl.js","__bl");
+</script>
+<div class="prepare-content">
+
+</div>
+<div class="flowstatus">
+    <p class="p1">
+        <span class="">工单流程</span>
+    </p>
+    <p class="p2">
+        <span class="span1">创建<br/>成功</span>
+        <span class="span2">工单<br/>结束</span>
+        <span class="span3 none">待整备</span>
+        <span class="span-left"></span>
+        <span class="span-length">
+            <span class="span-child"></span>
+        </span>
+        <span class="span-right"></span>
+        <span class="span4">已装备: <font>1</font></span>
+        <span class="span5">未装备: <font>16</font></span>
+    </p>
+</div>
+<div class="car-plane">
+    <span class="span1">车牌号：</span><input type="text" value="京Z25345" class="plane-num" placeholder="请输入车牌号" maxlength="8" />
+    <span class="span2 transform">&#xe603;</span>
+    <span class="span3">
+        <input type="checkbox" class="choice-check" value=""/>临牌
+    </span>
+     <span class="span4 none">
+        到期时间： <input type="text" class="date-key" value=""/>
+         <img class="date-icon" src=""/>
+    </span>
+    <span class="span5">
+        <input type="hidden" value="" class="car-plane-itemid"/>
+        保存
+    </span>
+</div>
+<ol class="prepare-list">
+
+</ol>
+<div class="prepare-btn">
+    <button class="open-door">开门</button>
+    <button class="close-door">锁门</button>
+    <button class="submit-btn">提交</button>
+</div>
+<!--alert弹框-->
+<div class="alert_window common_cover none">
+
+</div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+-var imgPrizes = img_prizes
+.activity_prizes
+    .list_con
+        ul
+            each val in prize_list
+                li
+                    span.ind=val.level
+                    span.pri=val.prize + ' ( ' + val.limit + '名 ) '
+        img.prizes(src=imgPrizes)
+    if !only_list
+        .des
+            span.icon
+            |评判标准：累计排名得奖

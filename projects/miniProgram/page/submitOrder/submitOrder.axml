@@ -1,0 +1,113 @@
+<view class="wrap" a:if="{{pageIsShow}}">
+    <view class="cell">
+        <text class="label">应付合计：{{totalNum}}元</text>
+    </view>
+    <view class="cell" onTap="selectCoupon" >
+        <text class="label">优惠券</text>
+        <view class="rightWrap">
+            <text class="rightLabel" a:if="{{leftNum &&couponKey==='' && couponInfo.voucher.coupon_cnt==0}}">无</text>
+            <text class="rightLabel" a:if="{{leftNum && couponKey==='' && couponInfo.voucher.coupon_cnt!=0}}">{{couponInfo.voucher.coupon_cnt}}张可用</text>
+            <text class="rightLabel" a:if="{{couponKey!==''}}">-{{couponVal}}元</text>
+            <text class="rightLabel" a:if="{{leftNum==0 && couponKey===''}}">今日优惠次数已用完</text>
+            <view class="arrow" a:if="{{leftNum!=0 || couponKey!==''}}"></view>
+        </view>
+    </view>
+    <view class="cell" onTap="selectHongbao" >
+        <text class="label">红包</text>
+        <view class="rightWrap">
+            <text class="rightLabel" a:if="{{leftNum && hongbaoKey==='' && couponInfo.voucher.coupon_cash_cnt==0}}">无</text>
+            <text class="rightLabel" a:if="{{leftNum && hongbaoKey==='' && couponInfo.voucher.coupon_cash_cnt!=0}}">{{couponInfo.voucher.coupon_cash_cnt}}张可用</text>
+            <text class="rightLabel" a:if="{{hongbaoKey!==''}}">-{{hongbaoVal}}元</text>
+            <text class="rightLabel" a:if="{{leftNum==0 && hongbaoKey===''}}">今日优惠次数已用完</text>
+            <view class="arrow" a:if="{{leftNum!=0 || hongbaoKey!==''}}"></view>
+        </view>
+    </view>
+    <view class="cell">
+        <text  class="label">余额（{{overage}}元）</text>
+        <view class="rightWrap">
+            <text class="rightLabel" a:if="{{isUsed}}">-{{useOverage}}元</text>
+            <switch class="switchBtn" checked="{{isUsed}}" color="#4CD864" onChange="SwitchBtn" disabled="{{disabled}}"/>
+        </view>
+    </view>
+    <view class="total">
+        <view class="totalItem">
+            <view class="numWrap">
+                <text class="numDesc">需支付:</text>
+                <text class="num">{{payNum}}</text>
+                <text class="numDesc">元</text>
+            </view>
+            <view class="openBtn" onTap="openDetail">
+                <text class="openBtnDesc">查看费用</text>
+                <view class="arrow-drop {{isShow?'arrow-down':''}}"></view>
+            </view>
+        </view>
+    </view>
+    <view class="detail-list" a:if="{{isShow}}">
+        <view class="listItem">
+            <text class="itemLabel">总里程(公里)</text>
+            <text class="itemVal">{{info.distance}}</text>
+        </view>
+        <view class="listItem">
+            <text class="itemLabel">总时长(时间)</text>
+            <view class="itemVal">
+                <text a:if="{{h}}">{{h}}小时</text>
+                <text>{{m}}分钟</text>
+            </view>
+        </view>
+        <view class="listItem">
+            <text class="itemLabel">里程费(元)</text>
+            <text class="itemVal">{{info.km_fee}}</text>
+        </view>
+        <view class="listItem">
+            <text class="itemLabel">用时费(元)</text>
+            <text class="itemVal">{{info.time_fee}}</text>
+        </view>
+        <view class="listItem" a:if="{{info.parking_fee_in!='0.00'}}">
+            <text class="itemLabel">还车附加费(元)</text>
+            <text class="itemVal">{{info.parking_fee_in}}</text>
+        </view>
+    </view>
+    <view class="detail-list footerList" a:if="{{isShow}}">
+        <view class="listItem">
+            <text class="itemLabel">应付(元)</text>
+            <text class="itemVal">{{fee_acutal}}</text>
+        </view>
+        <view class="listItem" >
+            <text class="itemLabel">优惠券</text>
+            <text class="itemVal">-{{couponVal||'0.00'}}</text>
+        </view>
+        <view class="listItem" >
+            <text class="itemLabel">红包</text>
+            <text class="itemVal">-{{hongbaoVal||'0.00'}}</text>
+        </view>
+    </view>
+    <view a:if="{{isShow}}">
+        <view class="listItem">
+            <text class="itemLabel">惠后应付</text>
+            <text class="itemVal">{{rental_actual_fee||'0.00'}}</text>
+        </view>
+        <view class="listItem" a:if="{{price_insurance>0}}">
+            <text class="itemLabel">不计免赔服务（元）</text>
+            <text class="itemVal">{{info.fee_total_insurance ||'0.00'}}</text>
+        </view>
+        <view class="listItem">
+            <text class="itemLabel">余额（元）</text>
+            <text class="itemVal">-{{useOverage||'0.00'}}</text>
+        </view>
+    </view>
+    <view a:if="{{isShow}}">
+        <view class="listItem">
+            <text class="itemLabel">实付（元）</text>
+            <text class="itemVal">{{info.actual_fee||'0.00'}}</text>
+        </view>
+    </view>
+</view>
+<view class="footer" a:if="{{pageIsShow}}">
+    <view class="btnWrap" onTap="postOrder">
+        <text class="btnText" a:if="{{payNum==0}}">确定</text>
+        <text class="btnText" a:else>还需支付{{payNum}}元</text>
+    </view>
+</view>
+<view class="loadingBox" a:if="{{!pageIsShow}}">
+    <view class="loadingIcon"></view>
+</view>

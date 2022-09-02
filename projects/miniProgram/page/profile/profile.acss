@@ -1,0 +1,315 @@
+.container{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+.headerBg{
+    height: 220rpx;
+    background-image: linear-gradient(-237deg, #35373D 0%, #282B34 100%);
+    position: relative;
+    left: 0;
+    right: 0;
+}
+.logoutBox{
+    position: absolute;
+    top: 36rpx;
+    right: 30rpx;
+    height: 48rpx;
+    width: 130rpx;
+    border: 1px solid #fff;
+    border-radius: 180rpx;
+    display: block;
+    text-align: center;
+    line-height: 42rpx;
+}
+.logoutText{
+    font-family: PingFangSC-Regular;
+    font-size:24rpx;
+    color: #fff;
+}
+.body{
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 120rpx;
+    left:0;
+}
+.bodyHeaderWrap{
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+}
+.bodyHeader{
+    height: 200rpx;
+    background: #fff;
+    box-shadow: 0 2px 6px 0 rgba(24,25,28,0.15);
+    border-radius: 8rpx;
+    display: flex;
+    align-items: center;  
+}
+.avatarBox{
+    width: 140rpx;
+    height: 140rpx;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 24rpx;
+    margin-right: 20rpx;
+}
+.avatar{
+    width: 140rpx;
+    height: 140rpx;
+}
+.desc{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.phone{
+    font-family: HelveticaNeue-Medium;
+    font-size: 19px;
+    color: #22252C;
+    text-align: center;
+    font-size: 32rpx;
+    color: #111;
+    line-height: 32rpx;
+}
+.labelBox{
+    padding-left: 12rpx;
+    padding-right: 12rpx;
+    padding-top: 4rpx;
+    padding-bottom: 4rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #D4DAE4;
+    border-radius: 100px;
+    margin-left: 8rpx;
+}
+.labelBox.on{
+    background-image: linear-gradient(90deg, #FF4604 0%, #E60000 100%);
+}
+.on .label{
+    color: #fff;
+}
+.label{
+    font-family: PingFangSC-Regular;
+    font-size: 20rpx;
+    color: #5F626B;
+    letter-spacing: 0;
+}
+.overBox{
+    margin-top: 16rpx;
+}
+.over{
+    font-family: PingFangSC-Regular;
+    font-size: 24rpx;
+    color: #22252C;
+    letter-spacing: 0;
+}
+.btnGroup{
+    display: flex;
+    margin-top: 36rpx;
+    position: relative;
+    flex-wrap: wrap;
+}
+.btnGroup::before{
+    content:'';
+    position: absolute;
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    background: #e3e3e3;
+    transform: scaleY(0.5);
+}
+
+.btnItem::before{
+    content:'';
+    position: absolute;
+    left:0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: #e3e3e3;
+    transform: scaleY(0.5);
+}
+.btnItem{
+    width: 250rpx;
+    display: flex;
+    flex-direction: column;
+    height: 186rpx;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+.btnItem .tip{
+    position: absolute;
+    top: 8rpx;
+    left:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+}
+.triangle{
+    width: 6rpx;
+    height: 5rpx;
+    background: url('/image/triangle.png') no-repeat;
+    background-size: 100% 100%;
+}
+.btnItem .tip .txt{
+    padding: 0 8rpx;
+    height: 34rpx;
+    background-image: linear-gradient(90deg, #FF4604 0%, #E60000 100%);
+    border-radius:17px;
+    color: #fff;
+    font-size: 18rpx;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.badge{
+    width: 30rpx;
+    height: 30rpx;
+    background-image: linear-gradient(90deg, #FF4604 0%, #E60000 100%);
+    font-family: PingFangSC-Regular;
+    font-size: 22rpx;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right:-12rpx;
+    top:-15rpx;
+    border-radius: 50%;
+}
+.rightBoder{
+    position: relative;
+}
+.rightBoder::after{
+    content:'';
+    position: absolute;
+    right:0;
+    bottom: 0;
+    width: 1px;
+    height: 100%;
+    background: #e3e3e3;
+    transform: scaleX(0.5);
+}
+.iconWrap{
+    width:52rpx;
+    height: 48rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.btnImg1{
+    width: 52rpx;
+    height: 40rpx;
+}
+.btnImgcz{
+    width: 48rpx;
+    height: 48rpx;
+}
+.btnImg2{
+    width: 40rpx;
+    height: 48rpx;
+}
+.btnImg3{
+    width: 44rpx;
+    height: 36rpx;
+}
+.btnImgtrip{
+    width: 48rpx;
+    height: 49rpx;
+}
+.btnText{
+    font-family: PingFangSC-Regular;
+    font-size: 24rpx;
+    color:  #22252C;
+    line-height: 24rpx;
+    margin-top: 16rpx;
+}
+.btnDesc{
+    margin-top: 16rpx;
+}
+.btnTextActive{
+    font-size: 24rpx;
+    color: #ED3800;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 12px;
+    margin-left: 8rpx;
+    margin-right: 8rpx;
+}
+.btnDescText{
+    font-size: 24rpx;
+    color: #333;
+}
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width:100%;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    padding-bottom:30rpx;
+}
+.footerBg{
+    width:100%;
+    height: 186rpx;
+    border-radius: 4rpx;
+}
+.footerDesc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30rpx;
+    font-family: PingFangSC-Regular;
+    font-size: 22rpx;
+    color: #999;
+}
+
+.footerDescBtnText{
+    font-family: PingFangSC-Regular;
+    font-size: 22rpx;
+    color: #848C99;
+    text-align: center;
+}
+.footerBody{
+    position: absolute;
+    left: 0;
+    top:0;
+    height: 186rpx;
+    display: flex;
+    flex-direction: column;
+    padding-left: 84rpx;
+    padding-top: 50rpx;
+}
+.footerBodyTitle{
+    font-family: PingFangSC-Medium;
+    font-size: 40rpx;
+    color: #FFFFFF;
+    margin-bottom: 20rpx;
+}
+.footer .footerDescLabel{
+    font-family: PingFangSC-Regular;
+    font-size: 22rpx;
+    color: #848C99;
+}
+.tel{
+    font-family: PingFangSC-Medium;
+    font-size: 22rpx;
+    color: #000016;
+}
+.footer .tip{
+    margin-top: 6rpx;
+    font-family: PingFangSC-Regular;
+    font-size: 22rpx;
+    color: #848C99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

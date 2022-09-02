@@ -1,0 +1,90 @@
+@import '../../../../../../css/animates';
+@import '../../../../../../css/animates/zoomInOut';
+@import '../../../../../../css/buttons/button';
+.Alert {
+  position: absolute;
+  z-index: 100;
+  .toast {
+    position: fixed;
+    top: 35vh;
+    width: 100vw;
+    .msg {
+      width: 60%;
+      max-width: 320px;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #FFF;
+      padding: 0.1rem 0.2rem;
+      border-radius: 3px;
+      margin: 0 auto
+    }
+  }
+
+  .tips {
+    position: fixed;
+    top: 0;
+    left: 3%;
+    width: 94%;
+    box-sizing: border-box;
+    padding: 0.05rem 1em;
+    border-radius: 0 0 5px 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+  }
+
+  .mask {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    .dialogBox {
+      background-color: #FFF;
+      width: 3rem;
+      margin-left: -1.5rem;
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      padding-top: 0.15rem;
+      border-radius: 3px;
+      color: #111;
+      text-align: center;
+      .title {
+        font-size: 0.16rem;
+        margin: 0.1rem 0.3rem;
+      }
+      .msg {
+        font-size: 0.15rem;
+        margin: 0.1rem 0.3rem;
+      }
+      .alert_btn_container {
+        height: 40px;
+        box-sizing: content-box;
+        margin: 0.1rem 0.3rem;
+        padding: 0.15rem 0;
+        border-top:solid 1px #DFDFDF;
+        button {
+          height: 100%;
+          font-size: 16px;
+        }
+        .btn_row_1 {
+          width: 100%;
+        }
+        .btn_row_2 {
+          width: 47.5%;
+          &:nth-child(1) {
+            float: left
+          }
+          &:nth-child(2) {
+            float: right
+          }
+        }
+      }
+    }
+  }
+
+  .alert_icon{
+    display: block;
+    margin:0 auto;
+    width:0.5rem
+  }
+}

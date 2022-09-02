@@ -1,0 +1,341 @@
+.icon(){
+  width: 0.2rem;
+  height: 0.2rem;
+  background: no-repeat center;
+  background-size: 100%;
+}
+html{
+  background: #F5F5F5;
+}
+
+.EditRental{
+  .tips{
+    padding:0.05rem 0.15rem;
+    background-color: #FEFED9;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    top:0;
+    z-index: 20;
+    line-height: 0.2rem;
+    &.hidden{
+      display:none;
+    }
+    span{
+      display: inline-block;
+      vertical-align: top;
+    }
+    .icon_suona{
+      .icon();
+     background-image: url('../../images/icon_suona.png') ;
+      margin-right: 0.5em;
+    }
+    .icon_close_red{
+      .icon();
+      background-image: url('../../images/icon_close_red.png');
+      background-size: 60%;
+      float:right;
+    }
+  }
+  .editContent{
+    .carInfo{
+      height: 1.3rem;
+      background:#f4f4f4;
+      padding: .34rem .36rem 0 .18rem;
+      box-sizing: border-box;
+      .desc{
+        float: left;
+        .name{
+          padding-top: .12rem;
+          font-size: 20px;
+          color: #333
+        }
+        .price{
+          padding-top: .03rem;
+          font-size: 16px;
+          color: #666;
+          span{
+            color: #333;
+          }
+        }
+      }
+      .img{
+        float: right;
+        width: 1.2rem;
+      }
+      p{
+        font-size:12px;
+        color:#aaaaaa;
+        line-height:18px;
+        float: right;
+        clear: both;
+        margin-top: .06rem;
+      }
+    }
+    .ChooseTime{
+      background: #FFF;
+      box-sizing: border-box;
+      padding: .2rem;
+      border-bottom: 1px solid #F5F5F5; 
+      p{
+        font-size:12px;
+        color:#999;
+        line-height:12px;
+        padding-bottom: 12px;
+      }
+      .day{
+        float: right;
+      }
+      div{
+        color: #111;
+        font-size: 14px;
+        padding-bottom: .18rem;
+      }
+      .date-select_wrap{
+        padding-bottom: 0;
+        margin-bottom: 0;
+        align-content: space-between;
+        display: flex;
+        div{
+          // flex: 1;
+          padding-bottom: 0;
+          margin-bottom: 0;
+          text-align: center;
+          // &:nth-of-type(1){
+            span{
+              text-align: center;
+
+            }
+          // } 
+          // &:nth-of-type(3){
+          //   text-align: right;
+          // } 
+          .timeSpan{
+              font-size:14px;
+              color:#e90000;
+              line-height:14px;
+              width: 100%;
+              text-align: center;
+              &.color{
+                color: #000;
+                line-height: .2rem;
+                width: 70px;
+                display: inline-block;
+              }
+          }
+        } 
+        .line{
+          // padding-top: .09rem;
+          display: flex;
+          flex: 1;
+          justify-content: center;
+          // width: .9rem !important;
+          align-items: center;
+          span{
+            width: .7rem;
+            border-top: 1px solid #999;
+            height: 1px;
+          }
+        }
+      }
+    }
+    .ChooseAddress{
+      background: #FFF;
+      box-sizing: border-box;
+      padding: .2rem;
+      padding-top: .15rem;
+      border-bottom: 1px solid #F5F5F5; 
+      padding-bottom: .15rem;
+      p{
+        font-size:12px;
+        color:#999;
+        line-height:12px;
+        padding-bottom: .08rem;
+      }
+    }
+    .getprice{
+      background: #FFF;
+      box-sizing: border-box;
+      padding: .15rem .2rem .22rem;
+      .fb{
+        display: flex;
+        align-items: center;
+      }
+      p{
+        font-size:12px;
+        color:#999;
+        line-height:12px;
+        padding-bottom: 5px;
+      }
+      .cost{
+        .total{
+          line-height: 0.32rem;
+          font-size: 14px;
+          color: #111;
+          .qa{
+            display: inline-block;
+            vertical-align: top;
+            width: 0.32rem;
+            height: 0.32rem;
+            background: url('../../images/icon_qa.png') no-repeat center center;
+            background-size: 62.5%;
+            line-height: 0.32rem;
+          }
+        }
+        .item{
+          position: relative;
+          line-height: 0.22rem;
+          color:#999;
+          margin-left: 0.8em;
+          &::before{
+            content: "";
+            position: absolute;
+            display: block;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            margin-top:-2px;
+            margin-left:-2px;
+            background-color: #999;
+            top:50%;
+            left:-0.6em;
+          }
+          .icon_discount{
+            display: inline-block;
+            position: absolute;
+            width:0.4rem;
+            height: 0.2rem;
+            background: url('../../images/icon_discount2.png') no-repeat center;
+            background-size: .31rem .15rem;
+            &.hidden{
+              display: none;
+            }
+          }
+        }
+        .depositIcon{
+          background: url('../../images/deposit_icon.png') no-repeat 60% center;
+          background-size: .59rem .13rem;
+          &.andTop{
+            background-position-y: 45%; 
+          }
+        }
+      }
+    }
+    .toPay{
+      padding: .2rem;
+      box-sizing: border-box;
+    }
+  }
+  .car_info{
+    position: relative;
+    padding-bottom: 0.1rem;
+    .desc{
+      padding: 0.05rem 0;
+      box-sizing: border-box;
+      height: 0.6rem;
+      color:#333;
+      .name{
+        line-height: 0.3rem;
+      }
+      .price{
+        line-height: 0.2rem;
+        color:#999;
+        .money{
+          color:#333;
+        }
+      }
+    }
+    .img {
+      position: absolute;
+      right: 0;
+      top: 0.05rem;
+      height: 0.6rem;
+    }
+  }
+  .time_parent{
+    padding-bottom: 0;
+  }
+  .time_select{
+    height: 0.46rem;
+    position: relative;
+    &::before{
+      content:'';
+      width: 0.32rem;
+      height: 1px;
+      position: absolute;
+      background-color: #999;
+      left:50%;
+      top:50%;
+      margin-left:-0.16rem;
+    }
+    .empty_time{
+      color:#ED3800;
+      line-height: 0.46rem;
+      width: 40%;
+      position: absolute;
+      top:0;
+      left:0;
+      &:nth-of-type(2){
+        left:auto;
+        right:0;
+        text-align: right;
+      }
+    }
+    .time_con{
+      margin-top: 0.06rem;
+      width: 7em;
+      position: absolute;
+      line-height: 0.20rem;
+      top:0;
+      left:0;
+      &:nth-of-type(2){
+        left:auto;
+        right:0;
+      }
+    }
+    .dura{
+
+      text-align: center;
+      color:#ff9500;
+      line-height: 0.16rem;
+      top:0.08rem;
+      position: absolute;
+      width: 4em;
+      left:50%;
+      margin-left: -2em;
+    }
+  }
+  .branch_select{
+    // margin-top: 0.07rem;
+    .point{
+      line-height: 0.3rem;
+      position: relative;
+      &::after{
+        content: '';
+        right:0;
+        top:0.05rem;
+        position: absolute;
+        width: 0.15rem;
+        height: 0.2rem;
+        background: url('../../images/icon_rightArrow_2.png') no-repeat center;
+        background-size: 100%;
+      }
+      .label{
+        position: absolute;
+        width: 5em;
+        top:0;
+        left:0;
+        font-size: 14px;
+        color: #111;
+      }
+      .point_name{
+        text-align: right;
+        margin-left: 5em;
+        margin-right: 0.2rem;
+        font-size:14px;
+      }
+    }
+  }
+}
+
+

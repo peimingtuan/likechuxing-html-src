@@ -1,0 +1,19 @@
+.container{
+    padding: 20px 10px;
+    font-size: 28rpx;
+    color: #393939;
+}
+.title{
+    padding: 10px 0 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 32rpx;
+}
+.p{
+    text-indent: 2em;
+    line-height: 44rpx;
+    margin-bottom: 20rpx;
+}
+.fw{
+    font-weight: bold;
+}

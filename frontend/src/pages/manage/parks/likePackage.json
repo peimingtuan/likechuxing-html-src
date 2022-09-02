@@ -1,0 +1,25 @@
+{
+  "id": 4003,
+  "zh_name": "停车场",
+  "name": "parks",
+  "group": "manage",
+  "ver": "1.0.0",
+  "lastUpdateTime": "2017-9",
+  "lastUpdateDesc": "1.0.0",
+  "bundle_vendor": false,
+  "input_file": {
+    "index": [
+      "index.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/manage/parks/",
+    "publicPath": "/",
+    "filename": "js/manage_parks/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.html"
+    ]
+  }
+}

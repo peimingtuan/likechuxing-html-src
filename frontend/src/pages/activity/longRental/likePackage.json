@@ -1,0 +1,31 @@
+{
+  "id": 2006,
+  "zh_name": "春节长租",
+  "name": "longRental",
+  "group": "activity",
+  "bundle_vendor": false,
+  "copy": true,
+  "input_file": {
+    "index": [
+      "index.jsx"
+    ],
+    "jump": [
+      "jump.js"
+    ],
+    "jump2": [
+      "jump2.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/activity/longRental/",
+    "publicPath": "/",
+    "filename": "js/activity_longRental/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.pug",
+      "jump.pug",
+      "jump2.pug"
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+.recordtails-content {
+    background: #fff;
+    padding: .5rem;
+    border-bottom: 1px solid #f6f6f6;
+}
+.recordtails-content span:not(:first-of-type) {
+    display: inline-block;
+    margin-top: .3rem;
+    padding: .3rem .5rem;
+    border: 1px solid #e7e7e7;
+    margin-right: .5rem;
+}
+.recordtails-content .p1 .font1 {
+    color: #999999;
+    margin-right: .1rem;
+}
+/*历史记录*/
+.recordtails-list{
+    margin:.5rem;
+}
+.recordtails-list li{
+    position:relative;
+    padding-left:7rem;
+    margin-bottom: .5rem;
+}
+.recordtails-list li span{
+    line-height: 1.2rem;
+    word-break: break-all;
+}
+.recordtails-list li .span1{
+    position:absolute;
+    left:0;
+    font-family: 'iconfont';
+}
+.recordtails-list li .span2{
+    margin-left:.1rem;
+}
+.recordtails-list li .span3{
+    color:#d1d1d1;
+}
+.recordtails-list .check{
+    font-family: 'iconfont';
+    color:#d1d1d1;
+    position:absolute;
+    right:0;
+}
+
+.recordtails-list li .net_type{
+    margin-right:.2rem;
+    width:.8rem;
+}

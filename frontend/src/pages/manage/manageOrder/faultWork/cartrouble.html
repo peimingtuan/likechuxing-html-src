@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+    <meta content="telephone=no, address=no" name="format-detection">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="no-cache" http-equiv="pragma">
+    <meta content="0" http-equiv="expires">
+    <meta name="full-screen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>处理车辆问题记录</title>
+    <script>
+        var htmlBq = document.documentElement;
+
+        function allSize() {
+            var htmlWidth = htmlBq.clientWidth;
+            if (htmlWidth >= 640) {
+                htmlBq.style.fontSize = '40px';
+            } else if (htmlWidth < 640 && htmlWidth >= 320) {
+                htmlBq.style.fontSize = htmlWidth / (640 / 40) + 'px';
+            } else if (htmlWidth < 320) {
+                htmlBq.style.fontSize = '20px';
+            }
+        }
+        allSize();
+        window.onresize = function () {
+            allSize();
+        };
+    </script>
+</head>
+<body class="none">
+<script>
+    !(function(c,b,d,a){c[a]||(c[a]={});c[a].config={pid:"gruqqi6cbp@6594c08d3216a5d",imgUrl:"https://arms-retcode.aliyuncs.com/r.png?"};
+        with(b)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("crossorigin","",src=d)
+    })(window,document,"https://retcode.alicdn.com/retcode/bl.js","__bl");
+</script>
+<div class="finsh_trouble none">
+    <img src=""/><br/>
+    该车的车辆问题已处理完成
+</div>
+<div class="deal-trouble none">本次工单处理问题为：</div>
+<p class="outer"><img class="img1" src=""/><span>外观问题部位</span><img class="img2" src=""/></p>
+
+<div class="outer-trouble solve-trouble">
+    <ul class="left-ul">
+
+    </ul>
+    <ul class="center-ul">
+
+    </ul>
+    <ul class="right-ul">
+
+    </ul>
+</div>
+<p class="inner"><img class="img1" src=""/><span>内饰问题</span><img class="img2" src=""/></p>
+
+<div class="inner-trouble solve-trouble">
+
+</div>
+<p class="other"><img class="img1" src=""/><span>其他问题类型</span><img class="img2" src=""/></p>
+
+<div class="other-trouble solve-trouble">
+
+</div>
+<div class="troule-btn">
+    <button>已处理</button>
+</div>
+<!--确认弹框-->
+<div class="sure_window common_cover none">
+    <div class="sure_content">
+        <div class="title">
+            确认清除以下<span></span>项问题记录？
+        </div>
+        <div class="center">
+
+        </div>
+        <div class="sure-bottom">
+            <span class="alert-cancel">取消</span>
+            <span class="alert-sure">确定</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+{
+  "id": 2009,
+  "zh_name": "百万红包二期",
+  "name": "millionGift2",
+  "group": "activity",
+  "bundle_vendor": true,
+  "copy": true,
+  "input_file": {
+    "index": [
+      "index.js"
+    ],
+    "history": [
+      "history.js"
+    ],
+    "confirmAccount": [
+      "confirmAccount.js"
+    ],
+    "editAccount": [
+      "editAccount.js"
+    ],
+    "explain": [
+      "explain.js"
+    ],
+    "share": [
+      "share.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/activity/millionGift2/",
+    "publicPath": "/",
+    "filename": "js/activity_millionGift2/[name].js"
+  },
+  "template": {
+    "list": [
+      "getOpenId.pug",
+      "index.pug",
+      "history.pug",
+      "confirmAccount.pug",
+      "editAccount.pug",
+      "explain.pug",
+      "share.pug"
+    ]
+  }
+}

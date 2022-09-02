@@ -1,0 +1,33 @@
+@import '../css/config';
+.CarInfoWindow{
+  background-color: #fff;
+  width: 260px;
+  padding:10px;
+  .title{
+    font-size: 16px;
+    color:@mainColor
+  }
+  .infoList{
+    .item{
+      font-size: 13px;
+      .item_name{
+        display: inline-block;
+        width: 4em;
+        color:@whiteBgFont
+      }
+    }
+  }
+  .options{
+    overflow: hidden;
+    .link{
+      font-size: 12px;
+      color:#0a8cff;
+      float:right
+    }
+  }
+}
+
+//覆盖高德地图信息窗默认样式
+.amap-info-content{
+  padding:0
+}

@@ -1,0 +1,27 @@
+{
+  "id": 991,
+  "zh_name": "branches",
+  "name": "branches",
+  "group": "test",
+  "bundle_vendor": false,
+  "copy": false,
+  "input_file": {
+    "index": [
+      "index.js"
+    ],
+    "dir/index2": [
+      "dir/index2.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/test/branches/",
+    "publicPath": "/",
+    "filename": "js/test_branches/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.html",
+      "dir/index2.html"
+    ]
+  }
+}

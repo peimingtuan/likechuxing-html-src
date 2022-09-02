@@ -1,0 +1,12 @@
+//- Created by garvey on 2017/11/7.
+-var menu = require('../js/menu.json')
+header.navHeader
+    .slogan#headerLogo
+    .menu_m
+        .bar
+        .bar
+        .bar
+    ul.nav
+        each key in menu
+            li
+                a(href=key.href data-href=key.href) #{key.text}

@@ -1,0 +1,63 @@
+#returnafterphoto .carpicture-content {
+    flex-wrap: wrap;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    padding: .234rem .41rem;
+}
+
+#returnafterphoto .carpicture-content div {
+    display: inline-block;
+}
+
+#returnafterphoto .carpicture-content > div {
+    margin-bottom: .234rem;
+}
+
+#returnafterphoto .carpicture-content > div:last-of-type {
+    margin-bottom: .936rem;
+}
+
+#returnafterphoto .carpicture-content > div > p {
+    text-align: center;
+    line-height: .468rem;
+}
+
+#returnafterphoto .carpicture-content > div > div {
+    position: relative;
+    width: 1.22rem;
+    height: 1.22rem;
+    background: #f4f4f4;
+}
+
+#returnafterphoto .uploadIcon {
+    font-family: 'iconfont';
+    font-size:.323rem;
+    position: absolute;
+    left: .447rem;
+    top: .447rem;
+}
+
+#returnafterphoto .end-photo{
+    display:inline-block;
+    position:absolute;
+    left: .34rem;
+    top: .304rem;
+    font-size: .187rem;
+}
+
+#returnafterphoto .check-photo{
+    display:inline-block;
+    position:absolute;
+    left: .234rem;
+    top: .773rem;
+    color:#43aff7;
+}
+
+#returnafterphoto .swat-photo{
+    display:inline-block;
+    position:absolute;
+    left: .773rem;
+    top: .773rem;
+    color:#43aff7;
+}

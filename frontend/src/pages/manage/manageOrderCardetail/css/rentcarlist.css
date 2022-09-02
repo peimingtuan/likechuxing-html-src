@@ -1,0 +1,217 @@
+.rentcar-content {
+    width: 100%;
+    height: 1.58rem;
+    border-bottom: 1px solid #f6f6f6;
+    background: #fff;
+}
+
+.rentcar-content span {
+    box-sizing: border-box;
+    font-family: 'iconfont';
+    display: inline-block;
+    width: 24%;
+    line-height: 1rem;
+    margin-top: .29rem;
+    text-align: center;
+    border-right: 1px solid #fbfbfb;
+}
+
+.rentcarList li {
+    padding: .5rem;
+    border-bottom: 2px solid #dcdcdc;
+}
+
+.color_li {
+    background: #f2f2f2;
+}
+
+.rentcarList li p span {
+    display: inline-block;
+    margin-top: .2rem;
+    margin-right: .5rem;
+    padding: .2rem .4rem;
+    border: 1px solid #dcdcdc;
+    border-radius: 2px;
+}
+
+.rentcarList li p:first-of-type  .span1{
+    line-height: 1rem;
+    padding: .1rem;
+    margin-top: .15rem;
+    border:none;
+    width: 1rem;
+    text-align: center;
+    margin-right: 1rem;
+}
+
+.opencar{
+    color:#fff;
+    background:#b6e088;
+    border-radius: 2px;
+}
+
+.stopcar{
+    color:#fff;
+    background: #ff8e8e;
+    border-radius: 2px;
+}
+
+.waitingcar {
+    color: #fff;
+    background: #D2D2D2;
+    border-radius: 2px;
+}
+
+.rentcarList li p .font1 {
+    color: #999999;
+    margin-right: .1rem;
+}
+
+.rentcarList p:last-of-type {
+    color: #a8a8a8;
+    padding: .5rem 0rem;
+    line-height: 1rem;
+    position: relative;
+}
+
+.rentcarList img {
+    width: 1rem;
+    margin-right:.2rem;
+}
+
+.content-filter{
+    height:22rem;
+}
+
+.confirm-content {
+    padding: .3rem .5rem;
+    height:16rem;
+    overflow-y: scroll;
+}
+
+.confirm-deploy > span, .confirm-netpoint > span, .confirm-carstate > span {
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    margin-right: .5rem;
+    margin-top: .5rem;
+    padding: .3rem .2rem;
+    border: 1px solid #e7e7e7;
+}
+
+.confirm-content p:nth-of-type(1) {
+    line-height: 1rem;
+}
+
+.confirm-content p:nth-of-type(3), .confirm-content p:nth-of-type(5){
+    margin-top: .5rem;
+    line-height: 1rem;
+}
+
+.confirm-content .confirm-style span {
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    margin-right: 1rem;
+    margin-top: .5rem;
+}
+
+.confirm-content .confirm-style span input {
+    margin-right: .3rem;
+    width: .8rem;
+    height: .8rem;
+    position: relative;
+    top: .2rem;
+}
+
+.confirm-reset {
+    margin-right: .3rem;
+    background: #d8d8d8;
+}
+
+.confirm-sure {
+    color: #fff;
+    background: #333333;
+}
+
+.color {
+    color: #fff;
+    background: #333333;
+}
+
+/*超链接字体样式*/
+a {
+    color: #a8a8a8;
+}
+/*车辆详情添加备注信息*/
+.rentcarList  li> div {
+    padding:.5rem 0 .5rem 2rem;
+    position:relative;
+    border-top: 1px dashed #E9E9E9;
+}
+
+.rentcarList  li> div span {
+    border:none!important;
+    display:inline-block;
+}
+.rentcarList  li> div .span1{
+    position:absolute;
+    left:0;
+    color:#333333;
+}
+.rentcarList  li> div .span2{
+    color:#666666;
+}
+/*@xurr 0831 预警列表进入修改样式*/
+.rentcarList li>div.not_time,.rentcarList li>div.long_distance{
+    border: none;
+    padding:0rem 0rem;
+    /*padding-bottom: .5rem;*/
+}
+.rentcarList li>div.not_time{
+    padding: .5rem 0rem;
+}
+.fcec6e{color: #ec6e6e;}
+
+/*新增排序弹框*/
+.sort_content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding: .5rem;
+    height: 5.8rem;
+    background: #fff;
+}
+
+.sort-title {
+    text-align: center;
+    fon-size: .8rem;
+    height: 1.6rem;
+    line-height: 1.5rem;
+}
+
+.close-sort {
+    font-family: 'iconfont';
+    fon-size: .8rem;
+    float: left;
+}
+
+.sort_content li {
+    line-height: 1.7rem;
+    border-top: 1px solid #ededed;
+    position: relative;
+}
+
+.sort_content li img {
+    position: absolute;
+    right: 0;
+    top: .35rem;
+    width: 1rem;
+    vertical-align: middle;
+}
+
+.sort-color {
+    color: #44a8ec;
+}

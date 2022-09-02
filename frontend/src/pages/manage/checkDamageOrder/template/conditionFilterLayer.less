@@ -1,0 +1,51 @@
+@import "../../../../css/animates";
+@import "../../../../css/animates/zoomInOut";
+
+.conditionFilterLayer{
+  position: fixed;
+  width:100%;
+  height: 100%;
+  min-height: 100vh;
+  left:0;
+  top:0;
+  z-index: 80;
+  background-color: rgba(0,0,0,0.6);
+  .filterBox{
+    position: absolute;
+    width: 80%;
+    top:30%;
+    left:10%;
+    background-color: #fff;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 0.15rem 0.2rem;
+    .option{
+      border-radius: 3px;
+      border:solid 1px #333;
+      width:45%;
+      margin:4% 0;
+      float: left;
+      text-align: center;
+      line-height: 0.26rem;
+      &:nth-of-type(even){
+        float: right;
+      }
+      &.active{
+        background-color: #333;
+        color:#fff;
+      }
+    }
+    #tips{
+      width:100%;
+      display: block;
+      float: left;
+      font-size: 0.12rem;
+      color:#999;
+    }
+    .blue_btn{
+      margin-top: 0.2rem;
+      width:100%;
+      height: 0.36rem;
+    }
+  }
+}

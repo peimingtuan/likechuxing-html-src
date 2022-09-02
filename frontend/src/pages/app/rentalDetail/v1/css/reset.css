@@ -1,0 +1,182 @@
+/* Css reset start */
+
+/* @media screen and (max-width: 319px) {
+  html {
+    font-size: 90px !important;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 359px) {
+  html {
+    font-size: 100px !important;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 374px) {
+  html {
+    font-size: 112px !important;
+  }
+}
+
+@media screen and (min-width: 374px)and (max-width: 410px) {
+  html {
+    font-size: 118px !important;
+  }
+}
+
+@media screen and (min-width: 410px) {
+  html {
+    font-size: 130px !important;
+  }
+}
+ */
+html,
+body,
+div,
+span,
+p,
+a,
+em,
+img,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h2,
+h3 {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    min-height: 100%;
+    color: #111;
+}
+
+
+
+/*body{ background-color:#fff; font: .12rem/1.2 SimHei,Sans-serif; outline: none;  }*/
+
+body {
+
+    font-family: Arial, SimHei, Sans-serif, serif;
+    outline: none;
+}
+
+
+/*body{ background-color:#fff; font: .12rem/1.2 Sans-serif,SimHei; outline: none;  }*/
+
+img {
+    display: block;
+    outline: none;
+    vertical-align: middle;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: .14rem;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: top;
+}
+
+* {
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
+a,
+a:focus,
+a img {
+    border: none;
+    hide-focus: expression(this.hideFocus=true);
+    outline: none;
+}
+
+a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    color: #333;
+    outline: none;
+    text-decoration: none;
+}
+
+a:hover {
+    outline: none;
+}
+
+em {
+    font-style: normal;
+}
+
+
+/* Css reset end */
+
+html,
+body {
+    max-width: 640px;
+    margin: 0 auto
+}
+
+* {
+    -webkit-touch-callout: none;
+    /*系统默认菜单被禁用*/
+    -webkit-user-select: none;
+    /*webkit浏览器*/
+    -khtml-user-select: none;
+    /*早期浏览器*/
+    -moz-user-select: none;
+    /*火狐*/
+    -ms-user-select: none;
+    /*IE10*/
+    user-select: none;
+}
+
+input {
+    -webkit-user-select: auto;
+    /*webkit浏览器*/
+}
+
+input,
+button {
+    -webkit-appearance: none;
+}
+
+
+/*隐藏360chrome浏览器插入莫名东西*/
+
+body>audio+div {
+    display: none
+}
+
+
+/*     -webkit-appearance: none;
+    border: 0;
+    background: none; */
+
+html{
+    font-size: 100px;
+}
+body{
+    font-size:.14rem;
+}
+
+img{
+    max-width: 100%;
+}

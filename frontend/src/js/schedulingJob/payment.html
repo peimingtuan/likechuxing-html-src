@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+    <meta content="telephone=no, address=no" name="format-detection">
+    
+    <meta name="full-screen" content="yes">
+    
+    <meta name="x5-fullscreen" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="no-cache" http-equiv="pragma">
+    <meta content="0" http-equiv="expires">
+    <meta name="full-screen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>出场缴费</title>
+    <script>
+        var htmlBq = document.documentElement;
+
+        function allSize() {
+            var htmlWidth = htmlBq.clientWidth;
+            if (htmlWidth >= 640) {
+                htmlBq.style.fontSize = '40px';
+            } else if (htmlWidth < 640 && htmlWidth >= 320) {
+                htmlBq.style.fontSize = htmlWidth / (640 / 40) + 'px';
+            } else if (htmlWidth < 320) {
+                htmlBq.style.fontSize = '20px';
+            }
+        }
+        allSize();
+        window.onresize = function () {
+            allSize();
+        };
+    </script>
+    <script src="https://g.alicdn.com/dingding/open-develop/1.9.0/dingtalk.js"></script>
+<link href="/css/manage_manageOrder/vendor.da8023.css" rel="stylesheet"><link href="/css/manage_manageOrder/chunk.633431.css" rel="stylesheet"><link href="/css/manage_manageOrder/schedulingJob/payment.0555ee.css" rel="stylesheet"></head>
+<body>
+<script>
+    !(function(c,b,d,a){c[a]||(c[a]={});c[a].config={pid:"gruqqi6cbp@6594c08d3216a5d",imgUrl:"https://arms-retcode.aliyuncs.com/r.png?"};
+        with(b)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("crossorigin","",src=d)
+    })(window,document,"https://retcode.alicdn.com/retcode/bl.js","__bl");
+</script>
+<div class="cardetail-content">
+    <p>
+        <span class="plate_no inline"></span><br>
+        <span class="status_name"></span>
+        <span class="remain_km"></span>
+        <span class="brand_name"></span>
+    </p>
+
+    <p>
+        <font>取：</font>
+        <img class="mapb" src="">
+        <span class="branch_addr inline"></span><br>
+        <span class="park_fee inline"></span>
+    </p>
+</div>
+<div class="payinfo">
+    <p>时长：<span class="span1"></span></p>
+    <p>开始：<span class="span2"></span></p>
+    <p>费用：<span class="span3"></span></p>
+</div>
+<div class="text-content">
+    <p class="p0">
+        凭证类型：<span><input type="radio" class="certificate" name="certificate" value="1" checked="checked">发票</span>
+        <span><input type="radio" class="certificate" name="certificate" value="2">收据</span>
+        <span><input type="radio" class="certificate" name="certificate" value="0" checked="checked">无</span>
+    </p>
+    <p class="p1">停车费用：<input type="text" value="" class="parkingfee" placeholder="请输入停车费" maxlength="4">元</p>
+    <p class="p2">
+    <textarea class="void_write" placeholder="请填写备注信息" maxlength="50">
+</textarea>
+    </p>
+</div>
+<p class="photo-du">请拍摄照片</p>
+<div class="getpicture-content">
+    <div class="left">
+        <div>
+            <div class="upload_new">
+                <img src="" alt="" name="pic" class="img-circle">
+                <input type="hidden" value="" class="image">
+                <input type="hidden" value="0" class="key">
+            </div>
+            <span class="uploadIcon">&#xe616;</span>
+            <input type="button" value="" name="" class="upload-img must">
+            <span class="remove-picturIcon none must-remove">&#xe601;</span>
+        </div>
+        <p>*车牌号<br>
+            <span class="parkfee">(产生费用的车辆)</span>
+        </p>
+    </div>
+    <div class="left">
+        <div>
+            <div class="upload_new">
+                <img src="" alt="" name="pic" class="img-circle">
+                <input type="hidden" value="" class="image">
+                <input type="hidden" value="1" class="key">
+            </div>
+            <span class="uploadIcon">&#xe616;</span>
+            <input type="button" value="" name="" class="upload-img must">
+            <span class="remove-picturIcon none must-remove">&#xe601;</span>
+        </div>
+        <p>*收费证明</p>
+    </div>
+    <div class="left remove-photo">
+        <div>
+            <div class="upload_new">
+                <img src="" alt="" name="pic" class="img-circle">
+                <input type="hidden" value="" class="image">
+                <input type="hidden" value="2" class="key">
+            </div>
+            <span class="uploadIcon">&#xe616;</span>
+            <input type="button" value="" name="" class="upload-img">
+            <span class="remove-picturIcon none">&#xe601;</span>
+        </div>
+        <p>临停收费标准</p>
+    </div>
+</div>
+<div class="carsingle-nextbtn">
+    <button>提交</button>
+</div>
+<script type="text/javascript" src="/js/manage_manageOrder/manageOrder_bundle_manifest.4d64bb.js"></script><script type="text/javascript" src="/js/manage_manageOrder/manageOrder_bundle_vendor.0c0134.js"></script><script type="text/javascript" src="/js/manage_manageOrder/manageOrder_bundle_chunk.f65b09.js"></script><script type="text/javascript" src="/js/manage_manageOrder/schedulingJob/payment.dc5ccf.js"></script></body>
+</html>

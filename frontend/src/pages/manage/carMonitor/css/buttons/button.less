@@ -1,0 +1,39 @@
+@import "../../../../../css/color.less";
+@import '../config';
+.btn(){
+  -webkit-appearance: none;
+  border-radius: 3px;
+  cursor: pointer;
+  height: 28px;
+  width: 100px;
+}
+
+.blue_btn {
+  .btn();
+  background-color: #169bd5;;
+  color: #FFF;
+  border: none;
+  &.disabled {
+    opacity: 0.3;
+  }
+}
+
+.dark_btn {
+  .btn();
+  background-color: @mainColor;
+  color: contrast(@mainColor);
+  border: none;
+  &.disabled {
+    opacity: 0.3;
+  }
+}
+
+.white_btn {
+  .btn();
+  background-color: #FFF;
+  color: #666;
+  border: solid 1px #DFDFDF;
+  &.disabled {
+    color: #aaa;
+  }
+}

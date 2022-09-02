@@ -1,0 +1,10 @@
+<view class="container">
+    <view class="icon"></view>
+    <view class="desc">
+        <text>您有待支付自助缴费</text>
+        <text>请登录立刻出行APP处理</text>
+    </view>
+    <view class="btn" onTap="goBack">
+        <text>我知道了</text>
+    </view>
+</view>

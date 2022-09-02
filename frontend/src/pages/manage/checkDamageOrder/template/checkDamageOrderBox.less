@@ -1,0 +1,33 @@
+.checkDamageOrderBox{
+  border-bottom: solid 1px #DFDFDF;
+  padding:0.1rem 0.15rem;
+  .id,.time{
+    line-height: 0.2rem;
+    display: inline-block;
+  }
+  .time{
+    float: right;
+  }
+  .part_list{
+    li{
+      display: inline-block;
+      margin-right:0.1rem;
+      padding: 0 0.5em;
+      border-radius: 3px;
+    }
+    .parts{
+      background-color: 	#F9F900;
+      &.important{
+        background-color: #ff6c3e;
+        color:#FFF
+      }
+    }
+  }
+  .photo{
+    width:45%;
+    height: 180px;
+    object-fit: contain;
+    margin:2%;
+    border:solid 1px #333;
+  }
+}

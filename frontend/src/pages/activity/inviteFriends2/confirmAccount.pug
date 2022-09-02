@@ -1,0 +1,22 @@
+//- Created by garvey on 2018/1/14.
+include ../../../template/base/h5
+    include ../../../template/head/viewport
+    include ../../../template/head/noTelephone
+    title 立刻提现
+body
+    .bg-img
+    .cash
+        p.fs16 本次可提取
+        p.fs14.money
+            span.fs64#money
+            | 元
+    .whiteBox
+        .content
+            .cashBox
+                p.fs134account 姓名：
+                    span#realname
+                    button.fs12.edit_btn 编辑
+                p.fs14.account 提现支付宝：
+                    span#account
+            .btn_con
+                button#transfer.btn.main_color_btn.fs15 确认提取

@@ -1,0 +1,25 @@
+{
+  "id": 3009,
+  "zh_name": "静态页-保证金",
+  "name": "deposit",
+  "group": "static",
+  "ver": "1.1.0",
+  "bundle_vendor": false,
+  "copy":true,
+  "input_file": {
+    "index": [
+      "index.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/static/deposit/",
+    "publicPath": "/",
+    "filename": "js/static_deposit/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.html"
+    ],
+    "importAll":false
+  }
+}

@@ -1,0 +1,11 @@
+-var imgPrizes = img_prizes
+.rules
+    img.prizes(src=imgPrizes)
+    ul
+        each val in prize_list
+            li
+                span.level=val.level+':'
+                span.prize_name=val.prize
+                span.limit=val.limit+'名'
+                span.range='( 第 '+val.limitDesc+' 名 )'
+

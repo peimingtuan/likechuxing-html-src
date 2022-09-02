@@ -1,0 +1,29 @@
+@import "./common/reset.css";
+html,body {
+	background-color: #fff;
+}
+.phone_item{
+	line-height: .2rem;
+    padding: .15rem .2rem;
+    border-bottom: 1px solid #f2f2f2;
+    color: #333;
+    font-size: .14rem;
+    
+}
+.item_title{margin-right: .2rem;color: #999;}
+.item_title span{
+	letter-spacing:.28rem;
+}
+.phone_dec{
+	padding: .15rem .2rem;
+	font-size: .12rem;
+	line-height: .2rem;
+}
+.pdec_item{
+	list-style-type: disc;
+	margin-left: .2rem;
+	color: #999;
+}
+.pdec_item span{
+	color: #333;
+}

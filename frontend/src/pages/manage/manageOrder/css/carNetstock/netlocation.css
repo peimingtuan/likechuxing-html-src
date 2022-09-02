@@ -1,0 +1,131 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#container-map {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/*刷新按钮*/
+.refure-page {
+    position: fixed;
+    bottom: 8.5rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    z-index: 100;
+}
+
+.refure-page img {
+    width: 2rem;
+}
+
+/*导航按钮*/
+.navigation-net {
+    position: fixed;
+    bottom: 6rem;
+    right: 1rem;
+    width: 2rem;
+    line-height: 2rem;
+    font-family: 'iconfont';
+    font-size: 1rem;
+    border-radius: 50%;
+    text-align: center;
+    background: #fff;
+    z-index: 100;
+}
+
+/*定位icon*/
+.current_location {
+    position: fixed;
+    bottom: 3.5rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    z-index: 100;
+}
+
+.current_location img {
+    vertical-align: middle;
+    width: 2rem;
+}
+
+/*合作网点icon*/
+.amap-marker .marker-route {
+    position: absolute;
+    width: 60px;
+    height: 50px;
+    background: url("../../image/carNetstock/likehuanb.png") no-repeat;
+    background-size: 50px;
+}
+
+/*非合作网点icon*/
+.amap-marker .marker-route2 {
+    position: absolute;
+    width: 60px;
+    height: 50px;
+    background: url("../../image/carNetstock/likehuanb2.png") no-repeat;
+    background-size: 50px;
+}
+
+.amap-marker .div1 {
+    width: 50px;
+    height: 24px;
+    padding: 2px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    position: absolute;
+    left: 28px;
+    top: -8px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.amap-marker .div1 .span1 {
+    display: inline-block;
+    width: 18px;
+    line-height: 18px;
+    margin-right: 8px;
+    background: #333;
+    border-radius: 50%;
+    text-align: center;
+    font-size: .4rem;
+    color: #fff;
+    position: absolute;
+    left: 2px;
+    top: 3px;
+}
+
+.amap-marker .div1 .span2 {
+    display: inline-block;
+    width: 18px;
+    line-height: 18px;
+    font-size: .4rem;
+    position: absolute;
+    left: 30px;
+    top: 3px;
+}
+
+/*返回按钮*/
+.netlocation-bottom {
+    width: 95%;
+    position: fixed;
+    bottom: .8rem;
+    padding: 0 2.5%;
+}
+
+.netlocation-bottom button {
+    width: 100%;
+    height: 1.8rem;
+    background: #187aeb;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    text-align: center;
+    color: #fff;
+    box-sizing: border-box;
+}

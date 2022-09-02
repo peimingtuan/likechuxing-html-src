@@ -1,0 +1,69 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 190rpx;
+}
+.footer .btn{
+    height: 75rpx;
+    width:450rpx;
+    background: #ee1b2c;
+    border-radius: 36rpx;
+    font-family: PingFangSC-Regular;
+    font-size: 34rpx;
+    color: #FFFFFF;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    width: 750rpx;
+    height: 587rpx;
+    background: url('/image/activityHeader.jpg') no-repeat;
+    background-size: 100%;
+}
+.body{
+    position: absolute;
+    top:430rpx;
+    left: 0;
+    width: 750rpx;
+    padding-top: 40rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    font-size: 36rpx;
+    color: #e60025;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.coupon{
+    width: 463rpx;
+    height: 181rpx;
+    background: url('/image/activityCoupon.png') no-repeat;
+    background-size: 100%;
+    margin-top: 24rpx;
+}
+.descWrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.descTtile{
+    font-size: 22rpx;
+    color: #220505;
+    font-weight: bold;
+    margin-top: 58rpx;
+    margin-bottom: 14rpx;
+}
+.desc{
+    width:570rpx;
+    display: flex;
+    flex-direction: column;
+    font-size: 22rpx;
+    color: #220505;
+    line-height: 36rpx;
+}

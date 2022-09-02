@@ -1,0 +1,90 @@
+/* pages/user/license.wxss */
+.License {
+  background-color: #F7F7F7;
+  min-height: 100vh;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+.header_desc {
+  padding-top: 30rpx;
+  font-size: 12px;
+  color: #999;
+  text-align: left;
+}
+.status_desc {
+  font-size: 12px;
+  text-align: left;
+  padding: 12rpx 0;
+}
+.status_desc.red {
+  color: #ED3800;
+}
+.status_desc.green {
+  color: #00B400;
+}
+.status_desc.gray {
+  color: #666;
+}
+.upload_box {
+  height: 256rpx;
+  background: #f1f1f1 no-repeat center;
+  background-size: contain;
+  margin:30rpx 0;
+  position: relative;
+}
+.upload_box.after .mask {
+  background: rgba(0, 0, 0, 0.48);
+}
+.upload_box.after .desc {
+  color: #fff;
+}
+.upload_box .mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.upload_box .desc {
+  position: relative;
+  text-align: left;
+  font-size: 13px;
+  padding: 0.5em;
+}
+.upload_box .desc span {
+  font-size: 12px;
+}
+.upload_box .camera {
+  position: absolute;
+  right:40rpx;
+  top: 50%;
+  margin-top: -60rpx;
+  width: 120rpx;
+  height: 120rpx;
+  color: #333;
+  float: right;
+}
+.img{
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+.btn_con {
+  position: absolute;
+  bottom:0;
+  width: 690rpx;
+  box-sizing:border-box;
+  padding-bottom: 30rpx;
+  background: #f7f7f7;
+}
+.btn_con .sub_btn {
+  width: 100%;
+  height: 92rpx;
+  font-size: 15pxm;
+  background-color: #dfdfdf;
+  color: #fff;
+  border:none;
+}
+.btn_con .sub_btn.active {
+  background-color: #111;
+}
+

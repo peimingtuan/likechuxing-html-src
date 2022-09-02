@@ -1,0 +1,136 @@
+.ChooseCar{
+  .chooseCar{
+    .empty{
+      padding-top: 0.5rem;
+      text-align: center;
+    }
+  }
+  .ContentBox{
+    padding:.2rem;
+    p{
+      line-height: 0.2rem;
+    }
+  }
+  .carList{
+    padding: 0.1rem 0;
+  }
+  .ChooseCarBox{
+    position: relative;
+    padding: 0.04rem 0;
+    img{
+      padding: 0.06rem 0;
+      height: 0.6rem;
+      display: block;
+    }
+    .car_info{
+      line-height: 0.22rem;
+      position: absolute;
+      top:0.03rem;
+      left:50%;
+      width: 50%;
+      color: #111;
+      &::after{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 0.2rem;
+        height: 0.2rem;
+        right:0;
+        top:50%;
+        margin-top: -0.1rem;
+        background: url('../../images/icon_rightArrow_2.png') no-repeat center;
+        background-size: 90%;
+      }
+    }
+  }
+  .chooseCarBtn{
+    padding: .3rem .2rem 0;
+    .btn_short_chooseCar{
+      // padding: .2rem;
+      // display: block;
+      background:#e9e9e9;
+      border-radius:2px;
+      // width:335px;
+      outline: none;
+      border: none;
+      // text-align: center;
+      // line-height: .46rem;
+      width: 100%;
+      height:.46rem;
+      // box-sizing: border-box;
+      font-size: 16px;
+      // padding: 0 .2rem;
+      &.hidden{
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.Prepare{
+  .chooseCarBox1{
+    padding: .2rem;
+    background: #FFF;
+    font-size:14px;
+    color:#111111;
+    border-bottom: 1px solid #F5f5f5;
+    p{
+      &:first-child{
+        font-size:12px;
+        color:#999999;
+        padding-bottom: .05rem;
+      }
+    }
+    .branchNameF{
+      font-size:13px;
+    }
+  }
+  .branchName{
+    line-height: 0.2rem;
+    padding: 0.1rem 0 0.05rem;
+    font-size: 14px;
+    color: #111;
+    .icon.pan{
+      display: inline-block;
+      width: 0.2rem;
+      height: 0.2rem;
+      background: url('../../images/icon_pan.png') no-repeat center;
+      background-size: 70%;
+      vertical-align: top;
+      margin:0 0.04rem
+    }
+  }
+}
+
+.Choose{
+  padding: .2rem .2rem 0;
+  background: #FFF;
+  .tips{
+    font-size:12px;
+    color:#999999;
+    text-align: left;
+  }
+  .red{
+    margin-top: .6rem;
+    text-align: center;
+    font-size:16px;
+    color:#e90000;
+  }
+  .no_border{
+    font-size:12px;
+    color:#999999;
+    text-align: left;
+  }
+}
+.paddingStyle1{padding-bottom: .9rem}
+.paddingStyle2{padding-bottom: .05rem}
+.icon-location{
+  display: inline-block;
+  width: .16rem;
+  height: .16rem;
+  background: url('../../images/location_icon2.png') no-repeat center center;
+  background-size: 100%;
+  position: relative;
+  top:.03rem;
+  left: .06rem;
+}

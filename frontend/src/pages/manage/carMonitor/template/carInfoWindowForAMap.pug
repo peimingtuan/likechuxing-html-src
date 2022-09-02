@@ -1,0 +1,17 @@
+//- Created by garvey on 2017/12/1.
+-
+    require('./carInfoWindowForAMap.less')
+    var infoList = [
+        {key:status_desc,name:"车辆状态"},
+        {key:vin,name:"车辆VIN"},
+        {key:distance_remain,name:"剩余里程"},
+        {key:modify_time,name:"定位时间"}
+    ]
+
+.CarInfoWindow
+    .title #{plate_no}
+    ul.infoList
+        each k in infoList
+            li.item
+                span.item_name #{k.name}
+                |：#{k.key}

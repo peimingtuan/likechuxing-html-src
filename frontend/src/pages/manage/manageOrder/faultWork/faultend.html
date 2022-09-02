@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+    <meta content="telephone=no, address=no" name="format-detection">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="no-cache" http-equiv="pragma">
+    <meta content="0" http-equiv="expires">
+    <meta name="full-screen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>工单完成</title>
+    <script>
+        var htmlBq = document.documentElement;
+
+        function allSize() {
+            var htmlWidth = htmlBq.clientWidth;
+            if (htmlWidth >= 640) {
+                htmlBq.style.fontSize = '40px';
+            } else if (htmlWidth < 640 && htmlWidth >= 320) {
+                htmlBq.style.fontSize = htmlWidth / (640 / 40) + 'px';
+            } else if (htmlWidth < 320) {
+                htmlBq.style.fontSize = '20px';
+            }
+        }
+        allSize();
+        window.onresize = function () {
+            allSize();
+        };
+    </script>
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.4&key=91ed10906005ee88866f14fd9f076e8b"></script>
+    <!-- UI组件库 1.0 -->
+    <script src="https://webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script>
+</head>
+<body>
+<script>
+    !(function(c,b,d,a){c[a]||(c[a]={});c[a].config={pid:"gruqqi6cbp@6594c08d3216a5d",imgUrl:"https://arms-retcode.aliyuncs.com/r.png?"};
+        with(b)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("crossorigin","",src=d)
+    })(window,document,"https://retcode.alicdn.com/retcode/bl.js","__bl");
+</script>
+    <div id="container-end"></div>
+    <div class="trail none">
+        <img src=""/><br/>
+        <span>轨迹加载失败</span>
+    </div>
+    <div class="center"></div>
+    <div class="content-top">
+        <span class="span1"></span>
+        <span class="span2"></span>
+        <span class="right span3"></span>
+    </div>
+    <div class="content none">
+        <p class="p1">
+            <img class="get-img" src="" alt=""/>
+            <span class="span1"></span><br/>
+            <span class="span2"></span>
+        </p>
+        <p class="p2">
+            <img class="return-img" src="" alt=""/>
+            <span class="span1"></span><br/>
+            <span class="span2"></span>
+        </p>
+    </div>
+    <div class="door-btn2">
+        <span class="sync-oiler2">同步油量</span>
+        <span class="open-cardoor2">开门</span>
+        <span class="close-cardoor2">锁门</span>
+    </div>
+    <div class="sync-detail">
+        <span class="remain_km">续航里程<font></font>km</span>
+        <span class="job-detail2 right">工单详情 &#xe623;</span>
+    </div>
+    <div class="content-bottom">
+        <span class="select-net">查询网点</span>
+        <span class="back_titlepage">返回首页</span>
+    </div>
+</body>
+</html>

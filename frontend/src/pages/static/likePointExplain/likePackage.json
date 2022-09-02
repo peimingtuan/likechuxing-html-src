@@ -1,0 +1,25 @@
+{
+  "id": 3002,
+  "zh_name": "说明页_网点说明",
+  "name": "likePointExplain",
+  "group": "static",
+  "ver": "1.1.0",
+  "bundle_vendor": false,
+  "copy":false,
+  "input_file": {
+    "index": [
+      "index.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/static/likePointExplain/",
+    "publicPath": "/",
+    "filename": "js/static_likePointExplain/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.pug"
+    ],
+    "importAll":false
+  }
+}

@@ -1,0 +1,78 @@
+<view class="container" a:if="{{pageIsShow}}">
+    <view class="mapWrap">
+        <map 
+            id="map"
+            style="height:100%"
+            class="mapStyle"
+            markers="{{markers}}" 
+            polyline="{{polyline}}"
+            include-points="{{markers}}" 
+            style="flex:1" 
+            longitude="{{longitude}}" 
+            latitude="{{latitude}}"
+            onControlTap="controlTap"
+            >  
+        </map>
+    </view>
+    <view class="box" >
+        <view class="carWrap">
+            <view class="carInfo">
+                <view class="name">
+                    <text>{{info.plate}}</text>
+                </view>
+                <view class="carDesc">
+                    <text>{{info.car_type}}</text>
+                    <text></text>
+                    <text></text>
+                </view>
+            </view>
+            <view class="carImgWrap">
+                <image class="carImg" src="{{info.car_img}}" mode="aspectFit" />
+            </view>
+        </view>
+        <view class="line-wrap first">
+            <view class="line"></view>
+        </view>
+        <view class="fee-wrap">
+            <view class="time">{{time}}</view>
+            <view class="fee">
+                <text class="num">{{fee_total}}</text>
+                <text>元</text>
+            </view>
+        </view>
+        <view class="address">
+            <view class="start">
+                <view class="icon">取：</view>
+                <text>{{line.start_point}}</text>
+            </view>
+            <view class="end">
+                <view class="icon">还：</view>
+                <text>{{line.end_point}}</text>
+            </view>
+        </view>
+        <view class="line-wrap">
+            <view class="line"></view>
+        </view>
+        <view class="btnGroup">
+            <view class="btn" onTap="_goAppraise" a:if="{{line.comment.can_comment}}">
+                <text>服务评价</text>
+            </view>
+            <view class="btn" onTap="_goFeeDetail" >
+                <text>费用明细</text>
+            </view>
+            <view class="btn" onTap="_goApp" a:if="{{line.has_accident}}">
+                <text>事故图片</text>
+            </view>
+            <view class="btn" onTap="_goCarImg" a:if="{{line.has_car_photo}}">
+                <text>验车单</text>
+            </view>
+            <view class="btn" onTap="_goApp" a:if="{{line.has_car_refuel}}">
+                <text>加油返款记录</text>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="loadingBox" a:if="{{!pageIsShow}}">
+    <view class="loadingIcon"></view>
+</view>
+

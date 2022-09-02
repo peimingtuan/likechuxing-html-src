@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, user-scalable=no"/>
+    <title>Title</title>
+</head>
+<body>
+<div class="login">
+    <input id="phone" type="text" maxlength="11" placeholder="请输入手机号">
+    <button id="getCode">获取验证码</button>
+    <input id="code" type="text" maxlength="4" placeholder="请输入验证码">
+</div>
+<script>
+	let login = new Login({
+		phone: document.querySelector('#phone'),
+		getCodeBtn: document.querySelector('#getCode'),
+		code: document.querySelector('#code'),
+		verifyBtn: document.querySelector('#verify'),
+		getCode: function (phone, cb) {
+			// send ajax request to get verifyCode,execute cb() when succeed
+		},
+		verify: function (data) {
+			/* send ajax request to get verify the code
+            data = {
+            	phone: 13812341234,
+                code: 1234
+            }
+            */
+		}
+	})
+</script>
+</body>
+</html>

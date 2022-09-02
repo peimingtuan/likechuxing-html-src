@@ -1,0 +1,59 @@
+@import "reset.css";
+
+html{
+  background: #ed3800 url('../images/bg_circle.png') repeat left top;
+  background-size: 50%;
+}
+
+.btn_short{
+  width: 1rem;
+  display: block;
+  text-align: center;
+  margin:0.05rem auto;
+  background: url('../images/btn_short.png') no-repeat center;
+  background-size: 100%;
+  color:#FFDA66;
+  line-height: 0.27rem;
+  &.yellow{
+    background-image: url('../images/btn_short_yellow.png');
+    color:#ed3800;
+  }
+  &.big{
+    line-height: 0.46rem;
+    background-image: url('../images/btn_short_big.png');
+  }
+}
+
+.btn_square{
+  width: 0.62rem;
+  height: 0.62rem;
+  display: block;
+  text-align: center;
+  margin:0.05rem auto;
+  background: url('../images/btn_square.png') no-repeat center;
+  background-size: 100%;
+  color:#ed3800;
+  line-height: 0.16rem;
+}
+
+.btn_long{
+  display: block;
+  text-align: center;
+  background: url('../images/btn_long.png') no-repeat center;
+  background-size: 100%;
+  color:#FFDA66;
+  line-height: 0.46rem;
+  &.yellow{
+    background-image: url('../images/btn_long_yellow.png');
+    color:#ed3800;
+  }
+  &.disabled{
+    background-image: url('../images/btn_long_disabled.png');
+    color:#cecece;
+  }
+
+}
+
+.red{
+  color:#ed3800;
+}

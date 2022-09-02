@@ -1,0 +1,86 @@
+.container{
+    padding-top: 48rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header{
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #525A66;
+    letter-spacing: 0;
+    line-height: 34rpx;
+    margin-bottom: 34rpx;
+}
+.num{
+    color: #d55e5e;
+}
+.checkList{
+    width: 500rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.listItem{
+    width: 240rpx;
+    height: 68rpx;
+    border: 1px solid #C6C6C6;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20rpx;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #848C99;
+    letter-spacing: 0;
+}
+.listItem.active{
+    border-color:  #2A2D36;
+    color: #2A2D36;
+}
+.textareaWrap{
+    width:500rpx;
+    background: #F4F5F7;
+    border: 1px solid #E7E7E7;
+    border-radius: 2px;
+    margin-bottom: 50rpx;
+}
+.textareaWrap textarea{
+    height: 220rpx;
+    background: transparent;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #2A2D36;  
+    letter-spacing: 0;
+    padding-left: 20rpx;
+    padding-right: 20rpx;
+    padding-bottom: 14rpx;
+    padding-top: 14rpx;
+}
+.textareaWrap .placeholder-class{
+    color: #B3B9C3;
+}
+.btn{
+    width: 500rpx;
+    height: 96rpx;
+    background: #D3D3D3;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ont-family: PingFangSC-Regular;
+    font-size: 34rpx;
+    color: #FFFFFF;
+    margin-bottom: 14rpx;
+}
+.btn.active{
+    background: #2B2E37;
+}
+.footer{
+    font-family: PingFangSC-Regular;
+    font-size: 20rpx;
+    color: #848C99;
+    letter-spacing: 0;
+}

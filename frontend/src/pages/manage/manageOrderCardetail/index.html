@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+    <meta content="telephone=no, address=no" name="format-detection">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="no-cache" http-equiv="pragma">
+    <meta content="0" http-equiv="expires">
+    <meta name="full-screen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>车辆详情</title>
+    <script>
+        var htmlBq = document.documentElement;
+
+        function allSize() {
+            var htmlWidth = htmlBq.clientWidth;
+            if (htmlWidth >= 640) {
+                htmlBq.style.fontSize = '40px';
+            } else if (htmlWidth < 640 && htmlWidth >= 320) {
+                htmlBq.style.fontSize = htmlWidth / (640 / 40) + 'px';
+            } else if (htmlWidth < 320) {
+                htmlBq.style.fontSize = '20px';
+            }
+        }
+        allSize();
+        window.onresize = function () {
+            allSize();
+        };
+    </script>
+    <script src="https://g.alicdn.com/dingding/open-develop/1.9.0/dingtalk.js"></script>
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.4&key=91ed10906005ee88866f14fd9f076e8b"></script>
+</head>
+<body class="body">
+<script>
+    !(function (c, b, d, a) {
+        c[a] || (c[a] = {});
+        c[a].config = {pid: "gruqqi6cbp@6594c08d3216a5d", imgUrl: "https://arms-retcode.aliyuncs.com/r.png?"};
+        with (b)with (body)with (insertBefore(createElement("script"), firstChild))setAttribute("crossorigin", "", src = d)
+    })(window, document, "https://retcode.alicdn.com/retcode/bl.js", "__bl");
+</script>
+<div class="cardetail-content none cardetail-block">
+    <div class="car-top">
+            <div class="plate_no"><font class="font1"></font> ()</div>
+            <!-- 成都限行-->
+            <div class="chengdu-limt none">今日限行</div>
+            <!-- 广州限行-->
+            <div class="gz-limit">
+
+            </div>
+    </div>
+    <p class="p1">
+        <span class="brand_name"></span>
+        <span class="car-color"></span>
+        <span class="carqube">三方</span>
+        <span class="remain_km"></span>
+    </p>
+    <!-- 新增车辆状态时长-->
+    <div class="status-time">
+        <!-- 车辆状态-->
+        <span class="status_name"></span>
+        <!-- 状态时长-->
+        <span class="time"></span>
+    </div>
+    <div class="getnet">
+        <div class="get-left">
+            <font class="none get-block">取：</font>
+            <!-- 去掉网点限非标志-->
+            <!--<img class="img2 none" src=""/>-->
+            <img class="mapb" src=""/>
+            <span class="branch_addr inline"></span><br/>
+            <span class="park_fee none">预计停车费<font></font>元</span>
+        </div>
+        <div class="get-right">
+            <div class="get-general general" >
+                <img src="" /><br/>
+                全景
+            </div>
+            <div class="daoh1 daoh" >
+                <img src="" /><br/>
+                导航
+            </div>
+        </div>
+    </div>
+    <div class="returnnet none">
+        <div class="return-left">
+            还：
+            <img class="mapb2" src=""/>
+            <span class="branch_addr2 inline"></span><br/>
+        </div>
+        <div class="return-right">
+            <div class="return-general general">
+                <img src=""  /><br/>
+                全景
+            </div>
+            <div class="daoh2 daoh" >
+                <img src="" /><br/>
+                导航
+            </div>
+        </div>
+    </div>
+    <!-- 新增备注信息-->
+    <div class="bottom none">
+        <span class="span1">备注:</span>
+        <span class="span2"></span>
+    </div>
+</div>
+<!--车辆详情按钮样式更换-->
+<div class="cardetail-tool2 none cardetail-block">
+    <div class="cardetail-left div1">
+        <div class="change-netstatus">
+            <img class="outer-img" src="" />
+            <span>
+                <input type="hidden" class="change-netstatus-value" value="" />
+                <img class="chang-net" src="" />
+                更改网点
+            </span>
+        </div>
+        <div class="change-carstatus">
+            <img class="outer-img" src="" />
+            <span>
+                <input type="hidden" class="change-carstatus-value" value="" />
+                <img class="chang-statue" src="" />
+                更改状态
+            </span>
+        </div>
+    </div>
+    <div class="cardetail-center div1">
+        <img class="center-img" src="" />
+        <img class="left-img flash-light" src="" />
+        <input type="hidden" class="flash-light-value" value="" />
+        <img class="top-img open-door" src="" />
+        <input type="hidden" class="open-door-value" value="" />
+        <img class="right-img whistle" src="" />
+        <input type="hidden" class="whistle-value" value="" />
+        <img class="bottom-img close-door" src="" />
+        <input type="hidden" class="close-door-value" value="" />
+    </div>
+    <div class="cardetail-right div1">
+        <div class="currentPage">
+            <img class="outer-img" src="" />
+            <span>
+                <input type="hidden" class="currentPage-value" value="" />
+                <img class="location" src="" />
+                当前位置
+            </span>
+        </div>
+        <div class="morechoice">
+            <img class="outer-img" src="" />
+            <span>
+                <img class="more" src="" />
+                更多
+                <font class="transorm-icon"><img src="" /></font>
+            </span>
+        </div>
+    </div>
+    <!--更多弹层 -->
+    <div class="more-alert none">
+        <img class="xia-l" src="" />
+        <span class="drivingPage">
+            <input type="hidden" class="drivingPage-value" value="" />
+            <img src="" />
+            行驶证
+        </span>
+         <span class="policyPage">
+             <input type="hidden" class="policyPage-value" value="" />
+            <img src="" />
+            保险单
+        </span>
+         <span class="history-carsingle">
+             <input type="hidden" class="history-carsingle-value" value="" />
+            <img src="" />
+            验车单
+        </span>
+         <span class="operaHistory">
+             <input type="hidden" class="operaHistory-value" value="" />
+            <img src="" />
+            操作历史
+        </span>
+         <span class="changeRemark">
+             <input type="hidden" class="changeRemark-value" value="" />
+            <img src="" />
+            修改备注
+        </span>
+         <span class="asny-oiler">
+             <input type="hidden" class="asny-oiler-value" value="" />
+            <img src="" />
+            同步油电量
+        </span>
+    </div>
+</div>
+<!--新建工单-->
+<div class="newbuilt-work-style">
+    <!--加油或充电工单-->
+    <div class="new-cardetail none cardetail-block">
+        <span class="left">
+            <font></font>
+            <img class="check-icon" src=""/>
+        </span>
+        <span class="newBtn  new_work">&#xe73e;</span>
+    </div>
+    <!--调度工单-->
+    <div class="new-diapatch none cardetail-block">
+        <span class="left">
+            <font></font>
+            <img class="check-icon" src=""/>
+        </span>
+        <span class="newBtn2  new_work">&#xe73e;</span>
+    </div>
+    <!--故障工单-->
+    <div class="new-trouble none cardetail-block">
+        <span class="left">
+            <font></font>
+            <img class="check-icon" src=""/>
+        </span>
+        <span class="newBtn3 new_work">&#xe73e;</span>
+        <span class="dispose none"><img src=""/></span>
+    </div>
+    <!--维修工单-->
+    <div class="new-service none cardetail-block">
+        <span class="left">
+            <font></font>
+            <img class="check-icon" src=""/>
+        </span>
+        <span class="newBtn6"> 查看</span>
+    </div>
+    <!--事故保险工单-->
+    <div class="new-insurance none cardetail-block">
+        <span class="left">
+            <font></font>
+            <img class="check-icon" src=""/>
+        </span>
+        <span class="newBtn7 new_work">&#xe73e;</span>
+    </div>
+    <!--遗失工单-->
+    <div class="new-lost none cardetail-block">
+        <span class="left">
+            <font></font>
+            <img class="check-icon" src=""/>
+        </span>
+        <span class="newBtn5 new_work">&#xe73e;</span>
+    </div>
+    <!--24小时预警-->
+    <div class="new-warning none cardetail-block">
+        <span class="left">
+            <font></font>
+            <img class="check-icon" src=""/>
+        </span>
+        <span class="newBtn8 new_work">&#xe73e;</span>
+        <span class="check none"> 查看</span>
+    </div>
+    <!--办公用车-->
+    <div class="new-office none cardetail-block">
+        <span class="left">
+            <font></font>
+            <img class="check-icon" src=""/>
+        </span>
+        <span class="newBtn10 new_work_office new_work">&#xe73e;</span>
+    </div>
+    <!--挪车工单-->
+    <div class="new-move none cardetail-block">
+        <span class="left">
+            <font></font>
+            <img class="check-icon" src=""/>
+        </span>
+        <span class="newBtn13 new_work_office new_work">&#xe73e;</span>
+    </div>
+    <!--年检工单-->
+    <div class="new-Review none cardetail-block">
+        <span class="left">
+            <font></font>
+            <img class="check-icon" src=""/>
+        </span>
+        <span class="newBtn12 new_work">&#xe73e;</span>
+    </div>
+    <!--洗车工单-->
+    <div class="new-carwash none cardetail-block">
+        <span class="left">
+            <font></font>
+            <img class="check-icon" src=""/>
+        </span>
+        <span class="newBtn9 new_work">&#xe73e;</span>
+    </div>
+    <!--车辆问题列表-->
+    <div class="new-troublerecord none cardetail-block">
+        <span class="left">
+            <font></font>
+            <img class="check-icon" src=""/>
+        </span>
+        <!-- 随时可创建工单-->
+        <span class="newBtn4 can_new_work">&#xe73e;</span>
+    </div>
+    <!--保养工单-->
+    <div class="new-maintain none cardetail-block">
+         <span class="left">
+            <font></font>
+            <img class="check-icon" src=""/>
+        </span>
+        <span class="newBtn11">&#xe73e;</span>
+    </div>
+    <!--巡检工单-->
+    <div class="new-inspection none cardetail-block">
+         <span class="left">
+            <font>巡检工单</font>
+            <img class="check-icon" src=""/>
+        </span>
+        <span class="newBtn14 can_new_work">&#xe73e;</span>
+    </div>
+</div>
+
+<!--遗失物品弹窗-->
+<div class="lostBox">
+    <div class="box">
+        <div class="title">发现遗失物品？</div>
+        <p class="desc">该车辆由用户上报，可能存在以下遗失物品，请仔细检查车辆，若发现该物品请点击"确认发现该物品"并及时送至指定办公室</p>
+        <div class="item">
+            物品名称：<span id="lost"></span>
+        </div>
+        <div class="item">
+            物品详情：<span id="lost_detail"></span>
+        </div>
+        <div class="btn-con">
+            <button class="btn main" id="lost_yes">确认发现该物品</button>
+            <button class="btn main" id="lost_no">未发现该物品</button>
+            <button class="btn" id="lost_cancel">取消</button>
+        </div>
+    </div>
+</div>
+<!--修改备注弹框-->
+<div class="editremark_window none">
+    <div class="editremark">
+        <p class="title">修改备注</p>
+        <div class="center">
+            <textarea class="void_writeinfo" placeholder="请输入备注信息，200字以内" maxlength="200">
+            </textarea>
+            <span class="record-number"><font class="font1">0</font>/<font class="font2">200</font></span>
+        </div>
+        <ul class="bottom">
+            <li class="sub-edit-remark">提交备注</li>
+            <li class="clear-void">长按清空</li>
+            <li class="give-up-edit">放弃修改</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

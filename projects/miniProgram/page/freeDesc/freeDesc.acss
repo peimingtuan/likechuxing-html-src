@@ -1,0 +1,6 @@
+.bg{
+    width: 750rpx;
+    height: 1812rpx;
+    background:url('/image/freeDesc.png') no-repeat;
+    background-size: 100%;
+}

@@ -1,0 +1,19 @@
+<view class="container">
+    <view class="title">
+        <text class="num">0元</text>
+        <text>用车无负担</text>
+    </view>
+    <view class="desc">
+        <text>芝麻信用超过</text>
+        <text class="num">700分</text>
+        <text>可免保证金用车</text>
+        <view class="tipImg" onTap="tip"></view>
+    </view>
+    <view class="logo"></view>
+    <view class="btn" onTap="postAuthCode">
+        <text>免保证金用车</text>
+    </view>
+</view>
+<view class="footer" onTap="goPayBail">
+    <text>缴纳保证金></text>
+</view>

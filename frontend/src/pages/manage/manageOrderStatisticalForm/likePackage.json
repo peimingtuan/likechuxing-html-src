@@ -1,0 +1,26 @@
+{
+  "id": 4022,
+  "zh_name": "管理APP钉钉-统计",
+  "name": "manageOrderStatisticalForm",
+  "group": "manage",
+  "copy": true,
+  "bundle_vendor": false,
+  "dll":[
+    "vuer"
+  ],
+  "input_file": {
+    "index": [
+      "index.js"
+    ]
+  },
+  "output_file": {
+    "path": "/dist/manage/manageOrderStatisticalForm/",
+    "publicPath": "/",
+    "filename": "js/manage_manageOrderStatisticalForm/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.html"
+    ]
+  }
+}

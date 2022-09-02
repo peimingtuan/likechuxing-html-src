@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <title>邀请好友</title>
+    <script>
+        var htmlBq = document.documentElement;
+
+        function allSize() {
+            var htmlWidth = htmlBq.clientWidth;
+            if (htmlWidth >= 640) {
+                htmlBq.style.fontSize = '40px';
+            } else if (htmlWidth < 640 && htmlWidth >= 320) {
+                htmlBq.style.fontSize = htmlWidth / (640 / 40) + 'px';
+            } else if (htmlWidth < 320) {
+                htmlBq.style.fontSize = '20px';
+            }
+        }
+        allSize();
+        window.onresize = function () {
+            allSize();
+        };
+    </script>
+</head>
+<body>
+    <div class="contentInfo">
+        <p class="p1">新用户再送<br/>
+            50元出行大礼
+        </p>
+        <p class="p2">您的好友<span></span>送您 30元 红包<br/>
+            输入手机号即可领取
+        </p>
+        <p class="p3">TA的立刻专属优惠码：<span>加载中...</span></p>
+    </div>
+    <div class="login">
+        <p><input id="phone" type="text" maxlength="11" placeholder="请输入手机号"></p>
+        <p class="p2"><input id="code" type="text" maxlength="4" placeholder="请输入验证码"><button class="dark_btn" id="getCode">获取验证码</button></p>
+        <p class="p3"> <button class="dark_btn" id="verify">领取优惠券</button></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "id": 2001,
+  "zh_name": "地推登录注册",
+  "name": "spread",
+  "desc": "百度糯米",
+  "group": "activity",
+  "ver": "1.0.0",
+  "bundle_vendor": false,
+  "input_file": {
+    "index": [
+      "index.js"
+    ]
+  },
+  "copy": true,
+  "output_file": {
+    "path": "./dist/activity/spread/",
+    "publicPath": "/",
+    "filename": "js/activity_spread/[name].js"
+  },
+  "template": {
+    "list": [
+      "index.html"
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+@import "reset.css";
+
+.btn{
+  color:#fff;
+}
+
+body{
+  min-height: 100vh;
+  background-color:#161723 ;
+}
+
+.footer{
+  width: 100%;
+  height: 0.22rem;
+  background: url(../../images/footer.png) no-repeat center;
+  background-size: auto 100%;
+  position: absolute;
+  bottom:0.2rem;
+}
+
+/*.btn{
+  padding: 0;
+  height: 0.32rem;
+  width: 1.1rem;
+  border:none;
+  border-radius: 0.18rem;
+  color:#fff;
+  font-weight: 300;
+  &.main_color_btn{
+    background-color: #08c6ff;
+  }
+  &.second_color_btn{
+    background-color: #fed31c;
+  }
+  &.dark_color_btn{
+    background-color:#373839 ;
+  }
+}*/
+
+.main_color_btn.disabled{
+  background-color: #9fa0a0;
+}
+.main_color_btn.dark{
+  background-color: #25213e;
+}
+.main_color_btn.border{
+  color:#e84656;
+  background-color: #fff;
+  box-sizing: border-box;
+  border:solid 1px #e84656;
+  font-weight: 400;
+}
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.float-left{
+  float: left!important;
+}
+
+.float-right{
+  float:  right!important;
+}

@@ -1,0 +1,38 @@
+@import "../../../../css/reset.css";
+@import "../../../../css/common.less";
+
+body{
+  max-width: 640px;
+  margin:0 auto;
+}
+
+.warn{
+  color:#ed3800;
+}
+
+
+.btn{
+  transition-duration: 100ms;
+  &.white:active{
+    background-color: #f7f7f7!important;
+  }
+  &.opacity:active{
+    opacity: 0.8;
+  }
+  &.disable{
+    opacity: 0.6;
+    &.white:active{
+      background-color: transparent;
+    }
+    &.white:active{
+      opacity: 1;
+    }
+  }
+}
+
+
+
+
+
+
+

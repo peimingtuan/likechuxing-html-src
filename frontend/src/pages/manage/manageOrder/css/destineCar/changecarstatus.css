@@ -1,0 +1,50 @@
+/*文本域样式*/
+.forget {
+    box-sizing: border-box;
+    margin: .5rem .5rem 3rem;
+    width: 15rem;
+    height: 4rem;
+    border: 1px solid #D9D9D9;
+}
+
+.forget textarea {
+    box-sizing: border-box;
+    padding: .5rem;
+    width: 14rem;
+    height: 3rem;
+    border: none;
+    font-size: 14px;
+}
+
+/*列表样式*/
+.list-items {
+    margin: .5rem;
+}
+
+.list-items li {
+    border-bottom: 1px solid #dcdcdc;
+    line-height:2rem;
+}
+
+/*底部按钮样式*/
+.bottom-btn-box {
+    width: 16rem;
+    height: 2rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 0 .5rem;
+    box-sizing: border-box;
+}
+
+.bottom-btn-box button {
+    width: 15rem;
+    line-height: 1.8rem;
+    background: #187aeb;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    text-align: center;
+    color: #fff;
+    box-sizing: border-box;
+}

@@ -1,0 +1,1 @@
+{"name":"vconsole","content":{"./other_modules/like-env/index.js":{"id":0,"buildMeta":{"exportsType":"namespace","providedExports":["default"]}},"./other_modules/like-tool/vconsole.js":{"id":2,"buildMeta":{"exportsType":"namespace","providedExports":[]}},"./node_modules/vconsole/dist/vconsole.min.js":{"id":3,"buildMeta":{"providedExports":true}}}}

@@ -1,0 +1,38 @@
+@import "../../../../css/reset.css";
+@import "../../../../css/font.less";
+@import "../../../../css/buttons/button";
+.fl_r{
+  float: right;
+}
+.header{
+  background-color: #fff9E9;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  top:0;
+  padding: 0.05rem 0.2rem;
+  border-bottom: solid 1px #f2f2f2;
+  .tip{
+    line-height: 0.2rem;
+    text-align: center;
+    color:#999;
+  }
+  select{
+    height: 0.2rem;
+    font-size: 0.13rem;
+  }
+}
+.list{
+  padding-top: 0.5rem;
+  .item{
+    padding: 0.05rem 0.2rem;
+    border-bottom: solid 1px #f2f2f2;
+    &:nth-of-type(odd){
+      background-color: #f7f7f7;
+    }
+    .model{
+      margin-right: 1em;
+      color:#999;
+    }
+  }
+}

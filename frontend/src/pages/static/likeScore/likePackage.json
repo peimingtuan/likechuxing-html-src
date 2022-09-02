@@ -1,0 +1,29 @@
+{
+  "id": 3003,
+  "zh_name": "说明页_里程积分",
+  "name": "likeScore",
+  "group": "static",
+  "ver": "1.1.0",
+  "bundle_vendor": false,
+  "copy":true,
+  "input_file": {
+    "increase": ["increase.js"],
+    "introduce": ["introduce.js"],
+    "mainPoint": ["mainPoint.js"],
+    "use": ["use.js"]
+  },
+  "output_file": {
+    "path": "/dist/static/likeScore/",
+    "publicPath": "/",
+    "filename": "js/static_likeScore/[name].js"
+  },
+  "template": {
+    "list": [
+      "increase.pug",
+      "introduce.pug",
+      "mainPoint.pug",
+      "use.pug"
+    ],
+    "importAll":false
+  }
+}

@@ -1,0 +1,41 @@
+.carsingle-content {
+    margin-top: 1rem;
+    width:100%;
+    height:19rem;
+}
+.carDamage_container {
+    height: 18rem;
+}
+.carsingle-check {
+    margin-top: .5rem;
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.carsingle-check input {
+    position: relative;
+    top: .15rem;
+    width: .8rem;
+    height: .8rem;
+}
+
+.carsingle-nextbtn {
+    position:fixed;
+    bottom:0;
+    width:100%;
+    padding:.5rem;
+    background: #fff;
+    box-shadow: 0px -2px 1px #eaeaea;
+}
+
+.carsingle-nextbtn button {
+    width: 15rem;
+    line-height: 1.9rem;
+    text-align: center;
+    color: #fff;
+    background: #333333;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    box-sizing: border-box;
+}

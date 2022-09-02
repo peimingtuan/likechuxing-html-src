@@ -1,0 +1,333 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#selectmapnet .dispatch-top {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: .05rem .12rem;
+    line-height: .2rem;
+    font-size: .14rem;
+    background: #fff;
+    z-index: 100;
+    display:flex;
+    display: -webkit-flex; /* Safari */
+    justify-content:space-between;
+    align-items: center;
+}
+
+#selectmapnet .title-left{
+    width:2.8rem;
+    text-align: justify;
+    font-size: .135rem;
+}
+
+#selectmapnet .mint-switch-core{
+    height:18px;
+}
+
+#selectmapnet .mint-switch-core:before,
+#selectmapnet .mint-switch-core:after{
+    height:16px;
+}
+
+/*开关*/
+#selectmapnet .title-right{
+    /*width:.6rem;*/
+    font-size: .135rem;
+}
+
+#selectmapnet #dispatch-map {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#selectmapnet .dispatch-search {
+    position: absolute;
+    left: 0;
+    top: .55rem;
+    width: 3.75rem;
+    padding: 0 .12rem;
+    z-index: 100;
+}
+
+#selectmapnet .repair_sear {
+    display: inline-block;
+    position: relative;
+}
+
+#selectmapnet .repair_sear input {
+    height: .4rem;
+    /*line-height: .4rem;*/
+    border: none;
+    outline: none;
+    padding: 0;
+    -webkit-appearance: none;
+    width: 3.5rem;
+    padding-left: .5rem;
+    padding-right: .31rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#selectmapnet .input_clearn {
+    right: .12rem;
+    top: .11rem;
+    position: absolute;
+    width: .18rem;
+}
+
+/*历史记录*/
+#selectmapnet .history_items {
+    z-index: 120;
+    background: #FFFFFF;
+    position: absolute;
+    width: 3.51rem;
+    left: .12rem;
+    border: 1px solid #F0F0F0;
+    overflow: hidden;
+    padding:0 .1rem;
+    box-shadow: 1px 2px 2px #e8e8e8;
+
+}
+
+#selectmapnet .his_list,#selectmapnet .his_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: -webkit-flex;
+    line-height: 1.1;
+    -webkit-justify-content: space-between;
+    -webkit-align-items: center;
+    /*padding: 0.1rem 0.15rem;*/
+}
+
+#selectmapnet .his_list {
+    border-bottom: 1px solid #ededed;
+    padding: 0.1rem 0;
+    line-height: 1.5;
+    /*margin: 0 0.15rem;*/
+}
+
+#selectmapnet .his_close {
+    /*padding: .1rem .15rem;*/
+    text-align: right;
+    color: #ccc;
+    line-height: 1.5;
+    padding: .1rem 0;
+}
+
+#selectmapnet .delete-icon {
+    font-family: iconfont;
+    width: .468rem;
+    line-height: .468rem;
+    font-size: .18rem;
+    display: inline-block;
+    text-align: center;
+}
+
+#selectmapnet .his_clearn {
+    display: inline-block;
+    width: .14rem;
+    height: .14rem;
+}
+
+#selectmapnet .his_clearn img {
+    width: 100%;
+}
+
+#selectmapnet .history_item {
+    padding: 0.1rem 0;
+    line-height: 1.5;
+    border-bottom: 1px solid #ededed;
+}
+
+#selectmapnet .noSearch {
+    margin-top:.01rem;
+    text-align: center;
+    padding: .5rem 0;
+    box-shadow: 1px 2px 2px #e8e8e8;
+    background:#fff;
+}
+
+#selectmapnet .noSearch img {
+    width: 0.5rem;
+}
+
+#selectmapnet .dispatch-search .icon {
+    font-family: 'iconfont';
+    display: inline-block;
+    width: .4rem;
+    line-height: .4rem;
+    text-align: center;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    left: .15rem;
+    top: 0rem;
+}
+
+/*刷新icon*/
+#selectmapnet .refure-dispatchpage {
+    position: absolute;
+    bottom: 2.1rem;
+    right: .12rem;
+    width: .47rem;
+    height: .47rem;
+    border-radius: 50%;
+    z-index: 100;
+}
+
+/*定位icon*/
+#selectmapnet .current_location2 {
+    position: absolute;
+    bottom: 1.6rem;
+    right: .12rem;
+    width: .47rem;
+    height: .47rem;
+    border-radius: 50%;
+    z-index: 100;
+}
+
+#selectmapnet .current_location2 img {
+    width: .47rem;
+}
+
+#selectmapnet .refure-dispatchpage img {
+    width: .47rem;
+}
+
+/*导航弹框*/
+#selectmapnet .navition-bottom {
+    box-sizing: border-box;
+    position: fixed;
+    bottom: .608rem;
+    left: .12rem;
+    width: 3.51rem;
+    height: .936rem;
+    border-radius: 5px;
+    background: #fff;
+}
+
+#selectmapnet .navition-bottom .left {
+    box-sizing: border-box;
+    padding: .187rem;
+    width: 2.5rem;
+    height: .936rem;
+    border-right: 1px solid #dcdcdc;
+}
+
+#selectmapnet .navition-bottom .left span {
+    width:2.2rem;
+    display: inline-block;
+    line-height: .281rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#selectmapnet .navition-bottom .left .address {
+    color: #999999;
+}
+
+#selectmapnet .navition-bottom .right {
+    box-sizing: border-box;
+    width: 1rem;
+    height: .93rem;
+    text-align: center;
+}
+
+#selectmapnet .navition-bottom .right img {
+    width: .351rem;
+    vertical-align: middle;
+    margin-top: .21rem;
+}
+
+/*底部按钮*/
+#selectmapnet .sure-btn{
+    position:fixed;
+    width:3.51rem;
+    bottom:.12rem;
+    left:.12rem;
+    background:#fff;
+    border-radius:3px;
+    line-height:.468rem;
+    text-align: center;
+}
+
+#selectmapnet .normal-color{
+    background:#333!important;
+    color:#fff;
+}
+
+/*网点小图标*/
+.amap-marker .marker-route {
+    position: absolute;
+    width: .39rem;
+    height: .42rem;
+    background: url("../images/white-net.png") no-repeat;
+    background-size: .39rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.amap-marker .marker-route2 {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    width: .39rem;
+    height: .42rem;
+    background: url("../images/black-net.png") no-repeat;
+    background-size: .39rem;
+}
+
+/*网点大图标*/
+.amap-marker .bigmarker-route {
+    position: absolute;
+    width: .53rem;
+    height: .6rem;
+    background: url("../images/bigwhite-net.png") no-repeat;
+    background-size: .53rem;
+}
+
+.amap-marker .bigmarker-route2 {
+    position: absolute;
+    width: .53rem;
+    height: .6rem;
+    background: url("../images/bigblack-net.png") no-repeat;
+    background-size: .53rem;
+}
+
+.amap-marker .div1 {
+    box-sizing: border-box;
+    width: .18rem;
+    height: .18rem;
+    white-space: nowrap;
+    position: absolute;
+    right: 0;
+    background: #fff;
+    border-radius:.09rem;
+    /*使数字居中处理*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.amap-marker .div1 .span1 {
+    display: inline-block;
+    width:.15rem;
+    height:.15rem;
+    box-sizing: border-box;
+    line-height:.15rem;
+    background: #484850;
+    border-radius: 50%;
+    text-align: center;
+    font-size: .12rem;
+    color: #fff;
+}

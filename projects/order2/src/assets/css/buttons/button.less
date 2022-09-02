@@ -1,0 +1,47 @@
+@import "../color.less";
+.btn_common(){
+  -webkit-appearance: none;
+  border-radius: 2px;
+}
+
+.blue_btn(){
+  .btn_common();
+  background-color: @blue;
+  color: #FFF;
+  border: none;
+  &.disabled {
+    opacity: 0.3;
+  }
+}
+
+.dark_btn(){
+  .btn_common();
+  background-color: #494b51;
+  color: #FFF;
+  border: none;
+  &.disabled {
+    opacity: 0.3;
+  }
+}
+
+.white_btn(){
+  .btn_common();
+  background-color: #FFF;
+  color: #666;
+  border: solid 1px #DFDFDF;
+  &.disabled {
+    color: #aaa;
+  }
+}
+
+.blue_btn {
+  .blue_btn()
+}
+
+.dark_btn {
+  .dark_btn()
+}
+
+.white_btn {
+  .white_btn()
+}
